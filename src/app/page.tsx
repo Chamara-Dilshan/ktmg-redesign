@@ -1,7 +1,26 @@
-export default function Home() {
+import Hero from '@/components/home/Hero'
+import StatsBar from '@/components/home/StatsBar'
+import ServicesGrid from '@/components/home/ServicesGrid'
+import ClinicFinder from '@/components/home/ClinicFinder'
+import DoctorsPreview from '@/components/home/DoctorsPreview'
+import TestimonialsSection from '@/components/home/TestimonialsSection'
+import InsuranceSection from '@/components/home/InsuranceSection'
+import services from '@/data/services.json'
+import doctors from '@/data/doctors.json'
+import testimonials from '@/data/testimonials.json'
+import locations from '@/data/locations.json'
+import type { Service, Doctor, Testimonial, Location } from '@/types'
+
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <h1>Homepage coming in Task 5</h1>
-    </div>
+    <>
+      <Hero />
+      <StatsBar />
+      <ServicesGrid services={services as Service[]} />
+      <ClinicFinder locations={locations as Location[]} />
+      <DoctorsPreview doctors={doctors as Doctor[]} />
+      <TestimonialsSection testimonials={testimonials as Testimonial[]} />
+      <InsuranceSection />
+    </>
   )
 }
