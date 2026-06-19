@@ -26,9 +26,9 @@ export default function InsurancePage() {
     <div className="px-6 py-16 md:px-12">
       <div className="mx-auto max-w-7xl">
         <SectionLabel className="mb-2">Insurance</SectionLabel>
-        <h1 className="font-heading mb-3 text-4xl font-extrabold text-teal-dark">We Accept All Insurance</h1>
+        <h1 className="font-heading mb-3 text-4xl font-extrabold text-teal-dark">Insurance is never a reason to delay care.</h1>
         <p className="mb-10 max-w-xl text-sm leading-relaxed text-brand-muted">
-          Including HMO, PPO, Medi-Cal, and most commercial plans. No insurance? Ask us about affordable payment options.
+          We accept HMO, PPO, Medi-Cal, and most commercial plans. No insurance? Ask us about affordable payment options.
         </p>
 
         {/* Partner logos */}

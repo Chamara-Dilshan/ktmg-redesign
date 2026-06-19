@@ -22,7 +22,9 @@ export default function ServicesPage() {
           {(services as Service[]).map(s => (
             <Link key={s.slug} href={`/services/${s.slug}`}
                   className="group rounded-xl border border-brand-border bg-white p-5 transition-shadow hover:shadow-md md:p-7">
-              <div className="mb-4 text-3xl">{s.icon}</div>
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-teal-tint text-xl">
+                {s.icon}
+              </div>
               <h2 className="font-heading mb-2 text-lg font-bold text-teal-dark group-hover:text-teal-mid">{s.name}</h2>
               {s.hours && <p className="mb-2 text-xs font-medium text-teal-mid">{s.hours}</p>}
               <p className="text-sm leading-relaxed text-brand-muted">{s.description}</p>

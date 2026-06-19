@@ -36,3 +36,16 @@
 <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'D:\Pet Projects\KTMG-Redesign\.next\cache\webpack\client-development\0.pack.gz_' -> 'D:\Pet Projects\KTMG-Redesign\.next\cache\webpack\client-development\0.pack.gz'
  ✓ Compiled in 143ms (701 modules)
  ✓ Compiled in 129ms (701 modules)
+ ✓ Compiled in 89ms (701 modules)
+ ✓ Compiled in 134ms (701 modules)
+ ✓ Compiled in 85ms (701 modules)
+ ✓ Compiled in 97ms (701 modules)
+ ✓ Compiled in 89ms (701 modules)
+ ✓ Compiled in 117ms (701 modules)
+ ✓ Compiled in 107ms (701 modules)
+ ✓ Compiled in 97ms (701 modules)
+ ✓ Compiled in 242ms (1454 modules)
+ ✓ Compiled /doctors/[slug] in 203ms (1447 modules)
+ GET /doctors/adrienne-c-altman 200 in 520ms
+ ✓ Compiled /about-us in 95ms (762 modules)
+ GET /about-us 200 in 179ms

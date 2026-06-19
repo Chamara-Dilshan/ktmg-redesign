@@ -19,7 +19,7 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
   }, [query, locations])
 
   const cities = useMemo(
-    () => [...new Set(locations.map(l => l.city))].sort(),
+    () => Array.from(new Set(locations.map(l => l.city))).sort(),
     [locations]
   )
 

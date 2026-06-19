@@ -77,9 +77,49 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
 
-        {/* Google Maps embed placeholder */}
-        <div className="mb-10 flex h-56 items-center justify-center rounded-xl border border-brand-border bg-teal-tint text-brand-muted">
-          <p className="text-sm">Google Maps embed — {location.address}, {location.city}</p>
+        {/* Location info card */}
+        <div className="mb-10 overflow-hidden rounded-2xl bg-teal-dark">
+          <div className="grid gap-0 md:grid-cols-2">
+            {/* Address + directions */}
+            <div className="relative p-8 md:p-10">
+              <span className="pointer-events-none absolute -right-4 -top-4 select-none font-heading text-[120px] font-black leading-none text-white/[0.03]">
+                {location.city[0]}
+              </span>
+              <div className="relative">
+                <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.25em] text-teal-light">Location</p>
+                <div className="mb-4 mt-3 h-0.5 w-10 bg-coral" />
+                <p className="text-base font-semibold text-white">{location.address}</p>
+                <p className="text-sm text-white/60">{location.city}, {location.state} {location.zip}</p>
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${location.address}, ${location.city}, ${location.state} ${location.zip}`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center gap-2 rounded-lg bg-coral px-5 py-2.5 text-sm font-bold text-white transition-opacity hover:opacity-90"
+                >
+                  Get Directions →
+                </a>
+              </div>
+            </div>
+
+            {/* Hours */}
+            <div className="border-t border-white/10 p-8 md:border-l md:border-t-0 md:p-10">
+              <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.25em] text-teal-light">Hours</p>
+              <div className="mb-4 mt-3 h-0.5 w-10 bg-coral" />
+              <p className="text-sm font-semibold text-white">{location.officeHours}</p>
+              {location.saturdayHours && (
+                <p className="mt-2 text-sm font-semibold text-coral">
+                  {location.saturdayHours}{' '}
+                  <span className="text-xs font-normal text-white/50">(In-office walk-in)</span>
+                </p>
+              )}
+              {location.telehealthHours && (
+                <div className="mt-5 border-t border-white/10 pt-4">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">Telehealth</p>
+                  <p className="mt-1 text-sm font-semibold text-white">{location.telehealthHours}</p>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
 
         {/* Doctors at this location */}

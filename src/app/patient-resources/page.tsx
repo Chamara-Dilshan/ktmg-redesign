@@ -69,13 +69,12 @@ export default function PatientResourcesPage() {
           <h2 className="font-heading mb-5 text-2xl font-bold text-teal-dark">Developmental Milestone Guides</h2>
           <p className="mb-6 text-sm text-brand-muted">
             Download age-specific guides to track your child&apos;s growth and development.
-            <strong className="text-coral"> Note:</strong> Upload 6-month and 18-month PDFs before launch — those links were broken on the previous site.
           </p>
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3 md:flex md:flex-wrap">
             {milestones.map(m => (
               <a key={m.age} href={m.href}
                  className="rounded-lg border border-brand-border bg-white px-4 py-2.5 text-center text-sm font-medium text-teal-dark hover:bg-teal-tint md:px-5">
-                📄 {m.age}
+                {m.age}
               </a>
             ))}
           </div>
