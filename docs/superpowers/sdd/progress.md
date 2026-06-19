@@ -11,4 +11,19 @@ Task 2: complete (commits d145166..4b5f476, review approved 2026-06-19)
   Minor: adrienne-c-altman has middle initial in slug (non-breaking)
   Minor: no referential-integrity test for providers↔doctors cross-refs
 
-Task 3: in_progress (BASE: 4b5f476)
+Task 3: complete (commits 4b5f476..55e22e2, review approved 2026-06-19)
+  Minor: Button silently ignores onClick when href also passed (undocumented)
+
+Task 4: complete (commits 55e22e2..6f43486, review approved after fix 2026-06-19)
+  Fixed: PHONE_TEXT_EN hardcoded in Navbar (now uses constant)
+  Fixed: nested <main> in page.tsx (now <div>)
+  Fixed: ESLint any→Record in data.test.ts
+
+Task 5: complete (commits 6f43486..736d241, review approved after fix 2026-06-19)
+  Added: teal-light token (#7dd3e8) to tailwind.config.ts
+  Fixed: non-standard Tailwind opacity values in ClinicFinder
+  Fixed: hardcoded hex replaced with teal-light token in Hero+ClinicFinder
+  Minor: key={i} in StatsBar (harmless static list)
+  Minor: ClinicFinder search input has no aria-label
+
+Task 6: in_progress (BASE: 736d241)
