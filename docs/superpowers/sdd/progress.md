@@ -35,4 +35,6 @@ Task 8: complete (commits 5448959..300c1c0, review approved 2026-06-19)
 
 Task 9: complete (commits 300c1c0..7d6dcae, review approved 2026-06-19)
 
-Task 10: in_progress (BASE: 7d6dcae)
+Task 10: complete (commits 7d6dcae..9758aa2, review approved 2026-06-19)
+
+Task 11: in_progress (BASE: 9758aa2)
