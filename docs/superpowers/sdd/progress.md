@@ -43,4 +43,10 @@ Task 11: complete (commits 9758aa2..993691d, review approved after fix 2026-06-1
   Fixed: all 6 form label-input pairs missing htmlFor/id associations
   Minor: indeed.com URL hardcoded — acceptable as third-party external link (not KTMG-owned)
 
-Task 12: in_progress (BASE: 993691d)
+Task 12: complete (commits 993691d..f80cd14, review approved after fix 2026-06-19)
+  Fixed: text-yellow-400 → text-coral (brand token constraint)
+  Fixed: BlogPostPage return type → never (TypeScript strict)
+  Note: next.config.mjs used (project already uses .mjs format, not .ts)
+  Minor: Google/Yelp URLs hardcoded — acceptable as third-party external links
+
+Task 13: in_progress (BASE: f80cd14)

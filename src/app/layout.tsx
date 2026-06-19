@@ -25,6 +25,16 @@ export const metadata: Metadata = {
     template: '%s | Kids & Teens Medical Group',
   },
   description: "LA's largest pediatric network. 25 clinics, 50+ board-certified doctors, same-day appointments. Serving children ages 0–21.",
+  openGraph: {
+    type: 'website',
+    siteName: 'Kids & Teens Medical Group',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@KTDoctorGroup',
+  },
+  metadataBase: new URL('https://www.ktdoctor.com'),
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
