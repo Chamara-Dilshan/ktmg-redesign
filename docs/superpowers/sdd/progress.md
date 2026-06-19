@@ -61,3 +61,18 @@ FINAL WHOLE-BRANCH REVIEW: APPROVED (2026-06-19)
   TypeScript: CLEAN — strict mode, no implicit any
   Final fixes: text-yellow-400/yellow-300 → text-coral, via-[#hex] removed from Hero gradient, ARIA tab roles added to careers page
   HEAD: 76969ab
+
+POST-LAUNCH UI OVERHAUL: complete (commits 76969ab..5afe059, 2026-06-19)
+  Added: framer-motion — FadeIn (scroll-triggered), CountUp (animated numbers)
+  Added: WhyUs section (4-feature strip between StatsBar and ServicesGrid)
+  Rewritten: Hero (staggered animation, floating stat cards, decorative circles)
+  Rewritten: StatsBar (CountUp numbers, emoji icons, hover tint)
+  Rewritten: DoctorCard (gradient initials avatar, hover lift, full-card link)
+  Rewritten: ServicesGrid (icon background flips on hover, full-card link)
+  Rewritten: TestimonialsSection (large ❝ quote, initials avatars, teal-tint bg)
+  Rewritten: DoctorsPreview (staggered FadeIn, outlined view-all button)
+  Rewritten: InsuranceSection (FadeIn logo grid, text partner chips)
+  Updated: BookingCTA (arrow animation, coral shadow, active:scale-95)
+  Updated: globals.css (smooth scroll, teal scrollbar, pulse-glow keyframe)
+  Build: ✓ 105 static pages, zero TypeScript errors
+  HEAD: 5afe059
