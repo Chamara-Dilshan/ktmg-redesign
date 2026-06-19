@@ -1,0 +1,23 @@
+[
+  {
+    "id": "t1",
+    "quote": "We've been coming to KTMG since my daughter was born. The doctors are warm, thorough, and genuinely care. Same-day appointments have saved us so many times.",
+    "author": "Maria R.",
+    "location": "Santa Monica · Mother of 2",
+    "rating": 5
+  },
+  {
+    "id": "t2",
+    "quote": "The telehealth option is a lifesaver. When my son was sick I booked a video visit for early morning. Diagnosed and prescribed before 9AM.",
+    "author": "James T.",
+    "location": "Pasadena · Father of 3",
+    "rating": 5
+  },
+  {
+    "id": "t3",
+    "quote": "The Beverly Hills clinic staff are amazing. Dr. Fineberg takes time to explain everything. My kids actually look forward to their check-ups!",
+    "author": "Aisha K.",
+    "location": "Beverly Hills · Mother of 1",
+    "rating": 5
+  }
+]

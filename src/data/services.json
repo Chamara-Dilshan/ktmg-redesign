@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "primary-care",
+    "name": "Primary Care",
+    "icon": "🩺",
+    "description": "Routine check-ups, immunizations, and ongoing wellness care for children 0–21. Walk-in or same-day appointments available.",
+    "hours": "Mon–Fri 9AM–6PM",
+    "ctaLabel": "Book Now"
+  },
+  {
+    "slug": "telehealth",
+    "name": "Telehealth",
+    "icon": "💻",
+    "description": "Video visits from the comfort of home. Available Mon–Sat 9AM–9PM and Sun 12PM–6PM, plus evening hours 7–9PM.",
+    "hours": "Mon–Sun 9AM–8PM",
+    "ctaLabel": "Book Now"
+  },
+  {
+    "slug": "urgent-care",
+    "name": "Urgent Care",
+    "icon": "⚡",
+    "description": "Immediate care for non-emergency illnesses and injuries. Less waiting, same trusted pediatric care for ages 0–21.",
+    "ctaLabel": "Book Now"
+  },
+  {
+    "slug": "after-hours-care",
+    "name": "After-Hours Care",
+    "icon": "🌙",
+    "description": "Evening and weekend availability when your child needs care outside of regular office hours.",
+    "ctaLabel": "Learn More"
+  },
+  {
+    "slug": "prenatal-consultation",
+    "name": "Prenatal Consultation",
+    "icon": "🍼",
+    "description": "Meet your pediatrician before baby arrives. We coordinate first hospital visits with our partner hospitals for families delivering nearby.",
+    "ctaLabel": "Learn More"
+  },
+  {
+    "slug": "specialized-care",
+    "name": "Specialized Care",
+    "icon": "🧠",
+    "description": "ADHD evaluation and management, allergy care, sports physicals, and adolescent health services.",
+    "ctaLabel": "Learn More"
+  }
+]

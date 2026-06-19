@@ -1,0 +1,344 @@
+[
+  {
+    "slug": "adrienne-c-altman",
+    "name": "Dr. Adrienne C. Altman",
+    "credentials": "MD",
+    "locations": ["valencia"]
+  },
+  {
+    "slug": "ahoo-sahba",
+    "name": "Dr. Ahoo Sahba",
+    "credentials": "MD",
+    "locations": ["van-nuys"]
+  },
+  {
+    "slug": "amrita-dosanjh",
+    "name": "Dr. Amrita Dosanjh",
+    "credentials": "MD",
+    "locations": ["west-hills"]
+  },
+  {
+    "slug": "anwar-arastu",
+    "name": "Dr. Anwar Arastu",
+    "credentials": "MD",
+    "locations": ["la-mirada"]
+  },
+  {
+    "slug": "azam-jazayeri",
+    "name": "Dr. Azam Jazayeri",
+    "credentials": "MD",
+    "locations": ["culver-city"]
+  },
+  {
+    "slug": "banpreet-samra",
+    "name": "Banpreet Samra",
+    "credentials": "PA",
+    "locations": ["northridge", "tarzana", "west-hills"]
+  },
+  {
+    "slug": "barbara-rodriguez",
+    "name": "Dr. Barbara Rodriguez",
+    "credentials": "MD, FAAP",
+    "locations": ["pasadena"]
+  },
+  {
+    "slug": "benjamin-behroozan",
+    "name": "Dr. Benjamin Behroozan",
+    "credentials": "MD",
+    "locations": ["hollywood", "santa-monica"]
+  },
+  {
+    "slug": "brian-bhatt",
+    "name": "Dr. Brian Bhatt",
+    "credentials": "MD, FAAP",
+    "locations": ["northridge", "valencia"]
+  },
+  {
+    "slug": "carolina-ungs",
+    "name": "Dr. Carolina Ungs",
+    "credentials": "MD",
+    "locations": ["pico-rivera", "pasadena", "whittier"]
+  },
+  {
+    "slug": "carolyn-czaplicki",
+    "name": "Dr. Carolyn Czaplicki",
+    "credentials": "DO",
+    "locations": ["san-pedro"]
+  },
+  {
+    "slug": "casie-mcguire",
+    "name": "Casie McGuire",
+    "credentials": "FNP-C",
+    "locations": ["canyon-country", "valencia"]
+  },
+  {
+    "slug": "cze-ja-tam",
+    "name": "Cze-Ja Tam",
+    "credentials": "NP",
+    "locations": ["la-canada-flintridge"]
+  },
+  {
+    "slug": "emily-brandt",
+    "name": "Dr. Emily Brandt",
+    "credentials": "MD",
+    "locations": ["glendale", "pasadena"]
+  },
+  {
+    "slug": "erik-saenz",
+    "name": "Erik Saenz",
+    "credentials": "NP",
+    "locations": ["whittier"]
+  },
+  {
+    "slug": "erika-lee",
+    "name": "Erika Lee",
+    "credentials": "PNP",
+    "locations": ["arcadia", "pasadena"]
+  },
+  {
+    "slug": "fatemeh-anari",
+    "name": "Fatemeh Anari",
+    "credentials": "PA-C",
+    "locations": ["northridge"]
+  },
+  {
+    "slug": "greta-vines-douglas",
+    "name": "Greta Vines-Douglas",
+    "credentials": "PA",
+    "locations": ["san-pedro"]
+  },
+  {
+    "slug": "halavi-delaram",
+    "name": "Halavi Delaram",
+    "credentials": "PA",
+    "locations": ["beverly-hills", "santa-monica"]
+  },
+  {
+    "slug": "hantman-david",
+    "name": "Dr. David Hantman",
+    "credentials": "MD",
+    "locations": ["santa-monica"]
+  },
+  {
+    "slug": "hilma-benjamin",
+    "name": "Dr. Hilma Benjamin",
+    "credentials": "MD, FAAP",
+    "locations": ["la-canada-flintridge", "mission-hills", "northridge", "west-hills"]
+  },
+  {
+    "slug": "janesri-de-silva",
+    "name": "Dr. Janesri De Silva",
+    "credentials": "MD, FAAP",
+    "locations": ["la-canada-flintridge", "pasadena"]
+  },
+  {
+    "slug": "jocelyn-zuniga",
+    "name": "Dr. Jocelyn Zuniga",
+    "credentials": "MD, FAAP",
+    "locations": ["arcadia", "downey"]
+  },
+  {
+    "slug": "jose-vargas",
+    "name": "Jose Vargas",
+    "credentials": "PA",
+    "locations": ["san-fernando", "van-nuys"]
+  },
+  {
+    "slug": "kelli-hernandez",
+    "name": "Kelli Hernandez",
+    "credentials": "NP",
+    "locations": ["west-hills"]
+  },
+  {
+    "slug": "kim-yeongbu",
+    "name": "Kim Yeongbu",
+    "credentials": "NP",
+    "locations": ["hollywood"]
+  },
+  {
+    "slug": "laurie-beth-juarez-morales",
+    "name": "Dr. Laurie Beth Juarez-Morales",
+    "credentials": "MD",
+    "locations": ["san-fernando", "van-nuys"]
+  },
+  {
+    "slug": "lisa-gutierrez",
+    "name": "Lisa Gutierrez",
+    "credentials": "NP",
+    "locations": ["la-canada-flintridge"]
+  },
+  {
+    "slug": "luis-garcia",
+    "name": "Luis Garcia",
+    "credentials": "NP",
+    "locations": ["pico-rivera", "torrance", "whittier"]
+  },
+  {
+    "slug": "mark-snyder",
+    "name": "Dr. Mark Snyder",
+    "credentials": "MD, FAAP",
+    "locations": ["agoura-hills", "west-hills"]
+  },
+  {
+    "slug": "martin-fineberg",
+    "name": "Dr. Martin Fineberg",
+    "credentials": "MD, FAAP",
+    "locations": ["beverly-hills", "culver-city", "pasadena", "torrance"]
+  },
+  {
+    "slug": "maria-vega",
+    "name": "Maria Vega",
+    "credentials": "PNP",
+    "locations": ["downey"]
+  },
+  {
+    "slug": "mealynne-ngu",
+    "name": "Mealynne Ngu",
+    "credentials": "PNP",
+    "locations": ["glendale", "la-canada-flintridge"]
+  },
+  {
+    "slug": "mercy-aeri",
+    "name": "Mercy Aeri",
+    "credentials": "MD, FAAP",
+    "locations": ["pico-rivera", "torrance", "whittier"]
+  },
+  {
+    "slug": "michael-green",
+    "name": "Michael Green",
+    "credentials": "PA",
+    "locations": ["san-pedro"]
+  },
+  {
+    "slug": "michels-savannah",
+    "name": "Savannah Michels",
+    "credentials": "NP",
+    "locations": ["beverly-hills", "torrance"]
+  },
+  {
+    "slug": "miguel-sutter",
+    "name": "Miguel Sutter",
+    "credentials": "PA-C",
+    "locations": ["northridge", "pasadena", "van-nuys", "west-hills"]
+  },
+  {
+    "slug": "monique-craig",
+    "name": "Monique Craig",
+    "credentials": "PA",
+    "locations": ["culver-city"]
+  },
+  {
+    "slug": "najma-qamar",
+    "name": "Dr. Najma Qamar",
+    "credentials": "MD",
+    "locations": ["arcadia"]
+  },
+  {
+    "slug": "narindar-nat",
+    "name": "Dr. Narindar Nat",
+    "credentials": "MD, FAAP",
+    "locations": ["canyon-country", "northridge"]
+  },
+  {
+    "slug": "njie-ernestine",
+    "name": "Ernestine Njie",
+    "credentials": "FNP-C",
+    "locations": ["hollywood"]
+  },
+  {
+    "slug": "oliver-petalver",
+    "name": "Oliver Petalver",
+    "credentials": "PA-C",
+    "locations": ["downey"]
+  },
+  {
+    "slug": "palak-shelat",
+    "name": "Dr. Palak Shelat",
+    "credentials": "MD, FAAP",
+    "locations": ["northridge", "valencia"]
+  },
+  {
+    "slug": "patino-cecilia",
+    "name": "Cecilia Patino",
+    "credentials": "NP",
+    "locations": ["hollywood"]
+  },
+  {
+    "slug": "rebecca-kim",
+    "name": "Rebecca Kim",
+    "credentials": "NP",
+    "locations": ["hollywood", "santa-monica", "torrance"]
+  },
+  {
+    "slug": "rena-keynigshteyn",
+    "name": "Dr. Rena Keynigshteyn",
+    "credentials": "MD",
+    "locations": ["culver-city", "tarzana"]
+  },
+  {
+    "slug": "rohina-furmuly",
+    "name": "Rohina Furmuly",
+    "credentials": "PA-C",
+    "locations": ["beverly-hills", "culver-city"]
+  },
+  {
+    "slug": "roobina-hakoopian",
+    "name": "Roobina Hakoopian",
+    "credentials": "NP",
+    "locations": ["pasadena"]
+  },
+  {
+    "slug": "sharmetha-ramanan",
+    "name": "Sharmetha Ramanan",
+    "credentials": "PNP",
+    "locations": ["beverly-hills", "glendale"]
+  },
+  {
+    "slug": "sohn-alea",
+    "name": "Alea Sohn",
+    "credentials": "NP",
+    "locations": ["santa-monica", "torrance"]
+  },
+  {
+    "slug": "sylvia-lam",
+    "name": "Dr. Sylvia Lam",
+    "credentials": "MD, FAAP",
+    "locations": ["arcadia", "pasadena"]
+  },
+  {
+    "slug": "tatiana-genjoyan",
+    "name": "Tatiana Genjoyan",
+    "credentials": "PNP",
+    "locations": ["la-canada-flintridge"]
+  },
+  {
+    "slug": "tisha-pison",
+    "name": "Tisha Pison",
+    "credentials": "PNP",
+    "locations": ["downey"]
+  },
+  {
+    "slug": "vaseema-arastu",
+    "name": "Dr. Vaseema Arastu",
+    "credentials": "MD, FAAP",
+    "locations": ["la-mirada"]
+  },
+  {
+    "slug": "victor-tamashiro",
+    "name": "Dr. Victor Tamashiro",
+    "credentials": "MD",
+    "locations": ["mission-hills"]
+  },
+  {
+    "slug": "victoria-millet",
+    "name": "Dr. Victoria Millet",
+    "credentials": "MD, FAAP",
+    "locations": ["northridge", "san-fernando"]
+  },
+  {
+    "slug": "yussef-sakhai",
+    "name": "Dr. Yussef Sakhai",
+    "credentials": "MD",
+    "locations": ["beverly-hills", "culver-city", "santa-monica"]
+  }
+]
