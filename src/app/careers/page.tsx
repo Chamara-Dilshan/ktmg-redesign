@@ -38,21 +38,23 @@ export default function CareersPage() {
         </div>
 
         {/* Region tabs */}
-        <div className="mb-8 flex gap-2 border-b border-brand-border">
-          {tabs.map(tab => (
-            <button key={tab.id} onClick={() => setActiveTab(tab.id)}
-                    className={`px-5 py-2.5 text-sm font-semibold transition-colors ${
-                      activeTab === tab.id
-                        ? 'border-b-2 border-coral text-coral'
-                        : 'text-brand-muted hover:text-brand-text'
-                    }`}>
-              {tab.label}
-            </button>
-          ))}
+        <div className="mb-8 border-b border-brand-border">
+          <div role="tablist" className="flex gap-2">
+            {tabs.map(tab => (
+              <button key={tab.id} role="tab" aria-selected={activeTab === tab.id} onClick={() => setActiveTab(tab.id)}
+                      className={`px-5 py-2.5 text-sm font-semibold transition-colors ${
+                        activeTab === tab.id
+                          ? 'border-b-2 border-coral text-coral'
+                          : 'text-brand-muted hover:text-brand-text'
+                      }`}>
+                {tab.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Tab content */}
-        <div className="mb-10 rounded-xl border border-brand-border bg-white p-6">
+        <div role="tabpanel" className="mb-10 rounded-xl border border-brand-border bg-white p-6">
           {activeTab === 'los-angeles' && (
             <div>
               <h2 className="font-heading mb-2 text-lg font-bold text-teal-dark">Los Angeles Positions</h2>

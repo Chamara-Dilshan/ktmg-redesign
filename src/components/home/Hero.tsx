@@ -3,7 +3,7 @@ import Button from '@/components/ui/Button'
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-teal-dark via-[#0a5566] to-teal-mid px-6 py-16 md:px-12">
+    <section className="bg-gradient-to-br from-teal-dark to-teal-mid px-6 py-16 md:px-12">
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
         {/* Content */}
         <div>

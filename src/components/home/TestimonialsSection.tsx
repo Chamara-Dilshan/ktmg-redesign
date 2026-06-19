@@ -10,7 +10,7 @@ export default function TestimonialsSection({ testimonials }: { testimonials: Te
         <div className="grid gap-5 md:grid-cols-3">
           {testimonials.map(t => (
             <div key={t.id} className="rounded-xl border border-brand-border bg-white p-6">
-              <div className="mb-3 text-yellow-400">{'★'.repeat(t.rating)}</div>
+              <div className="mb-3 text-coral">{'★'.repeat(t.rating)}</div>
               <p className="mb-5 text-sm italic leading-relaxed text-brand-text">&ldquo;{t.quote}&rdquo;</p>
               <div className="flex items-center gap-3">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-teal-tint text-sm">👤</div>

@@ -7,7 +7,7 @@ export default function UrgencyBar() {
         <p className="text-white/90">
           📍 25 clinics across Los Angeles — Same-day appointments available
         </p>
-        <a href={`tel:${PHONE_CALL.replace(/\D/g, '')}`} className="font-semibold text-yellow-300 hover:text-white">
+        <a href={`tel:${PHONE_CALL.replace(/\D/g, '')}`} className="font-semibold text-coral hover:text-white">
           Call {PHONE_CALL} →
         </a>
       </div>
