@@ -31,4 +31,6 @@ Task 6: complete (commits 736d241..f60d882, review approved 2026-06-19)
 Task 7: complete (commits f60d882..5448959, review approved 2026-06-19)
   Note: doctors/page.tsx uses 'use client' at page level — plan-mandated exception
 
-Task 8: in_progress (BASE: 5448959)
+Task 8: complete (commits 5448959..300c1c0, review approved 2026-06-19)
+
+Task 9: in_progress (BASE: 300c1c0)
