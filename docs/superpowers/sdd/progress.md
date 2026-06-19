@@ -37,4 +37,10 @@ Task 9: complete (commits 300c1c0..7d6dcae, review approved 2026-06-19)
 
 Task 10: complete (commits 7d6dcae..9758aa2, review approved 2026-06-19)
 
-Task 11: in_progress (BASE: 9758aa2)
+Task 11: complete (commits 9758aa2..993691d, review approved after fix 2026-06-19)
+  Fixed: CV file input uncontrolled — added useRef<HTMLInputElement> bound to file input
+  Fixed: console.log debug statement left in submit handler
+  Fixed: all 6 form label-input pairs missing htmlFor/id associations
+  Minor: indeed.com URL hardcoded — acceptable as third-party external link (not KTMG-owned)
+
+Task 12: in_progress (BASE: 993691d)
