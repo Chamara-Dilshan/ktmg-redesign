@@ -26,4 +26,6 @@ Task 5: complete (commits 6f43486..736d241, review approved after fix 2026-06-19
   Minor: key={i} in StatsBar (harmless static list)
   Minor: ClinicFinder search input has no aria-label
 
-Task 6: in_progress (BASE: 736d241)
+Task 6: complete (commits 736d241..f60d882, review approved 2026-06-19)
+
+Task 7: in_progress (BASE: f60d882)
