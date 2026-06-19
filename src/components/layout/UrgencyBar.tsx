@@ -1,4 +1,4 @@
-import { PHONE_CALL, PHONE_TEXT_EN } from '@/lib/constants'
+import { PHONE_CALL } from '@/lib/constants'
 
 export default function UrgencyBar() {
   return (

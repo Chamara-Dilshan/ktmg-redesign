@@ -6,7 +6,7 @@ import testimonials from '@/data/testimonials.json'
 describe('data files', () => {
   test('locations has 25 entries each with required fields', () => {
     expect(locations).toHaveLength(25)
-    locations.forEach((loc: any) => {
+    locations.forEach((loc: Record<string, unknown>) => {
       expect(loc).toHaveProperty('slug')
       expect(loc).toHaveProperty('name')
       expect(loc).toHaveProperty('address')
@@ -21,7 +21,7 @@ describe('data files', () => {
 
   test('doctors has at least 50 entries each with required fields', () => {
     expect(doctors.length).toBeGreaterThanOrEqual(50)
-    doctors.forEach((doc: any) => {
+    doctors.forEach((doc: Record<string, unknown>) => {
       expect(doc).toHaveProperty('slug')
       expect(doc).toHaveProperty('name')
       expect(doc).toHaveProperty('credentials')

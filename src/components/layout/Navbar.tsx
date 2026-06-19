@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import BookingCTA from '@/components/ui/BookingCTA'
-import { HEALOW_URL, PAY_ONLINE_URL, PORTAL_URL, PHONE_CALL } from '@/lib/constants'
+import { HEALOW_URL, PAY_ONLINE_URL, PORTAL_URL, PHONE_CALL, PHONE_TEXT_EN } from '@/lib/constants'
 
 const services = [
   { label: 'Primary Care',          href: '/services/primary-care' },
@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="border-b border-white/10 bg-teal-dark px-6 py-2">
         <div className="mx-auto flex max-w-7xl items-center justify-between text-xs text-white/70">
           <div className="flex gap-4">
-            <span>Text EN: (626) 298-7121</span>
+            <span>Text EN: {PHONE_TEXT_EN}</span>
             <span>Call: {PHONE_CALL}</span>
           </div>
           <div className="flex gap-4">
