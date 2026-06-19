@@ -34,7 +34,7 @@ export default function ShareExperiencePage() {
         <div className="grid gap-5 md:grid-cols-3">
           {(testimonials as Testimonial[]).map(t => (
             <div key={t.id} className="rounded-xl border border-brand-border bg-white p-6">
-              <div className="mb-3 text-yellow-400">{'★'.repeat(t.rating)}</div>
+              <div className="mb-3 text-coral">{'★'.repeat(t.rating)}</div>
               <p className="mb-5 text-sm italic leading-relaxed text-brand-text">&ldquo;{t.quote}&rdquo;</p>
               <p className="text-sm font-semibold text-teal-dark">{t.author}</p>
               <p className="text-xs text-brand-muted">{t.location}</p>
