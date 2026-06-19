@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import BookingCTA from '@/components/ui/BookingCTA'
 import Button from '@/components/ui/Button'
 
@@ -23,13 +24,15 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Photo placeholder — replace with next/image before launch */}
-        <div className="flex h-72 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-white/30 md:h-80">
-          <div className="text-center">
-            <div className="mb-2 text-5xl opacity-30">👨‍👩‍👧‍👦</div>
-            <p className="text-sm">Hero photo — real family with doctor</p>
-            <p className="text-xs opacity-50">Replace before launch</p>
-          </div>
+        {/* Hero clinic photo */}
+        <div className="relative h-72 overflow-hidden rounded-2xl shadow-2xl md:h-96">
+          <Image
+            src="/hero-clinic.png"
+            alt="Kids & Teens Medical Group clinic"
+            fill
+            className="object-cover object-center"
+            priority
+          />
         </div>
       </div>
     </section>

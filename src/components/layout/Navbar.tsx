@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import BookingCTA from '@/components/ui/BookingCTA'
+import MobileMenu from '@/components/layout/MobileMenu'
 import { HEALOW_URL, PAY_ONLINE_URL, PORTAL_URL, PHONE_CALL, PHONE_TEXT_EN } from '@/lib/constants'
 
 const services = [
@@ -33,7 +34,7 @@ export default function Navbar() {
 
       {/* Main nav */}
       <nav className="sticky top-0 z-50 bg-teal-dark shadow-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div className="relative mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center gap-3">
             <Image src="/logo.png" alt="Kids & Teens Medical Group" width={48} height={48} priority />
             <span className="text-sm font-semibold leading-tight text-white">
@@ -63,6 +64,7 @@ export default function Navbar() {
           </div>
 
           <BookingCTA label="Book Appointment" className="hidden md:inline-flex" />
+          <MobileMenu />
         </div>
       </nav>
     </header>
