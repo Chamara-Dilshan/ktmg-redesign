@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kids &amp; Teens — Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="sections.css" />
+<link rel="stylesheet" href="pages2.css" />
+<style>
+  body { background: var(--bg-tint); }
+  .ds { display: grid; grid-template-columns: 248px 1fr; min-height: 100vh; }
+  .ds-side { position: sticky; top: 0; align-self: start; height: 100vh; overflow-y: auto; background: #fff; border-right: 1px solid var(--line); padding: 26px 20px; }
+  .ds-side .logo { margin-bottom: 24px; }
+  .ds-side h5 { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin: 18px 0 8px; }
+  .ds-side a { display: block; font-size: 14px; font-weight: 500; color: var(--ink-2); padding: 7px 10px; border-radius: 8px; }
+  .ds-side a:hover { background: var(--bg-tint); color: var(--c-primary); }
+  .ds-main { padding: 0; max-width: 1100px; }
+  .ds-hero { background: linear-gradient(140deg, var(--c-primary-dark), var(--c-primary)); color: #fff; padding: 48px 44px; }
+  .ds-hero h1 { color: #fff; font-size: 40px; }
+  .ds-hero p { color: rgba(255,255,255,.82); margin-top: 10px; max-width: 60ch; font-size: 16px; }
+  .ds-hero .tag { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--c-accent); }
+  .ds-sec { padding: 44px; border-bottom: 1px solid var(--line); }
+  .ds-sec > h2 { font-size: 26px; margin-bottom: 4px; scroll-margin-top: 20px; }
+  .ds-sec > .lead { color: var(--ink-2); margin-bottom: 26px; font-size: 15px; }
+  .ds-label { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); margin: 26px 0 12px; }
+  .ds-label:first-of-type { margin-top: 0; }
+  .panel { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 26px; }
+  .row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .sw { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: #fff; }
+  .sw .chip { height: 64px; }
+  .sw .meta { padding: 10px 12px; }
+  .sw .meta b { font-size: 13px; display: block; }
+  .sw .meta code { font-size: 11px; color: var(--ink-3); font-family: ui-monospace, monospace; }
+  .icon-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 10px; }
+  .icon-cell { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 16px 8px; border: 1px solid var(--line); border-radius: 12px; color: var(--ink); background: #fff; }
+  .icon-cell span { font-size: 10.5px; color: var(--ink-3); font-family: ui-monospace, monospace; }
+  .spec-row { display: flex; align-items: baseline; gap: 16px; padding: 12px 0; border-bottom: 1px dashed var(--line); }
+  .spec-row .tk { width: 130px; flex-shrink: 0; font-size: 12px; font-family: ui-monospace, monospace; color: var(--ink-3); }
+  .demo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .radii .box { width: 90px; height: 64px; background: var(--bg-tint-2); border: 1.5px solid var(--c-primary); display: grid; place-items: center; font-size: 11px; font-family: ui-monospace, monospace; color: var(--c-primary-dark); }
+  .elev { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+  .elev .e { height: 80px; background: #fff; border-radius: 12px; display: grid; place-items: center; font-size: 12px; font-family: ui-monospace, monospace; color: var(--ink-3); }
+  @media (max-width: 820px) { .ds { grid-template-columns: 1fr; } .ds-side { position: static; height: auto; display: none; } .demo-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="data.js"></script>
+<script type="text/babel" src="components.jsx"></script>
+<script type="text/babel" src="home.jsx"></script>
+
+<script type="text/babel">
+const t = (en) => en;
+const noop = () => {};
+
+const COLORS = [
+  ["Primary", "#1668c5", "--c-primary"], ["Primary dark", "#0c3f7a", "--c-primary-dark"], ["Accent (teal)", "#0aa2b8", "--c-accent"],
+  ["Good / success", "#1f9d6b", "--good"], ["Warm / urgent", "#e8743b", "--warm"],
+  ["Ink", "#122031", "--ink"], ["Ink-2", "#41566a", "--ink-2"], ["Ink-3", "#6b7e90", "--ink-3"],
+  ["Background", "#ffffff", "--bg"], ["Tint", "#f4f8fd", "--bg-tint"], ["Tint-2", "#e9f2fb", "--bg-tint-2"],
+  ["Line", "#e2eaf2", "--line"], ["Line-2", "#d3deea", "--line-2"], ["Ink (dark bg)", "#0d1b2a", "--bg-ink"],
+];
+const ICONS = ["heart-pulse","video","shield-plus","stethoscope","baby","syringe","map-pin","locate","map","phone","message","calendar","clock","user","users","card","file","search","globe","award","heart","check-circle","star","play","plus","arrow-right","chevron-right","menu","x","facebook","instagram","twitter","youtube"];
+
+function Sec({ id, title, lead, children }) {
+  return (
+    <section className="ds-sec" id={id}>
+      <h2>{title}</h2>
+      {lead && <p className="lead">{lead}</p>}
+      {children}
+    </section>
+  );
+}
+
+function App() {
+  const KT = window.KT;
+  const sampleLoc = KT.locations[11];
+  const sampleDoc = KT.doctors[4];
+  return (
+    <div className="ds kt-root">
+      <aside className="ds-side">
+        <Logo lang="en" onClick={noop} />
+        <h5>Foundations</h5>
+        <a href="#color">Color</a><a href="#type">Typography</a><a href="#space">Spacing &amp; elevation</a><a href="#icons">Iconography</a><a href="#imagery">Imagery</a>
+        <h5>Components</h5>
+        <a href="#buttons">Buttons &amp; links</a><a href="#forms">Form controls</a><a href="#badges">Badges &amp; pills</a><a href="#care">Care cards</a><a href="#location">Location cards</a><a href="#doctor">Doctor card</a><a href="#content">Content cards</a><a href="#finder">Locations finder</a>
+      </aside>
+
+      <main className="ds-main">
+        <div className="ds-hero">
+          <div className="tag">Design System · v1</div>
+          <h1>Kids &amp; Teens Medical Group</h1>
+          <p>The living component inventory and design tokens behind the redesign. Everything here is rendered from the same CSS and React components the production site uses.</p>
+        </div>
+
+        <Sec id="color" title="Color" lead="Blue-led and clinical. Cool-tinted whites, a single trustworthy primary, teal accent used sparingly, and semantic colors for status. Four palettes ship as Tweaks.">
+          <div className="swatches">
+            {COLORS.map(([name, hex, varname]) => (
+              <div className="sw" key={varname}>
+                <div className="chip" style={{ background: hex, borderBottom: hex === "#ffffff" ? "1px solid var(--line)" : "none" }} />
+                <div className="meta"><b>{name}</b><code>{hex}</code></div>
+              </div>
+            ))}
+          </div>
+        </Sec>
+
+        <Sec id="type" title="Typography" lead="Lora (serif) for headlines — warm and trustworthy. Hanken Grotesk for body and UI — clean and friendly. Alt pairings available via Tweaks.">
+          <div className="panel">
+            <div className="spec-row"><span className="tk">Display / h1</span><h1 style={{ fontSize: 48 }}>Healthy kids, close to home</h1></div>
+            <div className="spec-row"><span className="tk">Section / h2</span><h2 style={{ fontSize: 34 }}>Three ways to get care</h2></div>
+            <div className="spec-row"><span className="tk">Card / h3</span><h3 style={{ fontSize: 24 }}>Primary Care</h3></div>
+            <div className="spec-row"><span className="tk">Eyebrow</span><span className="eyebrow">Pediatric &amp; Adolescent Care</span></div>
+            <div className="spec-row"><span className="tk">Lede</span><p style={{ fontSize: 18, color: "var(--ink-2)" }}>Trusted, friendly care for kids and teens from birth through age 21.</p></div>
+            <div className="spec-row"><span className="tk">Body</span><p style={{ fontSize: 15, color: "var(--ink-2)" }}>Well-child checkups, vaccines, growth tracking, and the everyday care that keeps kids thriving.</p></div>
+            <div className="spec-row" style={{ borderBottom: "none" }}><span className="tk">Mono / meta</span><code style={{ fontFamily: "ui-monospace, monospace", fontSize: 13, color: "var(--ink-3)" }}>Mon–Fri 9–6 · Sat 9–1</code></div>
+          </div>
+        </Sec>
+
+        <Sec id="space" title="Spacing &amp; elevation" lead="Soft radii and layered shadows give the clinical-but-friendly feel. Radius is tweakable (4–26px).">
+          <div className="ds-label">Corner radius</div>
+          <div className="row radii">
+            <div className="box" style={{ borderRadius: 8 }}>8px</div>
+            <div className="box" style={{ borderRadius: 12 }}>12px</div>
+            <div className="box" style={{ borderRadius: "var(--radius)" }}>16px·base</div>
+            <div className="box" style={{ borderRadius: 24 }}>24px</div>
+            <div className="box" style={{ borderRadius: 999 }}>pill</div>
+          </div>
+          <div className="ds-label">Elevation</div>
+          <div className="elev">
+            <div className="e" style={{ boxShadow: "var(--shadow-sm)" }}>shadow-sm</div>
+            <div className="e" style={{ boxShadow: "var(--shadow-md)" }}>shadow-md</div>
+            <div className="e" style={{ boxShadow: "var(--shadow-lg)" }}>shadow-lg</div>
+          </div>
+        </Sec>
+
+        <Sec id="icons" title="Iconography" lead="A consistent line-icon set (currentColor, 2px stroke, round joins). Filled variants for stars and play.">
+          <div className="icon-grid">
+            {ICONS.map((n) => (
+              <div className="icon-cell" key={n}><Icon name={n} size={24} /><span>{n}</span></div>
+            ))}
+          </div>
+        </Sec>
+
+        <Sec id="imagery" title="Imagery" lead="Until production photos arrive, every image slot is a labeled striped placeholder describing what belongs there and its aspect ratio.">
+          <div className="demo-grid">
+            <Ph label="hero photo — family at clinic (4:3)" style={{ aspectRatio: "4/3" }} />
+            <Ph label="doctor headshot (1:1)" style={{ aspectRatio: "4/3" }} />
+          </div>
+        </Sec>
+
+        <Sec id="buttons" title="Buttons &amp; links" lead="One primary action per view. Ghost for secondary, soft for tertiary, and arrow links for inline navigation.">
+          <div className="panel">
+            <div className="ds-label">On light</div>
+            <div className="row">
+              <a className="btn btn-primary"><Icon name="calendar" size={18} /> Book Appointment</a>
+              <a className="btn btn-ghost"><Icon name="map-pin" size={18} /> Find a clinic</a>
+              <a className="btn btn-soft">Pay online</a>
+              <a className="btn btn-primary btn-lg">Large CTA</a>
+              <a className="link-arrow">Learn more <Icon name="arrow-right" size={16} /></a>
+            </div>
+            <div className="ds-label">On dark</div>
+            <div className="row" style={{ background: "var(--c-primary-dark)", padding: 20, borderRadius: 12 }}>
+              <a className="btn btn-on-dark"><Icon name="shield-plus" size={18} /> Check your plan</a>
+              <a className="btn btn-outline-dark">No insurance? Options</a>
+            </div>
+            <div className="ds-label">Icon buttons</div>
+            <div className="row">
+              <button className="icon-btn"><Icon name="search" size={19} /></button>
+              <button className="icon-btn"><Icon name="menu" size={19} /></button>
+            </div>
+          </div>
+        </Sec>
+
+        <Sec id="forms" title="Form controls" lead="Used in booking, search and filters. Clear focus states in primary blue.">
+          <div className="panel">
+            <div className="demo-grid">
+              <div>
+                <label style={{ fontSize: 13, fontWeight: 700, color: "var(--ink-2)", display: "block", marginBottom: 7 }}>Select a clinic</label>
+                <select style={{ width: "100%", padding: "12px 14px", border: "1.5px solid var(--line-2)", borderRadius: 11, font: "inherit", fontSize: 15 }}>
+                  <option>Pasadena — Pasadena</option><option>Downey — Downey</option>
+                </select>
+              </div>
+              <div>
+                <label style={{ fontSize: 13, fontWeight: 700, color: "var(--ink-2)", display: "block", marginBottom: 7 }}>Search</label>
+                <div className="search-box"><Icon name="search" size={18} /><input placeholder="City, neighborhood or ZIP…" /></div>
+              </div>
+            </div>
+            <div className="ds-label">Filter chips</div>
+            <div className="region-chips">
+              <button data-on="1">All areas</button><button>San Fernando Valley</button><button>Westside &amp; Central</button>
+            </div>
+          </div>
+        </Sec>
+
+        <Sec id="badges" title="Badges, pills &amp; ratings">
+          <div className="panel row" style={{ gap: 22 }}>
+            <span className="pill-urgent">Urgent care</span>
+            <span className="avail-pill on">● Accepting new patients</span>
+            <span className="avail-pill off">● Waitlist only</span>
+            <span className="stars"><Stars2 /></span>
+            <span className="eyebrow">Eyebrow label</span>
+          </div>
+        </Sec>
+
+        <Sec id="care" title="Care cards" lead="Three switchable styles (Tweaks): Soft (elevated), Outline (bordered), Bold (accent bar + filled icon). Each care type owns an accent color.">
+          <div className="ds-label">Soft</div>
+          <CareSection careStyle="soft" t={t} nav={noop} bare />
+          <div className="ds-label">Outline</div>
+          <CareSection careStyle="outline" t={t} nav={noop} bare />
+          <div className="ds-label">Bold</div>
+          <CareSection careStyle="bold" t={t} nav={noop} bare />
+        </Sec>
+
+        <Sec id="location" title="Location cards" lead="Used across the finder grid and list. Region tag, address, hours, phone, and urgent-care flag.">
+          <div className="ds-label">Grid card</div>
+          <div className="loc-cards" style={{ gridTemplateColumns: "repeat(2, 1fr)" }}>
+            {[KT.locations[11], KT.locations[2]].map((l) => (
+              <div className="loc-card" key={l.slug}>
+                <span className="region-tag">{KT.REGIONS[l.region]}</span>
+                <h4>{l.name}</h4>
+                <span className="addr">{l.addr}, {l.city} {l.zip}</span>
+                <div className="meta"><span><Icon name="clock" size={14} />{l.hours}</span><span><Icon name="phone" size={14} />{l.phone}</span></div>
+                <div className="card-foot">{l.urgent ? <span className="pill-urgent">Urgent care</span> : <span style={{ fontSize: 13, color: "var(--ink-3)" }}>Primary care</span>}<span className="link-arrow">Details <Icon name="arrow-right" size={16} /></span></div>
+              </div>
+            ))}
+          </div>
+        </Sec>
+
+        <Sec id="doctor" title="Doctor card" lead="Headshot, availability status, specialty, clinic and languages. Links to the full provider profile.">
+          <div className="doctor-grid" style={{ gridTemplateColumns: "repeat(2,1fr)" }}>
+            {[sampleDoc, KT.doctors[1]].map((d) => (
+              <div className="doctor-card" key={d.slug}>
+                <Ph label="doctor headshot (1:1)" />
+                <div className="body">
+                  <span style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: ".04em", textTransform: "uppercase", color: d.accepting ? "var(--good)" : "var(--ink-3)" }}>● {d.accepting ? "Accepting patients" : "Waitlist"}</span>
+                  <h4 style={{ marginTop: 6 }}>{d.name}</h4>
+                  <div className="role">{d.specialty} · {d.clinic}</div>
+                  <div className="lang"><Icon name="globe" size={14} /> {d.lang}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Sec>
+
+        <Sec id="content" title="Content cards" lead="Resource, story (blog), job, form, testimonial and search-result patterns.">
+          <div className="ds-label">Resource &amp; story</div>
+          <div className="demo-grid">
+            <div className="res-card"><span className="ic"><Icon name="syringe" size={22} /></span><h4>Vaccine schedule</h4><p>Download the recommended immunization schedule, birth to 18.</p><a className="link-arrow">Download PDF <Icon name="arrow-right" size={16} /></a></div>
+            <a className="story-card"><Ph label="article image (16:10)" /><div className="body"><span className="stag">Seasonal</span><h4>Asthma &amp; winter care: a parent's guide</h4><div className="smeta"><span>Feb 2026</span><span>4 min read</span></div></div></a>
+          </div>
+          <div className="ds-label">Job &amp; form rows</div>
+          <div className="job-list" style={{ marginBottom: 16 }}>
+            <div className="job-row"><div><h4>Pediatric Nurse Practitioner</h4><div className="job-meta"><span><Icon name="users" size={14} />Clinical</span><span><Icon name="map-pin" size={14} />Downey</span><span><Icon name="clock" size={14} />Full-time</span></div></div><a className="btn btn-ghost">Apply <Icon name="arrow-right" size={16} /></a></div>
+          </div>
+          <a className="form-row" style={{ borderTop: "1px solid var(--line)", padding: "13px 16px", background: "#fff", border: "1px solid var(--line)", borderRadius: 12 }}><span><Icon name="file" size={18} /> Sports Physical Form</span><span className="dl"><Icon name="arrow-right" size={16} /> PDF</span></a>
+          <div className="ds-label">Testimonial &amp; search result</div>
+          <div className="demo-grid">
+            <figure className="testi-card" style={{ display: "block" }}><span className="stars"><Stars2 /></span><blockquote>“Every doctor we've seen actually listens. They never rush us.”</blockquote><figcaption><span className="ava">M</span><span><b>Maria G.</b><span className="muted">Downey</span></span></figcaption></figure>
+            <button className="search-result" style={{ alignSelf: "start" }}><span className="sr-ic"><Icon name="video" size={18} /></span><span className="sr-txt"><b>Telehealth</b><span className="muted">See a pediatric provider from home</span></span><Icon name="chevron-right" size={18} /></button>
+          </div>
+        </Sec>
+
+        <Sec id="finder" title="Locations finder" lead="The flagship interactive component — searchable, region-filterable, with map/grid/list views. Shown here in map view.">
+          <LocationsFinder view="map" t={t} nav={noop} />
+        </Sec>
+      </main>
+    </div>
+  );
+}
+
+function Stars2() { return [1,2,3,4,5].map((i) => <Icon key={i} name="star" size={16} filled />); }
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>

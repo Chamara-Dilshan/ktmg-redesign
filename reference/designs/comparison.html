@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KTDoctor — Direction Comparison</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; }
+  .cmp-frame { overflow: hidden; position: relative; background: #fff; border-radius: 10px; }
+  .cmp-frame iframe { border: 0; display: block; transform-origin: top left; }
+  .swatch-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(18,32,49,.1); }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="design-canvas.jsx"></script>
+
+<script type="text/babel">
+const SCALE = 0.52;
+const W = 1280;
+
+function Frame({ params, h }) {
+  const bw = Math.round(W * SCALE), bh = Math.round(h * SCALE);
+  return (
+    <div className="cmp-frame" style={{ width: bw, height: bh }}>
+      <iframe src={"index.html?" + params + "#/home"} width={W} height={h} loading="lazy"
+        style={{ transform: "scale(" + SCALE + ")" }} title={params} scrolling="no" />
+    </div>
+  );
+}
+
+const THEMES = [
+  { name: "Classic Sky", colors: ["#1668c5", "#0c3f7a", "#0aa2b8"] },
+  { name: "Deep Navy", colors: ["#1b3a6b", "#102544", "#2f9e8f"] },
+  { name: "Ocean Teal", colors: ["#0a7c8c", "#073f49", "#1668c5"] },
+  { name: "Bright Indigo", colors: ["#3457b3", "#1d2f6b", "#5ab0d6"] },
+];
+
+function PaletteCard({ name, colors }) {
+  const [p, d, a] = colors;
+  return (
+    <div className="swatch-card" style={{ width: 300, fontFamily: "Hanken Grotesk, sans-serif" }}>
+      <div style={{ display: "flex", height: 64 }}>
+        <div style={{ flex: 2, background: p }} />
+        <div style={{ flex: 1, background: d }} />
+        <div style={{ flex: 1, background: a }} />
+      </div>
+      <div style={{ padding: "18px 20px 22px" }}>
+        <div style={{ fontFamily: "Lora, serif", fontSize: 21, fontWeight: 600, color: d }}>{name}</div>
+        <div style={{ display: "flex", gap: 8, marginTop: 14 }}>
+          <span style={{ background: p, color: "#fff", padding: "9px 15px", borderRadius: 9, fontSize: 13, fontWeight: 600 }}>Book</span>
+          <span style={{ border: "1.5px solid " + a, color: a, padding: "9px 15px", borderRadius: 9, fontSize: 13, fontWeight: 600 }}>Find a clinic</span>
+        </div>
+        <div style={{ fontSize: 11, color: "#6b7e90", marginTop: 14, fontFamily: "ui-monospace, monospace", letterSpacing: ".02em" }}>{colors.join("  ·  ")}</div>
+      </div>
+    </div>
+  );
+}
+
+function TypeCard({ head, body, name }) {
+  return (
+    <div className="swatch-card" style={{ width: 360, padding: "26px 28px 28px" }}>
+      <div style={{ fontFamily: head, fontSize: 30, fontWeight: 600, color: "#122031", lineHeight: 1.1, letterSpacing: "-.01em" }}>Healthy kids, close to&nbsp;home.</div>
+      <div style={{ fontFamily: body, fontSize: 14, color: "#41566a", marginTop: 12, lineHeight: 1.6 }}>Trusted, friendly pediatric care for kids and teens from birth through age 21 — at 25 neighborhood clinics across Los Angeles.</div>
+      <div style={{ marginTop: 16, fontSize: 11, fontWeight: 700, letterSpacing: ".08em", textTransform: "uppercase", color: "#1668c5" }}>{name}</div>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <DesignCanvas>
+      <DCSection id="hero" title="Hero layout" subtitle="Split · Center · Bold — same content, three framings">
+        <DCArtboard id="hero-split" label="Split — image + stats" width={Math.round(W * SCALE)} height={Math.round(760 * SCALE)}>
+          <Frame params="only=hero&heroLayout=split" h={760} />
+        </DCArtboard>
+        <DCArtboard id="hero-center" label="Center — editorial" width={Math.round(W * SCALE)} height={Math.round(760 * SCALE)}>
+          <Frame params="only=hero&heroLayout=center" h={760} />
+        </DCArtboard>
+        <DCArtboard id="hero-bold" label="Bold — dark, big type" width={Math.round(W * SCALE)} height={Math.round(760 * SCALE)}>
+          <Frame params="only=hero&heroLayout=bold" h={760} />
+        </DCArtboard>
+      </DCSection>
+
+      <DCSection id="care" title="Care type cards" subtitle="Soft · Outline · Bold">
+        <DCArtboard id="care-soft" label="Soft — elevated" width={Math.round(W * SCALE)} height={Math.round(540 * SCALE)}>
+          <Frame params="only=care&careStyle=soft" h={540} />
+        </DCArtboard>
+        <DCArtboard id="care-outline" label="Outline — bordered" width={Math.round(W * SCALE)} height={Math.round(540 * SCALE)}>
+          <Frame params="only=care&careStyle=outline" h={540} />
+        </DCArtboard>
+        <DCArtboard id="care-bold" label="Bold — accent bar + filled icon" width={Math.round(W * SCALE)} height={Math.round(540 * SCALE)}>
+          <Frame params="only=care&careStyle=bold" h={540} />
+        </DCArtboard>
+      </DCSection>
+
+      <DCSection id="finder" title="Locations finder" subtitle="Map · Grid · List">
+        <DCArtboard id="finder-map" label="Map + list panel" width={Math.round(W * SCALE)} height={Math.round(740 * SCALE)}>
+          <Frame params="only=finder&locationsView=map" h={740} />
+        </DCArtboard>
+        <DCArtboard id="finder-grid" label="Card grid" width={Math.round(W * SCALE)} height={Math.round(740 * SCALE)}>
+          <Frame params="only=finder&locationsView=grid" h={740} />
+        </DCArtboard>
+        <DCArtboard id="finder-list" label="Compact list" width={Math.round(W * SCALE)} height={Math.round(740 * SCALE)}>
+          <Frame params="only=finder&locationsView=list" h={740} />
+        </DCArtboard>
+      </DCSection>
+
+      <DCSection id="palette" title="Color palette" subtitle="Primary · dark · accent — all blue-led, clinical">
+        {THEMES.map((t, i) => (
+          <DCArtboard key={i} id={"pal-" + i} label={t.name} width={300} height={196}>
+            <PaletteCard name={t.name} colors={t.colors} />
+          </DCArtboard>
+        ))}
+      </DCSection>
+
+      <DCSection id="type" title="Typography pairing" subtitle="Headline + body candidates">
+        <DCArtboard id="type-lora" label="Lora + Hanken Grotesk" width={360} height={196}>
+          <TypeCard head="Lora, serif" body="Hanken Grotesk, sans-serif" name="Lora + Hanken Grotesk" />
+        </DCArtboard>
+        <DCArtboard id="type-news" label="Newsreader + Figtree" width={360} height={196}>
+          <TypeCard head="Newsreader, serif" body="Figtree, sans-serif" name="Newsreader + Figtree" />
+        </DCArtboard>
+        <DCArtboard id="type-sans" label="Hanken Grotesk only" width={360} height={196}>
+          <TypeCard head="Hanken Grotesk, sans-serif" body="Hanken Grotesk, sans-serif" name="Hanken Grotesk only" />
+        </DCArtboard>
+      </DCSection>
+    </DesignCanvas>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>

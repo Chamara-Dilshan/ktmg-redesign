@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kids &amp; Teens — Redesign Blueprint</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --blue: #1668c5; --blue-d: #0c3f7a; --teal: #0aa2b8; --good: #1f9d6b; --warm: #e8743b;
+    --ink: #122031; --ink2: #41566a; --ink3: #6b7e90; --line: #e2eaf2; --line2: #d3deea;
+    --bg: #ffffff; --tint: #f4f8fd; --tint2: #e9f2fb;
+    --head: "Lora", Georgia, serif; --body: "Hanken Grotesk", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--body); color: var(--ink); background: #e9eef4; line-height: 1.6; -webkit-font-smoothing: antialiased; padding: 32px 16px; }
+  h1, h2, h3, h4 { font-family: var(--head); font-weight: 600; line-height: 1.15; letter-spacing: -.01em; text-wrap: balance; }
+  p { text-wrap: pretty; }
+  code { font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+
+  .doc { max-width: 940px; margin: 0 auto; background: var(--bg); box-shadow: 0 8px 40px rgba(13,46,92,.12); border-radius: 6px; overflow: hidden; }
+  .cover { background: linear-gradient(140deg, var(--blue-d), var(--blue)); color: #fff; padding: 60px 56px; position: relative; overflow: hidden; }
+  .cover::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(125deg, transparent 0 34px, rgba(255,255,255,.04) 34px 35px); }
+  .cover > * { position: relative; }
+  .cover .kicker { font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--teal); }
+  .cover h1 { color: #fff; font-size: 46px; margin: 14px 0 12px; }
+  .cover p { color: rgba(255,255,255,.82); max-width: 60ch; font-size: 16px; }
+  .cover .meta { display: flex; gap: 28px; margin-top: 32px; flex-wrap: wrap; }
+  .cover .meta b { display: block; font-family: var(--head); font-size: 26px; }
+  .cover .meta span { font-size: 12.5px; color: rgba(255,255,255,.75); }
+
+  .sec { padding: 48px 56px; border-bottom: 1px solid var(--line); }
+  .sec-no { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--blue); }
+  .sec h2 { font-size: 30px; margin: 8px 0 6px; }
+  .sec > .intro { color: var(--ink2); font-size: 15.5px; max-width: 72ch; margin-bottom: 28px; }
+  .sub { font-size: 12px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--ink3); margin: 30px 0 14px; }
+
+  /* flow chains */
+  .flow { display: flex; flex-wrap: wrap; align-items: stretch; gap: 0; }
+  .step { background: var(--tint); border: 1px solid var(--line2); border-radius: 12px; padding: 12px 15px; min-width: 120px; max-width: 168px; display: flex; flex-direction: column; gap: 3px; }
+  .step .s-k { font-size: 10.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--ink3); }
+  .step .s-t { font-size: 14px; font-weight: 600; color: var(--ink); }
+  .step.key { background: color-mix(in srgb, var(--blue) 12%, #fff); border-color: color-mix(in srgb, var(--blue) 40%, #fff); }
+  .step.key .s-k { color: var(--blue); }
+  .step.ext { background: color-mix(in srgb, var(--warm) 9%, #fff); border-color: color-mix(in srgb, var(--warm) 28%, #fff); }
+  .step.ext .s-k { color: var(--warm); }
+  .arr { align-self: center; color: var(--ink3); font-size: 20px; padding: 0 8px; flex-shrink: 0; }
+  .journey { border: 1px solid var(--line); border-radius: 16px; padding: 24px; margin-bottom: 18px; background: #fff; }
+  .journey-h { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .journey-h .dot { width: 34px; height: 34px; border-radius: 9px; display: grid; place-items: center; font-size: 18px; flex-shrink: 0; background: var(--tint2); }
+  .journey-h h3 { font-family: var(--body); font-size: 18px; font-weight: 700; }
+  .journey-h .tag { font-size: 12px; color: var(--ink3); }
+  .fix { margin-top: 16px; font-size: 13.5px; color: var(--ink2); background: var(--tint); border-left: 3px solid var(--teal); padding: 11px 15px; border-radius: 0 8px 8px 0; }
+  .fix b { color: var(--ink); }
+
+  /* entity hub */
+  .entities { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .entity { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .entity .hub { background: var(--blue-d); color: #fff; padding: 16px 20px; }
+  .entity .hub b { font-family: var(--head); font-size: 19px; font-weight: 600; display: block; }
+  .entity .hub code { font-size: 12px; color: rgba(255,255,255,.7); }
+  .entity .spokes { padding: 16px 20px; display: flex; flex-direction: column; gap: 9px; }
+  .spoke { display: flex; align-items: center; gap: 11px; font-size: 14px; }
+  .spoke::before { content: "↳"; color: var(--teal); font-weight: 700; }
+  .spoke b { font-weight: 600; }
+  .spoke span { color: var(--ink3); font-size: 12.5px; }
+  .schema-note { margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  .schema-card { background: var(--tint); border-radius: 12px; padding: 16px 18px; }
+  .schema-card h4 { font-family: var(--body); font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+  .schema-card p { font-size: 13px; color: var(--ink2); }
+  .schema-card code { font-size: 12px; color: var(--blue-d); background: #fff; padding: 1px 6px; border-radius: 5px; }
+
+  /* tech tiers */
+  .tier { border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin-bottom: 12px; background: #fff; position: relative; }
+  .tier .t-lbl { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--blue); margin-bottom: 12px; }
+  .tier .boxes { display: flex; flex-wrap: wrap; gap: 10px; }
+  .box { background: var(--tint); border: 1px solid var(--line2); border-radius: 10px; padding: 10px 14px; font-size: 13.5px; font-weight: 600; }
+  .box small { display: block; font-weight: 500; color: var(--ink3); font-size: 11.5px; }
+  .box.api { background: color-mix(in srgb, var(--warm) 9%, #fff); border-color: color-mix(in srgb, var(--warm) 26%, #fff); }
+  .tier-arrow { text-align: center; color: var(--line2); font-size: 22px; line-height: .6; margin: 2px 0; }
+  .legend { display: flex; gap: 18px; margin-top: 16px; font-size: 12.5px; color: var(--ink2); flex-wrap: wrap; }
+  .legend span { display: inline-flex; align-items: center; gap: 7px; }
+  .legend i { width: 13px; height: 13px; border-radius: 4px; display: inline-block; }
+
+  /* audit table */
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  thead th { text-align: left; font-family: var(--body); font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--ink3); padding: 0 12px 10px; border-bottom: 2px solid var(--line2); }
+  tbody td { padding: 14px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tbody tr:hover { background: var(--tint); }
+  td .area { font-weight: 700; }
+  td .issue { color: var(--ink2); }
+  .pri { font-size: 11px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+  .pri.high { color: var(--warm); background: color-mix(in srgb, var(--warm) 13%, #fff); }
+  .pri.med { color: var(--blue); background: var(--tint2); }
+  .pri.low { color: var(--ink3); background: var(--tint); }
+  .done-pill { font-size: 11px; font-weight: 700; color: var(--good); background: color-mix(in srgb, var(--good) 13%, #fff); padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+
+  .footer { padding: 28px 56px 40px; color: var(--ink3); font-size: 12.5px; }
+
+  /* rollout phases */
+  .phases { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+  .phase { border: 1px solid var(--line); border-radius: 14px; padding: 18px 16px; background: #fff; display: flex; flex-direction: column; }
+  .phase.now { border-color: color-mix(in srgb, var(--good) 45%, #fff); background: color-mix(in srgb, var(--good) 5%, #fff); }
+  .phase .p-no { width: 30px; height: 30px; border-radius: 8px; background: var(--blue); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 14px; font-family: var(--head); }
+  .phase.now .p-no { background: var(--good); }
+  .phase h4 { font-family: var(--body); font-size: 15px; font-weight: 700; margin: 12px 0 2px; }
+  .phase .dur { font-size: 11.5px; font-weight: 600; color: var(--ink3); margin-bottom: 12px; }
+  .phase ul { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+  .phase li { font-size: 12.5px; color: var(--ink2); padding-left: 15px; position: relative; line-height: 1.4; }
+  .phase li::before { content: ""; position: absolute; left: 0; top: 7px; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); }
+  .phase .status { margin-top: auto; padding-top: 12px; font-size: 11px; font-weight: 700; }
+
+  @media (max-width: 920px) { .phases { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 720px) {
+    .sec, .cover, .footer { padding-left: 26px; padding-right: 26px; }
+    .entities, .schema-note { grid-template-columns: 1fr; }
+    .step { max-width: none; flex: 1 1 140px; }
+  }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .doc { box-shadow: none; max-width: none; border-radius: 0; }
+    .sec, .journey, .tier, .entity { break-inside: avoid; }
+    tbody tr { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="doc">
+
+  <header class="cover">
+    <div class="kicker">Redesign Blueprint · Companion to the prototype</div>
+    <h1>Kids &amp; Teens Medical Group</h1>
+    <p>The five strategic layers behind the visual redesign — user journeys, SEO architecture, the technical ecosystem, and a content audit. Pairs with the working prototype and the design system.</p>
+    <div class="meta">
+      <div><b>25</b><span>Clinics, LA county</span></div>
+      <div><b>20</b><span>Services</span></div>
+      <div><b>0–21</b><span>Ages served</span></div>
+      <div><b>5</b><span>External platforms to unify</span></div>
+    </div>
+  </header>
+
+  <!-- LAYER 1 -->
+  <section class="sec">
+    <div class="sec-no">Layer 1</div>
+    <h2>UX flow &amp; parent journey maps</h2>
+    <p class="intro">A sitemap shows pages; this shows behavior. Four core journeys drive almost all traffic. Each ends in a conversion that currently hands off to an external platform — the redesign's job is to make those handoffs feel like one continuous experience.</p>
+
+    <div class="journey">
+      <div class="journey-h"><span class="dot">🩺</span><div><h3>New patient · well-child care</h3><div class="tag">Planned, research-heavy — the highest-value journey</div></div></div>
+      <div class="flow">
+        <div class="step"><span class="s-k">Acquire</span><span class="s-t">Google / local search</span></div><span class="arr">→</span>
+        <div class="step"><span class="s-k">Land</span><span class="s-t">Homepage</span></div><span class="arr">→</span>
+        <div class="step"><span class="s-k">Orient</span><span class="s-t">Find a clinic</span></div><span class="arr">→</span>
+        <div class="step"><span class="s-k">Trust</span><span class="s-t">Doctor profile</span></div><span class="arr">→</span>
+        <div class="step"><span class="s-k">Qualify</span><span class="s-t">Insurance check</span></div><span class="arr">→</span>
+        <div class="step key"><span class="s-k">Convert</span><span class="s-t">Book appointment</span></div><span class="arr">→</span>
+        <div class="step ext"><span class="s-k">External</span><span class="s-t">NexHealth / Healow</span></div>
+      </div>
+      <div class="fix"><b>Redesign fix:</b> surface the booking CTA at every step, pre-fill the chosen clinic &amp; doctor into the scheduler, and frame the Healow/NexHealth handoff inside our own header so trust isn't lost at the moment of conversion.</div>
+    </div>
+
+    <div class="journey">
+      <div class="journey-h"><span class="dot">🚑</span><div><h3>Sick child · urgent (panic)</h3><div class="tag">Fast, anxious, mobile-first, often after hours</div></div></div>
+      <div class="flow">
+        <div class="step"><span class="s-k">Enter</span><span class="s-t">Home / search</span></div><span class="arr">→</span>
+        <div class="step key"><span class="s-k">Intent</span><span class="s-t">Urgent care</span></div><span class="arr">→</span>
+        <div class="step"><span class="s-k">Locate</span><span class="s-t">Nearest open clinic</span></div><span class="arr">→</span>
+        <div class="step"><span class="s-k">Confirm</span><span class="s-t">Hours / walk-in</span></div><span class="arr">→</span>
+        <div class="step ext"><span class="s-k">Act</span><span class="s-t">Call / Directions</span></div>
+      </div>
+      <div class="fix"><b>Redesign fix:</b> a persistent "Urgent care near you" path, open-now filtering in the finder, and tap-to-call / tap-to-route on mobile. Clarify ER-vs-urgent-care up front to reduce wrong-venue anxiety.</div>
+    </div>
+
+    <div class="journey">
+      <div class="journey-h"><span class="dot">💻</span><div><h3>Telehealth · convenience</h3><div class="tag">Low-acuity, returning, time-poor parents</div></div></div>
+      <div class="flow">
+        <div class="step"><span class="s-k">Enter</span><span class="s-t">Homepage</span></div><span class="arr">→</span>
+        <div class="step key"><span class="s-k">Choose</span><span class="s-t">Telehealth</span></div><span class="arr">→</span>
+        <div class="step"><span class="s-k">Book</span><span class="s-t">Video visit</span></div><span class="arr">→</span>
+        <div class="step ext"><span class="s-k">Visit</span><span class="s-t">Healow video</span></div><span class="arr">→</span>
+        <div class="step"><span class="s-k">After</span><span class="s-t">Refill / follow-up</span></div>
+      </div>
+      <div class="fix"><b>Redesign fix:</b> make telehealth a first-class care type (done in the prototype), set "same-day" expectations, and connect the after-visit refill into the same portal session.</div>
+    </div>
+
+    <div class="journey">
+      <div class="journey-h"><span class="dot">📋</span><div><h3>Returning parent · admin</h3><div class="tag">Portal, forms, refills, payments</div></div></div>
+      <div class="flow">
+        <div class="step ext"><span class="s-k">Auth</span><span class="s-t">Portal login (ECW)</span></div><span class="arr">→</span>
+        <div class="step"><span class="s-k">Task</span><span class="s-t">Forms / refill</span></div><span class="arr">→</span>
+        <div class="step ext"><span class="s-k">Pay</span><span class="s-t">Healow Pay</span></div>
+      </div>
+      <div class="fix"><b>Redesign fix:</b> one "Patients" hub that unifies the four external destinations (portal, pay, refills, records) behind consistent cards — instead of scattering them across the top bar and footer.</div>
+    </div>
+  </section>
+
+  <!-- LAYER 3 -->
+  <section class="sec">
+    <div class="sec-no">Layer 3</div>
+    <h2>SEO entity architecture</h2>
+    <p class="intro">The 25 locations and 20 services are the site's biggest hidden asset. Treating Locations, Doctors and Services as interlinked entities — not flat pages — is what wins local and AI search. Every entity should link out to the others it relates to.</p>
+
+    <div class="entities">
+      <div class="entity">
+        <div class="hub"><b>Location</b><code>/locations/[city]/</code></div>
+        <div class="spokes">
+          <div class="spoke"><b>Doctors</b> <span>who practice here</span></div>
+          <div class="spoke"><b>Services</b> <span>offered at this clinic</span></div>
+          <div class="spoke"><b>Insurance</b> <span>plans accepted</span></div>
+          <div class="spoke"><b>Hours &amp; directions</b> <span>geo + map</span></div>
+          <div class="spoke"><b>Reviews</b> <span>clinic-level ratings</span></div>
+        </div>
+      </div>
+      <div class="entity">
+        <div class="hub"><b>Doctor</b><code>/our-doctors/[name]/</code></div>
+        <div class="spokes">
+          <div class="spoke"><b>Specialty</b> <span>e.g. adolescent medicine</span></div>
+          <div class="spoke"><b>Clinics</b> <span>locations they serve</span></div>
+          <div class="spoke"><b>Languages</b> <span>bilingual filter</span></div>
+          <div class="spoke"><b>Conditions</b> <span>treated / focus areas</span></div>
+          <div class="spoke"><b>Reviews</b> <span>provider-level</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub">Schema &amp; URL strategy</div>
+    <div class="schema-note">
+      <div class="schema-card"><h4>Structured data</h4><p>Mark up clinics as <code>MedicalClinic</code> + <code>LocalBusiness</code>, providers as <code>Physician</code>, and FAQs/blog with <code>FAQPage</code> / <code>Article</code>.</p></div>
+      <div class="schema-card"><h4>Stable URLs</h4><p>City-based location slugs and named doctor slugs (no IDs). Service pages at <code>/services/[service]/</code> cross-link to offering clinics.</p></div>
+      <div class="schema-card"><h4>Interlinking</h4><p>Every location lists its doctors &amp; services; every doctor lists clinics &amp; conditions. This mesh is the ranking engine.</p></div>
+    </div>
+  </section>
+
+  <!-- LAYER 4 -->
+  <section class="sec">
+    <div class="sec-no">Layer 4</div>
+    <h2>Technical system &amp; integration map</h2>
+    <p class="intro">The current site behaves like a portal stitched from five external platforms. The redesign keeps those systems but unifies them behind one presentation layer and a content model, so the seams disappear for parents.</p>
+
+    <div class="tier">
+      <div class="t-lbl">Presentation</div>
+      <div class="boxes">
+        <div class="box">Next.js<small>SSR / ISR, fast pages</small></div>
+        <div class="box">Design system<small>this component library</small></div>
+        <div class="box">i18n<small>English / Spanish</small></div>
+        <div class="box">Locations finder<small>search · filter · map</small></div>
+      </div>
+    </div>
+    <div class="tier-arrow">↓</div>
+    <div class="tier">
+      <div class="t-lbl">Content (Headless CMS)</div>
+      <div class="boxes">
+        <div class="box">Services<small>20 entries</small></div>
+        <div class="box">Locations<small>25 clinics</small></div>
+        <div class="box">Doctors<small>profiles</small></div>
+        <div class="box">Blog / resources</div>
+        <div class="box">Forms library</div>
+      </div>
+    </div>
+    <div class="tier-arrow">↓</div>
+    <div class="tier">
+      <div class="t-lbl">Data &amp; taxonomy</div>
+      <div class="boxes">
+        <div class="box">Location DB<small>geo, hours, services</small></div>
+        <div class="box">Doctor DB<small>specialty, clinics, languages</small></div>
+        <div class="box">Service taxonomy<small>conditions ↔ services</small></div>
+        <div class="box">Insurance plans</div>
+      </div>
+    </div>
+    <div class="tier-arrow">↓</div>
+    <div class="tier">
+      <div class="t-lbl">Integrations / external APIs</div>
+      <div class="boxes">
+        <div class="box api">NexHealth<small>scheduling</small></div>
+        <div class="box api">Healow<small>scheduling · video</small></div>
+        <div class="box api">eCW Cloud<small>patient portal / EHR</small></div>
+        <div class="box api">Healow Pay<small>payments</small></div>
+        <div class="box api">Google Maps<small>directions</small></div>
+        <div class="box api">Serendib Healthways<small>membership</small></div>
+      </div>
+    </div>
+    <div class="legend">
+      <span><i style="background:var(--tint);border:1px solid var(--line2)"></i> Owned / controllable</span>
+      <span><i style="background:color-mix(in srgb,var(--warm) 18%,#fff)"></i> Third-party platform (unify the UX, keep the system)</span>
+    </div>
+  </section>
+
+  <!-- LAYER 5 -->
+  <section class="sec">
+    <div class="sec-no">Layer 5</div>
+    <h2>Content quality audit</h2>
+    <p class="intro">The structural inventory was strong; the gaps are in content quality and consistency. Items marked <span class="done-pill">In prototype</span> are already addressed by the new design — the rest are content/engineering follow-ups.</p>
+    <table>
+      <thead><tr><th style="width:22%">Area</th><th style="width:34%">Current issue</th><th style="width:34%">Recommendation</th><th style="width:10%">Priority</th></tr></thead>
+      <tbody>
+        <tr><td class="area">Typography</td><td class="issue">Dated, inconsistent type with no clear scale.</td><td>Lora + Hanken Grotesk system with defined sizes. <span class="done-pill">In prototype</span></td><td><span class="pri high">High</span></td></tr>
+        <tr><td class="area">Visual hierarchy</td><td class="issue">Flat sections; nothing guides the eye.</td><td>Clear section rhythm, one primary CTA per view. <span class="done-pill">In prototype</span></td><td><span class="pri high">High</span></td></tr>
+        <tr><td class="area">CTAs</td><td class="issue">Fragmented, duplicated booking links across bar, body and footer.</td><td>Single, consistent booking path everywhere. <span class="done-pill">In prototype</span></td><td><span class="pri high">High</span></td></tr>
+        <tr><td class="area">Copywriting</td><td class="issue">Generic healthcare copy, low warmth.</td><td>Benefit-led, parent-voice copy; bilingual parity.</td><td><span class="pri high">High</span></td></tr>
+        <tr><td class="area">SEO page depth</td><td class="issue">Thin service &amp; location pages.</td><td>Entity-rich templates with schema &amp; interlinking (Layer 3).</td><td><span class="pri high">High</span></td></tr>
+        <tr><td class="area">Trust &amp; storytelling</td><td class="issue">Few emotional or social-proof signals.</td><td>Testimonials, doctor bios, partner logos, stats. <span class="done-pill">In prototype</span></td><td><span class="pri med">Med</span></td></tr>
+        <tr><td class="area">Navigation / links</td><td class="issue">Duplicate links; portal scattered.</td><td>Consolidated IA; unified Patients hub.</td><td><span class="pri med">Med</span></td></tr>
+        <tr><td class="area">Duplicate content</td><td class="issue">e.g. <code>/about-…-2/</code>, "Forms Only" duplicates.</td><td>Canonicalize and consolidate to single sources.</td><td><span class="pri med">Med</span></td></tr>
+        <tr><td class="area">Accessibility</td><td class="issue">Low contrast, weak focus states, missing alt text.</td><td>WCAG-AA contrast, visible focus, descriptive alt. <span class="done-pill">In prototype</span></td><td><span class="pri med">Med</span></td></tr>
+        <tr><td class="area">Outdated pages</td><td class="issue">Stale seasonal blog &amp; events.</td><td>Editorial calendar; archive or refresh old posts.</td><td><span class="pri low">Low</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- LAYER 6 / ROLLOUT -->
+  <section class="sec">
+    <div class="sec-no">Rollout</div>
+    <h2>Phased delivery plan</h2>
+    <p class="intro">How the audit items and architecture become a shipped redesign. Phase&nbsp;0 is what this prototype already proves; each later phase turns a layer above into production work. Durations are indicative and run partly in parallel.</p>
+    <div class="phases">
+      <div class="phase now">
+        <span class="p-no">0</span>
+        <h4>Foundation</h4>
+        <div class="dur">Done · in prototype</div>
+        <ul>
+          <li>Design system &amp; components</li>
+          <li>Information architecture</li>
+          <li>Responsive shell + mobile drawer</li>
+          <li>English / Spanish toggle</li>
+          <li>Entity cross-links (live)</li>
+        </ul>
+        <div class="status" style="color:var(--good)">✓ Complete</div>
+      </div>
+      <div class="phase">
+        <span class="p-no">1</span>
+        <h4>Content &amp; copy</h4>
+        <div class="dur">≈ 4–6 weeks</div>
+        <ul>
+          <li>Benefit-led, parent-voice copy</li>
+          <li>Full Spanish parity</li>
+          <li>Real photography &amp; doctor bios</li>
+          <li>Source &amp; verify testimonials</li>
+        </ul>
+        <div class="status" style="color:var(--warm)">High priority</div>
+      </div>
+      <div class="phase">
+        <span class="p-no">2</span>
+        <h4>SEO &amp; templates</h4>
+        <div class="dur">≈ 4–6 weeks</div>
+        <ul>
+          <li>Location / doctor / service templates</li>
+          <li>Schema markup + interlinking</li>
+          <li>Canonicalize duplicate pages</li>
+          <li>301 redirect map</li>
+        </ul>
+        <div class="status" style="color:var(--warm)">High priority</div>
+      </div>
+      <div class="phase">
+        <span class="p-no">3</span>
+        <h4>Integrations</h4>
+        <div class="dur">≈ 3–5 weeks</div>
+        <ul>
+          <li>Unify Healow / NexHealth booking</li>
+          <li>eCW portal &amp; Healow Pay in-shell</li>
+          <li>Pre-filled clinic + doctor flows</li>
+          <li>Single "Patients" hub</li>
+        </ul>
+        <div class="status" style="color:var(--blue)">Medium</div>
+      </div>
+      <div class="phase">
+        <span class="p-no">4</span>
+        <h4>Optimize</h4>
+        <div class="dur">Ongoing</div>
+        <ul>
+          <li>Booking-funnel analytics</li>
+          <li>A/B test hero &amp; CTA variants</li>
+          <li>WCAG-AA accessibility pass</li>
+          <li>Editorial content calendar</li>
+        </ul>
+        <div class="status" style="color:var(--ink3)">Continuous</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    Kids &amp; Teens Medical Group — Redesign Blueprint · Companion to the prototype (<code>index.html</code>), design system (<code>design-system.html</code>) and direction canvas (<code>comparison.html</code>). Print or export to PDF via your browser.
+  </div>
+</div>
+</body>
+</html>

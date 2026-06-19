@@ -42,7 +42,6 @@ next-env.d.ts
 ktdoctor-*.png
 
 # Local reference files (designs, mockups, assets — not for the repo)
-/reference/
 
 # Dev verification screenshots
 mobile-*.png

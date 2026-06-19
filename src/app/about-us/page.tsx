@@ -63,8 +63,30 @@ export default function AboutUsPage() {
               We offer a full range of services: routine check-ups, immunizations, allergies, ADHD management, urgent care, prenatal consultations, and after-hours care — all under one trusted name.
             </p>
           </div>
-          <div className="flex h-64 items-center justify-center rounded-2xl bg-teal-tint text-brand-muted">
-            <p className="text-sm">Team photo placeholder</p>
+          <div className="relative overflow-hidden rounded-2xl bg-teal-dark p-8 md:p-10">
+            {/* Large watermark number */}
+            <span className="pointer-events-none absolute -right-4 -top-4 select-none font-heading text-[130px] font-black leading-none text-white/[0.04]">
+              06
+            </span>
+            <div className="relative">
+              <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.25em] text-teal-light">
+                Est. 2006
+              </p>
+              <div className="mb-6 mt-3 h-0.5 w-10 bg-coral" />
+              <div className="grid grid-cols-2 gap-6">
+                {[
+                  { n: '25',   l: 'Clinics' },
+                  { n: '50+',  l: 'Doctors' },
+                  { n: '18',   l: 'Years' },
+                  { n: '0–21', l: 'Ages Served' },
+                ].map(s => (
+                  <div key={s.l}>
+                    <span className="font-heading block text-3xl font-extrabold text-white">{s.n}</span>
+                    <span className="mt-0.5 block text-xs text-white/50">{s.l}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
@@ -75,7 +97,10 @@ export default function AboutUsPage() {
           <div className="grid gap-5 md:grid-cols-3">
             {globalLocations.map(g => (
               <div key={g.region} className="rounded-xl border border-brand-border bg-white p-6">
-                <h3 className="font-heading mb-2 text-base font-bold text-teal-dark">📍 {g.region}</h3>
+                <h3 className="font-heading mb-2 flex items-center gap-2 text-base font-bold text-teal-dark">
+                  <span className="inline-block h-2 w-2 rounded-full bg-coral" />
+                  {g.region}
+                </h3>
                 <p className="text-sm leading-relaxed text-brand-muted">{g.desc}</p>
               </div>
             ))}

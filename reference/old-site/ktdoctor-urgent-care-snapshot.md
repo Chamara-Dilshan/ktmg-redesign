@@ -1,0 +1,143 @@
+- generic [active] [ref=e1]:
+  - generic "Accessibility Menu":
+    - button "Accessibility Menu" [ref=e174] [cursor=pointer]
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e4]:
+    - navigation "Menu" [ref=e15]:
+      - list [ref=e16]:
+        - listitem [ref=e17]:
+          - link "Home" [ref=e18] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/
+        - listitem [ref=e19]:
+          - link "About us" [ref=e20] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+        - listitem [ref=e21]:
+          - link "Parent Resources" [ref=e22] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/parent-resources/
+        - listitem [ref=e23]:
+          - link "Testimonials" [ref=e24] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/share-your-experience/
+        - listitem [ref=e25]:
+          - link "Forms Only" [ref=e26] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group-2/
+    - text: 
+  - generic [ref=e27]:
+    - generic [ref=e29]:
+      - img "Urgent Care" [ref=e34]
+      - generic [ref=e36]:
+        - heading "Get an immediate appointment?" [level=1] [ref=e39]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Get Fast and Reliable Care for Your Little One!
+          - paragraph [ref=e43]: Don’t worry, our team of expert pediatricians is here to save the day!
+          - paragraph [ref=e44]: At Kids & Teens Pediatric Medical Group, we understand the urgency of your child’s health, and we’re dedicated to providing top-notch care when you need it the most.
+          - paragraph [ref=e45]: Our mission is to ensure the well-being of your little superheroes, empowering them to bounce back to full health with a smile.
+        - link "URGENT CARE APPOINTMENT ⟶" [ref=e49] [cursor=pointer]:
+          - /url: "#urgentcare"
+          - generic [ref=e51]: URGENT CARE APPOINTMENT ⟶
+    - heading "Get The Best Care in California" [level=4] [ref=e58]
+  - contentinfo [ref=e59]:
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - figure [ref=e64]:
+          - img "Kids and teen pediatric Clinic logo" [ref=e65]
+        - heading "Kids and Teens Medical Group is the leading provider of pediatric care with extended hours in Southern California. We are focused on changing the way you think about children’s health." [level=6] [ref=e68]
+        - list [ref=e71]:
+          - listitem [ref=e72]:
+            - link "Facebook-f" [ref=e73] [cursor=pointer]:
+              - /url: https://www.facebook.com/kidsandteensmedicalgroup/
+              - generic [ref=e74]: Facebook-f
+              - img [ref=e75]
+          - listitem [ref=e77]:
+            - link "Instagram" [ref=e78] [cursor=pointer]:
+              - /url: https://www.instagram.com/ktmedicalgroup/
+              - generic [ref=e79]: Instagram
+              - img [ref=e80]
+          - listitem [ref=e82]:
+            - link "X-twitter" [ref=e83] [cursor=pointer]:
+              - /url: https://x.com/KTDoctorGroup
+              - generic [ref=e84]: X-twitter
+              - img [ref=e85]
+          - listitem [ref=e87]:
+            - link "Youtube" [ref=e88] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC5pMXGZ_F2OZUFdfy6YbIew
+              - generic [ref=e89]: Youtube
+              - img [ref=e90]
+      - generic [ref=e92]:
+        - heading "QUICK LINKS" [level=6] [ref=e95]
+        - list [ref=e98]:
+          - listitem [ref=e99]:
+            - link "Home" [ref=e100] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/
+              - generic [ref=e101]: Home
+          - listitem [ref=e102]:
+            - link "About us" [ref=e103] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+              - generic [ref=e104]: About us
+          - listitem [ref=e105]:
+            - link "Patient Resources" [ref=e106] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/parent-resources/
+              - generic [ref=e107]: Patient Resources
+          - listitem [ref=e108]:
+            - link "Testimonials" [ref=e109] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/share-your-experience/
+              - generic [ref=e110]: Testimonials
+          - listitem [ref=e111]:
+            - link "Terms and Conditions" [ref=e112] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/terms_and_conditions-2/
+              - generic [ref=e113]: Terms and Conditions
+          - listitem [ref=e114]:
+            - link "Privacy Policy" [ref=e115] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/privacy-policy-2/
+              - generic [ref=e116]: Privacy Policy
+          - listitem [ref=e117]:
+            - link "Careers" [ref=e118] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/careers/
+              - generic [ref=e119]: Careers
+      - generic [ref=e120]:
+        - heading "FOR PATIENTS" [level=6] [ref=e123]
+        - navigation "Menu" [ref=e126]:
+          - list [ref=e127]:
+            - listitem [ref=e128]:
+              - link "Same-Day Appointments" [ref=e129] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/same-day-appointments/
+            - listitem [ref=e130]:
+              - link "Providers" [ref=e131] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/our-doctors/
+            - listitem [ref=e132]:
+              - link "Telehealth" [ref=e133] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/telemedicine-for-children/
+            - listitem [ref=e134]:
+              - link "Locations" [ref=e135] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/locations/
+            - listitem [ref=e136]:
+              - link "Insurance" [ref=e137] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/insurance/
+            - listitem [ref=e138]:
+              - link "Services" [ref=e139] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/
+            - listitem [ref=e140]:
+              - link "Patient Resources" [ref=e141] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/resources/
+      - generic [ref=e142]:
+        - heading "GET IN TOUCH" [level=6] [ref=e145]
+        - paragraph [ref=e148]:
+          - text: Text (ENG) (626) 298 7121
+          - text: Call Us (818) 361 5437
+        - list [ref=e151]:
+          - listitem [ref=e152]:
+            - 'link "Email: customerservice@ktdoctor.com" [ref=e153] [cursor=pointer]':
+              - /url: mailto:contact@mysite.com
+              - generic [ref=e154]: "Email: customerservice@ktdoctor.com"
+    - paragraph [ref=e159]: © 2026 All Rights Reserved.
+  - generic [ref=e161]:
+    - link "Close" [ref=e162] [cursor=pointer]:
+      - /url: "#"
+      - img [ref=e163]
+    - generic [ref=e165]:
+      - paragraph [ref=e168]:
+        - strong [ref=e169]: "All our official job postings are only posted on the following websites:"
+        - text: "- Social media pages - Official company websites - Indeed"
+      - link "Careers" [ref=e171] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/careers/
+  - generic [ref=e172]: tablet
