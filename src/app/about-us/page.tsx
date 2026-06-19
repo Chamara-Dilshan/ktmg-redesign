@@ -25,7 +25,7 @@ export default function AboutUsPage() {
       <div className="bg-teal-dark px-6 py-16 md:px-12">
         <div className="mx-auto max-w-7xl">
           <SectionLabel className="mb-3 text-teal-light">About Us</SectionLabel>
-          <h1 className="font-heading text-5xl font-extrabold text-white">
+          <h1 className="font-heading text-3xl font-extrabold text-white md:text-5xl">
             Caring for the Future Generations<br />in Greater Los Angeles
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/75">
@@ -37,16 +37,16 @@ export default function AboutUsPage() {
       <div className="mx-auto max-w-7xl px-6 py-16 md:px-12">
 
         {/* Stats */}
-        <div className="mb-16 grid grid-cols-2 gap-6 md:grid-cols-4">
+        <div className="mb-16 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-6">
           {[
             { n: '25',   l: 'Clinics in LA'        },
             { n: '50+',  l: 'Board-Certified Doctors'},
             { n: '18',   l: 'Years of Excellence'   },
             { n: '0–21', l: 'Ages Served'           },
           ].map(s => (
-            <div key={s.l} className="rounded-xl border border-brand-border bg-white p-6 text-center">
-              <span className="font-heading block text-4xl font-extrabold text-teal-dark">{s.n}</span>
-              <span className="mt-1 block text-sm text-brand-muted">{s.l}</span>
+            <div key={s.l} className="rounded-xl border border-brand-border bg-white p-4 text-center md:p-6">
+              <span className="font-heading block text-2xl font-extrabold text-teal-dark md:text-4xl">{s.n}</span>
+              <span className="mt-1 block text-xs text-brand-muted md:text-sm">{s.l}</span>
             </div>
           ))}
         </div>
@@ -99,9 +99,9 @@ export default function AboutUsPage() {
         <div className="rounded-2xl bg-teal-dark p-10 text-center">
           <h2 className="font-heading mb-3 text-2xl font-extrabold text-white">Ready to find your pediatrician?</h2>
           <p className="mb-6 text-sm text-white/70">25 clinics across LA. Same-day appointments available.</p>
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-col justify-center gap-3 sm:flex-row sm:gap-4">
             <BookingCTA label="Book Appointment" />
-            <Link href="/locations" className="rounded-lg border border-white/30 bg-white/10 px-6 py-3 text-sm font-bold text-white hover:bg-white/20">
+            <Link href="/locations" className="rounded-lg border border-white/30 bg-white/10 px-6 py-3 text-center text-sm font-bold text-white hover:bg-white/20">
               Find a Clinic
             </Link>
           </div>

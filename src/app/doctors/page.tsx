@@ -30,11 +30,11 @@ export default function DoctorsPage() {
         </p>
 
         {/* Filters */}
-        <div className="mb-8 flex flex-wrap gap-4">
+        <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
           <select
             value={locationFilter}
             onChange={e => setLocationFilter(e.target.value)}
-            className="rounded-lg border border-brand-border px-4 py-2 text-sm text-brand-text"
+            className="w-full rounded-lg border border-brand-border px-4 py-2 text-sm text-brand-text sm:w-auto"
           >
             <option value="">All Locations</option>
             {(locations as Location[]).map(loc => (
@@ -44,7 +44,7 @@ export default function DoctorsPage() {
           <select
             value={credFilter}
             onChange={e => setCredFilter(e.target.value)}
-            className="rounded-lg border border-brand-border px-4 py-2 text-sm text-brand-text"
+            className="w-full rounded-lg border border-brand-border px-4 py-2 text-sm text-brand-text sm:w-auto"
           >
             <option value="">All Credentials</option>
             {credOptions.map(c => <option key={c} value={c}>{c}</option>)}

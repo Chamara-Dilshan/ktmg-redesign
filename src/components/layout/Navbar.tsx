@@ -16,8 +16,8 @@ const services = [
 export default function Navbar() {
   return (
     <header>
-      {/* Utility bar */}
-      <div className="border-b border-white/10 bg-teal-dark px-6 py-2">
+      {/* Utility bar — desktop only */}
+      <div className="hidden border-b border-white/10 bg-teal-dark px-6 py-2 md:block">
         <div className="mx-auto flex max-w-7xl items-center justify-between text-xs text-white/70">
           <div className="flex gap-4">
             <span>Text EN: {PHONE_TEXT_EN}</span>

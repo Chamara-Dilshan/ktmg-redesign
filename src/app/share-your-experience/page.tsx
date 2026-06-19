@@ -19,13 +19,13 @@ export default function ShareExperiencePage() {
         </p>
 
         {/* Review CTAs */}
-        <div className="mb-12 flex gap-4">
+        <div className="mb-12 flex flex-col gap-3 sm:flex-row sm:gap-4">
           <a href="https://www.google.com/search?q=Kids+and+Teens+Medical+Group" target="_blank" rel="noopener noreferrer"
-             className="rounded-lg border-2 border-teal-dark px-6 py-3 text-sm font-bold text-teal-dark hover:bg-teal-tint">
+             className="rounded-lg border-2 border-teal-dark px-6 py-3 text-center text-sm font-bold text-teal-dark hover:bg-teal-tint sm:w-auto">
             Leave a Google Review →
           </a>
           <a href="https://www.yelp.com/search?find_desc=Kids+Teens+Medical+Group" target="_blank" rel="noopener noreferrer"
-             className="rounded-lg border-2 border-brand-border px-6 py-3 text-sm font-bold text-brand-muted hover:bg-brand-bg">
+             className="rounded-lg border-2 border-brand-border px-6 py-3 text-center text-sm font-bold text-brand-muted hover:bg-brand-bg sm:w-auto">
             Leave a Yelp Review →
           </a>
         </div>

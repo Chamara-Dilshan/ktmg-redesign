@@ -18,10 +18,10 @@ export default function ServicesPage() {
         <p className="mb-10 max-w-xl text-sm leading-relaxed text-brand-muted">
           From routine well-child visits to urgent care and telehealth — we have everything your child needs, when they need it.
         </p>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3">
           {(services as Service[]).map(s => (
             <Link key={s.slug} href={`/services/${s.slug}`}
-                  className="group rounded-xl border border-brand-border bg-white p-7 transition-shadow hover:shadow-md">
+                  className="group rounded-xl border border-brand-border bg-white p-5 transition-shadow hover:shadow-md md:p-7">
               <div className="mb-4 text-3xl">{s.icon}</div>
               <h2 className="font-heading mb-2 text-lg font-bold text-teal-dark group-hover:text-teal-mid">{s.name}</h2>
               {s.hours && <p className="mb-2 text-xs font-medium text-teal-mid">{s.hours}</p>}

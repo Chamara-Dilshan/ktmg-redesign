@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex items-center justify-between border-t border-white/10 pt-6 text-xs">
+        <div className="mt-10 flex flex-col items-center gap-3 border-t border-white/10 pt-6 text-xs sm:flex-row sm:justify-between">
           <span>© 2026 Kids & Teens Medical Group. All Rights Reserved.</span>
           <div className="flex gap-4">
             <Link href="/privacy-policy"    className="hover:text-white">Privacy Policy</Link>
