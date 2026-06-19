@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="mb-4 flex items-center gap-3">
-              <Image src="/logo.svg" alt="Kids & Teens Medical Group" width={36} height={36} />
+              <Image src="/logo.png" alt="Kids & Teens Medical Group" width={44} height={44} />
               <span className="text-sm font-semibold text-white">Kids & Teens Medical Group</span>
             </div>
             <p className="text-sm leading-relaxed">

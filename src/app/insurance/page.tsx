@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import SectionLabel from '@/components/ui/SectionLabel'
 import BookingCTA from '@/components/ui/BookingCTA'
 import { EMAIL } from '@/lib/constants'
@@ -8,10 +9,16 @@ export const metadata: Metadata = {
   description: 'Kids & Teens Medical Group accepts all insurance including HMO, PPO, Medi-Cal, and commercial plans. Same-day IPA transfers available.',
 }
 
-const insurancePartners = [
-  'Regal Medical Group', 'Lakeside', 'Health Care Partners', 'Eastland',
-  'LA Care', 'Optum', 'Molina Healthcare', 'Blue Cross', 'Cedar Sinai', 'CHLA',
+const partnerLogos = [
+  { name: 'Regal Medical Group',  src: '/partners/regal.png'      },
+  { name: 'L.A. Care Health Plan', src: '/partners/la-care.png'   },
+  { name: 'Optum',                src: '/partners/optum.webp'      },
+  { name: 'Providence',           src: '/partners/providence.png'  },
+  { name: 'Molina Healthcare',    src: '/partners/molina.webp'     },
+  { name: 'Cedars-Sinai',         src: '/partners/cedars.png'      },
 ]
+
+const textPartners = ['Lakeside', 'Health Care Partners', 'Eastland', 'Blue Cross', 'CHLA']
 
 export default function InsurancePage() {
   return (
@@ -23,9 +30,18 @@ export default function InsurancePage() {
           Including HMO, PPO, Medi-Cal, and most commercial plans. No insurance? Ask us about affordable payment options.
         </p>
 
-        {/* Partners grid */}
+        {/* Partner logos */}
+        <div className="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+          {partnerLogos.map(p => (
+            <div key={p.name} className="flex items-center justify-center rounded-xl border border-brand-border bg-white p-4">
+              <Image src={p.src} alt={p.name} width={120} height={48} className="max-h-12 w-auto object-contain" />
+            </div>
+          ))}
+        </div>
+
+        {/* Text-only partners */}
         <div className="mb-10 flex flex-wrap gap-3">
-          {insurancePartners.map(p => (
+          {textPartners.map(p => (
             <span key={p} className="rounded-lg border border-brand-border bg-white px-5 py-3 text-sm font-semibold text-brand-muted">
               {p}
             </span>
@@ -45,6 +61,9 @@ export default function InsurancePage() {
 
         {/* Serendib callout */}
         <div className="mb-10 rounded-xl border border-brand-border bg-white p-6">
+          <div className="mb-4 flex items-center gap-4">
+            <Image src="/partners/serendib.png" alt="Serendib Healthways" width={160} height={48} className="max-h-12 w-auto object-contain" />
+          </div>
           <h2 className="font-heading mb-2 text-lg font-bold text-teal-dark">SoCal&apos;s Best Kept Secret — Serendib Healthways</h2>
           <p className="mb-4 text-sm leading-relaxed text-brand-muted">
             No doctor restrictions. Serendib Healthways offers flexible health coverage that lets you see any KTMG doctor without referrals or network limitations.

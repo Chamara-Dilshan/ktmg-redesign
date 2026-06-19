@@ -35,7 +35,7 @@ export default function Navbar() {
       <nav className="sticky top-0 z-50 bg-teal-dark shadow-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center gap-3">
-            <Image src="/logo.svg" alt="Kids & Teens Medical Group" width={40} height={40} priority />
+            <Image src="/logo.png" alt="Kids & Teens Medical Group" width={48} height={48} priority />
             <span className="text-sm font-semibold leading-tight text-white">
               Kids & Teens Medical Group
               <span className="block text-xs font-normal text-white/60">Pediatric Care · Los Angeles</span>
