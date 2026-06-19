@@ -1,8 +1,10 @@
 'use client'
 import { useState, useRef } from 'react'
 import SectionLabel from '@/components/ui/SectionLabel'
+import { CAREERS_FORM_URL } from '@/lib/constants'
 
 type Tab = 'los-angeles' | 'sri-lanka' | 'mexico'
+type SubmitState = 'idle' | 'sending' | 'success' | 'error'
 
 const tabs: { id: Tab; label: string }[] = [
   { id: 'los-angeles', label: 'Los Angeles' },
@@ -11,15 +13,39 @@ const tabs: { id: Tab; label: string }[] = [
 ]
 
 export default function CareersPage() {
-  const [activeTab, setActiveTab] = useState<Tab>('los-angeles')
-  const [form, setForm] = useState({ firstName: '', lastName: '', phone: '', email: '', position: '' })
+  const [activeTab, setActiveTab]   = useState<Tab>('los-angeles')
+  const [form, setForm]             = useState({ firstName: '', lastName: '', phone: '', email: '', position: '' })
+  const [submitState, setSubmitState] = useState<SubmitState>('idle')
   const cvRef = useRef<HTMLInputElement>(null)
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    // CV file is now accessible via ref for backend integration
-    // Form submission: integrate with email service or backend before launch
-    alert('Thank you! We will be in touch shortly.')
+    setSubmitState('sending')
+
+    const data = new FormData()
+    data.append('firstName', form.firstName)
+    data.append('lastName',  form.lastName)
+    data.append('phone',     form.phone)
+    data.append('email',     form.email)
+    data.append('position',  form.position)
+    if (cvRef.current?.files?.[0]) data.append('cv', cvRef.current.files[0])
+
+    try {
+      const res = await fetch(CAREERS_FORM_URL, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      })
+      if (res.ok) {
+        setSubmitState('success')
+        setForm({ firstName: '', lastName: '', phone: '', email: '', position: '' })
+        if (cvRef.current) cvRef.current.value = ''
+      } else {
+        setSubmitState('error')
+      }
+    } catch {
+      setSubmitState('error')
+    }
   }
 
   return (
@@ -112,9 +138,23 @@ export default function CareersPage() {
                      className="w-full rounded-lg border border-brand-border bg-white px-4 py-2.5 text-sm" />
             </div>
             <div className="sm:col-span-2">
-              <button type="submit" className="rounded-lg bg-coral px-8 py-3 text-sm font-bold text-white hover:opacity-90">
-                Submit Application
-              </button>
+              {submitState === 'success' ? (
+                <div className="rounded-lg border border-teal-mid bg-teal-tint px-6 py-4 text-sm font-semibold text-teal-dark">
+                  ✅ Application received! We&apos;ll be in touch shortly.
+                </div>
+              ) : (
+                <>
+                  <button type="submit" disabled={submitState === 'sending'}
+                          className="rounded-lg bg-coral px-8 py-3 text-sm font-bold text-white hover:opacity-90 disabled:opacity-60">
+                    {submitState === 'sending' ? 'Sending…' : 'Submit Application'}
+                  </button>
+                  {submitState === 'error' && (
+                    <p className="mt-2 text-xs text-coral">
+                      Something went wrong. Please email us at customerservice@ktdoctor.com.
+                    </p>
+                  )}
+                </>
+              )}
             </div>
           </form>
         </div>

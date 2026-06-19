@@ -1,4 +1,7 @@
-export const HEALOW_URL = 'https://healow.com/'  // TODO: confirm exact URL with KTMG
+export const HEALOW_URL = 'https://healow.com/'  // TODO: confirm exact URL with KTMG before launch
+
+// TODO: create free account at formspree.io, replace xxxx with your form ID
+export const CAREERS_FORM_URL = 'https://formspree.io/f/xxxxxxxxxxxx'
 
 export const PHONE_CALL     = '(818) 361-5437'
 export const PHONE_TEXT_EN  = '(626) 298-7121'
