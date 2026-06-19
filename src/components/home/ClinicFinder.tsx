@@ -23,7 +23,7 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
       <div className="mx-auto grid max-w-7xl items-start gap-12 md:grid-cols-2">
         {/* Left: search + results */}
         <div>
-          <SectionLabel className="mb-2 text-[#7dd3e8]">25 Locations</SectionLabel>
+          <SectionLabel className="mb-2 text-teal-light">25 Locations</SectionLabel>
           <h2 className="font-heading mb-3 text-3xl font-extrabold text-white">
             Find a Clinic Near You
           </h2>
@@ -42,9 +42,9 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
           </div>
           <ul className="space-y-3">
             {results.map(loc => (
-              <li key={loc.slug} className="flex items-center justify-between rounded-lg border border-white/12 bg-white/8 px-4 py-3">
+              <li key={loc.slug} className="flex items-center justify-between rounded-lg border border-white/10 bg-white/10 px-4 py-3">
                 <div className="flex items-center gap-3">
-                  <div className="h-2 w-2 rounded-full bg-[#7dd3e8]" />
+                  <div className="h-2 w-2 rounded-full bg-teal-light" />
                   <div>
                     <p className="text-sm font-semibold text-white">{loc.name}</p>
                     <p className="text-xs text-white/50">{loc.address}, {loc.city}</p>
@@ -56,7 +56,7 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
               </li>
             ))}
           </ul>
-          <Link href="/locations" className="mt-4 block text-center text-sm font-semibold text-[#7dd3e8] hover:underline">
+          <Link href="/locations" className="mt-4 block text-center text-sm font-semibold text-teal-light hover:underline">
             View all 25 locations →
           </Link>
         </div>

@@ -7,6 +7,7 @@ const config: Config = {
       colors: {
         'teal-dark':   '#073f49',
         'teal-mid':    '#047391',
+        'teal-light':  '#7dd3e8',
         'coral':       '#E8612C',
         'brand-bg':    '#F8FAFB',
         'brand-text':  '#1A1A2E',

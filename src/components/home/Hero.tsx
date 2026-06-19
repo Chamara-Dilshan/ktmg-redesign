@@ -12,7 +12,7 @@ export default function Hero() {
           </div>
           <h1 className="font-heading mb-5 text-4xl font-extrabold leading-tight text-white md:text-5xl">
             Compassionate Care for<br />
-            <em className="not-italic text-[#7dd3e8]">Every Child, Every Stage</em>
+            <em className="not-italic text-teal-light">Every Child, Every Stage</em>
           </h1>
           <p className="mb-8 max-w-lg text-base leading-relaxed text-white/75">
             25 clinics across Los Angeles. Board-certified pediatricians. Extended hours, same-day appointments, and telehealth — all under one trusted name.
