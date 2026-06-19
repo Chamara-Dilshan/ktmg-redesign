@@ -1,0 +1,253 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "TEXT (ENG) (626) 298 7121" [ref=e13] [cursor=pointer]:
+        - /url: sms:+16262987121
+        - generic [ref=e15]: TEXT (ENG) (626) 298 7121
+      - link "CALL US (818) 361 5437" [ref=e21] [cursor=pointer]:
+        - /url: tel:+18183615437
+        - generic [ref=e23]: CALL US (818) 361 5437
+      - link "DIRECTORY" [ref=e29] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/directory/
+        - generic [ref=e30]:
+          - img [ref=e32]
+          - generic [ref=e34]: DIRECTORY
+    - generic [ref=e40]:
+      - link "Kids and teen pediatric Clinic logo" [ref=e45] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com
+        - img "Kids and teen pediatric Clinic logo" [ref=e46]
+      - generic [ref=e53]:
+        - link "<a href=\"https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2\">APPOINTMENTS</a>" [ref=e55] [cursor=pointer]:
+          - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - img [ref=e56]
+        - heading "APPOINTMENTS" [level=3] [ref=e60]:
+          - link:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - link "APPOINTMENTS" [ref=e61] [cursor=pointer]:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+      - generic [ref=e66]:
+        - link "<a href=\"https://healowpay.com\">PAY ONLINE</a>" [ref=e68] [cursor=pointer]:
+          - /url: https://healowpay.com
+          - img [ref=e69]
+        - heading "PAY ONLINE" [level=3] [ref=e74]:
+          - link:
+            - /url: https://healowpay.com
+          - link "PAY ONLINE" [ref=e75] [cursor=pointer]:
+            - /url: https://healowpay.com
+      - generic [ref=e80]:
+        - link "<a href=\"https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp\">PORTAL LOG IN</a>" [ref=e82] [cursor=pointer]:
+          - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - img [ref=e83]
+        - heading "PORTAL LOG IN" [level=3] [ref=e86]:
+          - link:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - link "PORTAL LOG IN" [ref=e87] [cursor=pointer]:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+      - generic [ref=e92]:
+        - link "FIND A LOCATION" [ref=e94] [cursor=pointer]:
+          - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+          - img [ref=e95]
+        - heading "FIND A LOCATION" [level=3] [ref=e98]:
+          - link "FIND A LOCATION" [ref=e99] [cursor=pointer]:
+            - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+      - search [ref=e104]:
+        - generic [ref=e105]:
+          - button "Search" [ref=e106] [cursor=pointer]:
+            - img [ref=e108]
+          - generic:
+            - generic: Search
+            - searchbox "Search"
+      - link [ref=e115] [cursor=pointer]:
+        - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODIiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+        - img [ref=e116]
+    - navigation "Menu" [ref=e128]:
+      - list [ref=e129]:
+        - listitem [ref=e130]:
+          - link "Home" [ref=e131] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/
+        - listitem [ref=e132]:
+          - link "About us" [ref=e133] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+        - listitem [ref=e134]:
+          - link "Parent Resources" [ref=e135] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/parent-resources/
+        - listitem [ref=e136]:
+          - link "Testimonials" [ref=e137] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/share-your-experience/
+        - listitem [ref=e138]:
+          - link "Forms Only" [ref=e139] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group-2/
+    - text: 
+  - generic [ref=e140]:
+    - generic [ref=e142]:
+      - generic [ref=e144]:
+        - paragraph [ref=e147]:
+          - text: "10200 Sepulveda Blvd, Suite #220,"
+          - text: Mission Hills, CA 91345
+        - heading "Mission Hills" [level=1] [ref=e150]
+        - paragraph [ref=e153]: At their office on Sepulveda Blvd in Mission Hills, California, the team of board-certified pediatricians at Kids & Teens Medical Group are experts in pediatrics, providing attentive and integrated patient-focused care. The team specializes in general pediatrics, including newborn care, adolescent medicine, well-child exams, and specialized physicals for sports and school. They also diagnose and treat common pediatric health conditions like asthma and allergies. For patient and parent convenience, Kids & Teens Medical Group is open seven days a week and offers after-hours care and telehealth appointments.
+        - generic [ref=e157]:
+          - generic [ref=e159]:
+            - generic [ref=e161]:
+              - paragraph [ref=e164]: OFFICE OPEN
+              - heading "MON - FRI" [level=2] [ref=e167]
+              - heading "9AM - 6PM" [level=2] [ref=e170]
+            - generic [ref=e172]:
+              - paragraph [ref=e175]: TELEHEALTH
+              - heading "MON - SUN" [level=2] [ref=e178]
+              - heading "9AM - 8PM" [level=2] [ref=e181]
+          - link "BOOK APPOINTMENT NOW ⟶" [ref=e189] [cursor=pointer]:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=ZNo3rwVYY0VqK04O
+            - generic [ref=e191]: BOOK APPOINTMENT NOW ⟶
+      - generic [ref=e193]:
+        - img "1" [ref=e196]
+        - img "2" [ref=e199]
+        - img "3" [ref=e202]
+    - heading "Meet Our Providers" [level=2] [ref=e209]
+    - generic [ref=e215]:
+      - generic [ref=e217]:
+        - generic [ref=e220]:
+          - figure [ref=e221]
+          - generic [ref=e222]:
+            - heading "Victor Tamashiro" [level=3] [ref=e223]
+            - paragraph [ref=e224]: MD Board Certified Pediatrician
+        - heading "Locations:" [level=2] [ref=e227]
+        - link "Mission Hills" [ref=e235] [cursor=pointer]:
+          - /url: https://www.ktdoctor.com/locations/mission-hills/
+          - generic [ref=e237]: Mission Hills
+      - generic [ref=e241]:
+        - generic [ref=e244]:
+          - figure [ref=e245]
+          - generic [ref=e246]:
+            - heading "Hilma Benjamin" [level=3] [ref=e247]
+            - paragraph [ref=e248]: MD, FAAP Board Certified Pediatrician
+        - generic [ref=e250]: Hilma Benjamin, MD, FAAP, is a member of the caring team at Kids & Teens Medical Group. She serves patients from the practice’s location in Northridge, California. Dr. Benjamin graduated from the University of the Virgin Islands with a Bachelor of Science in biology in 1996 before earning a Master of Science in molecular and cellular biology at the University of Maryland, Baltimore County, in 1998. She received her medical degree in 2004 from Penn State College of Medicine and completed her residency in general pediatrics in 2007 at All Children’s Hospital in St. Petersburg, Florida, and Tampa General Hospital in Tampa, Florida. Before joining Kids & Teens Medical Group in 2009, she completed several locum tenens assignments in private practice in the San Francisco Bay Area and at the Natividad Medical Center in Salinas, affiliated with the University of California, San Francisco (UCSF). Dr. Benjamin currently serves as the acting Medical Director of Kids and Teens’ Extended Hours/After Hours Care services. Her special interests include child behavior, growth and development, dental care, nutrition, and physical education.
+        - heading "Locations:" [level=2] [ref=e253]
+        - generic [ref=e255]:
+          - generic [ref=e257]:
+            - link "Mission Hills" [ref=e261] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/locations/mission-hills/
+              - generic [ref=e263]: Mission Hills
+            - link "Pico Rivera" [ref=e267] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/locations/pico-rivera-pediatric-clinic/
+              - generic [ref=e269]: Pico Rivera
+          - generic [ref=e271]:
+            - link "Northridge" [ref=e275] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/locations/northridge/
+              - generic [ref=e277]: Northridge
+            - link "West Hills" [ref=e281] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/locations/west-hills-pediatric-clinic/
+              - generic [ref=e283]: West Hills
+    - generic [ref=e293]:
+      - paragraph [ref=e296]: REACH OUT
+      - heading "SEE A DOCTOR NOW" [level=2] [ref=e303]
+      - generic [ref=e310]:
+        - generic [ref=e313]:
+          - img [ref=e316]
+          - heading "Call Us" [level=4] [ref=e319]
+        - generic [ref=e322]:
+          - img [ref=e325]
+          - heading "Text Us" [level=4] [ref=e328]
+        - generic [ref=e331]:
+          - img [ref=e334]
+          - heading "Email Us" [level=4] [ref=e337]
+  - contentinfo [ref=e338]:
+    - generic [ref=e339]:
+      - generic [ref=e340]:
+        - figure [ref=e343]:
+          - img "Kids and teen pediatric Clinic logo" [ref=e344]
+        - heading "Kids and Teens Medical Group is the leading provider of pediatric care with extended hours in Southern California. We are focused on changing the way you think about children’s health." [level=6] [ref=e347]
+        - list [ref=e350]:
+          - listitem [ref=e351]:
+            - link "Facebook-f" [ref=e352] [cursor=pointer]:
+              - /url: https://www.facebook.com/kidsandteensmedicalgroup/
+              - generic [ref=e353]: Facebook-f
+              - img [ref=e354]
+          - listitem [ref=e356]:
+            - link "Instagram" [ref=e357] [cursor=pointer]:
+              - /url: https://www.instagram.com/ktmedicalgroup/
+              - generic [ref=e358]: Instagram
+              - img [ref=e359]
+          - listitem [ref=e361]:
+            - link "X-twitter" [ref=e362] [cursor=pointer]:
+              - /url: https://x.com/KTDoctorGroup
+              - generic [ref=e363]: X-twitter
+              - img [ref=e364]
+          - listitem [ref=e366]:
+            - link "Youtube" [ref=e367] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC5pMXGZ_F2OZUFdfy6YbIew
+              - generic [ref=e368]: Youtube
+              - img [ref=e369]
+      - generic [ref=e371]:
+        - heading "QUICK LINKS" [level=6] [ref=e374]
+        - list [ref=e377]:
+          - listitem [ref=e378]:
+            - link "Home" [ref=e379] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/
+              - generic [ref=e380]: Home
+          - listitem [ref=e381]:
+            - link "About us" [ref=e382] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+              - generic [ref=e383]: About us
+          - listitem [ref=e384]:
+            - link "Patient Resources" [ref=e385] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/parent-resources/
+              - generic [ref=e386]: Patient Resources
+          - listitem [ref=e387]:
+            - link "Testimonials" [ref=e388] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/share-your-experience/
+              - generic [ref=e389]: Testimonials
+          - listitem [ref=e390]:
+            - link "Terms and Conditions" [ref=e391] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/terms_and_conditions-2/
+              - generic [ref=e392]: Terms and Conditions
+          - listitem [ref=e393]:
+            - link "Privacy Policy" [ref=e394] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/privacy-policy-2/
+              - generic [ref=e395]: Privacy Policy
+          - listitem [ref=e396]:
+            - link "Careers" [ref=e397] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/careers/
+              - generic [ref=e398]: Careers
+      - generic [ref=e399]:
+        - heading "FOR PATIENTS" [level=6] [ref=e402]
+        - navigation "Menu" [ref=e405]:
+          - list [ref=e406]:
+            - listitem [ref=e407]:
+              - link "Same-Day Appointments" [ref=e408] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/same-day-appointments/
+            - listitem [ref=e409]:
+              - link "Providers" [ref=e410] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/our-doctors/
+            - listitem [ref=e411]:
+              - link "Telehealth" [ref=e412] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/telemedicine-for-children/
+            - listitem [ref=e413]:
+              - link "Locations" [ref=e414] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/locations/
+            - listitem [ref=e415]:
+              - link "Insurance" [ref=e416] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/insurance/
+            - listitem [ref=e417]:
+              - link "Services" [ref=e418] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/
+            - listitem [ref=e419]:
+              - link "Patient Resources" [ref=e420] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/resources/
+      - generic [ref=e421]:
+        - heading "GET IN TOUCH" [level=6] [ref=e424]
+        - paragraph [ref=e427]:
+          - text: Text (ENG) (626) 298 7121
+          - text: Call Us (818) 361 5437
+        - list [ref=e430]:
+          - listitem [ref=e431]:
+            - 'link "Email: customerservice@ktdoctor.com" [ref=e432] [cursor=pointer]':
+              - /url: mailto:contact@mysite.com
+              - generic [ref=e433]: "Email: customerservice@ktdoctor.com"
+    - paragraph [ref=e438]: © 2026 All Rights Reserved.
+  - link "Close" [ref=e441] [cursor=pointer]:
+    - /url: "#"
+    - img [ref=e442]
+  - generic [ref=e444]: desktop

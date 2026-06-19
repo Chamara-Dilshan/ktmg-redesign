@@ -1,0 +1,930 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "TEXT (ENG) (626) 298 7121" [ref=e13] [cursor=pointer]:
+        - /url: sms:+16262987121
+        - generic [ref=e15]: TEXT (ENG) (626) 298 7121
+      - link "CALL US (818) 361 5437" [ref=e21] [cursor=pointer]:
+        - /url: tel:+18183615437
+        - generic [ref=e23]: CALL US (818) 361 5437
+      - link "DIRECTORY" [ref=e29] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/directory/
+        - generic [ref=e30]:
+          - img [ref=e32]
+          - generic [ref=e34]: DIRECTORY
+    - generic [ref=e40]:
+      - link "Kids and teen pediatric Clinic logo" [ref=e45] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com
+        - img "Kids and teen pediatric Clinic logo" [ref=e46]
+      - generic [ref=e53]:
+        - link "<a href=\"https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2\">APPOINTMENTS</a>" [ref=e55] [cursor=pointer]:
+          - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - img [ref=e56]
+        - heading "APPOINTMENTS" [level=3] [ref=e60]:
+          - link:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - link "APPOINTMENTS" [ref=e61] [cursor=pointer]:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+      - generic [ref=e66]:
+        - link "<a href=\"https://healowpay.com\">PAY ONLINE</a>" [ref=e68] [cursor=pointer]:
+          - /url: https://healowpay.com
+          - img [ref=e69]
+        - heading "PAY ONLINE" [level=3] [ref=e74]:
+          - link:
+            - /url: https://healowpay.com
+          - link "PAY ONLINE" [ref=e75] [cursor=pointer]:
+            - /url: https://healowpay.com
+      - generic [ref=e80]:
+        - link "<a href=\"https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp\">PORTAL LOG IN</a>" [ref=e82] [cursor=pointer]:
+          - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - img [ref=e83]
+        - heading "PORTAL LOG IN" [level=3] [ref=e86]:
+          - link:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - link "PORTAL LOG IN" [ref=e87] [cursor=pointer]:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+      - generic [ref=e92]:
+        - link "FIND A LOCATION" [ref=e94] [cursor=pointer]:
+          - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+          - img [ref=e95]
+        - heading "FIND A LOCATION" [level=3] [ref=e98]:
+          - link "FIND A LOCATION" [ref=e99] [cursor=pointer]:
+            - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+      - search [ref=e104]:
+        - generic [ref=e105]:
+          - button "Search" [ref=e106] [cursor=pointer]:
+            - img [ref=e108]
+          - generic:
+            - generic: Search
+            - searchbox "Search"
+      - link [ref=e115] [cursor=pointer]:
+        - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODIiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+        - img [ref=e116]
+    - navigation "Menu" [ref=e128]:
+      - list [ref=e129]:
+        - listitem [ref=e130]:
+          - link "Home" [ref=e131] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/
+        - listitem [ref=e132]:
+          - link "About us" [ref=e133] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+        - listitem [ref=e134]:
+          - link "Parent Resources" [ref=e135] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/parent-resources/
+        - listitem [ref=e136]:
+          - link "Testimonials" [ref=e137] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/share-your-experience/
+        - listitem [ref=e138]:
+          - link "Forms Only" [ref=e139] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group-2/
+    - text: 
+  - generic [ref=e140]:
+    - heading "Expertise You Can Trust" [level=1] [ref=e151]
+    - paragraph [ref=e158]: Click on the area you are in or near you. to see the doctors available. You can visit any clinic mentioned here and your records will be synced to the clinic you are at immediately.
+    - generic [ref=e160]:
+      - list [ref=e165]:
+        - listitem [ref=e166]:
+          - link "Agoura Hills" [ref=e167] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/agoura-hills-pediatrician/
+            - img [ref=e169]
+            - generic [ref=e171]: Agoura Hills
+        - listitem [ref=e172]:
+          - link "Arcadia" [ref=e173] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/arcadia-clinic/
+            - img [ref=e175]
+            - generic [ref=e177]: Arcadia
+        - listitem [ref=e178]:
+          - link "Beverly Hills" [ref=e179] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/beverly-hills-clinic/
+            - img [ref=e181]
+            - generic [ref=e183]: Beverly Hills
+        - listitem [ref=e184]:
+          - link "Canyon Country" [ref=e185] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/canyon-country-pediatric-clinic/
+            - img [ref=e187]
+            - generic [ref=e189]: Canyon Country
+        - listitem [ref=e190]:
+          - link "Culver City" [ref=e191] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/culver-city-pediatric-clinic/
+            - img [ref=e193]
+            - generic [ref=e195]: Culver City
+        - listitem [ref=e196]:
+          - link "Downey" [ref=e197] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/downey/
+            - img [ref=e199]
+            - generic [ref=e201]: Downey
+      - list [ref=e206]:
+        - listitem [ref=e207]:
+          - link "Glendale" [ref=e208] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/glendale-pediatric-clinic/
+            - img [ref=e210]
+            - generic [ref=e212]: Glendale
+        - listitem [ref=e213]:
+          - link "Hollywood" [ref=e214] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/hollywood-clinic/
+            - img [ref=e216]
+            - generic [ref=e218]: Hollywood
+        - listitem [ref=e219]:
+          - link "La Cañada" [ref=e220] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/la-canada-flintridge/
+            - img [ref=e222]
+            - generic [ref=e224]: La Cañada
+        - listitem [ref=e225]:
+          - link "La Mirada" [ref=e226] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/la-mirada/
+            - img [ref=e228]
+            - generic [ref=e230]: La Mirada
+        - listitem [ref=e231]:
+          - link "Mission Hills" [ref=e232] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/mission-hills/
+            - img [ref=e234]
+            - generic [ref=e236]: Mission Hills
+        - listitem [ref=e237]:
+          - link "Northridge" [ref=e238] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/northridge/
+            - img [ref=e240]
+            - generic [ref=e242]: Northridge
+      - list [ref=e247]:
+        - listitem [ref=e248]:
+          - link "Pico Rivera" [ref=e249] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/pico-rivera-pediatric-clinic/
+            - img [ref=e251]
+            - generic [ref=e253]: Pico Rivera
+        - listitem [ref=e254]:
+          - link "Pasadena" [ref=e255] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/pasadena/
+            - img [ref=e257]
+            - generic [ref=e259]: Pasadena
+        - listitem [ref=e260]:
+          - link "Tarzana" [ref=e261] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/tarzana-pediatric-clinic/
+            - img [ref=e263]
+            - generic [ref=e265]: Tarzana
+        - listitem [ref=e266]:
+          - link "San Fernando" [ref=e267] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/san-fernando-pediatric-clinic/
+            - img [ref=e269]
+            - generic [ref=e271]: San Fernando
+        - listitem [ref=e272]:
+          - link "Santa Monica" [ref=e273] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/santa-monica-pediatric-clinic/
+            - img [ref=e275]
+            - generic [ref=e277]: Santa Monica
+        - listitem [ref=e278]:
+          - link "San Pedro" [ref=e279] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/san-pedro-pediatric-clinic/
+            - img [ref=e281]
+            - generic [ref=e283]: San Pedro
+      - list [ref=e288]:
+        - listitem [ref=e289]:
+          - link "Torrance" [ref=e290] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/torrance-pediatric-clinic/
+            - img [ref=e292]
+            - generic [ref=e294]: Torrance
+        - listitem [ref=e295]:
+          - link "Valencia" [ref=e296] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/valencia-pediatric-clinic/
+            - img [ref=e298]
+            - generic [ref=e300]: Valencia
+        - listitem [ref=e301]:
+          - link "Van Nuys" [ref=e302] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/van-nuys-pediatric-clinic/
+            - img [ref=e304]
+            - generic [ref=e306]: Van Nuys
+        - listitem [ref=e307]:
+          - link "West Hills" [ref=e308] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/west-hills-pediatric-clinic/
+            - img [ref=e310]
+            - generic [ref=e312]: West Hills
+        - listitem [ref=e313]:
+          - link "Whittier" [ref=e314] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/whittier-pediatric-clinic-whitter-telehealth-kidsandteens/
+            - img [ref=e316]
+            - generic [ref=e318]: Whittier
+    - generic [ref=e320]:
+      - heading "Agoura Hills" [level=3] [ref=e325]
+      - link "LOCATIONS ⟶" [ref=e331] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e333]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e339] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=8mqPBWAOD8V9GrMn
+        - generic [ref=e341]: BOOK APPT ⟶
+    - generic [ref=e353]:
+      - heading "Mark Snyder" [level=2] [ref=e356]
+      - paragraph [ref=e359]: MD, FAAP
+    - generic [ref=e401]:
+      - heading "Arcadia" [level=3] [ref=e406]
+      - link "LOCATIONS ⟶" [ref=e412] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e414]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e420] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=9DQ48zAN6zAew2J6
+        - generic [ref=e422]: BOOK APPT ⟶
+    - generic [ref=e424]:
+      - generic [ref=e428]:
+        - img "Dr-Sylvia-Lam" [ref=e433]
+        - generic [ref=e435]:
+          - heading "Sylvia Lam" [level=2] [ref=e438]
+          - paragraph [ref=e441]: MD, FAAP
+      - generic [ref=e459]:
+        - heading "Erika Lee" [level=2] [ref=e462]
+        - paragraph [ref=e465]: PNP
+      - generic [ref=e483]:
+        - heading "Jocelyn Zuniga" [level=2] [ref=e486]
+        - paragraph [ref=e489]: MD
+      - generic [ref=e501]:
+        - img "Craig" [ref=e506]
+        - generic [ref=e508]:
+          - heading "Najma Qamar" [level=2] [ref=e511]
+          - paragraph [ref=e514]: MD
+    - generic [ref=e524]:
+      - heading "Beverly Hills" [level=3] [ref=e529]
+      - link "LOCATIONS ⟶" [ref=e535] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e537]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e543] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=ObYNDykzjWkpB3jQ
+        - generic [ref=e545]: BOOK APPT ⟶
+    - generic [ref=e547]:
+      - generic [ref=e557]:
+        - heading "Martin Fineberg" [level=2] [ref=e560]
+        - paragraph [ref=e563]: MD, FAAP
+      - generic [ref=e581]:
+        - heading "Sharmetha Ramanan" [level=2] [ref=e584]
+        - paragraph [ref=e587]: PNP
+      - generic [ref=e605]:
+        - heading "Rohina Furmuly" [level=2] [ref=e608]
+        - paragraph [ref=e611]: PA-C
+      - generic [ref=e623]:
+        - img "Craig" [ref=e628]
+        - generic [ref=e630]:
+          - heading "Yussef Sakhai" [level=2] [ref=e633]
+          - paragraph [ref=e636]: MD
+      - generic [ref=e648]:
+        - img "Craig" [ref=e653]
+        - generic [ref=e655]:
+          - heading "Halavi Delaram" [level=2] [ref=e658]
+          - paragraph [ref=e661]:
+            - generic [ref=e662]: PA
+    - generic [ref=e676]:
+      - img "Craig" [ref=e681]
+      - generic [ref=e683]:
+        - heading "Michels Savannah" [level=2] [ref=e686]
+        - paragraph [ref=e689]: NP
+    - generic [ref=e699]:
+      - heading "Canyon Country" [level=3] [ref=e704]
+      - link "LOCATIONS ⟶" [ref=e710] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e712]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e718] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=1ZQB8mAJZOAjdG4n
+        - generic [ref=e720]: BOOK APPT ⟶
+    - generic [ref=e722]:
+      - generic [ref=e726]:
+        - img "Casie-McGuire" [ref=e731]
+        - generic [ref=e733]:
+          - heading "Casie McGuire" [level=2] [ref=e736]
+          - paragraph [ref=e739]: FNP-C
+      - generic [ref=e757]:
+        - heading "Narindar Nat" [level=2] [ref=e760]
+        - paragraph [ref=e763]: MD, FAAP
+    - generic [ref=e793]:
+      - heading "Culver City" [level=3] [ref=e798]
+      - link "LOCATIONS ⟶" [ref=e804] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e806]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e812] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=mdbGr1kwdgvyLDwZ
+        - generic [ref=e814]: BOOK APPT ⟶
+    - generic [ref=e816]:
+      - generic [ref=e826]:
+        - heading "Martin Fineberg" [level=2] [ref=e829]
+        - paragraph [ref=e832]: MD, FAAP
+      - generic [ref=e844]:
+        - img "Monique Craig" [ref=e849]
+        - generic [ref=e851]:
+          - heading "Monique Craig" [level=2] [ref=e854]
+          - paragraph [ref=e857]: PA
+      - generic [ref=e869]:
+        - img "Azam-Jazayeri-150x150" [ref=e874]
+        - generic [ref=e876]:
+          - heading "Azam Jazayeri" [level=2] [ref=e879]
+          - paragraph [ref=e882]: MD
+      - generic [ref=e900]:
+        - heading "Rohina Furmuly" [level=2] [ref=e903]
+        - paragraph [ref=e906]: PA-C
+    - generic [ref=e916]:
+      - generic [ref=e926]:
+        - heading "Rena Keynigshteyn" [level=2] [ref=e929]
+        - paragraph [ref=e932]: MD
+      - generic [ref=e944]:
+        - img "Craig" [ref=e949]
+        - generic [ref=e951]:
+          - heading "Yussef Sakhai" [level=2] [ref=e954]
+          - paragraph [ref=e957]: MD
+    - generic [ref=e1007]:
+      - heading "Downey" [level=3] [ref=e1012]
+      - link "LOCATIONS ⟶" [ref=e1018] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e1020]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e1026] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=gLZ6qokap9VB7rEl
+        - generic [ref=e1028]: BOOK APPT ⟶
+    - generic [ref=e1030]:
+      - generic [ref=e1040]:
+        - heading "Jocelyn Zuniga" [level=2] [ref=e1043]
+        - paragraph [ref=e1046]: MD, FAAP
+      - generic [ref=e1058]:
+        - img "Oliver" [ref=e1063]
+        - generic [ref=e1065]:
+          - heading "Oliver Petalver" [level=2] [ref=e1068]
+          - paragraph [ref=e1071]: PA-C
+      - generic [ref=e1083]:
+        - img "Craig" [ref=e1088]
+        - generic [ref=e1090]:
+          - heading "Maria Vega" [level=2] [ref=e1093]
+          - paragraph [ref=e1096]: PNP
+      - generic [ref=e1108]:
+        - img "Tisha Pison" [ref=e1113]
+        - generic [ref=e1115]:
+          - heading "Tisha Pison" [level=2] [ref=e1118]
+          - paragraph [ref=e1121]: PNP
+    - generic [ref=e1131]:
+      - heading "Glendale" [level=3] [ref=e1136]
+      - link "LOCATIONS ⟶" [ref=e1142] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e1144]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e1150] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=Qd1p2JAR0DkDozmN
+        - generic [ref=e1152]: BOOK APPT ⟶
+    - generic [ref=e1154]:
+      - generic [ref=e1164]:
+        - heading "Emily Brandt" [level=2] [ref=e1167]
+        - paragraph [ref=e1170]: MD
+      - generic [ref=e1188]:
+        - heading "Sharmetha Ramanan" [level=2] [ref=e1191]
+        - paragraph [ref=e1194]: PNP
+      - generic [ref=e1206]:
+        - img "Craig" [ref=e1211]
+        - generic [ref=e1213]:
+          - heading "Mealynne Ngu" [level=2] [ref=e1216]
+          - paragraph [ref=e1219]: PNP
+    - generic [ref=e1249]:
+      - heading "Hollywood" [level=3] [ref=e1254]
+      - link "LOCATIONS ⟶" [ref=e1260] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e1262]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e1268] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/appointments/
+        - generic [ref=e1270]: BOOK APPT ⟶
+    - generic [ref=e1272]:
+      - generic [ref=e1276]:
+        - img "BenB" [ref=e1281]
+        - generic [ref=e1283]:
+          - heading "Benjamin Behroozan" [level=2] [ref=e1286]
+          - paragraph [ref=e1289]: MD
+      - generic [ref=e1301]:
+        - img "kim" [ref=e1306]
+        - generic [ref=e1308]:
+          - heading "Rebecca Kim" [level=2] [ref=e1311]
+          - paragraph [ref=e1314]: NP
+      - generic [ref=e1326]:
+        - img "Craig" [ref=e1331]
+        - generic [ref=e1333]:
+          - heading "Kim Yeongbu" [level=2] [ref=e1336]
+          - generic [ref=e1338]:
+            - text: NP
+            - text: (Saturday’s Only)
+      - generic [ref=e1350]:
+        - img "Craig" [ref=e1355]
+        - generic [ref=e1357]:
+          - heading "Njie Ernestine" [level=2] [ref=e1360]
+          - paragraph [ref=e1363]: FNP – C
+      - generic [ref=e1375]:
+        - img "Craig" [ref=e1380]
+        - generic [ref=e1382]:
+          - heading "Patino Cecilia" [level=2] [ref=e1385]
+          - paragraph [ref=e1388]: NP
+    - generic [ref=e1398]:
+      - heading "La Cañada Flintridge" [level=3] [ref=e1403]
+      - link "LOCATIONS ⟶" [ref=e1409] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e1411]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e1417] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=41Brm3AmMaAY2nDW
+        - generic [ref=e1419]: BOOK APPT ⟶
+    - generic [ref=e1421]:
+      - generic [ref=e1431]:
+        - heading "Janesri De Silva" [level=2] [ref=e1434]
+        - paragraph [ref=e1437]: MD, FAAP
+      - generic [ref=e1449]:
+        - img "Craig" [ref=e1454]
+        - generic [ref=e1456]:
+          - heading "Mealynne Ngu" [level=2] [ref=e1459]
+          - paragraph [ref=e1462]: PNP
+      - generic [ref=e1474]:
+        - img "Tatiana(1)" [ref=e1479]
+        - generic [ref=e1481]:
+          - heading "Tatiana Genjoyan" [level=2] [ref=e1484]
+          - paragraph [ref=e1487]: PNP
+      - generic [ref=e1505]:
+        - heading "Hilma Benjamin" [level=2] [ref=e1508]
+        - paragraph [ref=e1511]: MD
+      - generic [ref=e1523]:
+        - img "Craig" [ref=e1528]
+        - generic [ref=e1530]:
+          - heading "Lisa Gutierrez" [level=2] [ref=e1533]
+          - paragraph [ref=e1536]: NP
+    - generic [ref=e1550]:
+      - img "Craig" [ref=e1555]
+      - generic [ref=e1557]:
+        - heading "Cze-Ja Tam" [level=2] [ref=e1560]
+        - paragraph [ref=e1563]: NP
+    - generic [ref=e1573]:
+      - heading "La Mirada" [level=3] [ref=e1578]
+      - link "LOCATIONS ⟶" [ref=e1584] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e1586]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e1592] [cursor=pointer]:
+        - /url: https://app.nexhealth.com/appt/ktdoctor?lid=39174
+        - generic [ref=e1594]: BOOK APPT ⟶
+    - generic [ref=e1596]:
+      - generic [ref=e1600]:
+        - img "arastu-anwar-1760509749" [ref=e1605]
+        - generic [ref=e1607]:
+          - heading "Anwar Arastu" [level=2] [ref=e1610]
+          - paragraph [ref=e1613]: MD
+      - generic [ref=e1625]:
+        - img "arastu-vaseema-1104941616" [ref=e1630]
+        - generic [ref=e1632]:
+          - heading "Vaseema Arastu" [level=2] [ref=e1635]
+          - paragraph [ref=e1638]: MD, FAAP
+    - generic [ref=e1678]:
+      - heading "Mission Hills" [level=3] [ref=e1683]
+      - link "LOCATIONS ⟶" [ref=e1689] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e1691]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e1697] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=ZNo3rwVYY0VqK04O
+        - generic [ref=e1699]: BOOK APPT ⟶
+    - generic [ref=e1701]:
+      - generic [ref=e1711]:
+        - heading "Victor Tamashiro" [level=2] [ref=e1714]
+        - paragraph [ref=e1717]: MD
+      - generic [ref=e1735]:
+        - heading "Hilma Benjamin" [level=2] [ref=e1738]
+        - paragraph [ref=e1741]: MD, FAAP
+    - generic [ref=e1781]:
+      - heading "Northridge" [level=3] [ref=e1786]
+      - link "LOCATIONS ⟶" [ref=e1792] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e1794]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e1800] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=a8gDE7vnNqvjwXe2
+        - generic [ref=e1802]: BOOK APPT ⟶
+    - generic [ref=e1804]:
+      - generic [ref=e1814]:
+        - heading "Hilma Benjamin" [level=2] [ref=e1817]
+        - paragraph [ref=e1820]: MD, FAAP
+      - generic [ref=e1832]:
+        - img "Palak Shelat" [ref=e1837]
+        - generic [ref=e1839]:
+          - heading "Palak Shelat" [level=2] [ref=e1842]
+          - paragraph [ref=e1845]: MD, FAAP
+      - generic [ref=e1863]:
+        - heading "Brian Bhatt" [level=2] [ref=e1866]
+        - paragraph [ref=e1869]: MD, FAAP
+      - generic [ref=e1887]:
+        - heading "Narindar Nat" [level=2] [ref=e1890]
+        - paragraph [ref=e1893]: MD, FAAP
+      - generic [ref=e1911]:
+        - heading "Victoria Millet" [level=2] [ref=e1914]
+        - paragraph [ref=e1917]: MD, FAAP
+    - generic [ref=e1927]:
+      - generic [ref=e1931]:
+        - img "Fatima" [ref=e1936]
+        - generic [ref=e1938]:
+          - heading "Fatemeh Anari" [level=2] [ref=e1941]
+          - paragraph [ref=e1944]: PA-C
+      - generic [ref=e1962]:
+        - heading "Miguel Sutter" [level=2] [ref=e1965]
+        - paragraph [ref=e1968]: PA-C
+      - generic [ref=e1980]:
+        - img "Craig" [ref=e1985]
+        - generic [ref=e1987]:
+          - heading "Banpreet Samra" [level=2] [ref=e1990]
+          - paragraph [ref=e1993]: PA
+    - generic [ref=e2035]:
+      - heading "Pico Rivera" [level=3] [ref=e2040]
+      - link "LOCATIONS ⟶" [ref=e2046] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e2048]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e2054] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=Qd1p2JAR0RkDozmN
+        - generic [ref=e2056]: BOOK APPT ⟶
+    - generic [ref=e2058]:
+      - generic [ref=e2062]:
+        - img "Luis" [ref=e2067]
+        - generic [ref=e2069]:
+          - heading "Luis Garcia" [level=2] [ref=e2072]
+          - paragraph [ref=e2075]: PNP
+      - generic [ref=e2087]:
+        - img "Carolina-Ungs-150x150" [ref=e2092]
+        - generic [ref=e2094]:
+          - heading "Carolina Ungs" [level=2] [ref=e2097]
+          - paragraph [ref=e2100]: MD
+      - generic [ref=e2112]:
+        - img "Craig" [ref=e2117]
+        - generic [ref=e2119]:
+          - heading "Mercy Aeri" [level=2] [ref=e2122]
+          - paragraph [ref=e2125]: PA
+    - generic [ref=e2145]:
+      - heading "Pasadena" [level=3] [ref=e2150]
+      - link "LOCATIONS ⟶" [ref=e2156] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e2158]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e2164] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=gBJw10kr7PvP4Rmo
+        - generic [ref=e2166]: BOOK APPT ⟶
+    - generic [ref=e2168]:
+      - generic [ref=e2178]:
+        - heading "Barbara Rodriguez" [level=2] [ref=e2181]
+        - paragraph [ref=e2184]: MD, FAAP
+      - generic [ref=e2202]:
+        - heading "Emily Brandt" [level=2] [ref=e2205]
+        - generic [ref=e2207]: MD
+      - generic [ref=e2219]:
+        - img "Dr-Sylvia-Lam" [ref=e2224]
+        - generic [ref=e2226]:
+          - heading "Sylvia Lam" [level=2] [ref=e2229]
+          - paragraph [ref=e2232]: MD, FAAP
+      - generic [ref=e2250]:
+        - heading "Erika Lee" [level=2] [ref=e2253]
+        - paragraph [ref=e2256]: PNP
+      - generic [ref=e2274]:
+        - heading "Martin Fineberg" [level=2] [ref=e2277]
+        - paragraph [ref=e2280]: MD, FAAP
+    - generic [ref=e2290]:
+      - generic [ref=e2300]:
+        - heading "Miguel Sutter" [level=2] [ref=e2303]
+        - paragraph [ref=e2306]: PA-C
+      - generic [ref=e2318]:
+        - img "Carolina-Ungs-150x150" [ref=e2323]
+        - generic [ref=e2325]:
+          - heading "Carolina Ungs" [level=2] [ref=e2328]
+          - paragraph [ref=e2331]: MD
+      - generic [ref=e2343]:
+        - img "Craig" [ref=e2348]
+        - generic [ref=e2350]:
+          - heading "Roobina Hakoopian" [level=2] [ref=e2353]
+          - paragraph [ref=e2356]: NP
+      - generic [ref=e2374]:
+        - heading "Janesri De Silva" [level=2] [ref=e2377]
+        - paragraph [ref=e2380]: MD, FAAP
+    - generic [ref=e2390]:
+      - heading "San Fernando" [level=3] [ref=e2395]
+      - link "LOCATIONS ⟶" [ref=e2401] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e2403]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e2409] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=8ryDOMA2yMvgLGWn
+        - generic [ref=e2411]: BOOK APPT ⟶
+    - generic [ref=e2413]:
+      - generic [ref=e2423]:
+        - heading "Victoria Millet" [level=2] [ref=e2426]
+        - paragraph [ref=e2429]: MD, FAAP
+      - generic [ref=e2447]:
+        - heading "Jose Vargas" [level=2] [ref=e2450]
+        - paragraph [ref=e2453]: PA
+      - generic [ref=e2465]:
+        - img "Morales" [ref=e2470]
+        - generic [ref=e2472]:
+          - heading "Laurie Beth Juarez- Morales" [level=2] [ref=e2475]
+          - paragraph [ref=e2478]: MD
+    - generic [ref=e2514]:
+      - heading "Santa Monica" [level=3] [ref=e2519]
+      - link "LOCATIONS ⟶" [ref=e2525] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e2527]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e2533] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=wOpGEdvXDLv3We9z
+        - generic [ref=e2535]: BOOK APPT ⟶
+    - generic [ref=e2537]:
+      - generic [ref=e2541]:
+        - img "Craig" [ref=e2546]
+        - generic [ref=e2548]:
+          - heading "Halavi Delaram" [level=2] [ref=e2551]
+          - paragraph [ref=e2554]: PA
+      - generic [ref=e2566]:
+        - img "BenB" [ref=e2571]
+        - generic [ref=e2573]:
+          - heading "Benjamin Behroozan" [level=2] [ref=e2576]
+          - paragraph [ref=e2579]: MD
+      - generic [ref=e2591]:
+        - img "Craig" [ref=e2596]
+        - generic [ref=e2598]:
+          - heading "Hantman David" [level=2] [ref=e2601]
+          - paragraph [ref=e2604]: MD
+      - generic [ref=e2616]:
+        - img "Craig" [ref=e2621]
+        - generic [ref=e2623]:
+          - heading "Yussef Sakhai" [level=2] [ref=e2626]
+          - paragraph [ref=e2629]: MD
+      - generic [ref=e2641]:
+        - img "kim" [ref=e2646]
+        - generic [ref=e2648]:
+          - heading "Kim Rebecca" [level=2] [ref=e2651]
+          - paragraph [ref=e2654]: NP
+    - generic [ref=e2668]:
+      - img "Craig" [ref=e2673]
+      - generic [ref=e2675]:
+        - heading "Sohn Alea" [level=2] [ref=e2678]
+        - paragraph [ref=e2681]: NP
+    - generic [ref=e2697]:
+      - heading "SAN PEDRO" [level=3] [ref=e2702]
+      - link "LOCATIONS ⟶" [ref=e2708] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e2710]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e2716] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=1&f=4XQdORVQQdVPzbZq
+        - generic [ref=e2718]: BOOK APPT ⟶
+    - generic [ref=e2720]:
+      - generic [ref=e2730]:
+        - heading "Carolyn Czaplicki" [level=2] [ref=e2733]
+        - paragraph [ref=e2736]: DO
+      - generic [ref=e2748]:
+        - img "Craig" [ref=e2753]
+        - generic [ref=e2755]:
+          - heading "Michael Green" [level=2] [ref=e2758]
+          - paragraph [ref=e2761]: PA
+      - generic [ref=e2779]:
+        - heading "Greta Vines-Douglas" [level=2] [ref=e2782]
+        - paragraph [ref=e2785]: PA
+    - generic [ref=e2805]:
+      - heading "Torrance" [level=3] [ref=e2810]
+      - link "LOCATIONS ⟶" [ref=e2816] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e2818]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e2824] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=KDdE17AxW7vZx8jg
+        - generic [ref=e2826]: BOOK APPT ⟶
+    - generic [ref=e2828]:
+      - generic [ref=e2838]:
+        - heading "Martin Fineberg" [level=2] [ref=e2841]
+        - paragraph [ref=e2844]: MD, FAAP
+      - generic [ref=e2856]:
+        - img "Luis" [ref=e2861]
+        - generic [ref=e2863]:
+          - heading "Luis Garcia" [level=2] [ref=e2866]
+          - paragraph [ref=e2869]: NP
+      - generic [ref=e2881]:
+        - img "Craig" [ref=e2886]
+        - generic [ref=e2888]:
+          - heading "Mercy Aeri" [level=2] [ref=e2891]
+          - paragraph [ref=e2894]: PA
+      - generic [ref=e2906]:
+        - img "kim" [ref=e2911]
+        - generic [ref=e2913]:
+          - heading "Rebecca Kim" [level=2] [ref=e2916]
+          - paragraph [ref=e2919]: NP
+      - generic [ref=e2931]:
+        - img "Craig" [ref=e2936]
+        - generic [ref=e2938]:
+          - heading "Michels Savannah" [level=2] [ref=e2941]
+          - paragraph [ref=e2944]:
+            - generic [ref=e2945]: NP
+    - generic [ref=e2959]:
+      - img "Craig" [ref=e2964]
+      - generic [ref=e2966]:
+        - heading "Sohn Alea" [level=2] [ref=e2969]
+        - paragraph [ref=e2972]:
+          - generic [ref=e2973]: NP
+    - generic [ref=e2983]:
+      - heading "Tarzana" [level=3] [ref=e2988]
+      - link "LOCATIONS ⟶" [ref=e2994] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e2996]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e3002] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=Ng8dZoVoWrVJ3b9w
+        - generic [ref=e3004]: BOOK APPT ⟶
+    - generic [ref=e3006]:
+      - generic [ref=e3016]:
+        - heading "Rena Keynigshteyn" [level=2] [ref=e3019]
+        - paragraph [ref=e3022]: MD
+      - generic [ref=e3034]:
+        - img "Craig" [ref=e3039]
+        - generic [ref=e3041]:
+          - heading "Banpreet Samra" [level=2] [ref=e3044]
+          - paragraph [ref=e3047]: PA
+    - generic [ref=e3055]:
+      - heading "Valencia" [level=3] [ref=e3060]
+      - link "LOCATIONS ⟶" [ref=e3066] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e3068]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e3074] [cursor=pointer]:
+        - /url: https://app.nexhealth.com/appt/ktdoctor?lid=22314%20
+        - generic [ref=e3076]: BOOK APPT ⟶
+    - generic [ref=e3078]:
+      - generic [ref=e3088]:
+        - heading "Adrienne C. Altman" [level=2] [ref=e3091]
+        - paragraph [ref=e3094]: MD
+      - generic [ref=e3106]:
+        - img "Palak Shelat" [ref=e3111]
+        - generic [ref=e3113]:
+          - heading "Palak Shelat" [level=2] [ref=e3116]
+          - paragraph [ref=e3119]: MD, FAAP
+      - generic [ref=e3137]:
+        - heading "Brian Bhatt" [level=2] [ref=e3140]
+        - paragraph [ref=e3143]: MD, FAAP
+      - generic [ref=e3155]:
+        - img "Casie-McGuire" [ref=e3160]
+        - generic [ref=e3162]:
+          - heading "Casie McGuire" [level=2] [ref=e3165]
+          - paragraph [ref=e3168]: FNP-C
+    - generic [ref=e3178]:
+      - heading "Van Nuys" [level=3] [ref=e3183]
+      - link "LOCATIONS ⟶" [ref=e3189] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e3191]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e3197] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=yQxbd9V5MlVROwY5
+        - generic [ref=e3199]: BOOK APPT ⟶
+    - generic [ref=e3201]:
+      - generic [ref=e3205]:
+        - img "Morales" [ref=e3210]
+        - generic [ref=e3212]:
+          - heading "Laurie Beth Juarez- Morales" [level=2] [ref=e3215]
+          - paragraph [ref=e3218]: MD
+      - generic [ref=e3236]:
+        - heading "Jose Vargas" [level=2] [ref=e3239]
+        - paragraph [ref=e3242]: PA
+      - generic [ref=e3254]:
+        - img "Craig" [ref=e3259]
+        - generic [ref=e3261]:
+          - heading "Ahoo Sahba" [level=2] [ref=e3264]
+          - paragraph [ref=e3267]: MD
+      - generic [ref=e3285]:
+        - heading "Miguel Sutter" [level=2] [ref=e3288]
+        - paragraph [ref=e3291]: PA-C
+    - generic [ref=e3309]:
+      - heading "West Hills" [level=3] [ref=e3314]
+      - link "LOCATIONS ⟶" [ref=e3320] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e3322]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e3328] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=xaqPX3Aq9BAQGJ46
+        - generic [ref=e3330]: BOOK APPT ⟶
+    - generic [ref=e3332]:
+      - generic [ref=e3342]:
+        - heading "Hilma Benjamin" [level=2] [ref=e3345]
+        - paragraph [ref=e3348]: MD, FAAP
+      - generic [ref=e3366]:
+        - heading "Mark Snyder" [level=2] [ref=e3369]
+        - paragraph [ref=e3372]: MD, FAAP
+      - generic [ref=e3384]:
+        - img "amrita" [ref=e3389]
+        - generic [ref=e3391]:
+          - heading "Amrita Dosanjh" [level=2] [ref=e3394]
+          - paragraph [ref=e3397]: MD
+      - generic [ref=e3409]:
+        - img "Kelly" [ref=e3414]
+        - generic [ref=e3416]:
+          - heading "Kelli Hernandez" [level=2] [ref=e3419]
+          - paragraph [ref=e3422]: NP
+      - generic [ref=e3440]:
+        - heading "Miguel Sutter" [level=2] [ref=e3443]
+        - paragraph [ref=e3446]: PA-C
+    - generic [ref=e3460]:
+      - img "Craig" [ref=e3465]
+      - generic [ref=e3467]:
+        - heading "Banpreet Samra" [level=2] [ref=e3470]
+        - paragraph [ref=e3473]: PA
+    - generic [ref=e3485]:
+      - heading "Whittier" [level=3] [ref=e3490]
+      - link "LOCATIONS ⟶" [ref=e3496] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/
+        - generic [ref=e3498]: LOCATIONS ⟶
+      - link "BOOK APPT ⟶" [ref=e3504] [cursor=pointer]:
+        - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=WgeqlNApN5k5GEMQ
+        - generic [ref=e3506]: BOOK APPT ⟶
+    - generic [ref=e3508]:
+      - generic [ref=e3512]:
+        - img "Luis" [ref=e3517]
+        - generic [ref=e3519]:
+          - heading "Luis Garcia" [level=2] [ref=e3522]
+          - paragraph [ref=e3525]: NP
+      - generic [ref=e3537]:
+        - img "Carolina-Ungs-150x150" [ref=e3542]
+        - generic [ref=e3544]:
+          - heading "Carolina Ungs" [level=2] [ref=e3547]
+          - paragraph [ref=e3550]: MD
+      - generic [ref=e3562]:
+        - img "Craig" [ref=e3567]
+        - generic [ref=e3569]:
+          - heading "Erik Saenz" [level=2] [ref=e3572]
+          - paragraph [ref=e3575]: NP
+      - generic [ref=e3587]:
+        - img "Craig" [ref=e3592]
+        - generic [ref=e3594]:
+          - heading "Mercy Aeri" [level=2] [ref=e3597]
+          - paragraph [ref=e3600]: MD, FAAP
+  - contentinfo [ref=e3609]:
+    - generic [ref=e3610]:
+      - generic [ref=e3611]:
+        - figure [ref=e3614]:
+          - img "Kids and teen pediatric Clinic logo" [ref=e3615]
+        - heading "Kids and Teens Medical Group is the leading provider of pediatric care with extended hours in Southern California. We are focused on changing the way you think about children’s health." [level=6] [ref=e3618]
+        - list [ref=e3621]:
+          - listitem [ref=e3622]:
+            - link "Facebook-f" [ref=e3623] [cursor=pointer]:
+              - /url: https://www.facebook.com/kidsandteensmedicalgroup/
+              - generic [ref=e3624]: Facebook-f
+              - img [ref=e3625]
+          - listitem [ref=e3627]:
+            - link "Instagram" [ref=e3628] [cursor=pointer]:
+              - /url: https://www.instagram.com/ktmedicalgroup/
+              - generic [ref=e3629]: Instagram
+              - img [ref=e3630]
+          - listitem [ref=e3632]:
+            - link "X-twitter" [ref=e3633] [cursor=pointer]:
+              - /url: https://x.com/KTDoctorGroup
+              - generic [ref=e3634]: X-twitter
+              - img [ref=e3635]
+          - listitem [ref=e3637]:
+            - link "Youtube" [ref=e3638] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC5pMXGZ_F2OZUFdfy6YbIew
+              - generic [ref=e3639]: Youtube
+              - img [ref=e3640]
+      - generic [ref=e3642]:
+        - heading "QUICK LINKS" [level=6] [ref=e3645]
+        - list [ref=e3648]:
+          - listitem [ref=e3649]:
+            - link "Home" [ref=e3650] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/
+              - generic [ref=e3651]: Home
+          - listitem [ref=e3652]:
+            - link "About us" [ref=e3653] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+              - generic [ref=e3654]: About us
+          - listitem [ref=e3655]:
+            - link "Patient Resources" [ref=e3656] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/parent-resources/
+              - generic [ref=e3657]: Patient Resources
+          - listitem [ref=e3658]:
+            - link "Testimonials" [ref=e3659] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/share-your-experience/
+              - generic [ref=e3660]: Testimonials
+          - listitem [ref=e3661]:
+            - link "Terms and Conditions" [ref=e3662] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/terms_and_conditions-2/
+              - generic [ref=e3663]: Terms and Conditions
+          - listitem [ref=e3664]:
+            - link "Privacy Policy" [ref=e3665] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/privacy-policy-2/
+              - generic [ref=e3666]: Privacy Policy
+          - listitem [ref=e3667]:
+            - link "Careers" [ref=e3668] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/careers/
+              - generic [ref=e3669]: Careers
+      - generic [ref=e3670]:
+        - heading "FOR PATIENTS" [level=6] [ref=e3673]
+        - navigation "Menu" [ref=e3676]:
+          - list [ref=e3677]:
+            - listitem [ref=e3678]:
+              - link "Same-Day Appointments" [ref=e3679] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/same-day-appointments/
+            - listitem [ref=e3680]:
+              - link "Providers" [ref=e3681] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/our-doctors/
+            - listitem [ref=e3682]:
+              - link "Telehealth" [ref=e3683] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/telemedicine-for-children/
+            - listitem [ref=e3684]:
+              - link "Locations" [ref=e3685] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/locations/
+            - listitem [ref=e3686]:
+              - link "Insurance" [ref=e3687] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/insurance/
+            - listitem [ref=e3688]:
+              - link "Services" [ref=e3689] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/
+            - listitem [ref=e3690]:
+              - link "Patient Resources" [ref=e3691] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/resources/
+      - generic [ref=e3692]:
+        - heading "GET IN TOUCH" [level=6] [ref=e3695]
+        - paragraph [ref=e3698]:
+          - text: Text (ENG) (626) 298 7121
+          - text: Call Us (818) 361 5437
+        - list [ref=e3701]:
+          - listitem [ref=e3702]:
+            - 'link "Email: customerservice@ktdoctor.com" [ref=e3703] [cursor=pointer]':
+              - /url: mailto:contact@mysite.com
+              - generic [ref=e3704]: "Email: customerservice@ktdoctor.com"
+    - paragraph [ref=e3709]: © 2026 All Rights Reserved.
+  - link "Close" [ref=e3712] [cursor=pointer]:
+    - /url: "#"
+    - img [ref=e3713]
+  - generic [ref=e3715]: desktop

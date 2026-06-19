@@ -1,0 +1,266 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "TEXT (ENG) (626) 298 7121" [ref=e13] [cursor=pointer]:
+        - /url: sms:+16262987121
+        - generic [ref=e15]: TEXT (ENG) (626) 298 7121
+      - link "CALL US (818) 361 5437" [ref=e21] [cursor=pointer]:
+        - /url: tel:+18183615437
+        - generic [ref=e23]: CALL US (818) 361 5437
+      - link "DIRECTORY" [ref=e29] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/directory/
+        - generic [ref=e30]:
+          - img [ref=e32]
+          - generic [ref=e34]: DIRECTORY
+    - generic [ref=e40]:
+      - link "Kids and teen pediatric Clinic logo" [ref=e45] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com
+        - img "Kids and teen pediatric Clinic logo" [ref=e46]
+      - generic [ref=e53]:
+        - link "<a href=\"https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2\">APPOINTMENTS</a>" [ref=e55] [cursor=pointer]:
+          - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - img [ref=e56]
+        - heading "APPOINTMENTS" [level=3] [ref=e60]:
+          - link:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - link "APPOINTMENTS" [ref=e61] [cursor=pointer]:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+      - generic [ref=e66]:
+        - link "<a href=\"https://healowpay.com\">PAY ONLINE</a>" [ref=e68] [cursor=pointer]:
+          - /url: https://healowpay.com
+          - img [ref=e69]
+        - heading "PAY ONLINE" [level=3] [ref=e74]:
+          - link:
+            - /url: https://healowpay.com
+          - link "PAY ONLINE" [ref=e75] [cursor=pointer]:
+            - /url: https://healowpay.com
+      - generic [ref=e80]:
+        - link "<a href=\"https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp\">PORTAL LOG IN</a>" [ref=e82] [cursor=pointer]:
+          - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - img [ref=e83]
+        - heading "PORTAL LOG IN" [level=3] [ref=e86]:
+          - link:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - link "PORTAL LOG IN" [ref=e87] [cursor=pointer]:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+      - generic [ref=e92]:
+        - link "FIND A LOCATION" [ref=e94] [cursor=pointer]:
+          - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+          - img [ref=e95]
+        - heading "FIND A LOCATION" [level=3] [ref=e98]:
+          - link "FIND A LOCATION" [ref=e99] [cursor=pointer]:
+            - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+      - search [ref=e104]:
+        - generic [ref=e105]:
+          - button "Search" [ref=e106] [cursor=pointer]:
+            - img [ref=e108]
+          - generic:
+            - generic: Search
+            - searchbox "Search"
+      - link [ref=e115] [cursor=pointer]:
+        - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODIiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+        - img [ref=e116]
+    - navigation "Menu" [ref=e128]:
+      - list [ref=e129]:
+        - listitem [ref=e130]:
+          - link "Home" [ref=e131] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/
+        - listitem [ref=e132]:
+          - link "About us" [ref=e133] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+        - listitem [ref=e134]:
+          - link "Parent Resources" [ref=e135] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/parent-resources/
+        - listitem [ref=e136]:
+          - link "Testimonials" [ref=e137] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/share-your-experience/
+        - listitem [ref=e138]:
+          - link "Forms Only" [ref=e139] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group-2/
+    - text: 
+  - generic [ref=e140]:
+    - generic [ref=e142]:
+      - generic [ref=e144]:
+        - paragraph [ref=e147]:
+          - text: 777 Truman Street,
+          - text: Suite 105 San Fernando, CA 91340
+        - heading "San Fernando" [level=1] [ref=e150]
+        - generic [ref=e152]: Kids & Teens Medical Group offers expert pediatrics care at their San Fernando, California, office on Truman Street. The team of board-certified pediatricians at the general pediatrics practice takes an integrated approach to care, listening closely to their patients’ needs and concerns whether during a well-child exam or urgent care visit. From newborn care to adolescent medicine, the team focuses on promoting health and well-being, offering vaccinations and nutrition services. The team also specializes in diagnosing and treating allergies, asthma, and attention-deficit disorder/attention-deficit hyperactivity disorder (ADHD).
+        - generic [ref=e156]:
+          - generic [ref=e158]:
+            - generic [ref=e160]:
+              - paragraph [ref=e163]: OFFICE OPEN
+              - heading "MON - FRI" [level=2] [ref=e166]
+              - heading "9AM - 6PM" [level=2] [ref=e169]
+            - generic [ref=e171]:
+              - paragraph [ref=e174]: TELEHEALTH
+              - heading "MON - SUN" [level=2] [ref=e177]
+              - heading "9AM - 8PM" [level=2] [ref=e180]
+          - link "BOOK APPOINTMENT NOW ⟶" [ref=e188] [cursor=pointer]:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=8ryDOMA2yMvgLGWn
+            - generic [ref=e190]: BOOK APPOINTMENT NOW ⟶
+      - generic [ref=e192]:
+        - img "1" [ref=e195]
+        - img "3" [ref=e198]
+        - img "3" [ref=e201]
+    - heading "Meet Our Providers" [level=2] [ref=e208]
+    - generic [ref=e214]:
+      - generic [ref=e216]:
+        - generic [ref=e219]:
+          - figure [ref=e220]
+          - generic [ref=e221]:
+            - heading "Victoria Millet" [level=3] [ref=e222]
+            - paragraph [ref=e223]: MD, FAAP Board Certified Infectious Disease
+        - generic [ref=e225]: Victoria Millet, MD, FAAP, is an experienced, board-certified pediatrician practicing at the Kids & Teens Medical Group locations in Encino, Northridge, Van Nuys, California. She has been in private pediatric practice since 1984 and joined Kids & Teens Medical Group in January of 2011. Dr. Millet completed her undergraduate studies at the University of California at Los Angeles, where she majored in zoology in 1969. She earned a Master of Science degree from the University of Southern California in 1972 and then completed a three-year residency in pediatrics at University Hospital in San Diego in 1975. She completed a pediatric infectious diseases/ambulatory pediatrics fellowship at the Center for the Health Sciences at the University of California at Los Angeles in 1980. Dr. Millet continues to do consulting work in pediatric infectious diseases for Kids & Teens Medical Group and her colleagues in the local pediatric community. She enjoys teaching and is a member of the Family Practice Residency Program faculty at Northridge Hospital Medical Center. She is also a clinical faculty member at the UCLA School of Nursing.
+        - heading "Locations:" [level=2] [ref=e228]
+        - generic [ref=e230]:
+          - link "Northridge" [ref=e236] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/northridge/
+            - generic [ref=e238]: Northridge
+          - link "San Fernando" [ref=e244] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/san-fernando-pediatric-clinic/
+            - generic [ref=e246]: San Fernando
+      - generic [ref=e248]:
+        - generic [ref=e251]:
+          - figure [ref=e252]
+          - generic [ref=e253]:
+            - heading "Jose Vargas" [level=3] [ref=e254]
+            - paragraph [ref=e255]: PA Certified Physician Assistant
+        - generic [ref=e257]: Physician assistant Jose Vargas, PA, brings a wealth of experience in pediatric and family medicine to the team at Kids & Teens Medical Group. He has been in practice in the San Fernando Valley for 35 years and is excited to continue serving the diverse community at the practice’s San Fernando, California, location. Jose completed the physician assistant program in family practice and pediatrics at Charles R. Drew University of Medicine and Science in Los Angeles, California. At Kids & Teens Medical Group, Jose specializes in general pediatrics and child development. He enjoys learning and meeting new challenges, and his priority is to provide high-quality pediatric care to young children and teens in the community. In his free time, Jose pursues many outdoor activities such as camping, hiking, and cycling. He enjoys keeping fit and attends the gym regularly. Jose promotes a healthy lifestyle and encourages his patients and their families to get out and exercise.
+        - heading "Locations:" [level=2] [ref=e260]
+        - generic [ref=e262]:
+          - link "San Fernando" [ref=e268] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/san-fernando-pediatric-clinic/
+            - generic [ref=e270]: San Fernando
+          - link "Van Nuys" [ref=e276] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/van-nuys-pediatric-clinic/
+            - generic [ref=e278]: Van Nuys
+      - generic [ref=e280]:
+        - generic [ref=e283]:
+          - figure [ref=e284]:
+            - img "Morales" [ref=e285]
+          - generic [ref=e286]:
+            - heading "Laurie Beth Juarez- Morales" [level=3] [ref=e287]
+            - paragraph [ref=e288]: MD
+        - paragraph [ref=e291]: Dr. Juarez is a seasoned pediatrician with over a decade of experience serving the vibrant community of the San Fernando Valley, where she was born and raised. From a tender age, her heart was set on pediatric medicine, and today, she feels privileged to live out her childhood dream. With a commitment to practicing medicine with compassion and thoroughness, Dr. Juarez believes deeply in the significance of the journey alongside the connections forged with patients and families. Beyond her professional endeavors, she finds immense joy in her role as a mother to a wonderful son and cherishes the time spent with her family. Dr. Juarez holds a degree in Molecular Biology with a minor in Education from UCLA, and prior to her medical training, she conducted novel research in neurology at UCLA’s Multiple Sclerosis Laboratory, contributing to multiple publications on hormonal treatments for the condition. She completed her medical education at Loma Linda School of Medicine and pediatric residency at UCI, and she continues to foster the next generation of healthcare providers as a volunteer assistant clinical professor at UCLA School of Nursing. Dr. Juarez is fluent in both Spanish and Tagalog and is deeply passionate about child development, literature, arts, travel, and music. As the former/incumbent Department Chair of Pediatrics at Pacifica Hospital of the Valley, her focus extends beyond individual care to encompass education, comprehensive wellness, and community outreach, embodying her belief in the embracive approach to health and wellbeing.
+        - heading "Locations:" [level=2] [ref=e294]
+        - generic [ref=e296]:
+          - link "SAN FERNANDO" [ref=e302] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/san-fernando-pediatric-clinic/
+            - generic [ref=e304]: SAN FERNANDO
+          - link "Van Nuys" [ref=e310] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/van-nuys-pediatric-clinic/
+            - generic [ref=e312]: Van Nuys
+    - generic [ref=e320]:
+      - paragraph [ref=e323]: REACH OUT
+      - heading "SEE A DOCTOR NOW" [level=2] [ref=e330]
+      - generic [ref=e337]:
+        - generic [ref=e340]:
+          - img [ref=e343]
+          - heading "Call Us" [level=4] [ref=e346]
+        - generic [ref=e349]:
+          - img [ref=e352]
+          - heading "Text Us" [level=4] [ref=e355]
+        - generic [ref=e358]:
+          - img [ref=e361]
+          - heading "Email Us" [level=4] [ref=e364]
+  - contentinfo [ref=e365]:
+    - generic [ref=e366]:
+      - generic [ref=e367]:
+        - figure [ref=e370]:
+          - img "Kids and teen pediatric Clinic logo" [ref=e371]
+        - heading "Kids and Teens Medical Group is the leading provider of pediatric care with extended hours in Southern California. We are focused on changing the way you think about children’s health." [level=6] [ref=e374]
+        - list [ref=e377]:
+          - listitem [ref=e378]:
+            - link "Facebook-f" [ref=e379] [cursor=pointer]:
+              - /url: https://www.facebook.com/kidsandteensmedicalgroup/
+              - generic [ref=e380]: Facebook-f
+              - img [ref=e381]
+          - listitem [ref=e383]:
+            - link "Instagram" [ref=e384] [cursor=pointer]:
+              - /url: https://www.instagram.com/ktmedicalgroup/
+              - generic [ref=e385]: Instagram
+              - img [ref=e386]
+          - listitem [ref=e388]:
+            - link "X-twitter" [ref=e389] [cursor=pointer]:
+              - /url: https://x.com/KTDoctorGroup
+              - generic [ref=e390]: X-twitter
+              - img [ref=e391]
+          - listitem [ref=e393]:
+            - link "Youtube" [ref=e394] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC5pMXGZ_F2OZUFdfy6YbIew
+              - generic [ref=e395]: Youtube
+              - img [ref=e396]
+      - generic [ref=e398]:
+        - heading "QUICK LINKS" [level=6] [ref=e401]
+        - list [ref=e404]:
+          - listitem [ref=e405]:
+            - link "Home" [ref=e406] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/
+              - generic [ref=e407]: Home
+          - listitem [ref=e408]:
+            - link "About us" [ref=e409] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+              - generic [ref=e410]: About us
+          - listitem [ref=e411]:
+            - link "Patient Resources" [ref=e412] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/parent-resources/
+              - generic [ref=e413]: Patient Resources
+          - listitem [ref=e414]:
+            - link "Testimonials" [ref=e415] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/share-your-experience/
+              - generic [ref=e416]: Testimonials
+          - listitem [ref=e417]:
+            - link "Terms and Conditions" [ref=e418] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/terms_and_conditions-2/
+              - generic [ref=e419]: Terms and Conditions
+          - listitem [ref=e420]:
+            - link "Privacy Policy" [ref=e421] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/privacy-policy-2/
+              - generic [ref=e422]: Privacy Policy
+          - listitem [ref=e423]:
+            - link "Careers" [ref=e424] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/careers/
+              - generic [ref=e425]: Careers
+      - generic [ref=e426]:
+        - heading "FOR PATIENTS" [level=6] [ref=e429]
+        - navigation "Menu" [ref=e432]:
+          - list [ref=e433]:
+            - listitem [ref=e434]:
+              - link "Same-Day Appointments" [ref=e435] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/same-day-appointments/
+            - listitem [ref=e436]:
+              - link "Providers" [ref=e437] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/our-doctors/
+            - listitem [ref=e438]:
+              - link "Telehealth" [ref=e439] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/telemedicine-for-children/
+            - listitem [ref=e440]:
+              - link "Locations" [ref=e441] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/locations/
+            - listitem [ref=e442]:
+              - link "Insurance" [ref=e443] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/insurance/
+            - listitem [ref=e444]:
+              - link "Services" [ref=e445] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/
+            - listitem [ref=e446]:
+              - link "Patient Resources" [ref=e447] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/resources/
+      - generic [ref=e448]:
+        - heading "GET IN TOUCH" [level=6] [ref=e451]
+        - paragraph [ref=e454]:
+          - text: Text (ENG) (626) 298 7121
+          - text: Call Us (818) 361 5437
+        - list [ref=e457]:
+          - listitem [ref=e458]:
+            - 'link "Email: customerservice@ktdoctor.com" [ref=e459] [cursor=pointer]':
+              - /url: mailto:contact@mysite.com
+              - generic [ref=e460]: "Email: customerservice@ktdoctor.com"
+    - paragraph [ref=e465]: © 2026 All Rights Reserved.
+  - link "Close" [ref=e468] [cursor=pointer]:
+    - /url: "#"
+    - img [ref=e469]
+  - generic [ref=e471]: desktop

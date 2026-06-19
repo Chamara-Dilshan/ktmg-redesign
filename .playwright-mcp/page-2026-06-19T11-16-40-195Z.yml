@@ -1,0 +1,183 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "TEXT (ENG) (626) 298 7121" [ref=e13] [cursor=pointer]:
+        - /url: sms:+16262987121
+        - generic [ref=e15]: TEXT (ENG) (626) 298 7121
+      - link "CALL US (818) 361 5437" [ref=e21] [cursor=pointer]:
+        - /url: tel:+18183615437
+        - generic [ref=e23]: CALL US (818) 361 5437
+      - link "DIRECTORY" [ref=e29] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/directory/
+        - generic [ref=e30]:
+          - img [ref=e32]
+          - generic [ref=e34]: DIRECTORY
+    - generic [ref=e40]:
+      - link "Kids and teen pediatric Clinic logo" [ref=e45] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com
+        - img "Kids and teen pediatric Clinic logo" [ref=e46]
+      - generic [ref=e53]:
+        - link "<a href=\"https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2\">APPOINTMENTS</a>" [ref=e55] [cursor=pointer]:
+          - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - img [ref=e56]
+        - heading "APPOINTMENTS" [level=3] [ref=e60]:
+          - link:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - link "APPOINTMENTS" [ref=e61] [cursor=pointer]:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+      - generic [ref=e66]:
+        - link "<a href=\"https://healowpay.com\">PAY ONLINE</a>" [ref=e68] [cursor=pointer]:
+          - /url: https://healowpay.com
+          - img [ref=e69]
+        - heading "PAY ONLINE" [level=3] [ref=e74]:
+          - link:
+            - /url: https://healowpay.com
+          - link "PAY ONLINE" [ref=e75] [cursor=pointer]:
+            - /url: https://healowpay.com
+      - generic [ref=e80]:
+        - link "<a href=\"https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp\">PORTAL LOG IN</a>" [ref=e82] [cursor=pointer]:
+          - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - img [ref=e83]
+        - heading "PORTAL LOG IN" [level=3] [ref=e86]:
+          - link:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - link "PORTAL LOG IN" [ref=e87] [cursor=pointer]:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+      - generic [ref=e92]:
+        - link "FIND A LOCATION" [ref=e94] [cursor=pointer]:
+          - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+          - img [ref=e95]
+        - heading "FIND A LOCATION" [level=3] [ref=e98]:
+          - link "FIND A LOCATION" [ref=e99] [cursor=pointer]:
+            - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+      - search [ref=e104]:
+        - generic [ref=e105]:
+          - button "Search" [ref=e106] [cursor=pointer]:
+            - img [ref=e108]
+          - generic:
+            - generic: Search
+            - searchbox "Search"
+      - link [ref=e115] [cursor=pointer]:
+        - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODIiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+        - img [ref=e116]
+    - navigation "Menu" [ref=e128]:
+      - list [ref=e129]:
+        - listitem [ref=e130]:
+          - link "Home" [ref=e131] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/
+        - listitem [ref=e132]:
+          - link "About us" [ref=e133] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+        - listitem [ref=e134]:
+          - link "Parent Resources" [ref=e135] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/parent-resources/
+        - listitem [ref=e136]:
+          - link "Testimonials" [ref=e137] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/share-your-experience/
+        - listitem [ref=e138]:
+          - link "Forms Only" [ref=e139] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group-2/
+    - text: 
+  - generic [ref=e144]:
+    - heading "Kids & Teens Pediatric Medical Group" [level=4] [ref=e147]
+    - heading "Caring for the Future Generations in Greater Los Angeles" [level=2] [ref=e150]
+  - contentinfo [ref=e151]:
+    - generic [ref=e152]:
+      - generic [ref=e153]:
+        - figure [ref=e156]:
+          - img "Kids and teen pediatric Clinic logo" [ref=e157]
+        - heading "Kids and Teens Medical Group is the leading provider of pediatric care with extended hours in Southern California. We are focused on changing the way you think about children’s health." [level=6] [ref=e160]
+        - list [ref=e163]:
+          - listitem [ref=e164]:
+            - link "Facebook-f" [ref=e165] [cursor=pointer]:
+              - /url: https://www.facebook.com/kidsandteensmedicalgroup/
+              - generic [ref=e166]: Facebook-f
+              - img [ref=e167]
+          - listitem [ref=e169]:
+            - link "Instagram" [ref=e170] [cursor=pointer]:
+              - /url: https://www.instagram.com/ktmedicalgroup/
+              - generic [ref=e171]: Instagram
+              - img [ref=e172]
+          - listitem [ref=e174]:
+            - link "X-twitter" [ref=e175] [cursor=pointer]:
+              - /url: https://x.com/KTDoctorGroup
+              - generic [ref=e176]: X-twitter
+              - img [ref=e177]
+          - listitem [ref=e179]:
+            - link "Youtube" [ref=e180] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC5pMXGZ_F2OZUFdfy6YbIew
+              - generic [ref=e181]: Youtube
+              - img [ref=e182]
+      - generic [ref=e184]:
+        - heading "QUICK LINKS" [level=6] [ref=e187]
+        - list [ref=e190]:
+          - listitem [ref=e191]:
+            - link "Home" [ref=e192] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/
+              - generic [ref=e193]: Home
+          - listitem [ref=e194]:
+            - link "About us" [ref=e195] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+              - generic [ref=e196]: About us
+          - listitem [ref=e197]:
+            - link "Patient Resources" [ref=e198] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/parent-resources/
+              - generic [ref=e199]: Patient Resources
+          - listitem [ref=e200]:
+            - link "Testimonials" [ref=e201] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/share-your-experience/
+              - generic [ref=e202]: Testimonials
+          - listitem [ref=e203]:
+            - link "Terms and Conditions" [ref=e204] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/terms_and_conditions-2/
+              - generic [ref=e205]: Terms and Conditions
+          - listitem [ref=e206]:
+            - link "Privacy Policy" [ref=e207] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/privacy-policy-2/
+              - generic [ref=e208]: Privacy Policy
+          - listitem [ref=e209]:
+            - link "Careers" [ref=e210] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/careers/
+              - generic [ref=e211]: Careers
+      - generic [ref=e212]:
+        - heading "FOR PATIENTS" [level=6] [ref=e215]
+        - navigation "Menu" [ref=e218]:
+          - list [ref=e219]:
+            - listitem [ref=e220]:
+              - link "Same-Day Appointments" [ref=e221] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/same-day-appointments/
+            - listitem [ref=e222]:
+              - link "Providers" [ref=e223] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/our-doctors/
+            - listitem [ref=e224]:
+              - link "Telehealth" [ref=e225] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/telemedicine-for-children/
+            - listitem [ref=e226]:
+              - link "Locations" [ref=e227] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/locations/
+            - listitem [ref=e228]:
+              - link "Insurance" [ref=e229] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/insurance/
+            - listitem [ref=e230]:
+              - link "Services" [ref=e231] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/
+            - listitem [ref=e232]:
+              - link "Patient Resources" [ref=e233] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/resources/
+      - generic [ref=e234]:
+        - heading "GET IN TOUCH" [level=6] [ref=e237]
+        - paragraph [ref=e240]:
+          - text: Text (ENG) (626) 298 7121
+          - text: Call Us (818) 361 5437
+        - list [ref=e243]:
+          - listitem [ref=e244]:
+            - 'link "Email: customerservice@ktdoctor.com" [ref=e245] [cursor=pointer]':
+              - /url: mailto:contact@mysite.com
+              - generic [ref=e246]: "Email: customerservice@ktdoctor.com"
+    - paragraph [ref=e251]: © 2026 All Rights Reserved.
+  - link "Close" [ref=e254] [cursor=pointer]:
+    - /url: "#"
+    - img [ref=e255]
+  - generic [ref=e257]: desktop

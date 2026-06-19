@@ -1,0 +1,295 @@
+- generic [active] [ref=e1]:
+  - generic "Accessibility Menu":
+    - button "Accessibility Menu" [ref=e3] [cursor=pointer]
+  - link "Skip to content" [ref=e7] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e8]:
+    - generic [ref=e10]:
+      - link "TEXT (ENG) (626) 298 7121" [ref=e18] [cursor=pointer]:
+        - /url: sms:+16262987121
+        - generic [ref=e20]: TEXT (ENG) (626) 298 7121
+      - link "CALL US (818) 361 5437" [ref=e26] [cursor=pointer]:
+        - /url: tel:+18183615437
+        - generic [ref=e28]: CALL US (818) 361 5437
+      - link "DIRECTORY" [ref=e34] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/directory/
+        - generic [ref=e35]:
+          - img [ref=e37]
+          - generic [ref=e39]: DIRECTORY
+    - generic [ref=e45]:
+      - link "Kids and teen pediatric Clinic logo" [ref=e50] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com
+        - img "Kids and teen pediatric Clinic logo" [ref=e51]
+      - generic [ref=e58]:
+        - link "<a href=\"https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2\">APPOINTMENTS</a>" [ref=e60] [cursor=pointer]:
+          - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - img [ref=e61]
+        - heading "APPOINTMENTS" [level=3] [ref=e65]:
+          - link:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - link "APPOINTMENTS" [ref=e66] [cursor=pointer]:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+      - generic [ref=e71]:
+        - link "<a href=\"https://healowpay.com\">PAY ONLINE</a>" [ref=e73] [cursor=pointer]:
+          - /url: https://healowpay.com
+          - img [ref=e74]
+        - heading "PAY ONLINE" [level=3] [ref=e79]:
+          - link:
+            - /url: https://healowpay.com
+          - link "PAY ONLINE" [ref=e80] [cursor=pointer]:
+            - /url: https://healowpay.com
+      - generic [ref=e85]:
+        - link "<a href=\"https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp\">PORTAL LOG IN</a>" [ref=e87] [cursor=pointer]:
+          - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - img [ref=e88]
+        - heading "PORTAL LOG IN" [level=3] [ref=e91]:
+          - link:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - link "PORTAL LOG IN" [ref=e92] [cursor=pointer]:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+      - generic [ref=e97]:
+        - link "FIND A LOCATION" [ref=e99] [cursor=pointer]:
+          - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+          - img [ref=e100]
+        - heading "FIND A LOCATION" [level=3] [ref=e103]:
+          - link "FIND A LOCATION" [ref=e104] [cursor=pointer]:
+            - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+      - search [ref=e109]:
+        - generic [ref=e110]:
+          - button "Search" [ref=e111] [cursor=pointer]:
+            - img [ref=e113]
+          - generic:
+            - generic: Search
+            - searchbox "Search"
+      - link [ref=e120] [cursor=pointer]:
+        - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODIiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+        - img [ref=e121]
+    - navigation "Menu" [ref=e133]:
+      - list [ref=e134]:
+        - listitem [ref=e135]:
+          - link "Home" [ref=e136] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/
+        - listitem [ref=e137]:
+          - link "About us" [ref=e138] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+        - listitem [ref=e139]:
+          - link "Parent Resources" [ref=e140] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/parent-resources/
+        - listitem [ref=e141]:
+          - link "Testimonials" [ref=e142] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/share-your-experience/
+        - listitem [ref=e143]:
+          - link "Forms Only" [ref=e144] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group-2/
+    - text: 
+  - generic [ref=e145]:
+    - generic [ref=e147]:
+      - generic [ref=e149]:
+        - paragraph [ref=e152]:
+          - text: 8201 4TH ST,
+          - text: DOWNEY, CA 90241
+        - heading "Downey" [level=1] [ref=e155]
+        - paragraph [ref=e158]: Located on 4th Street in Downey, Kids & Teens Medical Group is a general pediatrics practice specializing in newborn care, well-child exams, and adolescent medicine. The team of board-certified pediatricians also diagnoses and treats common pediatric health conditions, including asthma, autism, and allergies. Taking an integrated and evidence-based approach to care, the team focuses on child health and well-being, providing vaccinations and nutrition services. Kids & Teens Medical Group offers health care services seven days a week, including after-hours care and extended evening appointments through their telehealth service.
+        - generic [ref=e162]:
+          - generic [ref=e164]:
+            - generic [ref=e166]:
+              - paragraph [ref=e169]: OFFICE OPEN
+              - heading "MON - FRI" [level=2] [ref=e172]
+              - heading "9AM - 6PM" [level=2] [ref=e175]
+              - heading "SAT" [level=2] [ref=e178]
+              - heading "8AM - 4PM" [level=2] [ref=e181]
+            - generic [ref=e183]:
+              - paragraph [ref=e186]: TELEHEALTH
+              - heading "MON - SUN" [level=2] [ref=e189]
+              - heading "9AM - 8PM" [level=2] [ref=e192]
+          - link "BOOK APPOINTMENT NOW ⟶" [ref=e200] [cursor=pointer]:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=gLZ6qokap9VB7rEl
+            - generic [ref=e202]: BOOK APPOINTMENT NOW ⟶
+      - generic [ref=e204]:
+        - img "shared image" [ref=e207]
+        - img "shared image (1)" [ref=e210]
+        - img "shared image (2)" [ref=e213]
+        - img [ref=e218]
+        - img [ref=e363]
+    - heading "Meet Our Providers" [level=2] [ref=e510]
+    - generic [ref=e516]:
+      - generic [ref=e518]:
+        - generic [ref=e521]:
+          - figure [ref=e522]
+          - generic [ref=e523]:
+            - heading "Jocelyn Zuniga" [level=3] [ref=e524]
+            - paragraph [ref=e525]: MD, FAAP, General Pediatrics
+        - generic [ref=e527]: Pediatricians treat children, infants, and adolescents. They are trained to meet the unique needs of children, through all of their developmental stages, as they grow and mature. 21+ Yrs Experience.
+        - heading "Locations:" [level=2] [ref=e530]
+        - link "Downey" [ref=e538] [cursor=pointer]:
+          - /url: https://www.ktdoctor.com/locations/downey/
+          - generic [ref=e540]: Downey
+      - generic [ref=e544]:
+        - generic [ref=e547]:
+          - figure [ref=e548]:
+            - img "Joseph Gancayco" [ref=e549]
+          - generic [ref=e550]:
+            - heading "Joseph Gancayco" [level=3] [ref=e551]
+            - paragraph [ref=e552]: MD, FAAP
+        - generic [ref=e554]:
+          - paragraph [ref=e555]: Dr. Joe Gancayco, a dedicated healthcare professional, has navigated an impressive academic journey, earning his undergraduate degree in biology from UC Irvine, a master’s in nutrition from Columbia University, and a medical degree from California Northstate University. His commitment to pediatric excellence is underscored by the completion of his pediatrics training at Harbor-UCLA Medical Center in Torrance, CA.
+          - paragraph [ref=e556]: A proud native of Los Angeles County, specifically from the South Bay, Dr. Joe is enthusiastic about contributing to the well-being of Southern California through his role at Kids & Teens Medical Group. His passion lies in providing exceptional pediatric care tailored to patients of all ages and diverse backgrounds.
+          - paragraph [ref=e557]: In his leisure time, Dr. Joe finds joy in immersing himself in all things Marvel alongside his wife, indulging in the company of his dogs, avidly supporting LA sports teams, exploring new destinations through travel, and continuously expanding his knowledge base. Through both his professional and personal pursuits, Dr. Joe remains committed to fostering a healthier and happier community.
+        - heading "Locations:" [level=2] [ref=e560]
+        - link "Downey" [ref=e568] [cursor=pointer]:
+          - /url: https://www.ktdoctor.com/locations/downey/
+          - generic [ref=e570]: Downey
+      - generic [ref=e574]:
+        - generic [ref=e577]:
+          - figure [ref=e578]:
+            - img "Oliver" [ref=e579]
+          - generic [ref=e580]:
+            - heading "Oliver Petalver" [level=3] [ref=e581]
+            - paragraph [ref=e582]: PA-C
+        - paragraph [ref=e585]: –
+        - heading "Locations:" [level=2] [ref=e588]
+        - link "Downey" [ref=e596] [cursor=pointer]:
+          - /url: https://www.ktdoctor.com/locations/downey/
+          - generic [ref=e598]: Downey
+      - generic [ref=e602]:
+        - generic [ref=e605]:
+          - figure [ref=e606]:
+            - img "Craig" [ref=e607]
+          - generic [ref=e608]:
+            - heading "Maria Vega" [level=3] [ref=e609]
+            - paragraph [ref=e610]: PNP
+        - paragraph [ref=e613]: –
+        - heading "Locations:" [level=2] [ref=e616]
+        - link "Downey" [ref=e624] [cursor=pointer]:
+          - /url: https://www.ktdoctor.com/locations/downey/
+          - generic [ref=e626]: Downey
+    - generic [ref=e632]:
+      - generic [ref=e635]:
+        - figure [ref=e636]:
+          - img "Tisha Pison" [ref=e637]
+        - generic [ref=e638]:
+          - heading "Tisha Pison" [level=3] [ref=e639]
+          - paragraph [ref=e640]: PNP
+      - paragraph [ref=e643]: –
+      - heading "Locations:" [level=2] [ref=e646]
+      - link "Downey" [ref=e654] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/locations/downey/
+        - generic [ref=e656]: Downey
+    - generic [ref=e668]:
+      - paragraph [ref=e671]: REACH OUT
+      - heading "SEE A DOCTOR NOW" [level=2] [ref=e678]
+      - generic [ref=e685]:
+        - generic [ref=e688]:
+          - img [ref=e691]
+          - heading "Call Us" [level=4] [ref=e694]
+        - generic [ref=e697]:
+          - img [ref=e700]
+          - heading "Text Us" [level=4] [ref=e703]
+        - generic [ref=e706]:
+          - img [ref=e709]
+          - heading "Email Us" [level=4] [ref=e712]
+  - contentinfo [ref=e713]:
+    - generic [ref=e714]:
+      - generic [ref=e715]:
+        - figure [ref=e718]:
+          - img "Kids and teen pediatric Clinic logo" [ref=e719]
+        - heading "Kids and Teens Medical Group is the leading provider of pediatric care with extended hours in Southern California. We are focused on changing the way you think about children’s health." [level=6] [ref=e722]
+        - list [ref=e725]:
+          - listitem [ref=e726]:
+            - link "Facebook-f" [ref=e727] [cursor=pointer]:
+              - /url: https://www.facebook.com/kidsandteensmedicalgroup/
+              - generic [ref=e728]: Facebook-f
+              - img [ref=e729]
+          - listitem [ref=e731]:
+            - link "Instagram" [ref=e732] [cursor=pointer]:
+              - /url: https://www.instagram.com/ktmedicalgroup/
+              - generic [ref=e733]: Instagram
+              - img [ref=e734]
+          - listitem [ref=e736]:
+            - link "X-twitter" [ref=e737] [cursor=pointer]:
+              - /url: https://x.com/KTDoctorGroup
+              - generic [ref=e738]: X-twitter
+              - img [ref=e739]
+          - listitem [ref=e741]:
+            - link "Youtube" [ref=e742] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC5pMXGZ_F2OZUFdfy6YbIew
+              - generic [ref=e743]: Youtube
+              - img [ref=e744]
+      - generic [ref=e746]:
+        - heading "QUICK LINKS" [level=6] [ref=e749]
+        - list [ref=e752]:
+          - listitem [ref=e753]:
+            - link "Home" [ref=e754] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/
+              - generic [ref=e755]: Home
+          - listitem [ref=e756]:
+            - link "About us" [ref=e757] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+              - generic [ref=e758]: About us
+          - listitem [ref=e759]:
+            - link "Patient Resources" [ref=e760] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/parent-resources/
+              - generic [ref=e761]: Patient Resources
+          - listitem [ref=e762]:
+            - link "Testimonials" [ref=e763] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/share-your-experience/
+              - generic [ref=e764]: Testimonials
+          - listitem [ref=e765]:
+            - link "Terms and Conditions" [ref=e766] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/terms_and_conditions-2/
+              - generic [ref=e767]: Terms and Conditions
+          - listitem [ref=e768]:
+            - link "Privacy Policy" [ref=e769] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/privacy-policy-2/
+              - generic [ref=e770]: Privacy Policy
+          - listitem [ref=e771]:
+            - link "Careers" [ref=e772] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/careers/
+              - generic [ref=e773]: Careers
+      - generic [ref=e774]:
+        - heading "FOR PATIENTS" [level=6] [ref=e777]
+        - navigation "Menu" [ref=e780]:
+          - list [ref=e781]:
+            - listitem [ref=e782]:
+              - link "Same-Day Appointments" [ref=e783] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/same-day-appointments/
+            - listitem [ref=e784]:
+              - link "Providers" [ref=e785] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/our-doctors/
+            - listitem [ref=e786]:
+              - link "Telehealth" [ref=e787] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/telemedicine-for-children/
+            - listitem [ref=e788]:
+              - link "Locations" [ref=e789] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/locations/
+            - listitem [ref=e790]:
+              - link "Insurance" [ref=e791] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/insurance/
+            - listitem [ref=e792]:
+              - link "Services" [ref=e793] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/
+            - listitem [ref=e794]:
+              - link "Patient Resources" [ref=e795] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/resources/
+      - generic [ref=e796]:
+        - heading "GET IN TOUCH" [level=6] [ref=e799]
+        - paragraph [ref=e802]:
+          - text: Text (ENG) (626) 298 7121
+          - text: Call Us (818) 361 5437
+        - list [ref=e805]:
+          - listitem [ref=e806]:
+            - 'link "Email: customerservice@ktdoctor.com" [ref=e807] [cursor=pointer]':
+              - /url: mailto:contact@mysite.com
+              - generic [ref=e808]: "Email: customerservice@ktdoctor.com"
+    - paragraph [ref=e813]: © 2026 All Rights Reserved.
+  - generic [ref=e815]:
+    - link "Close" [ref=e816] [cursor=pointer]:
+      - /url: "#"
+      - img [ref=e817]
+    - generic [ref=e819]:
+      - paragraph [ref=e822]:
+        - strong [ref=e823]: "All our official job postings are only posted on the following websites:"
+        - text: "- Social media pages - Official company websites - Indeed"
+      - link "Careers" [ref=e825] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/careers/
+  - generic [ref=e826]: desktop

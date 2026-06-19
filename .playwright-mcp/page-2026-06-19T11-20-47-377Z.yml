@@ -1,0 +1,269 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "TEXT (ENG) (626) 298 7121" [ref=e13] [cursor=pointer]:
+        - /url: sms:+16262987121
+        - generic [ref=e15]: TEXT (ENG) (626) 298 7121
+      - link "CALL US (818) 361 5437" [ref=e21] [cursor=pointer]:
+        - /url: tel:+18183615437
+        - generic [ref=e23]: CALL US (818) 361 5437
+      - link "DIRECTORY" [ref=e29] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/directory/
+        - generic [ref=e30]:
+          - img [ref=e32]
+          - generic [ref=e34]: DIRECTORY
+    - generic [ref=e40]:
+      - link "Kids and teen pediatric Clinic logo" [ref=e45] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com
+        - img "Kids and teen pediatric Clinic logo" [ref=e46]
+      - generic [ref=e53]:
+        - link "<a href=\"https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2\">APPOINTMENTS</a>" [ref=e55] [cursor=pointer]:
+          - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - img [ref=e56]
+        - heading "APPOINTMENTS" [level=3] [ref=e60]:
+          - link:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - link "APPOINTMENTS" [ref=e61] [cursor=pointer]:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+      - generic [ref=e66]:
+        - link "<a href=\"https://healowpay.com\">PAY ONLINE</a>" [ref=e68] [cursor=pointer]:
+          - /url: https://healowpay.com
+          - img [ref=e69]
+        - heading "PAY ONLINE" [level=3] [ref=e74]:
+          - link:
+            - /url: https://healowpay.com
+          - link "PAY ONLINE" [ref=e75] [cursor=pointer]:
+            - /url: https://healowpay.com
+      - generic [ref=e80]:
+        - link "<a href=\"https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp\">PORTAL LOG IN</a>" [ref=e82] [cursor=pointer]:
+          - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - img [ref=e83]
+        - heading "PORTAL LOG IN" [level=3] [ref=e86]:
+          - link:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - link "PORTAL LOG IN" [ref=e87] [cursor=pointer]:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+      - generic [ref=e92]:
+        - link "FIND A LOCATION" [ref=e94] [cursor=pointer]:
+          - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+          - img [ref=e95]
+        - heading "FIND A LOCATION" [level=3] [ref=e98]:
+          - link "FIND A LOCATION" [ref=e99] [cursor=pointer]:
+            - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+      - search [ref=e104]:
+        - generic [ref=e105]:
+          - button "Search" [ref=e106] [cursor=pointer]:
+            - img [ref=e108]
+          - generic:
+            - generic: Search
+            - searchbox "Search"
+      - link [ref=e115] [cursor=pointer]:
+        - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODIiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+        - img [ref=e116]
+    - navigation "Menu" [ref=e128]:
+      - list [ref=e129]:
+        - listitem [ref=e130]:
+          - link "Home" [ref=e131] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/
+        - listitem [ref=e132]:
+          - link "About us" [ref=e133] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+        - listitem [ref=e134]:
+          - link "Parent Resources" [ref=e135] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/parent-resources/
+        - listitem [ref=e136]:
+          - link "Testimonials" [ref=e137] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/share-your-experience/
+        - listitem [ref=e138]:
+          - link "Forms Only" [ref=e139] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group-2/
+    - text: 
+  - generic [ref=e140]:
+    - generic [ref=e142]:
+      - generic [ref=e144]:
+        - paragraph [ref=e147]:
+          - text: 1530 E Chevy Chase Dr,
+          - text: Ste 202, Glendale, CA 91206
+        - heading "Glendale" [level=1] [ref=e150]
+        - generic [ref=e152]:
+          - paragraph [ref=e153]: Kids & Teens Medical Group offers the highest quality of general pediatric care at their Glendale, California, office.
+          - paragraph [ref=e154]: The team of board-certified pediatricians takes an integrated and evidence-based approach, providing comprehensive newborn care, well-child exams, and physicals.
+          - paragraph [ref=e155]: They also specialize in adolescent medicine, pediatric infectious disease, asthma, and allergies. To make health care more accessible to those living and working in the Greater Los Angeles area, Kids & Teens Medical Group provides care seven days a week and offers after-hours care with extended hours through their telehealth service.
+        - generic [ref=e159]:
+          - generic [ref=e161]:
+            - generic [ref=e163]:
+              - paragraph [ref=e166]: OFFICE OPEN
+              - heading "MON - FRI" [level=2] [ref=e169]
+              - heading "9AM - 6PM" [level=2] [ref=e172]
+            - generic [ref=e174]:
+              - paragraph [ref=e177]: TELEHEALTH
+              - heading "MON - SUN" [level=2] [ref=e180]
+              - heading "9AM - 8PM" [level=2] [ref=e183]
+          - link "BOOK APPOINTMENT NOW ⟶" [ref=e191] [cursor=pointer]:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=Qd1p2JAR0DkDozmN
+            - generic [ref=e193]: BOOK APPOINTMENT NOW ⟶
+      - generic [ref=e195]:
+        - img "Glendale Pediatrician" [ref=e198]
+        - img "Glendale Pediatrician" [ref=e201]
+        - img "26" [ref=e204]
+    - heading "Meet Our Providers" [level=2] [ref=e211]
+    - generic [ref=e217]:
+      - generic [ref=e219]:
+        - generic [ref=e222]:
+          - figure [ref=e223]
+          - generic [ref=e224]:
+            - heading "Emily Brandt" [level=3] [ref=e225]
+            - paragraph [ref=e226]: MD
+        - generic [ref=e228]: Emily Brandt, DO is excited to join Kids & Teens Medical Group in Santa Clarita, Glendale and in Pasadena, CA. She is looking forward to fostering new relationships with patients and providing quality family centered care. Dr. Brandt grew up outside of Buffalo, New York. She then went on to complete her undergraduate degree at Northeastern University in Boston where she majored in biology. She earned her Doctorate of Medicine at the University of New England College of Osteopathic Medicine in Maine and completed her pediatric residency training at LAC+USC Medical Center in Los Angeles. Outside of the office, she enjoys spending time with family and friends, cooking, reading, camping, tennis and learning the ukulele.
+        - heading "Locations:" [level=2] [ref=e231]
+        - generic [ref=e233]:
+          - link "Glendale" [ref=e239] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/glendale-pediatric-clinic/#
+            - generic [ref=e241]: Glendale
+          - link "PASADENA" [ref=e247] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e249]: PASADENA
+      - generic [ref=e251]:
+        - generic [ref=e254]:
+          - figure [ref=e255]
+          - generic [ref=e256]:
+            - heading "Sharmetha Ramanan" [level=3] [ref=e257]
+            - paragraph [ref=e258]: PNP
+        - generic [ref=e260]: Sharmetha Ramanan, PNP is a certified pediatric nurse practitioner at Kids & Teens medical group. Sharmetha obtained her masters in pediatric nursing at Massachusetts General Hospital’s Institute of Health Professions in Boston. She is new to LA and is excited to make an impact in this community. Her career in pediatrics began through volunteering at children’s hospitals in Sri Lanka while visiting family there. In college, she studied abroad in Australia as a medical assistant for a children’s heart and lung center and was an EMT for many children’s summer camps during her time as a student at Boston University. Additionally, she helped conduct research on infant neuro-cognitive development as a research assistant at Boston Children’s Hospital. Sharmetha has always had a passion for kids and strives to be a support system and positive influence for her patients as they navigate the various stages between childhood and adulthood.
+        - heading "Locations:" [level=2] [ref=e263]
+        - generic [ref=e265]:
+          - link "Beverly Hills" [ref=e271] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/beverly-hills-clinic/
+            - generic [ref=e273]: Beverly Hills
+          - link "Glendale" [ref=e279] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/glendale-pediatric-clinic/#
+            - generic [ref=e281]: Glendale
+      - generic [ref=e283]:
+        - generic [ref=e286]:
+          - figure [ref=e287]:
+            - img "Craig" [ref=e288]
+          - generic [ref=e289]:
+            - heading "Mealynne Ngu" [level=3] [ref=e290]
+            - paragraph [ref=e291]: PNP Board Certified Pediatric Nurse Practitioner
+        - paragraph [ref=e294]: Mealynne is a Certified Pediatric Nurse Practitioner that received a Master of Nursing at the University of South Florida. She has over 6 years of overall pediatric experience in both outpatient environments and inpatient level one trauma centers. She is passionate about educating patients and families regarding health prevention and promotion. In her free time, she enjoys traveling, finding new food places to try, outdoor activities and spending time with her American Eskimo dog.
+        - heading "Locations:" [level=2] [ref=e297]
+        - generic [ref=e299]:
+          - link "La Cañada Flintridge" [ref=e305] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/la-canada-flintridge/
+            - generic [ref=e307]: La Cañada Flintridge
+          - link "Glendale" [ref=e313] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/glendale-pediatric-clinic/#
+            - generic [ref=e315]: Glendale
+    - generic [ref=e323]:
+      - paragraph [ref=e326]: REACH OUT
+      - heading "SEE A DOCTOR NOW" [level=2] [ref=e333]
+      - generic [ref=e340]:
+        - generic [ref=e343]:
+          - img [ref=e346]
+          - heading "Call Us" [level=4] [ref=e349]
+        - generic [ref=e352]:
+          - img [ref=e355]
+          - heading "Text Us" [level=4] [ref=e358]
+        - generic [ref=e361]:
+          - img [ref=e364]
+          - heading "Email Us" [level=4] [ref=e367]
+  - contentinfo [ref=e368]:
+    - generic [ref=e369]:
+      - generic [ref=e370]:
+        - figure [ref=e373]:
+          - img "Kids and teen pediatric Clinic logo" [ref=e374]
+        - heading "Kids and Teens Medical Group is the leading provider of pediatric care with extended hours in Southern California. We are focused on changing the way you think about children’s health." [level=6] [ref=e377]
+        - list [ref=e380]:
+          - listitem [ref=e381]:
+            - link "Facebook-f" [ref=e382] [cursor=pointer]:
+              - /url: https://www.facebook.com/kidsandteensmedicalgroup/
+              - generic [ref=e383]: Facebook-f
+              - img [ref=e384]
+          - listitem [ref=e386]:
+            - link "Instagram" [ref=e387] [cursor=pointer]:
+              - /url: https://www.instagram.com/ktmedicalgroup/
+              - generic [ref=e388]: Instagram
+              - img [ref=e389]
+          - listitem [ref=e391]:
+            - link "X-twitter" [ref=e392] [cursor=pointer]:
+              - /url: https://x.com/KTDoctorGroup
+              - generic [ref=e393]: X-twitter
+              - img [ref=e394]
+          - listitem [ref=e396]:
+            - link "Youtube" [ref=e397] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC5pMXGZ_F2OZUFdfy6YbIew
+              - generic [ref=e398]: Youtube
+              - img [ref=e399]
+      - generic [ref=e401]:
+        - heading "QUICK LINKS" [level=6] [ref=e404]
+        - list [ref=e407]:
+          - listitem [ref=e408]:
+            - link "Home" [ref=e409] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/
+              - generic [ref=e410]: Home
+          - listitem [ref=e411]:
+            - link "About us" [ref=e412] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+              - generic [ref=e413]: About us
+          - listitem [ref=e414]:
+            - link "Patient Resources" [ref=e415] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/parent-resources/
+              - generic [ref=e416]: Patient Resources
+          - listitem [ref=e417]:
+            - link "Testimonials" [ref=e418] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/share-your-experience/
+              - generic [ref=e419]: Testimonials
+          - listitem [ref=e420]:
+            - link "Terms and Conditions" [ref=e421] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/terms_and_conditions-2/
+              - generic [ref=e422]: Terms and Conditions
+          - listitem [ref=e423]:
+            - link "Privacy Policy" [ref=e424] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/privacy-policy-2/
+              - generic [ref=e425]: Privacy Policy
+          - listitem [ref=e426]:
+            - link "Careers" [ref=e427] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/careers/
+              - generic [ref=e428]: Careers
+      - generic [ref=e429]:
+        - heading "FOR PATIENTS" [level=6] [ref=e432]
+        - navigation "Menu" [ref=e435]:
+          - list [ref=e436]:
+            - listitem [ref=e437]:
+              - link "Same-Day Appointments" [ref=e438] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/same-day-appointments/
+            - listitem [ref=e439]:
+              - link "Providers" [ref=e440] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/our-doctors/
+            - listitem [ref=e441]:
+              - link "Telehealth" [ref=e442] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/telemedicine-for-children/
+            - listitem [ref=e443]:
+              - link "Locations" [ref=e444] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/locations/
+            - listitem [ref=e445]:
+              - link "Insurance" [ref=e446] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/insurance/
+            - listitem [ref=e447]:
+              - link "Services" [ref=e448] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/
+            - listitem [ref=e449]:
+              - link "Patient Resources" [ref=e450] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/resources/
+      - generic [ref=e451]:
+        - heading "GET IN TOUCH" [level=6] [ref=e454]
+        - paragraph [ref=e457]:
+          - text: Text (ENG) (626) 298 7121
+          - text: Call Us (818) 361 5437
+        - list [ref=e460]:
+          - listitem [ref=e461]:
+            - 'link "Email: customerservice@ktdoctor.com" [ref=e462] [cursor=pointer]':
+              - /url: mailto:contact@mysite.com
+              - generic [ref=e463]: "Email: customerservice@ktdoctor.com"
+    - paragraph [ref=e468]: © 2026 All Rights Reserved.
+  - link "Close" [ref=e471] [cursor=pointer]:
+    - /url: "#"
+    - img [ref=e472]
+  - generic [ref=e474]: desktop

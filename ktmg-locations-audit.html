@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KTMG Location Content Audit</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, sans-serif; background: #f5f5f3; color: #1a1a1a; padding: 2rem; }
+  h1 { font-size: 1.4rem; font-weight: 600; margin-bottom: 0.25rem; }
+  .meta { font-size: 0.8rem; color: #666; margin-bottom: 2rem; }
+  .summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+  .stat { background: #fff; border: 0.5px solid #ddd; border-radius: 10px; padding: 1rem; }
+  .stat-num { font-size: 1.8rem; font-weight: 600; color: #1a1a1a; }
+  .stat-label { font-size: 0.75rem; color: #888; margin-top: 2px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; border: 0.5px solid #ddd; font-size: 0.85rem; }
+  thead { background: #f0efe8; }
+  th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #555; border-bottom: 0.5px solid #ddd; }
+  td { padding: 0.75rem 1rem; border-bottom: 0.5px solid #f0f0f0; vertical-align: top; line-height: 1.5; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fafaf8; }
+  .loc-name { font-weight: 600; color: #1a1a1a; }
+  .address { color: #333; }
+  .hours-block { display: flex; flex-direction: column; gap: 2px; }
+  .hours-row { display: flex; gap: 6px; align-items: baseline; }
+  .hours-label { font-size: 0.7rem; color: #888; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; min-width: 60px; }
+  .hours-val { color: #333; font-size: 0.82rem; }
+  .phone { color: #333; font-size: 0.82rem; }
+  .note { font-size: 0.72rem; color: #e06a2c; font-style: italic; }
+  .tag { display: inline-block; font-size: 0.68rem; background: #e8f4ea; color: #2a7a3a; border-radius: 4px; padding: 1px 6px; font-weight: 500; }
+  .tag-sat { background: #faeee0; color: #b05a10; }
+  caption { text-align: left; padding: 0.75rem 1rem; font-size: 0.75rem; color: #888; }
+  @media (max-width: 700px) {
+    body { padding: 1rem; }
+    .summary { grid-template-columns: 1fr 1fr; }
+    table { font-size: 0.78rem; }
+    th, td { padding: 0.6rem 0.75rem; }
+  }
+</style>
+</head>
+<body>
+<h1>Kids &amp; Teens Medical Group — Location Content Audit</h1>
+<p class="meta">22 locations scraped live · June 19, 2026 · For website redesign</p>
+
+<div class="summary">
+  <div class="stat"><div class="stat-num">22</div><div class="stat-label">Total locations</div></div>
+  <div class="stat"><div class="stat-num">21</div><div class="stat-label">Standard Mon–Fri 9–6 office hours</div></div>
+  <div class="stat"><div class="stat-num">1</div><div class="stat-label">Extended Sat hours (Downey)</div></div>
+</div>
+
+<table>
+  <caption>All location pages share sitewide phone: Text (ENG) (626) 298-7121 · Call (818) 361-5437. No location-specific phones were found. Telehealth hours are uniform: Mon–Sun 9AM–8PM across all locations.</caption>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Location</th>
+      <th>Address</th>
+      <th>Office Hours</th>
+      <th>Telehealth Hours</th>
+      <th>Phone</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td class="loc-name">Arcadia</td>
+      <td class="address">16 E Huntington Drive<br>Arcadia, CA 91006</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td class="loc-name">Beverly Hills</td>
+      <td class="address">8733 Beverly Blvd., #200<br>West Hollywood, CA 90048</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td><span class="note">Listed as "West Hollywood" in address despite "Beverly Hills" branding</span></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="loc-name">Camarillo</td>
+      <td class="address">2486 Ponderosa Dr. N., Suite D-211<br>Camarillo, CA 93010</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td><span class="note">Page body copy says "San Pedro office" — copy/paste error</span></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td class="loc-name">Canyon Country</td>
+      <td class="address">20655 Soledad Canyon Road, #25<br>Canyon Country, CA 91351</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td class="loc-name">Culver City</td>
+      <td class="address">3831 Hughes Avenue, Suite 602<br>Culver City, CA 90232</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td class="loc-name">Downey</td>
+      <td class="address">8201 4th St<br>Downey, CA 90241</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div><div class="hours-row"><span class="hours-label">Sat</span><span class="hours-val">8AM–4PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td><span class="tag tag-sat">Sat hours</span> Only location with Saturday in-office hours</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td class="loc-name">Glendale</td>
+      <td class="address">1530 E Chevy Chase Dr, Ste 202<br>Glendale, CA 91206</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td class="loc-name">Hollywood</td>
+      <td class="address">5255 W Sunset Blvd.<br>Los Angeles, CA 90027</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">8:30AM–5PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td><span class="note">Different office hours from all other locations (8:30AM–5PM vs 9AM–6PM)</span></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td class="loc-name">La Mirada</td>
+      <td class="address">12675 La Mirada Blvd #200<br>La Mirada, CA 90638</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td class="loc-name">Mission Hills</td>
+      <td class="address">10200 Sepulveda Blvd, Suite #220<br>Mission Hills, CA 91345</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td class="loc-name">Northridge</td>
+      <td class="address">8628 Reseda Blvd<br>Northridge, CA 91324</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td class="loc-name">Pico Rivera</td>
+      <td class="address">8337 Telegraph Rd #119<br>Pico Rivera, CA 90660</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td class="loc-name">Pasadena</td>
+      <td class="address">504 S Sierra Madre Blvd<br>Pasadena, CA 91107</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td class="loc-name">Tarzana</td>
+      <td class="address">18372 Clark St Ste 226<br>Tarzana, CA 91356</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td><span class="note">Page body copy says "Beverly Hills office on La Cienega Blvd" — copy/paste error</span></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td class="loc-name">San Fernando</td>
+      <td class="address">777 Truman Street, Suite 105<br>San Fernando, CA 91340</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td class="loc-name">Santa Monica</td>
+      <td class="address">2221 Lincoln Blvd #200<br>Santa Monica, CA 90405</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td><span class="note">Page body says "Santa Monica Blvd" but address is Lincoln Blvd</span></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td class="loc-name">San Pedro</td>
+      <td class="address">887 W 9th St<br>San Pedro, CA 90731</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td class="loc-name">Torrance</td>
+      <td class="address">3524 Torrance Blvd, Suite 101<br>Torrance, CA 90503</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td class="loc-name">Valencia</td>
+      <td class="address">24330 McBean Pkwy<br>Valencia, CA 91355</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td class="loc-name">Van Nuys</td>
+      <td class="address">14426 Gilmore Street, Suite B<br>Van Nuys, CA 91401</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td class="loc-name">West Hills</td>
+      <td class="address">7345 Medical Center Drive, #400<br>West Hills, CA 91307</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td class="loc-name">Whittier</td>
+      <td class="address">13470 Telegraph Road<br>Whittier, CA 90605</td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Fri</span><span class="hours-val">9AM–6PM</span></div></div></td>
+      <td><div class="hours-block"><div class="hours-row"><span class="hours-label">Mon–Sun</span><span class="hours-val">9AM–8PM</span></div></div></td>
+      <td class="phone">Site-wide only</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 1.5rem; font-size: 0.78rem; color: #888;">Sitewide phone numbers shown on all pages: Text (ENG) <strong>(626) 298-7121</strong> &nbsp;|&nbsp; Call <strong>(818) 361-5437</strong> &nbsp;|&nbsp; Email: customerservice@ktdoctor.com</p>
+</body>
+</html>

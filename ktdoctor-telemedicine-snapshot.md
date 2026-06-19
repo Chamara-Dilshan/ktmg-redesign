@@ -1,0 +1,176 @@
+- generic [active] [ref=e1]:
+  - generic "Accessibility Menu":
+    - button "Accessibility Menu" [ref=e276] [cursor=pointer]
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - navigation "Menu" [ref=e14]:
+      - list [ref=e15]:
+        - listitem [ref=e16]:
+          - link "Home" [ref=e17] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/
+        - listitem [ref=e18]:
+          - link "About us" [ref=e19] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+        - listitem [ref=e20]:
+          - link "Parent Resources" [ref=e21] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/parent-resources/
+        - listitem [ref=e22]:
+          - link "Testimonials" [ref=e23] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/share-your-experience/
+        - listitem [ref=e24]:
+          - link "Forms Only" [ref=e25] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group-2/
+    - text: 
+  - generic [ref=e26]:
+    - generic [ref=e34]:
+      - heading "Telehealth for Pediatric Care" [level=1] [ref=e37]
+      - heading "Your Child's Well-Being at Your Fingertips" [level=1] [ref=e40]
+      - paragraph [ref=e283]: Quick and convenient telehealth access to board-certified pediatricians.
+      - link "BOOK AN APPOINTMENT ⟶" [ref=e44] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/appointments/
+        - generic [ref=e46]: BOOK AN APPOINTMENT ⟶
+    - generic [ref=e50]:
+      - heading "The Benefits of Telehealth for Pediatric Care" [level=2] [ref=e53]
+      - heading "Telehealth is transforming healthcare by connecting patients and doctors, offering convenient and efficient care." [level=2] [ref=e56]
+      - generic [ref=e58]:
+        - generic [ref=e61]:
+          - img [ref=e64]
+          - heading "Convenience" [level=3] [ref=e67]
+        - generic [ref=e70]:
+          - img [ref=e73]
+          - heading "Quick Access" [level=3] [ref=e76]
+        - generic [ref=e79]:
+          - img [ref=e82]
+          - heading "Flexible Scheduling" [level=3] [ref=e85]
+      - generic [ref=e87]:
+        - generic [ref=e90]:
+          - img [ref=e93]
+          - heading "Continuity of Care" [level=3] [ref=e96]
+        - generic [ref=e99]:
+          - img [ref=e102]
+          - heading "Privacy and Comfort" [level=3] [ref=e105]
+    - generic [ref=e109]:
+      - heading "Accessing Telehealth Services" [level=2] [ref=e112]
+      - heading "Scheduling telehealth with our pediatricians is easy. Choose from various options." [level=2] [ref=e115]
+      - generic [ref=e117]:
+        - generic [ref=e120]:
+          - img [ref=e123]
+          - heading "CALL (626) 795 8811" [level=3] [ref=e126]
+        - generic [ref=e129]:
+          - img [ref=e132]
+          - heading "CALL (818) 361 5437" [level=3] [ref=e135]
+        - generic [ref=e138]:
+          - img [ref=e141]
+          - heading "TEXT (ENG) (626) 298 7121" [level=3] [ref=e144]
+        - generic [ref=e147]:
+          - img [ref=e150]
+          - heading "TEXT (ESP) (818) 423 5637" [level=3] [ref=e153]
+    - generic [ref=e157]:
+      - heading "How Telehealth Works" [level=2] [ref=e160]
+      - heading "When you schedule a telehealth visit with Kids & Teens Medical Group, you’ll receive instructions on how to connect with our pediatrician through a secure and user-friendly virtual platform. During the consultation, our experienced pediatricians will listen to your concerns, provide medical advice, offer treatment recommendations, and address any questions you may have. Trust in the expertise of our team to provide the same level of compassionate care and medical guidance you would receive in person, all while enjoying the convenience and flexibility that telehealth offers." [level=2] [ref=e163]
+  - contentinfo [ref=e168]:
+    - generic [ref=e169]:
+      - generic [ref=e170]:
+        - figure [ref=e173]:
+          - img "Kids and teen pediatric Clinic logo" [ref=e174]
+        - heading "Kids and Teens Medical Group is the leading provider of pediatric care with extended hours in Southern California. We are focused on changing the way you think about children’s health." [level=6] [ref=e177]
+        - list [ref=e180]:
+          - listitem [ref=e181]:
+            - link "Facebook-f" [ref=e182] [cursor=pointer]:
+              - /url: https://www.facebook.com/kidsandteensmedicalgroup/
+              - generic [ref=e183]: Facebook-f
+              - img [ref=e184]
+          - listitem [ref=e186]:
+            - link "Instagram" [ref=e187] [cursor=pointer]:
+              - /url: https://www.instagram.com/ktmedicalgroup/
+              - generic [ref=e188]: Instagram
+              - img [ref=e189]
+          - listitem [ref=e191]:
+            - link "X-twitter" [ref=e192] [cursor=pointer]:
+              - /url: https://x.com/KTDoctorGroup
+              - generic [ref=e193]: X-twitter
+              - img [ref=e194]
+          - listitem [ref=e196]:
+            - link "Youtube" [ref=e197] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC5pMXGZ_F2OZUFdfy6YbIew
+              - generic [ref=e198]: Youtube
+              - img [ref=e199]
+      - generic [ref=e201]:
+        - heading "QUICK LINKS" [level=6] [ref=e204]
+        - list [ref=e207]:
+          - listitem [ref=e208]:
+            - link "Home" [ref=e209] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/
+              - generic [ref=e210]: Home
+          - listitem [ref=e211]:
+            - link "About us" [ref=e212] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+              - generic [ref=e213]: About us
+          - listitem [ref=e214]:
+            - link "Patient Resources" [ref=e215] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/parent-resources/
+              - generic [ref=e216]: Patient Resources
+          - listitem [ref=e217]:
+            - link "Testimonials" [ref=e218] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/share-your-experience/
+              - generic [ref=e219]: Testimonials
+          - listitem [ref=e220]:
+            - link "Terms and Conditions" [ref=e221] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/terms_and_conditions-2/
+              - generic [ref=e222]: Terms and Conditions
+          - listitem [ref=e223]:
+            - link "Privacy Policy" [ref=e224] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/privacy-policy-2/
+              - generic [ref=e225]: Privacy Policy
+          - listitem [ref=e226]:
+            - link "Careers" [ref=e227] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/careers/
+              - generic [ref=e228]: Careers
+      - generic [ref=e229]:
+        - heading "FOR PATIENTS" [level=6] [ref=e232]
+        - navigation "Menu" [ref=e235]:
+          - list [ref=e236]:
+            - listitem [ref=e237]:
+              - link "Same-Day Appointments" [ref=e238] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/same-day-appointments/
+            - listitem [ref=e239]:
+              - link "Providers" [ref=e240] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/our-doctors/
+            - listitem [ref=e241]:
+              - link "Telehealth" [ref=e242] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/telemedicine-for-children/
+            - listitem [ref=e243]:
+              - link "Locations" [ref=e244] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/locations/
+            - listitem [ref=e245]:
+              - link "Insurance" [ref=e246] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/insurance/
+            - listitem [ref=e247]:
+              - link "Services" [ref=e248] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/
+            - listitem [ref=e249]:
+              - link "Patient Resources" [ref=e250] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/resources/
+      - generic [ref=e251]:
+        - heading "GET IN TOUCH" [level=6] [ref=e254]
+        - paragraph [ref=e257]:
+          - text: Text (ENG) (626) 298 7121
+          - text: Call Us (818) 361 5437
+        - list [ref=e260]:
+          - listitem [ref=e261]:
+            - 'link "Email: customerservice@ktdoctor.com" [ref=e262] [cursor=pointer]':
+              - /url: mailto:contact@mysite.com
+              - generic [ref=e263]: "Email: customerservice@ktdoctor.com"
+    - paragraph [ref=e268]: © 2026 All Rights Reserved.
+  - generic [ref=e270]:
+    - link "Close" [ref=e271] [cursor=pointer]:
+      - /url: "#"
+      - img [ref=e272]
+    - generic [ref=e284]:
+      - paragraph [ref=e287]:
+        - strong [ref=e288]: "All our official job postings are only posted on the following websites:"
+        - text: "- Social media pages - Official company websites - Indeed"
+      - link "Careers" [ref=e290] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/careers/
+  - generic [ref=e274]: tablet

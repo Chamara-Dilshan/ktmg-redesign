@@ -1,0 +1,357 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "TEXT (ENG) (626) 298 7121" [ref=e13] [cursor=pointer]:
+        - /url: sms:+16262987121
+        - generic [ref=e15]: TEXT (ENG) (626) 298 7121
+      - link "CALL US (818) 361 5437" [ref=e21] [cursor=pointer]:
+        - /url: tel:+18183615437
+        - generic [ref=e23]: CALL US (818) 361 5437
+      - link "DIRECTORY" [ref=e29] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/directory/
+        - generic [ref=e30]:
+          - img [ref=e32]
+          - generic [ref=e34]: DIRECTORY
+    - generic [ref=e40]:
+      - link "Kids and teen pediatric Clinic logo" [ref=e45] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com
+        - img "Kids and teen pediatric Clinic logo" [ref=e46]
+      - generic [ref=e53]:
+        - link "<a href=\"https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2\">APPOINTMENTS</a>" [ref=e55] [cursor=pointer]:
+          - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - img [ref=e56]
+        - heading "APPOINTMENTS" [level=3] [ref=e60]:
+          - link:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - link "APPOINTMENTS" [ref=e61] [cursor=pointer]:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+      - generic [ref=e66]:
+        - link "<a href=\"https://healowpay.com\">PAY ONLINE</a>" [ref=e68] [cursor=pointer]:
+          - /url: https://healowpay.com
+          - img [ref=e69]
+        - heading "PAY ONLINE" [level=3] [ref=e74]:
+          - link:
+            - /url: https://healowpay.com
+          - link "PAY ONLINE" [ref=e75] [cursor=pointer]:
+            - /url: https://healowpay.com
+      - generic [ref=e80]:
+        - link "<a href=\"https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp\">PORTAL LOG IN</a>" [ref=e82] [cursor=pointer]:
+          - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - img [ref=e83]
+        - heading "PORTAL LOG IN" [level=3] [ref=e86]:
+          - link:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - link "PORTAL LOG IN" [ref=e87] [cursor=pointer]:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+      - generic [ref=e92]:
+        - link "FIND A LOCATION" [ref=e94] [cursor=pointer]:
+          - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+          - img [ref=e95]
+        - heading "FIND A LOCATION" [level=3] [ref=e98]:
+          - link "FIND A LOCATION" [ref=e99] [cursor=pointer]:
+            - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+      - search [ref=e104]:
+        - generic [ref=e105]:
+          - button "Search" [ref=e106] [cursor=pointer]:
+            - img [ref=e108]
+          - generic:
+            - generic: Search
+            - searchbox "Search"
+      - link [ref=e115] [cursor=pointer]:
+        - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODIiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+        - img [ref=e116]
+    - navigation "Menu" [ref=e128]:
+      - list [ref=e129]:
+        - listitem [ref=e130]:
+          - link "Home" [ref=e131] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/
+        - listitem [ref=e132]:
+          - link "About us" [ref=e133] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+        - listitem [ref=e134]:
+          - link "Parent Resources" [ref=e135] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/parent-resources/
+        - listitem [ref=e136]:
+          - link "Testimonials" [ref=e137] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/share-your-experience/
+        - listitem [ref=e138]:
+          - link "Forms Only" [ref=e139] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group-2/
+    - text: 
+  - generic [ref=e140]:
+    - generic [ref=e144]:
+      - paragraph [ref=e147]:
+        - text: 8628 Reseda Blvd, Northridge,
+        - text: CA 91324
+      - heading "Northridge" [level=1] [ref=e150]
+      - generic [ref=e152]:
+        - paragraph [ref=e153]: Kids & Teens Medical Group provides high-quality primary care for their pediatric patients at their Northridge, California, office on Reseda Boulevard. The team of board-certified pediatricians provides comprehensive care to meet any child’s health needs, including well-child exams, newborn care, sick visits, and urgent care.
+        - paragraph [ref=e154]: They also specialize in diagnosing and treating health conditions like autism, asthma, and allergies and have a pediatric infectious disease expert on staff.
+        - paragraph [ref=e155]: For parent flexibility, Kids & Teens Medical Group has after-hours care with extended evening hours through their telehealth service.
+      - generic [ref=e159]:
+        - generic [ref=e161]:
+          - generic [ref=e163]:
+            - paragraph [ref=e166]: OFFICE OPEN
+            - heading "MON - FRI" [level=2] [ref=e169]
+            - heading "9AM - 6PM" [level=2] [ref=e172]
+          - generic [ref=e174]:
+            - paragraph [ref=e177]: TELEHEALTH
+            - heading "MON - SUN" [level=2] [ref=e180]
+            - heading "9AM - 8PM" [level=2] [ref=e183]
+        - link "BOOK APPOINTMENT NOW ⟶" [ref=e191] [cursor=pointer]:
+          - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=a8gDE7vnNqvjwXe2
+          - generic [ref=e193]: BOOK APPOINTMENT NOW ⟶
+    - heading "Meet Our Providers" [level=2] [ref=e208]
+    - generic [ref=e214]:
+      - generic [ref=e216]:
+        - generic [ref=e219]:
+          - figure [ref=e220]
+          - generic [ref=e221]:
+            - heading "Hilma Benjamin" [level=3] [ref=e222]
+            - paragraph [ref=e223]: MD, FAAP Board Certified Pediatrician
+        - generic [ref=e225]: Hilma Benjamin, MD, FAAP, is a member of the caring team at Kids & Teens Medical Group. She serves patients from the practice’s location in Northridge, California. Dr. Benjamin graduated from the University of the Virgin Islands with a Bachelor of Science in biology in 1996 before earning a Master of Science in molecular and cellular biology at the University of Maryland, Baltimore County, in 1998. She received her medical degree in 2004 from Penn State College of Medicine and completed her residency in general pediatrics in 2007 at All Children’s Hospital in St. Petersburg, Florida, and Tampa General Hospital in Tampa, Florida. Before joining Kids & Teens Medical Group in 2009, she completed several locum tenens assignments in private practice in the San Francisco Bay Area and at the Natividad Medical Center in Salinas, affiliated with the University of California, San Francisco (UCSF). Dr. Benjamin currently serves as the acting Medical Director of Kids and Teens’ Extended Hours/After Hours Care services. Her special interests include child behavior, growth and development, dental care, nutrition, and physical education.
+        - heading "Locations:" [level=2] [ref=e228]
+        - generic [ref=e230]:
+          - generic [ref=e232]:
+            - link "Mission Hills" [ref=e236] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/locations/mission-hills/
+              - generic [ref=e238]: Mission Hills
+            - link "Northridge" [ref=e242] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/locations/northridge/
+              - generic [ref=e244]: Northridge
+          - generic [ref=e246]:
+            - link "West Hills" [ref=e250] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/locations/northridge/
+              - generic [ref=e252]: West Hills
+            - link "Pico Rivera" [ref=e256] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/locations/pico-rivera-pediatric-clinic/
+              - generic [ref=e258]: Pico Rivera
+      - generic [ref=e260]:
+        - generic [ref=e263]:
+          - figure [ref=e264]
+          - generic [ref=e265]:
+            - heading "Victoria Millet" [level=3] [ref=e266]
+            - paragraph [ref=e267]: MD, FAAP Board Certified Infectious Disease
+        - generic [ref=e269]: Victoria Millet, MD, FAAP, is an experienced, board-certified pediatrician practicing at the Kids & Teens Medical Group locations in Encino, Northridge, Van Nuys, California. She has been in private pediatric practice since 1984 and joined Kids & Teens Medical Group in January of 2011. Dr. Millet completed her undergraduate studies at the University of California at Los Angeles, where she majored in zoology in 1969. She earned a Master of Science degree from the University of Southern California in 1972 and then completed a three-year residency in pediatrics at University Hospital in San Diego in 1975. She completed a pediatric infectious diseases/ambulatory pediatrics fellowship at the Center for the Health Sciences at the University of California at Los Angeles in 1980. Dr. Millet continues to do consulting work in pediatric infectious diseases for Kids & Teens Medical Group and her colleagues in the local pediatric community. She enjoys teaching and is a member of the Family Practice Residency Program faculty at Northridge Hospital Medical Center. She is also a clinical faculty member at the UCLA School of Nursing.
+        - heading "Locations:" [level=2] [ref=e272]
+        - generic [ref=e274]:
+          - link "Northridge" [ref=e280] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/northridge/
+            - generic [ref=e282]: Northridge
+          - link "San Fernando" [ref=e288] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/san-fernando-pediatric-clinic/
+            - generic [ref=e290]: San Fernando
+      - generic [ref=e292]:
+        - generic [ref=e295]:
+          - figure [ref=e296]
+          - generic [ref=e297]:
+            - heading "Brian Bhatt" [level=3] [ref=e298]
+            - paragraph [ref=e299]: MD, FAAP
+        - generic [ref=e301]: Dr. Brian Bhatt, born and brought up in the Northeast, is looking forward to being a part of the family at the Kids and Teens Medical Group. Dr. Bhatt obtained his Bachelor’s degree in Biological Sciences at the University of Connecticut, and Doctor of Medicine degree from St. George’s University School of Medicine. He went to NYU Langone Long Island Hospital to complete a three-year pediatric residency in a robust environment. He is a driven physician, keen to establish a strong rapport and provide the best medical care possible for all age groups. He is fluent in English and Gujarati. Outside of medicine, Dr. Bhatt is a husband and a father. He enjoys his time cooking, playing tennis, relaxing at the beach, learning about and collecting vintage watches, and enjoying a good marvel movie night with family & friends.
+        - heading "Locations:" [level=2] [ref=e304]
+        - generic [ref=e306]:
+          - link "Northridge" [ref=e312] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/northridge/
+            - generic [ref=e314]: Northridge
+          - link "Valencia" [ref=e320] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/valencia-pediatric-clinic/
+            - generic [ref=e322]: Valencia
+      - generic [ref=e324]:
+        - generic [ref=e327]:
+          - figure [ref=e328]:
+            - img "Palak Shelat" [ref=e329]
+          - generic [ref=e330]:
+            - heading "Palak Shelat" [level=3] [ref=e331]
+            - paragraph [ref=e332]: MD, FAAP
+        - generic [ref=e334]: Dr. Palak Shelat is excited to join and be a part of the Kids and Teens Medical Group. She is a dedicated pediatrician who provides exceptional care to children and enjoys problem-solving with a positive, can-do attitude. She is fluent in English, Gujarati, and Hindi. Born and raised in India, Dr. Shelat came to the USA when she was a teenager. She always knew she wanted to become a physician. She pursued her dreams and earned as a New England Scholar, a Bachelor degree in Biological Sciences with a minor in Physiology & Neurobiology, and Molecular Cell Biology at the University of Connecticut. She completed her Doctor of Medicine degree at St. George’s University School of Medicine with high honors. She went on to complete her pediatric residency at NYU Langone Long Island Hospital. In her free time, she enjoys painting, tennis, meditation, yoga, long walks on the beach, and spending time with family and friends.
+        - heading "Locations:" [level=2] [ref=e337]
+        - generic [ref=e339]:
+          - link "Northridge" [ref=e345] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/northridge/
+            - generic [ref=e347]: Northridge
+          - link "Valencia" [ref=e353] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/valencia-pediatric-clinic/
+            - generic [ref=e355]: Valencia
+    - generic [ref=e357]:
+      - generic [ref=e359]:
+        - generic [ref=e362]:
+          - figure [ref=e363]
+          - generic [ref=e364]:
+            - heading "Miguel Sutter" [level=3] [ref=e365]
+            - paragraph [ref=e366]: PA-C Certified Physician Assistant
+        - generic [ref=e368]: I am a Certified Physician Assistant for over 24 years. I am a father of two girls. My hobbies are cycling, running, skiing, and spending time with family. I am passionate about helping people.
+        - heading "Locations:" [level=2] [ref=e371]
+        - generic [ref=e373]:
+          - generic [ref=e375]:
+            - link "Northridge" [ref=e379] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/locations/northridge/
+              - generic [ref=e381]: Northridge
+            - link "West Hills" [ref=e385] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/locations/west-hills-pediatric-clinic/
+              - generic [ref=e387]: West Hills
+          - generic [ref=e389]:
+            - link "Pasadena" [ref=e393] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/locations/pasadena/
+              - generic [ref=e395]: Pasadena
+            - link "Van Nuys" [ref=e399] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/locations/van-nuys-pediatric-clinic/
+              - generic [ref=e401]: Van Nuys
+      - generic [ref=e403]:
+        - generic [ref=e406]:
+          - figure [ref=e407]:
+            - img "Narindar-Nat-150x150.jpg" [ref=e408]
+          - generic [ref=e409]:
+            - heading "Narindar Nat" [level=3] [ref=e410]
+            - paragraph [ref=e411]: MD, FAAP
+        - paragraph [ref=e414]: _
+        - heading "Locations:" [level=2] [ref=e417]
+        - generic [ref=e419]:
+          - link "Canyon Country" [ref=e425] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/canyon-country-pediatric-clinic/
+            - generic [ref=e427]: Canyon Country
+          - link "Northridge" [ref=e433] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/northridge/
+            - generic [ref=e435]: Northridge
+      - generic [ref=e437]:
+        - generic [ref=e440]:
+          - figure [ref=e441]:
+            - img "Fatima" [ref=e442]
+          - generic [ref=e443]:
+            - heading "Fatemeh Anari" [level=3] [ref=e444]
+            - paragraph [ref=e445]: PA-C
+        - paragraph [ref=e448]: _
+        - heading "Locations:" [level=2] [ref=e451]
+        - link "Northridge" [ref=e459] [cursor=pointer]:
+          - /url: https://www.ktdoctor.com/locations/northridge/
+          - generic [ref=e461]: Northridge
+      - generic [ref=e465]:
+        - generic [ref=e468]:
+          - figure [ref=e469]:
+            - img "Craig" [ref=e470]
+          - generic [ref=e471]:
+            - heading "Banpreet Samra" [level=3] [ref=e472]
+            - paragraph [ref=e473]: PA
+        - heading "Locations:" [level=2] [ref=e476]
+        - generic [ref=e478]:
+          - link "Northridge" [ref=e484] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/northridge/
+            - generic [ref=e486]: Northridge
+          - link "WEST HILLS" [ref=e492] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/west-hills-pediatric-clinic/
+            - generic [ref=e494]: WEST HILLS
+        - link "TARZANA" [ref=e502] [cursor=pointer]:
+          - /url: https://www.ktdoctor.com/locations/tarzana-pediatric-clinic/
+          - generic [ref=e504]: TARZANA
+    - generic [ref=e514]:
+      - paragraph [ref=e517]: REACH OUT
+      - heading "SEE A DOCTOR NOW" [level=2] [ref=e524]
+      - generic [ref=e531]:
+        - generic [ref=e534]:
+          - img [ref=e537]
+          - heading "Call Us" [level=4] [ref=e540]
+        - generic [ref=e543]:
+          - img [ref=e546]
+          - heading "Text Us" [level=4] [ref=e549]
+        - generic [ref=e552]:
+          - img [ref=e555]
+          - heading "Email Us" [level=4] [ref=e558]
+  - contentinfo [ref=e559]:
+    - generic [ref=e560]:
+      - generic [ref=e561]:
+        - figure [ref=e564]:
+          - img "Kids and teen pediatric Clinic logo" [ref=e565]
+        - heading "Kids and Teens Medical Group is the leading provider of pediatric care with extended hours in Southern California. We are focused on changing the way you think about children’s health." [level=6] [ref=e568]
+        - list [ref=e571]:
+          - listitem [ref=e572]:
+            - link "Facebook-f" [ref=e573] [cursor=pointer]:
+              - /url: https://www.facebook.com/kidsandteensmedicalgroup/
+              - generic [ref=e574]: Facebook-f
+              - img [ref=e575]
+          - listitem [ref=e577]:
+            - link "Instagram" [ref=e578] [cursor=pointer]:
+              - /url: https://www.instagram.com/ktmedicalgroup/
+              - generic [ref=e579]: Instagram
+              - img [ref=e580]
+          - listitem [ref=e582]:
+            - link "X-twitter" [ref=e583] [cursor=pointer]:
+              - /url: https://x.com/KTDoctorGroup
+              - generic [ref=e584]: X-twitter
+              - img [ref=e585]
+          - listitem [ref=e587]:
+            - link "Youtube" [ref=e588] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC5pMXGZ_F2OZUFdfy6YbIew
+              - generic [ref=e589]: Youtube
+              - img [ref=e590]
+      - generic [ref=e592]:
+        - heading "QUICK LINKS" [level=6] [ref=e595]
+        - list [ref=e598]:
+          - listitem [ref=e599]:
+            - link "Home" [ref=e600] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/
+              - generic [ref=e601]: Home
+          - listitem [ref=e602]:
+            - link "About us" [ref=e603] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+              - generic [ref=e604]: About us
+          - listitem [ref=e605]:
+            - link "Patient Resources" [ref=e606] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/parent-resources/
+              - generic [ref=e607]: Patient Resources
+          - listitem [ref=e608]:
+            - link "Testimonials" [ref=e609] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/share-your-experience/
+              - generic [ref=e610]: Testimonials
+          - listitem [ref=e611]:
+            - link "Terms and Conditions" [ref=e612] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/terms_and_conditions-2/
+              - generic [ref=e613]: Terms and Conditions
+          - listitem [ref=e614]:
+            - link "Privacy Policy" [ref=e615] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/privacy-policy-2/
+              - generic [ref=e616]: Privacy Policy
+          - listitem [ref=e617]:
+            - link "Careers" [ref=e618] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/careers/
+              - generic [ref=e619]: Careers
+      - generic [ref=e620]:
+        - heading "FOR PATIENTS" [level=6] [ref=e623]
+        - navigation "Menu" [ref=e626]:
+          - list [ref=e627]:
+            - listitem [ref=e628]:
+              - link "Same-Day Appointments" [ref=e629] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/same-day-appointments/
+            - listitem [ref=e630]:
+              - link "Providers" [ref=e631] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/our-doctors/
+            - listitem [ref=e632]:
+              - link "Telehealth" [ref=e633] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/telemedicine-for-children/
+            - listitem [ref=e634]:
+              - link "Locations" [ref=e635] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/locations/
+            - listitem [ref=e636]:
+              - link "Insurance" [ref=e637] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/insurance/
+            - listitem [ref=e638]:
+              - link "Services" [ref=e639] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/
+            - listitem [ref=e640]:
+              - link "Patient Resources" [ref=e641] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/resources/
+      - generic [ref=e642]:
+        - heading "GET IN TOUCH" [level=6] [ref=e645]
+        - paragraph [ref=e648]:
+          - text: Text (ENG) (626) 298 7121
+          - text: Call Us (818) 361 5437
+        - list [ref=e651]:
+          - listitem [ref=e652]:
+            - 'link "Email: customerservice@ktdoctor.com" [ref=e653] [cursor=pointer]':
+              - /url: mailto:contact@mysite.com
+              - generic [ref=e654]: "Email: customerservice@ktdoctor.com"
+    - paragraph [ref=e659]: © 2026 All Rights Reserved.
+  - link "Close" [ref=e662] [cursor=pointer]:
+    - /url: "#"
+    - img [ref=e663]
+  - generic [ref=e665]: desktop

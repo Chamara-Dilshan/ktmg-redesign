@@ -1,0 +1,282 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "TEXT (ENG) (626) 298 7121" [ref=e13] [cursor=pointer]:
+        - /url: sms:+16262987121
+        - generic [ref=e15]: TEXT (ENG) (626) 298 7121
+      - link "CALL US (818) 361 5437" [ref=e21] [cursor=pointer]:
+        - /url: tel:+18183615437
+        - generic [ref=e23]: CALL US (818) 361 5437
+      - link "DIRECTORY" [ref=e29] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com/directory/
+        - generic [ref=e30]:
+          - img [ref=e32]
+          - generic [ref=e34]: DIRECTORY
+    - generic [ref=e40]:
+      - link "Kids and teen pediatric Clinic logo" [ref=e45] [cursor=pointer]:
+        - /url: https://www.ktdoctor.com
+        - img "Kids and teen pediatric Clinic logo" [ref=e46]
+      - generic [ref=e53]:
+        - link "<a href=\"https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2\">APPOINTMENTS</a>" [ref=e55] [cursor=pointer]:
+          - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - img [ref=e56]
+        - heading "APPOINTMENTS" [level=3] [ref=e60]:
+          - link:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+          - link "APPOINTMENTS" [ref=e61] [cursor=pointer]:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2
+      - generic [ref=e66]:
+        - link "<a href=\"https://healowpay.com\">PAY ONLINE</a>" [ref=e68] [cursor=pointer]:
+          - /url: https://healowpay.com
+          - img [ref=e69]
+        - heading "PAY ONLINE" [level=3] [ref=e74]:
+          - link:
+            - /url: https://healowpay.com
+          - link "PAY ONLINE" [ref=e75] [cursor=pointer]:
+            - /url: https://healowpay.com
+      - generic [ref=e80]:
+        - link "<a href=\"https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp\">PORTAL LOG IN</a>" [ref=e82] [cursor=pointer]:
+          - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - img [ref=e83]
+        - heading "PORTAL LOG IN" [level=3] [ref=e86]:
+          - link:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+          - link "PORTAL LOG IN" [ref=e87] [cursor=pointer]:
+            - /url: https://mycw178.ecwcloud.com/portal23441/jsp/100mp/login_otp.jsp
+      - generic [ref=e92]:
+        - link "FIND A LOCATION" [ref=e94] [cursor=pointer]:
+          - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+          - img [ref=e95]
+        - heading "FIND A LOCATION" [level=3] [ref=e98]:
+          - link "FIND A LOCATION" [ref=e99] [cursor=pointer]:
+            - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+      - search [ref=e104]:
+        - generic [ref=e105]:
+          - button "Search" [ref=e106] [cursor=pointer]:
+            - img [ref=e108]
+          - generic:
+            - generic: Search
+            - searchbox "Search"
+      - link [ref=e115] [cursor=pointer]:
+        - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3ODIiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+        - img [ref=e116]
+    - navigation "Menu" [ref=e128]:
+      - list [ref=e129]:
+        - listitem [ref=e130]:
+          - link "Home" [ref=e131] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/
+        - listitem [ref=e132]:
+          - link "About us" [ref=e133] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+        - listitem [ref=e134]:
+          - link "Parent Resources" [ref=e135] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/parent-resources/
+        - listitem [ref=e136]:
+          - link "Testimonials" [ref=e137] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/share-your-experience/
+        - listitem [ref=e138]:
+          - link "Forms Only" [ref=e139] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/about-kids-teens-medical-group-2/
+    - text: 
+  - generic [ref=e140]:
+    - generic [ref=e142]:
+      - generic [ref=e144]:
+        - paragraph [ref=e147]:
+          - text: 16 E Huntington Drive
+          - text: Arcadia, CA 91006
+        - heading "Arcadia" [level=1] [ref=e150]
+        - generic [ref=e152]:
+          - paragraph [ref=e153]: Located on Huntington DR in Arcadia, California, Kids & Teens Medical Group is a general pediatrics practice specializing in newborn care, well-child exams, and adolescent medicine.
+          - paragraph [ref=e154]: The team of board-certified pediatricians also diagnoses and treats common pediatric health conditions, including asthma, autism, and allergies.
+          - paragraph [ref=e155]: Taking an integrated and evidence-based approach to care, the team focuses on child health and well-being, providing vaccinations and nutrition services.
+          - paragraph [ref=e156]: Kids & Teens Medical Group offers health care services seven days a week, including after-hours care and extended evening appointments through their telehealth service.
+        - generic [ref=e160]:
+          - generic [ref=e162]:
+            - generic [ref=e164]:
+              - paragraph [ref=e167]: OFFICE OPEN
+              - heading "MON - FRI" [level=2] [ref=e170]
+              - heading "9AM - 6PM" [level=2] [ref=e173]
+            - generic [ref=e175]:
+              - paragraph [ref=e178]: TELEHEALTH
+              - heading "MON - SUN" [level=2] [ref=e181]
+              - heading "9AM - 8PM" [level=2] [ref=e184]
+          - link "BOOK APPOINTMENT NOW ⟶" [ref=e192] [cursor=pointer]:
+            - /url: https://healow.com/apps/practice/janesri-de-silva-md-a-prof-corp-dba-kids-and-teens-medical-group-25634?v=2&t=2&f=9DQ48zAN6zAew2J6
+            - generic [ref=e194]: BOOK APPOINTMENT NOW ⟶
+      - img "17" [ref=e199]
+    - heading "Meet Our Providers" [level=2] [ref=e210]
+    - generic [ref=e216]:
+      - generic [ref=e218]:
+        - generic [ref=e221]:
+          - figure [ref=e222]
+          - generic [ref=e223]:
+            - heading "Erika Lee" [level=3] [ref=e224]
+            - paragraph [ref=e225]: PNP
+        - paragraph [ref=e228]: Erika Lee is a certified pediatric nurse practitioner who joined the Kids and Teens Medical Group in 2023. She completed her undergraduate studies in Human Physiology and Biology at Boston University and earned her bachelor’s and master’s degrees in Nursing at Massachusetts General Hospital Institute of Health Professions. She currently sees patients in Pasadena and Arcadia.
+        - heading "Locations:" [level=2] [ref=e231]
+        - generic [ref=e233]:
+          - link "Arcadia" [ref=e239] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/arcadia-clinic/
+            - generic [ref=e241]: Arcadia
+          - link "Pasadena" [ref=e247] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/pasadena/
+            - generic [ref=e249]: Pasadena
+      - generic [ref=e251]:
+        - generic [ref=e254]:
+          - figure [ref=e255]:
+            - img "Dr-Sylvia-Lam" [ref=e256]
+          - generic [ref=e257]:
+            - heading "Sylvia Lam" [level=3] [ref=e258]
+            - paragraph [ref=e259]: MD, FAAP
+        - generic [ref=e261]:
+          - paragraph [ref=e262]: With more than four decades of dedicated pediatric medical expertise, Dr. Sylvia Lam is a passionate advocate for children, recognizing them as the vibrant force shaping the future. Her commitment extends beyond clinical practice; she values open communication with parents, actively listening to their concerns.
+          - paragraph [ref=e263]: Grounding her approach in clinical evidence, Dr. Lam ensures the optimal well-being of children with a judicious use of necessary lab tests and medications. Beyond medical interventions, she provides invaluable reassurance and compassionate guidance to her young patients.
+          - paragraph [ref=e264]: Dr. Lam honed her medical skills through rigorous training at esteemed institutions, including Mercy Hospital of Chicago, University of Illinois Hospital, and Children’s Memorial Hospital of Chicago. Her areas of expertise encompass allergy management, ADHD, and weight management.
+          - paragraph [ref=e265]: As a multilingual healthcare provider, Dr. Lam is fluent in English, Mandarin, Cantonese, and Medical Spanish, fostering a deeper connection with diverse communities and ensuring effective communication in delivering personalized care.
+        - heading "Locations:" [level=2] [ref=e268]
+        - generic [ref=e270]:
+          - link "Arcadia" [ref=e276] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/arcadia-clinic/
+            - generic [ref=e278]: Arcadia
+          - link "Pasadena" [ref=e284] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/pasadena/
+            - generic [ref=e286]: Pasadena
+      - generic [ref=e288]:
+        - generic [ref=e291]:
+          - figure [ref=e292]
+          - generic [ref=e293]:
+            - heading "Jocelyn Zuniga" [level=3] [ref=e294]
+            - paragraph [ref=e295]: MD
+        - paragraph [ref=e298]: Pediatricians treat children, infants, and adolescents. They are trained to meet the unique needs of children, through all of their developmental stages, as they grow and mature. 21+ Yrs Experience.
+        - heading "Locations:" [level=2] [ref=e301]
+        - generic [ref=e303]:
+          - link "Arcadia" [ref=e309] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/arcadia-clinic/
+            - generic [ref=e311]: Arcadia
+          - link "Downey" [ref=e317] [cursor=pointer]:
+            - /url: https://www.ktdoctor.com/locations/downey/
+            - generic [ref=e319]: Downey
+      - generic [ref=e321]:
+        - generic [ref=e324]:
+          - figure [ref=e325]:
+            - img "Craig" [ref=e326]
+          - generic [ref=e327]:
+            - heading "Najma Qamar" [level=3] [ref=e328]
+            - paragraph [ref=e329]: MD
+        - heading "Locations:" [level=2] [ref=e332]
+        - link "ARCADIA" [ref=e340] [cursor=pointer]:
+          - /url: https://www.ktdoctor.com/locations/arcadia-clinic/
+          - generic [ref=e342]: ARCADIA
+    - generic [ref=e355]:
+      - paragraph [ref=e358]: REACH OUT
+      - heading "SEE A DOCTOR NOW" [level=2] [ref=e365]
+      - generic [ref=e372]:
+        - generic [ref=e375]:
+          - img [ref=e378]
+          - heading "Call Us" [level=4] [ref=e381]
+        - generic [ref=e384]:
+          - img [ref=e387]
+          - heading "Text Us" [level=4] [ref=e390]
+        - generic [ref=e393]:
+          - img [ref=e396]
+          - heading "Email Us" [level=4] [ref=e399]
+  - contentinfo [ref=e400]:
+    - generic [ref=e401]:
+      - generic [ref=e402]:
+        - figure [ref=e405]:
+          - img "Kids and teen pediatric Clinic logo" [ref=e406]
+        - heading "Kids and Teens Medical Group is the leading provider of pediatric care with extended hours in Southern California. We are focused on changing the way you think about children’s health." [level=6] [ref=e409]
+        - list [ref=e412]:
+          - listitem [ref=e413]:
+            - link "Facebook-f" [ref=e414] [cursor=pointer]:
+              - /url: https://www.facebook.com/kidsandteensmedicalgroup/
+              - generic [ref=e415]: Facebook-f
+              - img [ref=e416]
+          - listitem [ref=e418]:
+            - link "Instagram" [ref=e419] [cursor=pointer]:
+              - /url: https://www.instagram.com/ktmedicalgroup/
+              - generic [ref=e420]: Instagram
+              - img [ref=e421]
+          - listitem [ref=e423]:
+            - link "X-twitter" [ref=e424] [cursor=pointer]:
+              - /url: https://x.com/KTDoctorGroup
+              - generic [ref=e425]: X-twitter
+              - img [ref=e426]
+          - listitem [ref=e428]:
+            - link "Youtube" [ref=e429] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC5pMXGZ_F2OZUFdfy6YbIew
+              - generic [ref=e430]: Youtube
+              - img [ref=e431]
+      - generic [ref=e433]:
+        - heading "QUICK LINKS" [level=6] [ref=e436]
+        - list [ref=e439]:
+          - listitem [ref=e440]:
+            - link "Home" [ref=e441] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/
+              - generic [ref=e442]: Home
+          - listitem [ref=e443]:
+            - link "About us" [ref=e444] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/about-kids-teens-medical-group/
+              - generic [ref=e445]: About us
+          - listitem [ref=e446]:
+            - link "Patient Resources" [ref=e447] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/parent-resources/
+              - generic [ref=e448]: Patient Resources
+          - listitem [ref=e449]:
+            - link "Testimonials" [ref=e450] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/share-your-experience/
+              - generic [ref=e451]: Testimonials
+          - listitem [ref=e452]:
+            - link "Terms and Conditions" [ref=e453] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/terms_and_conditions-2/
+              - generic [ref=e454]: Terms and Conditions
+          - listitem [ref=e455]:
+            - link "Privacy Policy" [ref=e456] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/privacy-policy-2/
+              - generic [ref=e457]: Privacy Policy
+          - listitem [ref=e458]:
+            - link "Careers" [ref=e459] [cursor=pointer]:
+              - /url: https://www.ktdoctor.com/careers/
+              - generic [ref=e460]: Careers
+      - generic [ref=e461]:
+        - heading "FOR PATIENTS" [level=6] [ref=e464]
+        - navigation "Menu" [ref=e467]:
+          - list [ref=e468]:
+            - listitem [ref=e469]:
+              - link "Same-Day Appointments" [ref=e470] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/same-day-appointments/
+            - listitem [ref=e471]:
+              - link "Providers" [ref=e472] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/our-doctors/
+            - listitem [ref=e473]:
+              - link "Telehealth" [ref=e474] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/telemedicine-for-children/
+            - listitem [ref=e475]:
+              - link "Locations" [ref=e476] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/locations/
+            - listitem [ref=e477]:
+              - link "Insurance" [ref=e478] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/insurance/
+            - listitem [ref=e479]:
+              - link "Services" [ref=e480] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/services/
+            - listitem [ref=e481]:
+              - link "Patient Resources" [ref=e482] [cursor=pointer]:
+                - /url: https://www.ktdoctor.com/resources/
+      - generic [ref=e483]:
+        - heading "GET IN TOUCH" [level=6] [ref=e486]
+        - paragraph [ref=e489]:
+          - text: Text (ENG) (626) 298 7121
+          - text: Call Us (818) 361 5437
+        - list [ref=e492]:
+          - listitem [ref=e493]:
+            - 'link "Email: customerservice@ktdoctor.com" [ref=e494] [cursor=pointer]':
+              - /url: mailto:contact@mysite.com
+              - generic [ref=e495]: "Email: customerservice@ktdoctor.com"
+    - paragraph [ref=e500]: © 2026 All Rights Reserved.
+  - link "Close" [ref=e503] [cursor=pointer]:
+    - /url: "#"
+    - img [ref=e504]
+  - generic [ref=e506]: desktop
