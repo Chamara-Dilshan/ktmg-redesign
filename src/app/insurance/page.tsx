@@ -10,15 +10,16 @@ export const metadata: Metadata = {
 }
 
 const partnerLogos = [
-  { name: 'Regal Medical Group',  src: '/partners/regal.png'      },
-  { name: 'L.A. Care Health Plan', src: '/partners/la-care.png'   },
-  { name: 'Optum',                src: '/partners/optum.webp'      },
-  { name: 'Providence',           src: '/partners/providence.png'  },
-  { name: 'Molina Healthcare',    src: '/partners/molina.webp'     },
-  { name: 'Cedars-Sinai',         src: '/partners/cedars.png'      },
+  { name: 'Regal Medical Group',          src: '/partners/regal.png'      },
+  { name: 'L.A. Care Health Plan',        src: '/partners/la-care.png'    },
+  { name: 'Optum',                        src: '/partners/optum.webp'     },
+  { name: 'Providence',                   src: '/partners/providence.png' },
+  { name: 'Molina Healthcare',            src: '/partners/molina.webp'    },
+  { name: 'Cedars-Sinai',                 src: '/partners/cedars.png'     },
+  { name: "Children's Hospital LA",       src: '/partners/chla.webp'      },
 ]
 
-const textPartners = ['Lakeside', 'Health Care Partners', 'Eastland', 'Blue Cross', 'CHLA']
+const textPartners = ['Lakeside', 'Health Care Partners', 'Eastland', 'Blue Cross']
 
 export default function InsurancePage() {
   return (
@@ -31,7 +32,7 @@ export default function InsurancePage() {
         </p>
 
         {/* Partner logos */}
-        <div className="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
           {partnerLogos.map(p => (
             <div key={p.name} className="flex items-center justify-center rounded-xl border border-brand-border bg-white p-4">
               <Image src={p.src} alt={p.name} width={120} height={48} className="max-h-12 w-auto object-contain" />
