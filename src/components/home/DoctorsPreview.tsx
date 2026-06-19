@@ -7,18 +7,22 @@ import type { Doctor } from '@/types'
 export default function DoctorsPreview({ doctors }: { doctors: Doctor[] }) {
   const preview = doctors.slice(0, 4)
   return (
-    <section className="bg-white px-6 py-16 md:px-12">
+    <section className="bg-brand-bg px-6 py-16 md:px-12">
       <div className="mx-auto max-w-7xl">
         <FadeIn>
-          <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <div>
+          <div className="relative mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            {/* Background watermark number */}
+            <span className="pointer-events-none absolute -left-2 -top-4 select-none font-heading text-[96px] font-black leading-none text-teal-dark/[0.04] md:text-[120px]">
+              50+
+            </span>
+            <div className="relative">
               <SectionLabel className="mb-2">Our Team</SectionLabel>
               <h2 className="font-heading text-3xl font-extrabold text-teal-dark">Meet Our Pediatricians</h2>
-              <p className="mt-2 text-sm text-brand-muted">50+ board-certified doctors across 25 LA locations.</p>
+              <p className="mt-2 text-sm text-brand-muted">Board-certified doctors. All FAAP. Across 25 LA locations.</p>
             </div>
             <Link
               href="/doctors"
-              className="rounded-xl border-2 border-teal-dark px-5 py-2.5 text-center text-sm font-bold text-teal-dark transition-all duration-200 hover:bg-teal-dark hover:text-white"
+              className="relative rounded-xl border-2 border-teal-dark px-5 py-2.5 text-center text-sm font-bold text-teal-dark transition-all duration-200 hover:bg-teal-dark hover:text-white"
             >
               View All Doctors →
             </Link>
