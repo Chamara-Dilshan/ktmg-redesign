@@ -18,8 +18,6 @@ export default function CareersPage() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     // CV file is now accessible via ref for backend integration
-    const cvFile = cvRef.current?.files?.[0]
-    console.log('CV file:', cvFile?.name)
     // Form submission: integrate with email service or backend before launch
     alert('Thank you! We will be in touch shortly.')
   }
@@ -81,34 +79,34 @@ export default function CareersPage() {
           <h2 className="font-heading mb-6 text-xl font-bold text-teal-dark">Apply Now</h2>
           <form onSubmit={handleSubmit} className="grid gap-4 sm:grid-cols-2">
             <div>
-              <label className="mb-1.5 block text-xs font-semibold text-brand-text">First Name *</label>
-              <input required value={form.firstName} onChange={e => setForm(f => ({ ...f, firstName: e.target.value }))}
+              <label htmlFor="firstName" className="mb-1.5 block text-xs font-semibold text-brand-text">First Name *</label>
+              <input id="firstName" required value={form.firstName} onChange={e => setForm(f => ({ ...f, firstName: e.target.value }))}
                      className="w-full rounded-lg border border-brand-border bg-white px-4 py-2.5 text-sm outline-none focus:border-teal-mid" />
             </div>
             <div>
-              <label className="mb-1.5 block text-xs font-semibold text-brand-text">Last Name *</label>
-              <input required value={form.lastName} onChange={e => setForm(f => ({ ...f, lastName: e.target.value }))}
+              <label htmlFor="lastName" className="mb-1.5 block text-xs font-semibold text-brand-text">Last Name *</label>
+              <input id="lastName" required value={form.lastName} onChange={e => setForm(f => ({ ...f, lastName: e.target.value }))}
                      className="w-full rounded-lg border border-brand-border bg-white px-4 py-2.5 text-sm outline-none focus:border-teal-mid" />
             </div>
             <div>
-              <label className="mb-1.5 block text-xs font-semibold text-brand-text">Phone *</label>
-              <input required type="tel" value={form.phone} onChange={e => setForm(f => ({ ...f, phone: e.target.value }))}
+              <label htmlFor="phone" className="mb-1.5 block text-xs font-semibold text-brand-text">Phone *</label>
+              <input id="phone" required type="tel" value={form.phone} onChange={e => setForm(f => ({ ...f, phone: e.target.value }))}
                      className="w-full rounded-lg border border-brand-border bg-white px-4 py-2.5 text-sm outline-none focus:border-teal-mid" />
             </div>
             <div>
-              <label className="mb-1.5 block text-xs font-semibold text-brand-text">Email *</label>
-              <input required type="email" value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
+              <label htmlFor="email" className="mb-1.5 block text-xs font-semibold text-brand-text">Email *</label>
+              <input id="email" required type="email" value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
                      className="w-full rounded-lg border border-brand-border bg-white px-4 py-2.5 text-sm outline-none focus:border-teal-mid" />
             </div>
             <div className="sm:col-span-2">
-              <label className="mb-1.5 block text-xs font-semibold text-brand-text">Position Applying For *</label>
-              <input required value={form.position} onChange={e => setForm(f => ({ ...f, position: e.target.value }))}
+              <label htmlFor="position" className="mb-1.5 block text-xs font-semibold text-brand-text">Position Applying For *</label>
+              <input id="position" required value={form.position} onChange={e => setForm(f => ({ ...f, position: e.target.value }))}
                      placeholder="e.g. Pediatrician, NP, Front Desk"
                      className="w-full rounded-lg border border-brand-border bg-white px-4 py-2.5 text-sm outline-none focus:border-teal-mid" />
             </div>
             <div className="sm:col-span-2">
-              <label className="mb-1.5 block text-xs font-semibold text-brand-text">CV / Resume</label>
-              <input type="file" accept=".pdf,.doc,.docx" ref={cvRef}
+              <label htmlFor="cv" className="mb-1.5 block text-xs font-semibold text-brand-text">CV / Resume</label>
+              <input id="cv" type="file" accept=".pdf,.doc,.docx" ref={cvRef}
                      className="w-full rounded-lg border border-brand-border bg-white px-4 py-2.5 text-sm" />
             </div>
             <div className="sm:col-span-2">
