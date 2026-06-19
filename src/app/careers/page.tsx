@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import SectionLabel from '@/components/ui/SectionLabel'
 
 type Tab = 'los-angeles' | 'sri-lanka' | 'mexico'
@@ -13,9 +13,13 @@ const tabs: { id: Tab; label: string }[] = [
 export default function CareersPage() {
   const [activeTab, setActiveTab] = useState<Tab>('los-angeles')
   const [form, setForm] = useState({ firstName: '', lastName: '', phone: '', email: '', position: '' })
+  const cvRef = useRef<HTMLInputElement>(null)
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
+    // CV file is now accessible via ref for backend integration
+    const cvFile = cvRef.current?.files?.[0]
+    console.log('CV file:', cvFile?.name)
     // Form submission: integrate with email service or backend before launch
     alert('Thank you! We will be in touch shortly.')
   }
@@ -104,7 +108,7 @@ export default function CareersPage() {
             </div>
             <div className="sm:col-span-2">
               <label className="mb-1.5 block text-xs font-semibold text-brand-text">CV / Resume</label>
-              <input type="file" accept=".pdf,.doc,.docx"
+              <input type="file" accept=".pdf,.doc,.docx" ref={cvRef}
                      className="w-full rounded-lg border border-brand-border bg-white px-4 py-2.5 text-sm" />
             </div>
             <div className="sm:col-span-2">
