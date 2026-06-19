@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import { Poppins, Roboto } from 'next/font/google'
 import './globals.css'
+import UrgencyBar from '@/components/layout/UrgencyBar'
+import Navbar from '@/components/layout/Navbar'
+import Footer from '@/components/layout/Footer'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -28,7 +31,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${poppins.variable} ${roboto.variable}`}>
       <body className="font-body bg-brand-bg text-brand-text antialiased">
-        {children}
+        <UrgencyBar />
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )
