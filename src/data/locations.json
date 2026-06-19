@@ -36,7 +36,7 @@
     "lng": -118.3803,
     "officeHours": "Mon–Fri 9AM–6PM",
     "telehealthHours": "Mon–Sun 9AM–8PM",
-    "providers": ["martin-fineberg", "sharmetha-ramanan", "rohina-furmuly", "yussef-sakhai", "halavi-delaram", "michels-savannah"]
+    "providers": ["martin-fineberg", "sharmetha-ramanan", "rohina-furmuly", "yussef-sakhai", "halavi-delaram", "savannah-michels"]
   },
   {
     "slug": "camarillo",
@@ -115,7 +115,7 @@
     "lng": -118.3262,
     "officeHours": "Mon–Fri 8:30AM–5PM",
     "telehealthHours": "Mon–Sun 9AM–8PM",
-    "providers": ["benjamin-behroozan", "rebecca-kim", "kim-yeongbu", "njie-ernestine", "patino-cecilia"]
+    "providers": ["benjamin-behroozan", "rebecca-kim", "kim-yeongbu", "ernestine-njie", "cecilia-patino"]
   },
   {
     "slug": "la-canada-flintridge",
@@ -232,7 +232,7 @@
     "lng": -118.4912,
     "officeHours": "Mon–Fri 9AM–6PM",
     "telehealthHours": "Mon–Sun 9AM–8PM",
-    "providers": ["halavi-delaram", "benjamin-behroozan", "hantman-david", "yussef-sakhai", "rebecca-kim", "sohn-alea"]
+    "providers": ["halavi-delaram", "benjamin-behroozan", "david-hantman", "yussef-sakhai", "rebecca-kim", "alea-sohn"]
   },
   {
     "slug": "tarzana",
@@ -258,7 +258,7 @@
     "lng": -118.3406,
     "officeHours": "Mon–Fri 9AM–6PM",
     "telehealthHours": "Mon–Sun 9AM–8PM",
-    "providers": ["martin-fineberg", "luis-garcia", "mercy-aeri", "rebecca-kim", "michels-savannah", "sohn-alea"]
+    "providers": ["martin-fineberg", "luis-garcia", "mercy-aeri", "rebecca-kim", "savannah-michels", "alea-sohn"]
   },
   {
     "slug": "valencia",

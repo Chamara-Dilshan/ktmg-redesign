@@ -114,7 +114,7 @@
     "locations": ["beverly-hills", "santa-monica"]
   },
   {
-    "slug": "hantman-david",
+    "slug": "david-hantman",
     "name": "Dr. David Hantman",
     "credentials": "MD",
     "locations": ["santa-monica"]
@@ -210,7 +210,7 @@
     "locations": ["san-pedro"]
   },
   {
-    "slug": "michels-savannah",
+    "slug": "savannah-michels",
     "name": "Savannah Michels",
     "credentials": "NP",
     "locations": ["beverly-hills", "torrance"]
@@ -240,7 +240,7 @@
     "locations": ["canyon-country", "northridge"]
   },
   {
-    "slug": "njie-ernestine",
+    "slug": "ernestine-njie",
     "name": "Ernestine Njie",
     "credentials": "FNP-C",
     "locations": ["hollywood"]
@@ -258,7 +258,7 @@
     "locations": ["northridge", "valencia"]
   },
   {
-    "slug": "patino-cecilia",
+    "slug": "cecilia-patino",
     "name": "Cecilia Patino",
     "credentials": "NP",
     "locations": ["hollywood"]
@@ -294,7 +294,7 @@
     "locations": ["beverly-hills", "glendale"]
   },
   {
-    "slug": "sohn-alea",
+    "slug": "alea-sohn",
     "name": "Alea Sohn",
     "credentials": "NP",
     "locations": ["santa-monica", "torrance"]
