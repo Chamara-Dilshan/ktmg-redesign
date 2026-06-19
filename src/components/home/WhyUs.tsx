@@ -9,17 +9,15 @@ const features = [
 
 export default function WhyUs() {
   return (
-    <section className="border-b border-brand-border bg-brand-bg px-6 py-8 md:px-12">
+    <section className="relative overflow-hidden bg-gradient-to-r from-teal-dark to-teal-mid px-6 py-2 md:px-12">
       <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
+        <div className="grid grid-cols-2 divide-x divide-white/10 md:grid-cols-4">
           {features.map((f, i) => (
             <FadeIn key={f.title} delay={i * 0.07}>
-              <div className="flex items-start gap-3 rounded-xl p-4 transition-all duration-200 hover:bg-white hover:shadow-sm">
-                <span className="mt-0.5 text-2xl">{f.icon}</span>
-                <div>
-                  <p className="font-heading text-sm font-bold text-teal-dark">{f.title}</p>
-                  <p className="mt-0.5 text-xs leading-relaxed text-brand-muted">{f.desc}</p>
-                </div>
+              <div className="flex flex-col items-center gap-2 px-4 py-7 text-center transition-colors duration-200 hover:bg-white/5 md:px-8">
+                <span className="text-3xl">{f.icon}</span>
+                <p className="font-heading text-sm font-extrabold text-white md:text-base">{f.title}</p>
+                <p className="text-xs leading-relaxed text-white/55">{f.desc}</p>
               </div>
             </FadeIn>
           ))}

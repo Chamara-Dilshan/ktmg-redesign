@@ -4,6 +4,7 @@ import './globals.css'
 import UrgencyBar from '@/components/layout/UrgencyBar'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import MobileBookingBar from '@/components/layout/MobileBookingBar'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -40,11 +41,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${poppins.variable} ${roboto.variable}`}>
-      <body className="font-body bg-brand-bg text-brand-text antialiased">
+      <body className="font-body bg-brand-bg pb-20 text-brand-text antialiased md:pb-0">
         <UrgencyBar />
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <MobileBookingBar />
       </body>
     </html>
   )

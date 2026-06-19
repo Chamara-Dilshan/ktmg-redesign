@@ -3,6 +3,8 @@ import SectionLabel from '@/components/ui/SectionLabel'
 import FadeIn from '@/components/ui/FadeIn'
 import type { Service } from '@/types'
 
+const accentColors = ['bg-coral', 'bg-teal-mid', 'bg-teal-dark']
+
 export default function ServicesGrid({ services }: { services: Service[] }) {
   return (
     <section className="px-6 py-16 md:px-12">
@@ -22,21 +24,26 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
             <FadeIn key={service.slug} delay={i * 0.07}>
               <Link
                 href={`/services/${service.slug}`}
-                className="group flex h-full flex-col rounded-2xl border border-brand-border bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-teal-mid/40 hover:shadow-xl"
+                className="group flex h-full flex-col overflow-hidden rounded-2xl border border-brand-border bg-white transition-all duration-300 hover:-translate-y-1 hover:border-transparent hover:shadow-xl"
               >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-teal-tint text-2xl ring-1 ring-teal-mid/20 transition-all duration-300 group-hover:bg-teal-dark group-hover:ring-teal-dark">
-                  <span className="transition-transform duration-300 group-hover:scale-110">{service.icon}</span>
+                {/* Colored accent bar */}
+                <div className={`h-1.5 w-full flex-none ${accentColors[i % 3]}`} />
+
+                <div className="flex flex-1 flex-col p-6">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-teal-tint text-2xl ring-1 ring-teal-mid/20 transition-all duration-300 group-hover:bg-teal-dark group-hover:ring-teal-dark">
+                    <span className="transition-transform duration-300 group-hover:scale-110">{service.icon}</span>
+                  </div>
+                  <h3 className="font-heading mb-1 text-base font-bold text-teal-dark transition-colors group-hover:text-teal-mid">
+                    {service.name}
+                  </h3>
+                  {service.hours && (
+                    <p className="mb-2 text-xs font-semibold text-coral">{service.hours}</p>
+                  )}
+                  <p className="mb-5 flex-1 text-sm leading-relaxed text-brand-muted">{service.description}</p>
+                  <span className="text-xs font-bold text-teal-mid transition-colors duration-200 group-hover:text-coral">
+                    Learn more →
+                  </span>
                 </div>
-                <h3 className="font-heading mb-1 text-base font-bold text-teal-dark transition-colors group-hover:text-teal-mid">
-                  {service.name}
-                </h3>
-                {service.hours && (
-                  <p className="mb-2 text-xs font-semibold text-coral">{service.hours}</p>
-                )}
-                <p className="mb-5 flex-1 text-sm leading-relaxed text-brand-muted">{service.description}</p>
-                <span className="text-xs font-bold text-teal-mid transition-colors duration-200 group-hover:text-coral">
-                  Learn more →
-                </span>
               </Link>
             </FadeIn>
           ))}

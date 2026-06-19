@@ -6,6 +6,7 @@ import ClinicFinder from '@/components/home/ClinicFinder'
 import DoctorsPreview from '@/components/home/DoctorsPreview'
 import TestimonialsSection from '@/components/home/TestimonialsSection'
 import InsuranceSection from '@/components/home/InsuranceSection'
+import CTABand from '@/components/home/CTABand'
 import services from '@/data/services.json'
 import doctors from '@/data/doctors.json'
 import testimonials from '@/data/testimonials.json'
@@ -22,6 +23,7 @@ export default function HomePage() {
       <ClinicFinder locations={locations as Location[]} />
       <DoctorsPreview doctors={doctors as Doctor[]} />
       <TestimonialsSection testimonials={testimonials as Testimonial[]} />
+      <CTABand />
       <InsuranceSection />
     </>
   )

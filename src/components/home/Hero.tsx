@@ -30,9 +30,9 @@ export default function Hero() {
           </motion.div>
 
           <motion.h1 {...fadeUp(0.1)}
-            className="font-heading mb-5 text-4xl font-extrabold leading-[1.1] text-white md:text-5xl lg:text-6xl"
+            className="font-heading mb-5 text-5xl font-extrabold leading-[1.06] text-white md:text-6xl lg:text-7xl"
           >
-            Compassionate Care for{' '}
+            Compassionate<br />Care for{' '}
             <span className="text-teal-light">Every Child,<br />Every Stage</span>
           </motion.h1>
 
@@ -47,12 +47,23 @@ export default function Hero() {
             <Button variant="ghost" href="/locations">Find a Clinic Near You</Button>
           </motion.div>
 
-          <motion.div {...fadeUp(0.45)}
+          <motion.div {...fadeUp(0.42)}
             className="mt-8 flex flex-wrap gap-x-5 gap-y-2 text-xs text-white/55"
           >
             <span>✓ Same-day appointments</span>
             <span>✓ All insurance accepted</span>
             <span>✓ Telehealth 7 days/week</span>
+          </motion.div>
+
+          <motion.div {...fadeUp(0.54)}
+            className="mt-5 flex items-center gap-2.5"
+          >
+            <div className="flex gap-0.5">
+              {Array.from({ length: 5 }).map((_, j) => (
+                <span key={j} className="text-sm text-coral">★</span>
+              ))}
+            </div>
+            <p className="text-xs text-white/50">4.9 on Google · 500+ parent reviews</p>
           </motion.div>
         </div>
 
