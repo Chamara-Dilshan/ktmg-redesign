@@ -120,3 +120,32 @@ All required interfaces confirmed present:
 2. **`tsconfig.json` excludes `jest.config.ts`** — Required to make `npm run build` pass. Downstream tasks should be aware.
 3. Minor: Geist font files orphaned in `src/app/fonts/`.
 4. Minor: `.playwright-mcp/` and research PNGs committed — recommend adding to `.gitignore`.
+
+---
+
+## Fix Applied: Jest Config Key Correction (2026-06-19)
+
+**Correct config option name:** `setupFilesAfterEnv`
+
+Source confirmed via `node_modules/@jest/types/build/index.d.ts` — the `InitialOptions` and `Config` interfaces define `setupFilesAfterEnv: Array<string>`. The key `setupFilesAfterFramework` is not valid and was never a Jest option.
+
+**`jest.config.ts` change:**
+```diff
+-  setupFilesAfterFramework: ['<rootDir>/jest.setup.ts'],  // Jest 27+: key is setupFilesAfterFramework
++  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+```
+
+**Test output after fix (`npm test -- --passWithNoTests`):**
+```
+> ktmg-redesign@0.1.0 test
+> jest --passWithNoTests
+
+No tests found, exiting with code 0
+```
+
+Validation warning is GONE. `jest.setup.ts` is now loaded — `@testing-library/jest-dom` matchers will work in all tests without manual imports.
+
+**Additional changes in this fix commit:**
+- `.gitignore` updated: added `.playwright-mcp/` and `ktdoctor-*.png` entries
+- `src/app/fonts/GeistVF.woff` and `GeistMonoVF.woff` deleted (orphaned, unused)
+- `npm run build` still passes after all changes
