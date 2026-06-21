@@ -1,47 +1,74 @@
 import FadeIn from '@/components/ui/FadeIn'
-import { HEALOW_URL } from '@/lib/constants'
+import { HEALOW_URL, PHONE_CALL } from '@/lib/constants'
 
 export default function CTABand() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-teal-dark to-teal-mid px-6 py-16 md:px-12 md:py-20">
-      {/* Decorative large text watermark */}
-      <span className="pointer-events-none absolute -right-8 top-1/2 -translate-y-1/2 select-none font-heading text-[160px] font-black leading-none text-white/[0.04] md:text-[220px]">
+    <section className="relative overflow-hidden bg-teal-dark px-6 py-24 md:px-12 md:py-32">
+      {/* Grain texture overlay */}
+      <div className="grain absolute inset-0 pointer-events-none" />
+      {/* Subtle depth */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -right-40 -top-40 h-[700px] w-[700px] rounded-full bg-teal-mid/[0.07]" />
+        <div className="absolute -bottom-32 left-1/3 h-[500px] w-[500px] rounded-full bg-coral/[0.04]" />
+      </div>
+
+      {/* Watermark */}
+      <span className="pointer-events-none absolute -right-4 top-1/2 -translate-y-1/2 select-none font-heading text-[22vw] font-extrabold leading-none text-white/[0.02]">
         KTMG
       </span>
 
       <div className="relative mx-auto max-w-7xl">
         <FadeIn>
-          <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
-            {/* Left — copy */}
-            <div className="max-w-xl">
-              <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-white/40">
-                Same-day appointments available
-              </p>
-              <h2 className="font-heading text-4xl font-extrabold leading-[1.06] text-white md:text-5xl lg:text-6xl">
-                Your Child&apos;s Health<br />Can&apos;t Wait.
+          <div className="flex flex-col gap-14 lg:flex-row lg:items-center lg:justify-between">
+
+            {/* Left — massive headline */}
+            <div className="flex-1">
+              <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.05] px-4 py-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-coral" />
+                <span className="text-[11px] font-medium text-white/55">Same-day appointments available</span>
+              </div>
+              <h2 className="font-heading leading-[0.92] tracking-tight text-white heading-tighter"
+                  style={{ fontSize: 'clamp(3.5rem, 10vw, 8.5rem)' }}>
+                Your Child&rsquo;s<br />
+                Health<br />
+                <span className="text-coral">Can&rsquo;t Wait.</span>
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-white/60">
-                25 clinics across LA. All insurance accepted. Ages 0–21.
+              <p className="mt-7 max-w-md text-[15px] leading-relaxed text-white/45">
+                25 clinics across LA. All insurance accepted. Ages 0–21. Book online in under a minute.
               </p>
             </div>
 
-            {/* Right — CTA block */}
-            <div className="flex flex-col gap-5 lg:items-end">
+            {/* Right — CTA stack */}
+            <div className="flex flex-col gap-4 lg:min-w-[300px] lg:items-stretch">
               <a
                 href={HEALOW_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3 rounded-2xl bg-coral px-10 py-4 text-base font-extrabold text-white shadow-2xl transition-all duration-200 hover:scale-105 hover:shadow-coral/40 active:scale-95"
+                className="group flex items-center justify-between gap-4 rounded-2xl bg-coral px-8 py-5 shadow-2xl shadow-coral/25 transition-all duration-200 hover:-translate-y-0.5 hover:bg-coral/90 hover:shadow-coral/35 active:scale-[0.98]"
               >
-                Book Appointment
-                <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
+                <span className="font-heading text-lg font-bold text-white">Book Appointment</span>
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition-transform duration-200 group-hover:translate-x-0.5">
+                  →
+                </span>
               </a>
-              <div className="flex flex-col gap-1.5 text-xs text-white/40 lg:text-right">
+
+              <a
+                href={`tel:${PHONE_CALL.replace(/\D/g, '')}`}
+                className="flex items-center justify-center gap-3 rounded-2xl border border-white/10 bg-white/[0.05] px-8 py-4 text-sm font-medium text-white/65 transition-all hover:bg-white/[0.09] hover:text-white"
+              >
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                Call {PHONE_CALL}
+              </a>
+
+              <div className="mt-1 flex flex-col gap-1.5 text-xs text-white/25 lg:items-end">
                 <span>✓ No referral needed</span>
                 <span>✓ All insurance accepted</span>
                 <span>✓ Telehealth 7 days/week</span>
               </div>
             </div>
+
           </div>
         </FadeIn>
       </div>

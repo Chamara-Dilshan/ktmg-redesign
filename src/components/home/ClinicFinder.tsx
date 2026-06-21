@@ -24,22 +24,25 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
   )
 
   return (
-    <section className="bg-teal-dark px-6 py-16 md:px-12">
-      <div className="mx-auto grid max-w-7xl items-start gap-10 md:grid-cols-2">
+    <section className="relative bg-teal-dark px-6 py-20 md:px-12 overflow-hidden">
+      {/* Background decoration */}
+      <div className="pointer-events-none absolute right-0 top-0 h-[500px] w-[500px] rounded-full bg-teal-mid/[0.06] translate-x-1/3 -translate-y-1/4" />
+      <div className="pointer-events-none absolute left-0 bottom-0 h-[300px] w-[300px] rounded-full bg-coral/[0.04] -translate-x-1/3 translate-y-1/4" />
 
-        {/* Left: search + results */}
+      <div className="relative mx-auto grid max-w-7xl items-start gap-12 md:grid-cols-2">
+        {/* Left: search */}
         <div>
-          <SectionLabel className="mb-2 text-teal-light">25 Locations</SectionLabel>
-          <h2 className="font-heading mb-3 text-3xl font-extrabold text-white">
-            Find a Clinic Near You
+          <SectionLabel className="mb-3 [&>span:first-child]:bg-coral [&_p]:text-teal-light">25 Locations</SectionLabel>
+          <h2 className="font-heading mb-3 text-4xl font-extrabold tracking-tight text-white heading-tight md:text-5xl">
+            Find a Clinic<br />Near You
           </h2>
-          <p className="mb-6 text-sm leading-relaxed text-white/60">
+          <p className="mb-8 text-[14px] leading-relaxed text-white/55">
             From Santa Monica to Whittier, Beverly Hills to Northridge — always close to home.
           </p>
 
-          {/* Search */}
-          <div className="mb-5 flex items-center gap-3 rounded-xl border border-white/15 bg-white/10 px-5 py-4 focus-within:border-teal-light/50 focus-within:bg-white/15 transition-all duration-200">
-            <svg className="h-4 w-4 shrink-0 text-white/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          {/* Search input */}
+          <div className="mb-4 flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.07] px-5 py-4 ring-0 transition-all duration-200 focus-within:border-teal-light/40 focus-within:bg-white/[0.1]">
+            <svg className="h-4 w-4 shrink-0 text-white/35" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" />
             </svg>
             <input
@@ -47,65 +50,86 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
               value={query}
               onChange={e => setQuery(e.target.value)}
               placeholder="Enter city, zip, or neighborhood..."
-              className="flex-1 bg-transparent text-sm text-white placeholder-white/40 outline-none"
+              className="flex-1 bg-transparent text-sm text-white placeholder-white/35 outline-none"
             />
+            {query && (
+              <button onClick={() => setQuery('')} className="text-white/30 hover:text-white/60 transition-colors">
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            )}
           </div>
 
           {/* Results */}
-          <ul className="space-y-2.5">
+          <ul className="space-y-2">
             {results.map(loc => (
-              <li key={loc.slug} className="group flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.06] px-4 py-3.5 transition-all duration-200 hover:border-white/20 hover:bg-white/10">
-                <div className="flex items-center gap-3">
-                  <div className="h-1.5 w-1.5 shrink-0 rounded-full bg-coral" />
-                  <div>
-                    <p className="text-sm font-semibold text-white">{loc.name}</p>
-                    <p className="text-xs text-white/45">{loc.address}, {loc.city}</p>
+              <li key={loc.slug}>
+                <Link
+                  href={`/locations/${loc.slug}`}
+                  className="group flex items-center justify-between rounded-xl border border-white/[0.08] bg-white/[0.05] px-4 py-3.5 transition-all duration-200 hover:border-white/[0.15] hover:bg-white/[0.09]"
+                >
+                  <div className="flex items-center gap-3.5">
+                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-coral/15">
+                      <div className="h-2 w-2 rounded-full bg-coral" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-white">{loc.name}</p>
+                      <p className="text-[11px] text-white/40">{loc.address}, {loc.city}</p>
+                    </div>
                   </div>
-                </div>
-                <Link href={`/locations/${loc.slug}`} className="text-xs font-bold text-coral opacity-0 transition-all duration-200 group-hover:opacity-100">
-                  View →
+                  <span className="ml-3 shrink-0 text-xs font-semibold text-coral opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                    View →
+                  </span>
                 </Link>
               </li>
             ))}
           </ul>
 
-          <Link href="/locations" className="mt-5 block text-center text-sm font-semibold text-white/50 transition-colors hover:text-teal-light">
+          <Link href="/locations" className="mt-5 block text-center text-xs font-semibold text-white/35 transition-colors hover:text-teal-light">
             View all 25 locations →
           </Link>
         </div>
 
         {/* Right: coverage panel */}
-        <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-8 md:p-10">
+        <div className="relative overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.03] p-8 md:p-10">
           {/* Large background number */}
-          <span className="pointer-events-none absolute -right-4 -top-4 select-none font-heading text-[160px] font-black leading-none text-white/[0.03]">
+          <span className="pointer-events-none absolute -right-6 -top-6 select-none font-heading text-[180px] font-extrabold leading-none text-white/[0.025]">
             25
           </span>
 
           <div className="relative">
-            <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.25em] text-teal-light">
-              Coverage across Greater LA
-            </p>
-            <div className="mb-6 mt-3 h-0.5 w-10 bg-coral" />
+            <SectionLabel className="mb-4 [&>span:first-child]:bg-teal-light [&_p]:text-teal-light">Coverage</SectionLabel>
+            <h3 className="font-heading mb-6 text-xl font-bold text-white">Greater LA Coverage</h3>
 
-            {/* City scatter */}
-            <div className="flex flex-wrap gap-x-2 gap-y-1.5">
-              {cities.map((city, i) => (
-                <span key={city} className="text-sm text-white/50 after:ml-2 after:text-white/20 after:content-['·'] last:after:content-['']">
+            {/* City grid */}
+            <div className="grid grid-cols-2 gap-x-3 gap-y-2">
+              {cities.map((city) => (
+                <div key={city} className="flex items-center gap-2 text-sm text-white/50">
+                  <div className="h-1 w-1 shrink-0 rounded-full bg-coral/60" />
                   {city}
-                </span>
+                </div>
               ))}
             </div>
 
-            <div className="mt-8 border-t border-white/10 pt-6">
-              <p className="text-xs text-white/40 leading-relaxed">
-                Can&apos;t make it in? Telehealth is available 7 days a week — same trusted KTMG doctors, from wherever you are.
-              </p>
-              <Link
-                href="/locations"
-                className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-coral transition-colors hover:text-white"
-              >
-                See all clinic details →
-              </Link>
+            <div className="mt-8 rounded-2xl border border-white/[0.08] bg-white/[0.04] p-5">
+              <div className="flex items-start gap-3">
+                <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-teal-mid/30 text-base">
+                  💻
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-white">Can&apos;t make it in?</p>
+                  <p className="mt-1 text-xs leading-relaxed text-white/45">
+                    Telehealth available 7 days a week — same trusted KTMG doctors, wherever you are.
+                  </p>
+                  <Link
+                    href="/services/telehealth"
+                    className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-coral transition-colors hover:text-white"
+                  >
+                    Learn about Telehealth →
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

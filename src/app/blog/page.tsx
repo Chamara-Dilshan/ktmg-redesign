@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import SectionLabel from '@/components/ui/SectionLabel'
+import PageHero from '@/components/layout/PageHero'
 import BookingCTA from '@/components/ui/BookingCTA'
 
 export const metadata: Metadata = {
@@ -19,47 +19,49 @@ const topics = [
 
 export default function BlogPage() {
   return (
-    <div className="px-6 py-16 md:px-12">
-      <div className="mx-auto max-w-7xl">
-        <SectionLabel className="mb-2">Health Blog</SectionLabel>
-        <h1 className="font-heading mb-3 text-3xl font-extrabold text-teal-dark md:text-4xl">
-          Health News &amp; Stories
-        </h1>
-        <p className="mb-12 max-w-xl text-sm leading-relaxed text-brand-muted">
-          Expert pediatric health tips, developmental guides, and updates from our board-certified
-          doctors — coming soon.
-        </p>
+    <>
+      <PageHero
+        label="Health Blog"
+        title="Health News & Stories"
+        subtitle="Expert pediatric health tips, developmental guides, and updates from our board-certified doctors — coming soon."
+      />
 
-        {/* Topics preview */}
-        <div className="mb-12 grid grid-cols-2 gap-3 sm:grid-cols-3 md:gap-5 lg:grid-cols-6">
-          {topics.map(t => (
-            <div key={t.label}
-                 className="flex flex-col items-center gap-2 rounded-xl border border-brand-border bg-white p-4 text-center">
-              <span className="text-3xl">{t.icon}</span>
-              <span className="text-xs font-semibold text-brand-muted">{t.label}</span>
+      <div className="bg-brand-bg px-6 py-14 md:px-12">
+        <div className="mx-auto max-w-7xl">
+
+          {/* Topics preview */}
+          <div className="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+            {topics.map(t => (
+              <div
+                key={t.label}
+                className="flex flex-col items-center gap-2.5 rounded-2xl border border-brand-border bg-white p-5 text-center shadow-sm"
+              >
+                <span className="text-3xl">{t.icon}</span>
+                <span className="text-xs font-semibold leading-tight text-brand-muted">{t.label}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Coming soon callout */}
+          <div className="rounded-3xl bg-teal-dark px-8 py-10 text-center md:py-14">
+            <div className="mb-4 text-4xl">✍️</div>
+            <h2 className="font-heading mb-3 text-2xl font-extrabold text-white">Articles Coming Soon</h2>
+            <p className="mx-auto mb-8 max-w-md text-sm leading-relaxed text-white/55">
+              Our pediatricians are preparing expert articles on child health, development, and
+              wellness. In the meantime, book an appointment or find resources below.
+            </p>
+            <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <BookingCTA label="Book Appointment" />
+              <Link
+                href="/patient-resources"
+                className="inline-flex items-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white/80 transition-colors hover:bg-white/10"
+              >
+                Patient Resources →
+              </Link>
             </div>
-          ))}
-        </div>
-
-        {/* Coming soon callout */}
-        <div className="rounded-2xl border border-brand-border bg-teal-tint p-8 text-center md:p-12">
-          <div className="mb-4 text-4xl">✍️</div>
-          <h2 className="font-heading mb-3 text-2xl font-extrabold text-teal-dark">
-            Articles Coming Soon
-          </h2>
-          <p className="mx-auto mb-8 max-w-md text-sm leading-relaxed text-brand-muted">
-            Our pediatricians are preparing expert articles on child health, development, and
-            wellness. In the meantime, book an appointment or find a clinic near you.
-          </p>
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <BookingCTA label="Book Appointment" />
-            <Link href="/patient-resources"
-                  className="rounded-lg border border-teal-dark px-6 py-3 text-center text-sm font-bold text-teal-dark hover:bg-teal-tint">
-              Patient Resources →
-            </Link>
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }

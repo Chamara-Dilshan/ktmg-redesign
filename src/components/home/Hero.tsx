@@ -1,99 +1,130 @@
 'use client'
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
+import { useRef } from 'react'
 import BookingCTA from '@/components/ui/BookingCTA'
 import Button from '@/components/ui/Button'
+import { PHONE_CALL } from '@/lib/constants'
 
 const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 28 },
+  initial: { opacity: 0, y: 32 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] as const },
+  transition: { duration: 0.85, delay, ease: [0.22, 1, 0.36, 1] as const },
 })
 
-export default function Hero() {
-  return (
-    <section className="relative flex min-h-[88vh] items-center overflow-hidden">
-      {/* Full-bleed background image */}
-      <Image
-        src="/hero-clinic.png"
-        alt="Kids & Teens Medical Group clinic"
-        fill
-        className="object-cover object-center"
-        priority
-      />
+const ticker = [
+  '25 Clinics', 'Same-Day Appointments', 'Telehealth 7 Days', 'All Insurance Accepted',
+  'Ages 0–21', 'Board-Certified Pediatricians', '18 Years of Excellence', 'Spanish · Armenian · Tagalog',
+]
 
-      {/* Left-to-right gradient: opaque teal on left, photo shows on right */}
-      <div className="absolute inset-0 bg-gradient-to-r from-teal-dark via-teal-dark/80 to-teal-dark/20" />
-      {/* Bottom vignette to ground the floating badges */}
-      <div className="absolute inset-0 bg-gradient-to-t from-teal-dark/60 via-transparent to-transparent" />
+export default function Hero() {
+  const sectionRef = useRef<HTMLElement>(null)
+  const { scrollY } = useScroll()
+  const bgY = useTransform(scrollY, [0, 700], ['0%', '25%'])
+
+  return (
+    <section ref={sectionRef} className="relative flex min-h-[94vh] flex-col overflow-hidden">
+      {/* Parallax background */}
+      <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110 will-change-transform">
+        <Image
+          src="/hero-clinic.png"
+          alt="Kids & Teens Medical Group clinic"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+      </motion.div>
+
+      {/* Overlays */}
+      <div className="absolute inset-0 bg-gradient-to-r from-teal-dark via-teal-dark/88 to-teal-dark/10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-teal-dark/80 via-transparent to-transparent" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-24 md:px-12">
-        <div className="max-w-2xl">
-          <motion.div
-            {...fadeUp(0)}
-            className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white/90 backdrop-blur-sm"
-          >
-            <span className="text-coral">★</span> LA&apos;s Largest Pediatric Network
-          </motion.div>
+      <div className="relative z-10 flex flex-1 items-center">
+        <div className="mx-auto w-full max-w-7xl px-6 py-28 md:px-12">
+          <div className="max-w-[680px]">
 
-          <motion.h1
-            {...fadeUp(0.1)}
-            className="font-heading mb-6 text-6xl font-extrabold leading-[1.03] text-white md:text-7xl lg:text-8xl"
-          >
-            Compassionate<br />
-            Care for{' '}
-            <span className="text-teal-light">Every<br />Child.</span>
-          </motion.h1>
+            {/* Trust badge */}
+            <motion.div
+              {...fadeUp(0)}
+              className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.07] px-4 py-2 backdrop-blur-sm"
+            >
+              <span className="flex h-4 w-4 items-center justify-center rounded-full bg-coral text-[8px] text-white">★</span>
+              <span className="text-xs font-medium tracking-wide text-white/75">LA&rsquo;s Largest Pediatric Network</span>
+            </motion.div>
 
-          <motion.p
-            {...fadeUp(0.2)}
-            className="mb-8 max-w-lg text-base leading-relaxed text-white/70 md:text-lg"
-          >
-            25 clinics across Los Angeles. Board-certified pediatricians. Extended hours, same-day appointments, and telehealth — all under one trusted name.
-          </motion.p>
+            {/* Headline */}
+            <motion.h1
+              {...fadeUp(0.08)}
+              className="font-heading mb-7 text-[clamp(3.25rem,9vw,7rem)] font-extrabold leading-[0.95] tracking-tight text-white heading-tighter"
+            >
+              Compassionate<br />
+              Care for{' '}
+              <span className="text-teal-light">Every Child.</span>
+            </motion.h1>
 
-          <motion.div {...fadeUp(0.3)} className="flex flex-wrap gap-3">
-            <BookingCTA label="Book Appointment" className="animate-pulse-glow" />
-            <Button variant="ghost" href="/locations">Find a Clinic Near You</Button>
-          </motion.div>
+            {/* Sub */}
+            <motion.p
+              {...fadeUp(0.18)}
+              className="mb-9 max-w-md text-[15px] leading-[1.8] text-white/60"
+            >
+              25 clinics across Los Angeles. Board-certified pediatricians. Extended hours, same-day appointments, and telehealth — all under one trusted name.
+            </motion.p>
 
-          <motion.div
-            {...fadeUp(0.42)}
-            className="mt-8 flex flex-wrap gap-x-5 gap-y-2 text-xs text-white/50"
-          >
-            <span>✓ Same-day appointments</span>
-            <span>✓ All insurance accepted</span>
-            <span>✓ Telehealth 7 days/week</span>
-          </motion.div>
+            {/* CTAs */}
+            <motion.div {...fadeUp(0.28)} className="flex flex-wrap items-center gap-3">
+              <BookingCTA label="Book Appointment" className="animate-pulse-glow" />
+              <Button variant="ghost" href="/locations">Find a Clinic →</Button>
+              <a
+                href={`tel:${PHONE_CALL.replace(/\D/g, '')}`}
+                className="hidden items-center gap-2 text-sm text-white/45 transition-colors hover:text-white/75 md:flex"
+              >
+                <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                {PHONE_CALL}
+              </a>
+            </motion.div>
 
-          <motion.div {...fadeUp(0.54)} className="mt-5 flex items-center gap-2.5">
-            <div className="flex gap-0.5">
-              {Array.from({ length: 5 }).map((_, j) => (
-                <span key={j} className="text-sm text-coral">★</span>
-              ))}
-            </div>
-            <p className="text-xs text-white/50">4.9 on Google · 500+ parent reviews</p>
-          </motion.div>
+            {/* Trust signals */}
+            <motion.div
+              {...fadeUp(0.38)}
+              className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-2"
+            >
+              <div className="flex items-center gap-1.5">
+                <div className="flex gap-0.5">
+                  {Array.from({ length: 5 }).map((_, j) => (
+                    <span key={j} className="text-xs text-coral">★</span>
+                  ))}
+                </div>
+                <span className="text-xs text-white/40">4.9 · 500+ reviews</span>
+              </div>
+              <span className="hidden text-white/15 md:block">|</span>
+              <span className="text-xs text-white/40">✓ Same-day available</span>
+              <span className="text-xs text-white/40">✓ All insurance</span>
+              <span className="text-xs text-white/40">✓ Ages 0–21</span>
+            </motion.div>
+
+          </div>
         </div>
-
-        {/* Floating stat badges — bottom-right, visible on medium+ */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
-          className="absolute bottom-10 right-6 hidden gap-3 md:flex md:right-12"
-        >
-          <div className="rounded-2xl bg-white px-5 py-3 shadow-2xl">
-            <p className="font-heading text-2xl font-extrabold text-teal-dark">25+</p>
-            <p className="text-xs text-brand-muted">Clinics in LA</p>
-          </div>
-          <div className="rounded-2xl bg-coral px-5 py-3 shadow-2xl">
-            <p className="font-heading text-2xl font-extrabold text-white">50+</p>
-            <p className="text-xs text-white/80">Doctors</p>
-          </div>
-        </motion.div>
       </div>
+
+      {/* Bottom ticker */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.7 }}
+        className="relative z-10 overflow-hidden border-t border-white/[0.08] bg-teal-dark/60 backdrop-blur-sm"
+      >
+        <div className="flex animate-marquee gap-0 whitespace-nowrap py-3">
+          {[...ticker, ...ticker].map((item, i) => (
+            <span key={i} className="flex items-center gap-5 px-6 text-[11px] font-semibold uppercase tracking-[0.15em] text-white/40">
+              {item}
+              <span className="h-1 w-1 rounded-full bg-coral/50" />
+            </span>
+          ))}
+        </div>
+      </motion.div>
     </section>
   )
 }

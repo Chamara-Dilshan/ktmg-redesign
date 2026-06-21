@@ -1,22 +1,22 @@
 import type { Metadata } from 'next'
-import { Poppins, Roboto } from 'next/font/google'
+import { Bricolage_Grotesque, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import UrgencyBar from '@/components/layout/UrgencyBar'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import MobileBookingBar from '@/components/layout/MobileBookingBar'
 
-const poppins = Poppins({
+const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
-  weight: ['700', '800'],
-  variable: '--font-poppins',
+  weight: ['500', '700', '800'],
+  variable: '--font-bricolage',
   display: 'swap',
 })
 
-const roboto = Roboto({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  weight: ['400', '500'],
-  variable: '--font-roboto',
+  weight: ['400', '500', '600'],
+  variable: '--font-jakarta',
   display: 'swap',
 })
 
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${roboto.variable}`}>
+    <html lang="en" className={`${bricolage.variable} ${jakarta.variable}`}>
       <body className="font-body bg-brand-bg pb-20 text-brand-text antialiased md:pb-0">
         <UrgencyBar />
         <Navbar />

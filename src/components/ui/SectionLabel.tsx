@@ -2,8 +2,11 @@ import { cn } from '@/lib/utils'
 
 export default function SectionLabel({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <p className={cn('text-xs font-bold uppercase tracking-widest text-teal-mid', className)}>
-      {children}
-    </p>
+    <div className={cn('inline-flex items-center gap-2', className)}>
+      <span className="block h-px w-5 bg-coral" />
+      <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-teal-mid">
+        {children}
+      </p>
+    </div>
   )
 }

@@ -13,12 +13,17 @@ export default function BookingCTA({ label = 'Book Appointment', className }: Bo
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        'group inline-flex items-center gap-2 rounded-xl bg-coral px-6 py-3 text-sm font-bold text-white shadow-md shadow-coral/20 transition-all duration-200 hover:bg-coral/90 hover:shadow-lg hover:shadow-coral/30 active:scale-95',
+        'group inline-flex items-center gap-2.5 rounded-full bg-coral px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-coral/25 transition-all duration-200 hover:bg-coral/90 hover:shadow-xl hover:shadow-coral/30 hover:-translate-y-0.5 active:scale-95',
         className
       )}
     >
       {label}
-      <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-1">→</span>
+      <span
+        aria-hidden="true"
+        className="flex h-5 w-5 items-center justify-center rounded-full bg-white/20 text-xs transition-transform duration-200 group-hover:translate-x-0.5"
+      >
+        →
+      </span>
     </a>
   )
 }

@@ -11,11 +11,11 @@ interface ButtonProps {
 }
 
 export default function Button({ variant = 'primary', href, onClick, children, className, external }: ButtonProps) {
-  const base = 'inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-bold transition-opacity hover:opacity-90'
+  const base = 'inline-flex items-center gap-2 rounded-full px-6 py-2.5 text-sm font-semibold transition-all duration-200 active:scale-95'
   const variants = {
-    primary: 'bg-teal-dark text-white',
-    ghost:   'border border-white/30 bg-white/10 text-white',
-    outline: 'border-2 border-teal-dark text-teal-dark',
+    primary: 'bg-teal-dark text-white hover:bg-teal-mid shadow-sm',
+    ghost:   'border border-white/25 text-white hover:bg-white/10',
+    outline: 'border-2 border-teal-dark text-teal-dark hover:bg-teal-dark hover:text-white',
   }
   const cls = cn(base, variants[variant], className)
 

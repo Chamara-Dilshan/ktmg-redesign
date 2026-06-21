@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import SectionLabel from '@/components/ui/SectionLabel'
 import BookingCTA from '@/components/ui/BookingCTA'
 import FadeIn from '@/components/ui/FadeIn'
 
@@ -17,20 +16,35 @@ const textPartners = ['Medi-Cal', 'Blue Cross', 'Lakeside', 'Health Care Partner
 
 export default function InsuranceSection() {
   return (
-    <section className="bg-white px-6 py-16 md:px-12 md:py-20">
+    <section className="bg-white px-6 py-20 md:px-12 md:py-24">
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-12 lg:grid-cols-[1fr_2fr] lg:items-start lg:gap-20">
+        <div className="grid gap-14 lg:grid-cols-[5fr_7fr] lg:items-center lg:gap-20">
 
-          {/* Left — declaration */}
+          {/* Left */}
           <FadeIn>
-            <SectionLabel className="mb-3">Insurance</SectionLabel>
-            <h2 className="font-heading text-3xl font-extrabold leading-tight text-teal-dark md:text-4xl">
-              Insurance is never a reason<br className="hidden md:block" /> to delay care.
+            <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.18em] text-brand-muted">Insurance</p>
+            <h2 className="font-heading text-[clamp(2rem,4.5vw,3.25rem)] font-extrabold leading-[1.05] tracking-tight text-teal-dark heading-tight">
+              Insurance is never<br />a reason to delay care.
             </h2>
-            <p className="mt-4 text-sm leading-relaxed text-brand-muted">
+            <p className="mt-5 text-[15px] leading-relaxed text-brand-muted">
               HMO, PPO, Medi-Cal, and most commercial plans accepted. No insurance? Ask about affordable self-pay options.
             </p>
-            <div className="mt-6">
+
+            {/* Acceptance highlights */}
+            <div className="mt-6 space-y-2.5">
+              {['Most HMO & PPO plans', 'Medi-Cal accepted', 'Self-pay options available'].map(item => (
+                <div key={item} className="flex items-center gap-3">
+                  <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-teal-tint">
+                    <svg className="h-3 w-3 text-teal-mid" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-sm font-medium text-brand-text">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8">
               <BookingCTA label="Check Your Insurance" />
             </div>
           </FadeIn>
@@ -41,29 +55,32 @@ export default function InsuranceSection() {
               {partnerLogos.map((p, i) => (
                 <div
                   key={p.name}
-                  className="flex items-center justify-center rounded-xl border border-brand-border bg-brand-bg p-4 transition-all duration-200 hover:border-teal-mid/30 hover:bg-teal-tint hover:shadow-sm"
-                  style={{ transitionDelay: `${i * 40}ms` }}
+                  className="flex items-center justify-center rounded-2xl border border-brand-border bg-brand-bg p-4 transition-all duration-200 hover:border-teal-mid/20 hover:bg-teal-tint hover:shadow-sm"
+                  style={{ transitionDelay: `${i * 35}ms` }}
                 >
                   <Image
                     src={p.src}
                     alt={p.name}
                     width={100}
                     height={40}
-                    className="max-h-9 w-auto object-contain"
+                    className="max-h-9 w-auto object-contain opacity-75 transition-opacity hover:opacity-100"
                   />
                 </div>
               ))}
             </div>
 
-            <div className="mt-3 flex flex-wrap gap-2">
+            <div className="mt-4 flex flex-wrap gap-2">
               {textPartners.map(p => (
                 <span
                   key={p}
-                  className="rounded-lg border border-brand-border bg-brand-bg px-4 py-2 text-xs font-semibold text-brand-muted transition-colors hover:border-teal-mid/30 hover:bg-teal-tint"
+                  className="rounded-full border border-brand-border bg-brand-bg px-4 py-1.5 text-xs font-semibold text-brand-muted transition-colors hover:border-teal-mid/20 hover:bg-teal-tint"
                 >
                   {p}
                 </span>
               ))}
+              <span className="rounded-full border border-dashed border-brand-border px-4 py-1.5 text-xs text-brand-muted">
+                + many more
+              </span>
             </div>
           </FadeIn>
         </div>

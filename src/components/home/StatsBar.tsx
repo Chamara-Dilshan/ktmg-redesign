@@ -2,32 +2,36 @@
 import CountUp from '@/components/ui/CountUp'
 
 const stats = [
-  { value: '25',   label: 'Clinic Locations'       },
-  { value: '50+',  label: 'Board-Certified Doctors' },
-  { value: '18',   label: 'Years of Excellence'     },
-  { value: '0–21', label: 'Ages We Serve'           },
+  { value: '25',   suffix: '',  label: 'Clinic Locations',     note: 'Across Greater LA' },
+  { value: '50',   suffix: '+', label: 'Board-Certified Docs', note: 'All FAAP Certified' },
+  { value: '18',   suffix: '',  label: 'Years of Excellence',  note: 'Est. 2006' },
+  { value: '0–21', suffix: '',  label: 'Ages We Serve',        note: 'Newborn to Adult' },
 ]
 
 export default function StatsBar() {
   return (
-    <section className="bg-teal-dark">
+    <div className="border-y border-brand-border bg-white">
       <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-2 divide-x divide-white/10 md:grid-cols-4">
+        <div className="grid grid-cols-2 divide-x divide-y divide-brand-border md:grid-cols-4 md:divide-y-0">
           {stats.map((s) => (
-            <div
-              key={s.label}
-              className="group flex flex-col items-center justify-center px-6 py-10 transition-colors duration-200 hover:bg-white/5 md:py-12"
-            >
-              <p className="font-heading text-5xl font-black leading-none text-white md:text-7xl">
-                <CountUp value={s.value} />
-              </p>
-              <p className="mt-3 text-center text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
-                {s.label}
-              </p>
+            <div key={s.label} className="px-8 py-12 md:px-10 md:py-14">
+              <div className="flex items-end gap-0.5 leading-none">
+                <p className="font-heading text-[4rem] font-extrabold leading-none tracking-tight text-teal-dark md:text-[5.5rem]">
+                  <CountUp value={s.value} />
+                </p>
+                {s.suffix && (
+                  <span className="mb-2 font-heading text-[2rem] font-extrabold leading-none text-coral md:text-[3rem]">
+                    {s.suffix}
+                  </span>
+                )}
+              </div>
+              <div className="mt-4 h-0.5 w-10 bg-coral" />
+              <p className="mt-3 text-[11px] font-bold uppercase tracking-[0.16em] text-brand-text">{s.label}</p>
+              <p className="mt-1 text-[11px] text-brand-muted">{s.note}</p>
             </div>
           ))}
         </div>
       </div>
-    </section>
+    </div>
   )
 }

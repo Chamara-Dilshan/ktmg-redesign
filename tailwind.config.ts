@@ -16,8 +16,8 @@ const config: Config = {
         'teal-tint':   '#E8F4F7',
       },
       fontFamily: {
-        heading: ['var(--font-poppins)', 'sans-serif'],
-        body:    ['var(--font-roboto)',   'sans-serif'],
+        heading: ['var(--font-bricolage)', 'sans-serif'],
+        body:    ['var(--font-jakarta)',   'sans-serif'],
       },
     },
   },
