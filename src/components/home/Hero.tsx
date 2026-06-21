@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useRef } from 'react'
 import BookingCTA from '@/components/ui/BookingCTA'
 import Button from '@/components/ui/Button'
+import { useLanguage } from '@/contexts/LanguageContext'
 import { PHONE_CALL } from '@/lib/constants'
 
 const fadeUp = (delay = 0) => ({
@@ -12,15 +13,13 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 0.85, delay, ease: [0.22, 1, 0.36, 1] as const },
 })
 
-const ticker = [
-  '25 Clinics', 'Same-Day Appointments', 'Telehealth 7 Days', 'All Insurance Accepted',
-  'Ages 0–21', 'Board-Certified Pediatricians', '18 Years of Excellence', 'Spanish · Armenian · Tagalog',
-]
-
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null)
   const { scrollY } = useScroll()
   const bgY = useTransform(scrollY, [0, 700], ['0%', '25%'])
+  const { t } = useLanguage()
+
+  const ticker = Array.from({ length: 8 }, (_, i) => t(`hero.ticker.${i}`))
 
   return (
     <section ref={sectionRef} className="relative flex min-h-[94vh] flex-col overflow-hidden">
@@ -50,7 +49,7 @@ export default function Hero() {
               className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.07] px-4 py-2 backdrop-blur-sm"
             >
               <span className="flex h-4 w-4 items-center justify-center rounded-full bg-coral text-[8px] text-white">★</span>
-              <span className="text-xs font-medium tracking-wide text-white/75">LA&rsquo;s Largest Pediatric Network</span>
+              <span className="text-xs font-medium tracking-wide text-white/75">{t('hero.badge')}</span>
             </motion.div>
 
             {/* Headline */}
@@ -58,9 +57,9 @@ export default function Hero() {
               {...fadeUp(0.08)}
               className="font-heading mb-7 text-[clamp(3.25rem,9vw,7rem)] font-extrabold leading-[0.95] tracking-tight text-white heading-tighter"
             >
-              Compassionate<br />
-              Care for{' '}
-              <span className="text-teal-light">Every Child.</span>
+              {t('hero.headline1')}<br />
+              {t('hero.headline2')}{' '}
+              <span className="text-teal-light">{t('hero.headline3')}</span>
             </motion.h1>
 
             {/* Sub */}
@@ -68,13 +67,13 @@ export default function Hero() {
               {...fadeUp(0.18)}
               className="mb-9 max-w-md text-[15px] leading-[1.8] text-white/60"
             >
-              25 clinics across Los Angeles. Board-certified pediatricians. Extended hours, same-day appointments, and telehealth — all under one trusted name.
+              {t('hero.subtitle')}
             </motion.p>
 
             {/* CTAs */}
             <motion.div {...fadeUp(0.28)} className="flex flex-wrap items-center gap-3">
-              <BookingCTA label="Book Appointment" className="animate-pulse-glow" />
-              <Button variant="ghost" href="/locations">Find a Clinic →</Button>
+              <BookingCTA label={t('hero.bookAppointment')} className="animate-pulse-glow" />
+              <Button variant="ghost" href="/locations">{t('hero.findClinic')}</Button>
               <a
                 href={`tel:${PHONE_CALL.replace(/\D/g, '')}`}
                 className="hidden items-center gap-2 text-sm text-white/45 transition-colors hover:text-white/75 md:flex"
@@ -97,12 +96,12 @@ export default function Hero() {
                     <span key={j} className="text-xs text-coral">★</span>
                   ))}
                 </div>
-                <span className="text-xs text-white/40">4.9 · 500+ reviews</span>
+                <span className="text-xs text-white/40">{t('hero.reviews')}</span>
               </div>
               <span className="hidden text-white/15 md:block">|</span>
-              <span className="text-xs text-white/40">✓ Same-day available</span>
-              <span className="text-xs text-white/40">✓ All insurance</span>
-              <span className="text-xs text-white/40">✓ Ages 0–21</span>
+              <span className="text-xs text-white/40">{t('hero.sameDay')}</span>
+              <span className="text-xs text-white/40">{t('hero.allInsurance')}</span>
+              <span className="text-xs text-white/40">{t('hero.ages')}</span>
             </motion.div>
 
           </div>

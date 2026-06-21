@@ -2,10 +2,13 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import SectionLabel from '@/components/ui/SectionLabel'
+import ServiceIcon from '@/components/ui/ServiceIcon'
+import { useLanguage } from '@/contexts/LanguageContext'
 import type { Location } from '@/types'
 
 export default function ClinicFinder({ locations }: { locations: Location[] }) {
   const [query, setQuery] = useState('')
+  const { t } = useLanguage()
 
   const results = useMemo(() => {
     if (!query.trim()) return locations.slice(0, 5)
@@ -25,19 +28,19 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
 
   return (
     <section className="relative bg-teal-dark px-6 py-20 md:px-12 overflow-hidden">
-      {/* Background decoration */}
       <div className="pointer-events-none absolute right-0 top-0 h-[500px] w-[500px] rounded-full bg-teal-mid/[0.06] translate-x-1/3 -translate-y-1/4" />
       <div className="pointer-events-none absolute left-0 bottom-0 h-[300px] w-[300px] rounded-full bg-coral/[0.04] -translate-x-1/3 translate-y-1/4" />
 
       <div className="relative mx-auto grid max-w-7xl items-start gap-12 md:grid-cols-2">
         {/* Left: search */}
         <div>
-          <SectionLabel className="mb-3 [&>span:first-child]:bg-coral [&_p]:text-teal-light">25 Locations</SectionLabel>
+          <SectionLabel className="mb-3 [&>span:first-child]:bg-coral [&_p]:text-teal-light">{t('clinicFinder.label')}</SectionLabel>
           <h2 className="font-heading mb-3 text-4xl font-extrabold tracking-tight text-white heading-tight md:text-5xl">
-            Find a Clinic<br />Near You
+            {t('clinicFinder.headline1')}<br />
+            {t('clinicFinder.headline2')}
           </h2>
           <p className="mb-8 text-[14px] leading-relaxed text-white/55">
-            From Santa Monica to Whittier, Beverly Hills to Northridge — always close to home.
+            {t('clinicFinder.subtitle')}
           </p>
 
           {/* Search input */}
@@ -49,7 +52,7 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
               type="text"
               value={query}
               onChange={e => setQuery(e.target.value)}
-              placeholder="Enter city, zip, or neighborhood..."
+              placeholder={t('clinicFinder.placeholder')}
               className="flex-1 bg-transparent text-sm text-white placeholder-white/35 outline-none"
             />
             {query && (
@@ -79,7 +82,7 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
                     </div>
                   </div>
                   <span className="ml-3 shrink-0 text-xs font-semibold text-coral opacity-0 transition-opacity duration-200 group-hover:opacity-100">
-                    View →
+                    {t('clinicFinder.view')}
                   </span>
                 </Link>
               </li>
@@ -87,22 +90,20 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
           </ul>
 
           <Link href="/locations" className="mt-5 block text-center text-xs font-semibold text-white/35 transition-colors hover:text-teal-light">
-            View all 25 locations →
+            {t('clinicFinder.viewAll')}
           </Link>
         </div>
 
         {/* Right: coverage panel */}
         <div className="relative overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.03] p-8 md:p-10">
-          {/* Large background number */}
           <span className="pointer-events-none absolute -right-6 -top-6 select-none font-heading text-[180px] font-extrabold leading-none text-white/[0.025]">
             25
           </span>
 
           <div className="relative">
-            <SectionLabel className="mb-4 [&>span:first-child]:bg-teal-light [&_p]:text-teal-light">Coverage</SectionLabel>
-            <h3 className="font-heading mb-6 text-xl font-bold text-white">Greater LA Coverage</h3>
+            <SectionLabel className="mb-4 [&>span:first-child]:bg-teal-light [&_p]:text-teal-light">{t('clinicFinder.coverageLabel')}</SectionLabel>
+            <h3 className="font-heading mb-6 text-xl font-bold text-white">{t('clinicFinder.coverageTitle')}</h3>
 
-            {/* City grid */}
             <div className="grid grid-cols-2 gap-x-3 gap-y-2">
               {cities.map((city) => (
                 <div key={city} className="flex items-center gap-2 text-sm text-white/50">
@@ -114,19 +115,19 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
 
             <div className="mt-8 rounded-2xl border border-white/[0.08] bg-white/[0.04] p-5">
               <div className="flex items-start gap-3">
-                <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-teal-mid/30 text-base">
-                  💻
+                <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-teal-mid/30 text-teal-light">
+                  <ServiceIcon slug="telehealth" className="h-4 w-4" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-white">Can&apos;t make it in?</p>
+                  <p className="text-sm font-semibold text-white">{t('clinicFinder.cantMakeIt')}</p>
                   <p className="mt-1 text-xs leading-relaxed text-white/45">
-                    Telehealth available 7 days a week — same trusted KTMG doctors, wherever you are.
+                    {t('clinicFinder.telehealthDesc')}
                   </p>
                   <Link
                     href="/services/telehealth"
                     className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-coral transition-colors hover:text-white"
                   >
-                    Learn about Telehealth →
+                    {t('clinicFinder.learnTelehealth')}
                   </Link>
                 </div>
               </div>

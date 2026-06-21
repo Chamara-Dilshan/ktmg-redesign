@@ -3,25 +3,29 @@
     "slug": "adrienne-c-altman",
     "name": "Dr. Adrienne C. Altman",
     "credentials": "MD",
-    "locations": ["valencia"]
+    "locations": ["valencia"],
+    "photo": "/doctors/adrienne-c-altman.jpg"
   },
   {
     "slug": "ahoo-sahba",
     "name": "Dr. Ahoo Sahba",
     "credentials": "MD",
-    "locations": ["van-nuys"]
+    "locations": ["van-nuys"],
+    "photo": "/doctors/ahoo-sahba.jpg"
   },
   {
     "slug": "amrita-dosanjh",
     "name": "Dr. Amrita Dosanjh",
     "credentials": "MD",
-    "locations": ["west-hills"]
+    "locations": ["west-hills"],
+    "photo": "/doctors/amrita-dosanjh.jpg"
   },
   {
     "slug": "anwar-arastu",
     "name": "Dr. Anwar Arastu",
     "credentials": "MD",
-    "locations": ["la-mirada"]
+    "locations": ["la-mirada"],
+    "photo": "/doctors/anwar-arastu.jpg"
   },
   {
     "slug": "azam-jazayeri",

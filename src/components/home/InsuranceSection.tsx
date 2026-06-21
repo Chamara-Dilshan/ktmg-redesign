@@ -1,6 +1,8 @@
+'use client'
 import Image from 'next/image'
 import BookingCTA from '@/components/ui/BookingCTA'
 import FadeIn from '@/components/ui/FadeIn'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 const partnerLogos = [
   { name: 'Regal Medical Group',    src: '/partners/regal.png'      },
@@ -15,6 +17,14 @@ const partnerLogos = [
 const textPartners = ['Medi-Cal', 'Blue Cross', 'Lakeside', 'Health Care Partners']
 
 export default function InsuranceSection() {
+  const { t } = useLanguage()
+
+  const highlights = [
+    'insurance.hmo',
+    'insurance.medicaid',
+    'insurance.selfPay',
+  ]
+
   return (
     <section className="bg-white px-6 py-20 md:px-12 md:py-24">
       <div className="mx-auto max-w-7xl">
@@ -22,30 +32,30 @@ export default function InsuranceSection() {
 
           {/* Left */}
           <FadeIn>
-            <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.18em] text-brand-muted">Insurance</p>
+            <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.18em] text-brand-muted">{t('insurance.label')}</p>
             <h2 className="font-heading text-[clamp(2rem,4.5vw,3.25rem)] font-extrabold leading-[1.05] tracking-tight text-teal-dark heading-tight">
-              Insurance is never<br />a reason to delay care.
+              {t('insurance.headline1')}<br />
+              {t('insurance.headline2')}
             </h2>
             <p className="mt-5 text-[15px] leading-relaxed text-brand-muted">
-              HMO, PPO, Medi-Cal, and most commercial plans accepted. No insurance? Ask about affordable self-pay options.
+              {t('insurance.subtitle')}
             </p>
 
-            {/* Acceptance highlights */}
             <div className="mt-6 space-y-2.5">
-              {['Most HMO & PPO plans', 'Medi-Cal accepted', 'Self-pay options available'].map(item => (
-                <div key={item} className="flex items-center gap-3">
+              {highlights.map(key => (
+                <div key={key} className="flex items-center gap-3">
                   <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-teal-tint">
                     <svg className="h-3 w-3 text-teal-mid" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-sm font-medium text-brand-text">{item}</span>
+                  <span className="text-sm font-medium text-brand-text">{t(key)}</span>
                 </div>
               ))}
             </div>
 
             <div className="mt-8">
-              <BookingCTA label="Check Your Insurance" />
+              <BookingCTA label={t('insurance.checkInsurance')} />
             </div>
           </FadeIn>
 
@@ -79,7 +89,7 @@ export default function InsuranceSection() {
                 </span>
               ))}
               <span className="rounded-full border border-dashed border-brand-border px-4 py-1.5 text-xs text-brand-muted">
-                + many more
+                {t('insurance.andMore')}
               </span>
             </div>
           </FadeIn>

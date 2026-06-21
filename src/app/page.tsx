@@ -21,6 +21,7 @@ export default function HomePage() {
       <StatsBar />
       <WhyUs />
       <ServicesGrid services={services as Service[]} />
+      <PhotoBreak />
       <ClinicFinder locations={locations as Location[]} />
       <DoctorsPreview doctors={doctors as Doctor[]} />
       <TestimonialsSection testimonials={testimonials as Testimonial[]} />

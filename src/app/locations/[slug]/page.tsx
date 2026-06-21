@@ -68,7 +68,7 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
           <SectionLabel className="mb-4 [&_p]:text-teal-light [&>span:first-child]:bg-teal-light">
             Pediatric Clinic
           </SectionLabel>
-          <h1 className="font-heading text-4xl font-extrabold tracking-tight text-white md:text-5xl">
+          <h1 className="font-heading text-[clamp(2rem,5.5vw,3.5rem)] font-extrabold tracking-tight text-white">
             {location.name}
           </h1>
           <p className="mt-3 text-sm text-white/55">

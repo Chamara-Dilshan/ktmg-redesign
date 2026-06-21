@@ -1,7 +1,10 @@
 'use client'
+import { useLanguage } from '@/contexts/LanguageContext'
 import { HEALOW_URL, PHONE_CALL } from '@/lib/constants'
 
 export default function MobileBookingBar() {
+  const { t } = useLanguage()
+
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
       <div className="border-t border-white/[0.07] bg-teal-dark/95 px-4 pb-6 pt-3 backdrop-blur-xl">
@@ -20,7 +23,7 @@ export default function MobileBookingBar() {
             rel="noopener noreferrer"
             className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-coral py-3 text-sm font-semibold text-white shadow-lg shadow-coral/20 transition-transform active:scale-95"
           >
-            Book Appointment
+            {t('common.bookAppointment')}
             <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white/20 text-xs">→</span>
           </a>
         </div>

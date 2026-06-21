@@ -1,4 +1,6 @@
+'use client'
 import FadeIn from '@/components/ui/FadeIn'
+import { useLanguage } from '@/contexts/LanguageContext'
 import type { Testimonial } from '@/types'
 
 function initials(name: string) {
@@ -21,6 +23,7 @@ const accentColors = ['bg-coral', 'bg-teal-mid', 'bg-teal-light']
 
 export default function TestimonialsSection({ testimonials }: { testimonials: Testimonial[] }) {
   const [featured, ...rest] = testimonials
+  const { t } = useLanguage()
 
   return (
     <section className="bg-brand-text px-6 py-24 md:px-12">
@@ -29,10 +32,10 @@ export default function TestimonialsSection({ testimonials }: { testimonials: Te
         {/* Header row */}
         <FadeIn>
           <div className="mb-16 flex items-center justify-between border-b border-white/[0.06] pb-8">
-            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-white/25">Parent Reviews</p>
+            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-white/25">{t('testimonials.label')}</p>
             <div className="flex items-center gap-2.5">
               <Stars count={5} />
-              <span className="text-xs text-white/30">4.9 · 500+ reviews</span>
+              <span className="text-xs text-white/30">{t('testimonials.rating')}</span>
             </div>
           </div>
         </FadeIn>
@@ -60,20 +63,20 @@ export default function TestimonialsSection({ testimonials }: { testimonials: Te
 
         {/* Secondary testimonials */}
         <div className="grid gap-5 border-t border-white/[0.06] pt-10 sm:grid-cols-2">
-          {rest.slice(0, 2).map((t, i) => (
-            <FadeIn key={t.id} delay={(i + 1) * 0.1}>
+          {rest.slice(0, 2).map((testimonial, i) => (
+            <FadeIn key={testimonial.id} delay={(i + 1) * 0.1}>
               <div className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-6">
-                <Stars count={t.rating} />
+                <Stars count={testimonial.rating} />
                 <p className="mt-4 text-sm italic leading-relaxed text-white/55">
-                  &ldquo;{t.quote}&rdquo;
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <div className="mt-5 flex items-center gap-3 border-t border-white/[0.05] pt-4">
                   <div className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[10px] font-bold text-white ${accentColors[(i + 1) % accentColors.length]}`}>
-                    {initials(t.author)}
+                    {initials(testimonial.author)}
                   </div>
                   <div>
-                    <p className="text-xs font-semibold text-white">{t.author}</p>
-                    <p className="text-[10px] text-white/30">{t.location}</p>
+                    <p className="text-xs font-semibold text-white">{testimonial.author}</p>
+                    <p className="text-[10px] text-white/30">{testimonial.location}</p>
                   </div>
                 </div>
               </div>

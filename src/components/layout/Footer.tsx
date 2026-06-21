@@ -1,5 +1,7 @@
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useLanguage } from '@/contexts/LanguageContext'
 import { EMAIL, PHONE_CALL, SOCIAL } from '@/lib/constants'
 
 const FacebookIcon = () => (
@@ -27,9 +29,10 @@ const XIcon = () => (
 )
 
 export default function Footer() {
+  const { t } = useLanguage()
+
   return (
     <footer className="bg-teal-dark text-white/60">
-      {/* Top accent line */}
       <div className="h-px bg-gradient-to-r from-transparent via-coral/40 to-transparent" />
 
       <div className="mx-auto max-w-7xl px-6 py-14 md:py-16">
@@ -46,9 +49,8 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-[13px] leading-relaxed">
-              Southern California&rsquo;s leading pediatric care network. 25 clinics, extended hours, and a team that treats your child like family.
+              {t('footer.tagline')}
             </p>
-            {/* Social links */}
             <div className="mt-5 flex gap-2">
               {[
                 { href: SOCIAL.facebook,  icon: <FacebookIcon />,  label: 'Facebook'  },
@@ -72,18 +74,18 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/40">Services</h3>
+            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/40">{t('footer.services')}</h3>
             <ul className="space-y-2.5">
               {[
-                ['Primary Care',          '/services/primary-care'],
-                ['Telehealth',            '/services/telehealth'],
-                ['Urgent Care',           '/services/urgent-care'],
-                ['After-Hours Care',      '/services/after-hours-care'],
-                ['Prenatal Consultation', '/services/prenatal-consultation'],
-                ['Specialized Care',      '/services/specialized-care'],
-              ].map(([label, href]) => (
+                ['footer.primaryCare',          '/services/primary-care'],
+                ['footer.telehealth',            '/services/telehealth'],
+                ['footer.urgentCare',            '/services/urgent-care'],
+                ['footer.afterHoursCare',        '/services/after-hours-care'],
+                ['footer.prenatalConsultation',  '/services/prenatal-consultation'],
+                ['footer.specializedCare',       '/services/specialized-care'],
+              ].map(([key, href]) => (
                 <li key={href}>
-                  <Link href={href} className="text-sm transition-colors hover:text-white">{label}</Link>
+                  <Link href={href} className="text-sm transition-colors hover:text-white">{t(key)}</Link>
                 </li>
               ))}
             </ul>
@@ -91,18 +93,18 @@ export default function Footer() {
 
           {/* For Patients */}
           <div>
-            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/40">For Patients</h3>
+            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/40">{t('footer.forPatients')}</h3>
             <ul className="space-y-2.5">
               {[
-                ['Find a Clinic',       '/locations'],
-                ['Our Doctors',         '/doctors'],
-                ['Insurance',           '/insurance'],
-                ['Patient Resources',   '/patient-resources'],
-                ['Share Your Experience', '/share-your-experience'],
-                ['Blog',                '/blog'],
-              ].map(([label, href]) => (
+                ['footer.findClinic',       '/locations'],
+                ['footer.ourDoctors',       '/doctors'],
+                ['footer.insurance',        '/insurance'],
+                ['footer.patientResources', '/patient-resources'],
+                ['footer.shareExperience',  '/share-your-experience'],
+                ['footer.blog',             '/blog'],
+              ].map(([key, href]) => (
                 <li key={href}>
-                  <Link href={href} className="text-sm transition-colors hover:text-white">{label}</Link>
+                  <Link href={href} className="text-sm transition-colors hover:text-white">{t(key)}</Link>
                 </li>
               ))}
             </ul>
@@ -110,7 +112,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/40">Contact</h3>
+            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/40">{t('footer.contact')}</h3>
             <ul className="space-y-3">
               <li>
                 <a href={`tel:${PHONE_CALL.replace(/\D/g, '')}`} className="flex items-center gap-2.5 text-sm transition-colors hover:text-white">
@@ -129,10 +131,10 @@ export default function Footer() {
                 </a>
               </li>
               <li className="pt-2">
-                <Link href="/about-us"  className="block text-sm transition-colors hover:text-white">About Us</Link>
+                <Link href="/about-us"  className="block text-sm transition-colors hover:text-white">{t('footer.aboutUs')}</Link>
               </li>
               <li>
-                <Link href="/careers"   className="block text-sm transition-colors hover:text-white">Careers</Link>
+                <Link href="/careers"   className="block text-sm transition-colors hover:text-white">{t('footer.careers')}</Link>
               </li>
             </ul>
           </div>
@@ -140,10 +142,10 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center gap-3 border-t border-white/[0.07] pt-6 text-xs sm:flex-row sm:justify-between">
-          <span className="text-white/35">© 2026 Kids & Teens Medical Group. All Rights Reserved.</span>
+          <span className="text-white/35">{t('footer.copyright')}</span>
           <div className="flex gap-5">
-            <Link href="/privacy-policy"   className="text-white/35 transition-colors hover:text-white/70">Privacy Policy</Link>
-            <Link href="/terms-conditions" className="text-white/35 transition-colors hover:text-white/70">Terms & Conditions</Link>
+            <Link href="/privacy-policy"   className="text-white/35 transition-colors hover:text-white/70">{t('footer.privacy')}</Link>
+            <Link href="/terms-conditions" className="text-white/35 transition-colors hover:text-white/70">{t('footer.terms')}</Link>
           </div>
         </div>
       </div>

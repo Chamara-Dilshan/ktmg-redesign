@@ -5,6 +5,7 @@ import UrgencyBar from '@/components/layout/UrgencyBar'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import MobileBookingBar from '@/components/layout/MobileBookingBar'
+import { LanguageProvider } from '@/contexts/LanguageContext'
 
 const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
@@ -42,11 +43,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${bricolage.variable} ${jakarta.variable}`}>
       <body className="font-body bg-brand-bg pb-20 text-brand-text antialiased md:pb-0">
-        <UrgencyBar />
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <MobileBookingBar />
+        <LanguageProvider>
+          <UrgencyBar />
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+          <MobileBookingBar />
+        </LanguageProvider>
       </body>
     </html>
   )

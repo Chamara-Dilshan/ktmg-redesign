@@ -29,7 +29,7 @@ export default function PageHero({ label, title, subtitle, backHref, backLabel, 
         <SectionLabel className="mb-4 [&_p]:text-teal-light [&>span:first-child]:bg-teal-light">
           {label}
         </SectionLabel>
-        <h1 className="font-heading text-4xl font-extrabold tracking-tight text-white heading-tight md:text-5xl">
+        <h1 className="font-heading text-[clamp(2rem,5.5vw,3.5rem)] font-extrabold tracking-tight text-white heading-tight">
           {title}
         </h1>
         {subtitle && (
