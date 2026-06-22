@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import Image from 'next/image'
 import Link from 'next/link'
 import BookingCTA from '@/components/ui/BookingCTA'
 import LocationCard from '@/components/locations/LocationCard'
@@ -78,12 +79,24 @@ export default function DoctorPage({ params }: { params: { slug: string } }) {
             {/* Avatar */}
             <div className="relative flex-shrink-0">
               <div
-                className={`relative flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br ${gradient} ring-4 ring-white/20 md:h-28 md:w-28`}
+                className={`relative flex h-24 w-24 items-center justify-center overflow-hidden rounded-full bg-gradient-to-br ${gradient} ring-4 ring-white/20 md:h-28 md:w-28`}
               >
-                <div className="absolute inset-0 rounded-full bg-white/5" />
-                <span className="font-heading relative text-2xl font-extrabold text-white md:text-3xl">
-                  {doctorInitials}
-                </span>
+                {doctor.photo ? (
+                  <Image
+                    src={doctor.photo}
+                    alt={doctor.name}
+                    fill
+                    className="object-cover object-top"
+                    sizes="112px"
+                  />
+                ) : (
+                  <>
+                    <div className="absolute inset-0 rounded-full bg-white/5" />
+                    <span className="font-heading relative text-2xl font-extrabold text-white md:text-3xl">
+                      {doctorInitials}
+                    </span>
+                  </>
+                )}
               </div>
               {isFAAP && (
                 <div className="absolute -bottom-1 -right-1 rounded-full bg-coral px-2 py-0.5 text-[9px] font-bold text-white ring-2 ring-teal-dark">
