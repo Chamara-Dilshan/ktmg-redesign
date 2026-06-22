@@ -120,7 +120,7 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
                       <motion.div
                         whileHover={{ rotate: [-4, 4, -2, 0], scale: 1.08 }}
                         transition={{ type: 'spring', stiffness: 300, damping: 18 }}
-                        className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-teal-tint text-teal-mid ring-1 ring-teal-mid/15 transition-colors duration-300 group-hover:bg-teal-dark group-hover:text-white group-hover:ring-0"
+                        className={`mb-4 flex h-11 w-11 items-center justify-center rounded-xl ${i % 2 === 0 ? 'bg-teal-tint' : 'bg-brand-amber/10'} text-teal-mid ring-1 ring-teal-mid/15 transition-colors duration-300 group-hover:bg-teal-dark group-hover:text-white group-hover:ring-0`}
                       >
                         <ServiceIcon slug={service.slug} className="h-5 w-5" />
                       </motion.div>

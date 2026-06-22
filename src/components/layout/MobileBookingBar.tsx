@@ -7,7 +7,7 @@ export default function MobileBookingBar() {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
-      <div className="border-t border-white/[0.07] bg-teal-dark/95 px-4 pb-6 pt-3 backdrop-blur-xl">
+      <div className="border-t border-white/[0.07] bg-teal-dark px-4 pb-6 pt-3">
         <div className="flex gap-2.5">
           <a
             href={`tel:${PHONE_CALL.replace(/\D/g, '')}`}
