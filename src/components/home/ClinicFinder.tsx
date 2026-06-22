@@ -95,37 +95,37 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
         </div>
 
         {/* Right: coverage panel */}
-        <div className="relative overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.03] p-8 md:p-10">
-          <span className="pointer-events-none absolute -right-6 -top-6 select-none font-heading text-[180px] font-extrabold leading-none text-white/[0.025]">
+        <div className="relative overflow-hidden rounded-3xl border border-brand-border bg-white p-8 md:p-10 shadow-sm">
+          <span className="pointer-events-none absolute -right-6 -top-6 select-none font-heading text-[180px] font-extrabold leading-none text-teal-dark/[0.04]">
             25
           </span>
 
           <div className="relative">
-            <SectionLabel className="mb-4 [&>span:first-child]:bg-teal-light [&_p]:text-teal-light">{t('clinicFinder.coverageLabel')}</SectionLabel>
-            <h3 className="font-heading mb-6 text-xl font-bold text-white">{t('clinicFinder.coverageTitle')}</h3>
+            <SectionLabel className="mb-4 [&>span:first-child]:bg-teal-mid [&_p]:text-teal-mid">{t('clinicFinder.coverageLabel')}</SectionLabel>
+            <h3 className="font-heading mb-6 text-xl font-bold text-teal-dark">{t('clinicFinder.coverageTitle')}</h3>
 
             <div className="grid grid-cols-2 gap-x-3 gap-y-2">
               {cities.map((city) => (
-                <div key={city} className="flex items-center gap-2 text-sm text-white/50">
+                <div key={city} className="flex items-center gap-2 text-sm text-brand-muted">
                   <div className="h-1 w-1 shrink-0 rounded-full bg-coral/60" />
                   {city}
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 rounded-2xl border border-white/[0.08] bg-white/[0.04] p-5">
+            <div className="mt-8 rounded-2xl border border-brand-border bg-teal-tint p-5">
               <div className="flex items-start gap-3">
                 <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-teal-mid/30 text-teal-light">
                   <ServiceIcon slug="telehealth" className="h-4 w-4" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-white">{t('clinicFinder.cantMakeIt')}</p>
-                  <p className="mt-1 text-xs leading-relaxed text-white/45">
+                  <p className="text-sm font-semibold text-teal-dark">{t('clinicFinder.cantMakeIt')}</p>
+                  <p className="mt-1 text-xs leading-relaxed text-brand-muted">
                     {t('clinicFinder.telehealthDesc')}
                   </p>
                   <Link
                     href="/services/telehealth"
-                    className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-coral transition-colors hover:text-white"
+                    className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-coral transition-colors hover:text-teal-dark"
                   >
                     {t('clinicFinder.learnTelehealth')}
                   </Link>
