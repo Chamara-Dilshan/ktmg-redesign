@@ -1,6 +1,7 @@
 'use client'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { DISTANCE, DURATION, EASE_OUT } from '@/lib/motion'
 
 interface FadeInProps {
   children: React.ReactNode
@@ -15,7 +16,7 @@ export default function FadeIn({
   className,
   delay = 0,
   direction = 'up',
-  distance = 36,
+  distance = DISTANCE,
 }: FadeInProps) {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-48px' })
@@ -32,9 +33,9 @@ export default function FadeIn({
       initial={initial}
       animate={inView ? { opacity: 1, y: 0, x: 0 } : initial}
       transition={{
-        duration: 0.7,
+        duration: DURATION,
         delay,
-        ease: [0.16, 1, 0.3, 1],
+        ease: EASE_OUT,
       }}
       className={className}
     >

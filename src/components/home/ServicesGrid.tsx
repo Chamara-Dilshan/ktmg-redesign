@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import FadeIn from '@/components/ui/FadeIn'
 import ServiceIcon from '@/components/ui/ServiceIcon'
+import { SPRING } from '@/lib/motion'
 import { useLanguage, slugToCamel } from '@/contexts/LanguageContext'
 import type { Service } from '@/types'
 
@@ -59,7 +60,7 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
           <FadeIn className="lg:col-span-1 lg:row-span-2">
             <motion.div
               whileHover={{ scale: 1.015 }}
-              transition={{ type: 'spring', stiffness: 380, damping: 22 }}
+              transition={SPRING}
               className="h-full"
             >
               <Link
@@ -123,7 +124,7 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
               <FadeIn key={service.slug} delay={i * 0.06}>
                 <motion.div
                   whileHover={{ y: -6, boxShadow: '0 20px 40px -12px rgba(7,63,73,0.18)' }}
-                  transition={{ type: 'spring', stiffness: 380, damping: 22 }}
+                  transition={SPRING}
                   className="h-full"
                 >
                   <Link
@@ -172,7 +173,7 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
           <FadeIn delay={0.24} className="lg:col-span-3">
             <motion.div
               whileHover={{ y: -4, boxShadow: '0 20px 40px -12px rgba(7,63,73,0.14)' }}
-              transition={{ type: 'spring', stiffness: 380, damping: 22 }}
+              transition={SPRING}
             >
               <Link
                 href={`/services/${wideCard.slug}`}

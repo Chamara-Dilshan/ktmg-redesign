@@ -12,6 +12,7 @@ export default function PhotoBreak() {
         src="/pediatric-consultation.jpg"
         alt="Doctor consulting with a child and parent"
         fill
+        sizes="100vw"
         className="object-cover object-center"
       />
       <div className="absolute inset-0 bg-teal-dark/65" />

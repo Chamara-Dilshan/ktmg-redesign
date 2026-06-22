@@ -5,11 +5,14 @@ import { useRef } from 'react'
 import BookingCTA from '@/components/ui/BookingCTA'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { PHONE_CALL } from '@/lib/constants'
+import { DISTANCE, DURATION, EASE_OUT } from '@/lib/motion'
 
+// Hero animates on mount (it's above the fold) rather than on scroll-in,
+// but shares the site's entrance curve/duration/distance for consistency.
 const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 32 },
+  initial: { opacity: 0, y: DISTANCE },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.85, delay, ease: [0.22, 1, 0.36, 1] as const },
+  transition: { duration: DURATION, delay, ease: EASE_OUT },
 })
 
 export default function Hero() {
@@ -26,6 +29,7 @@ export default function Hero() {
           src="/hero-clinic.png"
           alt="Kids & Teens Medical Group clinic"
           fill
+          sizes="100vw"
           className="object-cover object-center"
           priority
         />
@@ -82,23 +86,29 @@ export default function Hero() {
               </a>
             </motion.div>
 
-            {/* Trust signals */}
+            {/* Trust signals — social proof rating + scannable feature pills */}
             <motion.div
               {...fadeUp(0.38)}
-              className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-2"
+              className="mt-10 flex flex-wrap items-center gap-2.5"
             >
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center gap-1.5 pr-1">
                 <div className="flex gap-0.5">
                   {Array.from({ length: 5 }).map((_, j) => (
                     <span key={j} className="text-xs text-coral">★</span>
                   ))}
                 </div>
-                <span className="text-xs text-white/80">{t('hero.reviews')}</span>
+                <span className="text-xs font-medium text-white/85">{t('hero.reviews')}</span>
               </div>
-              <span className="hidden text-white/15 md:block">|</span>
-              <span className="text-xs text-white/80">{t('hero.sameDay')}</span>
-              <span className="text-xs text-white/80">{t('hero.allInsurance')}</span>
-              <span className="text-xs text-white/80">{t('hero.ages')}</span>
+
+              {['hero.ticker.1', 'hero.ticker.2', 'hero.ticker.3'].map(key => (
+                <span
+                  key={key}
+                  className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.06] px-3 py-1.5 text-xs font-medium text-white/85 backdrop-blur-sm"
+                >
+                  <span className="h-1.5 w-1.5 rounded-full bg-coral" />
+                  {t(key)}
+                </span>
+              ))}
             </motion.div>
 
           </div>

@@ -62,18 +62,17 @@ export default function InsuranceSection() {
           {/* Right — logos */}
           <FadeIn delay={0.1}>
             <div className="grid grid-cols-3 gap-3 sm:grid-cols-4">
-              {partnerLogos.map((p, i) => (
+              {partnerLogos.map((p) => (
                 <div
                   key={p.name}
-                  className="flex items-center justify-center rounded-2xl border border-brand-border bg-brand-bg p-4 transition-all duration-200 hover:border-teal-mid/20 hover:bg-teal-tint hover:shadow-sm"
-                  style={{ transitionDelay: `${i * 35}ms` }}
+                  className="group flex h-20 items-center justify-center rounded-2xl border border-brand-border bg-brand-bg p-4 transition-all duration-200 hover:border-teal-mid/20 hover:bg-teal-tint hover:shadow-sm"
                 >
                   <Image
                     src={p.src}
                     alt={p.name}
                     width={100}
                     height={40}
-                    className="max-h-9 w-auto object-contain opacity-75 transition-opacity hover:opacity-100"
+                    className="max-h-8 w-auto object-contain opacity-70 grayscale transition-all duration-200 group-hover:opacity-100 group-hover:grayscale-0"
                   />
                 </div>
               ))}

@@ -46,6 +46,7 @@ export default function WhyUs() {
                   src="/pediatric-highfive.jpg"
                   alt="Pediatric nurse high-fiving a child patient"
                   fill
+                  sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover object-center transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-teal-dark/70 via-teal-dark/20 to-transparent" />

@@ -115,7 +115,7 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
 
             <div className="mt-8 rounded-2xl border border-brand-border bg-teal-tint p-5">
               <div className="flex items-start gap-3">
-                <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-teal-mid/30 text-teal-light">
+                <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-teal-mid/15 text-teal-mid">
                   <ServiceIcon slug="telehealth" className="h-4 w-4" />
                 </div>
                 <div>

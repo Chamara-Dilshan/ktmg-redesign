@@ -73,7 +73,7 @@ const en: Record<string, string> = {
   'hero.headline1': 'Compassionate',
   'hero.headline2': 'Care for',
   'hero.headline3': 'Every Child.',
-  'hero.subtitle': '25 clinics across Los Angeles. Board-certified pediatricians. Extended hours, same-day appointments, and telehealth — all under one trusted name.',
+  'hero.subtitle': 'Board-certified pediatric care for ages 0–21, across 25 clinics in Greater LA — all under one trusted name.',
   'hero.bookAppointment': 'Book Appointment',
   'hero.findClinic': 'Find a Clinic →',
   'hero.reviews': '4.9 · 500+ reviews',

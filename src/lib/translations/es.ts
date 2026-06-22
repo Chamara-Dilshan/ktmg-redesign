@@ -73,7 +73,7 @@ const es: Record<string, string> = {
   'hero.headline1': 'Atención',
   'hero.headline2': 'Compasiva para',
   'hero.headline3': 'Cada Niño.',
-  'hero.subtitle': '25 clínicas en Los Ángeles. Pediatras certificados. Horarios extendidos, citas el mismo día y telesalud — todo bajo un nombre de confianza.',
+  'hero.subtitle': 'Atención pediátrica certificada para edades 0–21, en 25 clínicas del área de Los Ángeles — todo bajo un nombre de confianza.',
   'hero.bookAppointment': 'Reservar Cita',
   'hero.findClinic': 'Encontrar una Clínica →',
   'hero.reviews': '4.9 · 500+ opiniones',
