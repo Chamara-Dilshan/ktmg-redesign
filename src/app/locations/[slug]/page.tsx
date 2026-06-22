@@ -57,7 +57,7 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
         <div className="relative mx-auto max-w-7xl">
           <Link
             href="/locations"
-            className="mb-5 inline-flex items-center gap-1.5 text-sm text-white/70 transition-colors hover:text-white"
+            className="mb-9 flex w-fit items-center gap-1.5 text-sm text-white/70 transition-colors hover:text-white"
           >
             <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -65,7 +65,7 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
             All Locations
           </Link>
 
-          <SectionLabel className="mb-4 [&_p]:text-teal-light [&>span:first-child]:bg-teal-light">
+          <SectionLabel className="mb-3 [&_p]:text-teal-light [&>span:first-child]:hidden">
             Pediatric Clinic
           </SectionLabel>
           <h1 className="font-heading text-[clamp(2rem,5.5vw,3.5rem)] font-extrabold tracking-tight text-white">
