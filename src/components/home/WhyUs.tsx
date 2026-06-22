@@ -1,18 +1,24 @@
 'use client'
 import Image from 'next/image'
 import FadeIn from '@/components/ui/FadeIn'
-import CountUp from '@/components/ui/CountUp'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function WhyUs() {
   const { t } = useLanguage()
 
   const features = [
-    { stat: '25',   unitKey: 'whyUs.clinicsUnit',    descKey: 'whyUs.clinicsDesc'    },
-    { stat: 'Same', unitKey: 'whyUs.sameDayUnit',    descKey: 'whyUs.sameDayDesc'    },
-    { stat: '7',    unitKey: 'whyUs.telehealthUnit', descKey: 'whyUs.telehealthDesc' },
-    { stat: 'All',  unitKey: 'whyUs.insuranceUnit',  descKey: 'whyUs.insuranceDesc'  },
+    { icon: 'pin',    unitKey: 'whyUs.clinicsUnit',    descKey: 'whyUs.clinicsDesc'    },
+    { icon: 'clock',  unitKey: 'whyUs.sameDayUnit',    descKey: 'whyUs.sameDayDesc'    },
+    { icon: 'video',  unitKey: 'whyUs.telehealthUnit', descKey: 'whyUs.telehealthDesc' },
+    { icon: 'shield', unitKey: 'whyUs.insuranceUnit',  descKey: 'whyUs.insuranceDesc'  },
   ]
+
+  const icons: Record<string, JSX.Element> = {
+    pin:    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z" />,
+    clock:  <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />,
+    video:  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />,
+    shield: <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />,
+  }
 
   return (
     <section className="bg-teal-dark">
@@ -27,7 +33,7 @@ export default function WhyUs() {
                   {t('whyUs.headline1')}<br />
                   <span className="text-coral">{t('whyUs.headline2')}</span>
                 </h2>
-                <p className="mt-6 max-w-sm text-[15px] leading-relaxed text-white/50">
+                <p className="mt-6 max-w-sm text-[15px] leading-relaxed text-white/70">
                   {t('whyUs.subtitle')}
                 </p>
               </div>
@@ -56,12 +62,14 @@ export default function WhyUs() {
           {features.map((f, i) => (
             <FadeIn key={f.unitKey} delay={i * 0.08}>
               <div className="group px-8 py-12 transition-colors duration-300 hover:bg-white/[0.03] md:px-10">
-                <p className="font-heading text-[2.75rem] font-extrabold leading-none tracking-tight text-white">
-                  <CountUp value={f.stat} />
-                </p>
-                <p className="mt-1 text-sm font-bold uppercase tracking-wide text-coral">{t(f.unitKey)}</p>
-                <div className="my-5 h-px bg-white/[0.07]" />
-                <p className="text-[13px] leading-relaxed text-white/45">{t(f.descKey)}</p>
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/[0.06] text-teal-light ring-1 ring-white/10 transition-colors duration-300 group-hover:bg-coral group-hover:text-white group-hover:ring-0">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                    {icons[f.icon]}
+                  </svg>
+                </div>
+                <p className="font-heading mt-5 text-lg font-bold leading-snug text-white">{t(f.unitKey)}</p>
+                <div className="my-4 h-px w-8 bg-coral" />
+                <p className="text-[13px] leading-relaxed text-white/65">{t(f.descKey)}</p>
               </div>
             </FadeIn>
           ))}

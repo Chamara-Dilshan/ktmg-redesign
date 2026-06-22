@@ -14,7 +14,7 @@ export default function CTABand() {
         <div className="absolute -bottom-32 left-1/3 h-[500px] w-[500px] rounded-full bg-coral/[0.04]" />
       </div>
 
-      <span className="pointer-events-none absolute -right-4 top-1/2 -translate-y-1/2 select-none font-heading text-[22vw] font-extrabold leading-none text-white/[0.02]">
+      <span className="pointer-events-none absolute right-6 top-1/2 -translate-y-1/2 select-none font-heading text-[13vw] font-extrabold leading-none text-white/[0.03]">
         KTMG
       </span>
 
@@ -26,7 +26,7 @@ export default function CTABand() {
             <div className="flex-1">
               <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.05] px-4 py-1.5">
                 <span className="h-1.5 w-1.5 rounded-full bg-coral" />
-                <span className="text-[11px] font-medium text-white/55">{t('cta.badge')}</span>
+                <span className="text-[11px] font-medium text-white/75">{t('cta.badge')}</span>
               </div>
               <h2 className="font-heading leading-[0.92] tracking-tight text-white heading-tighter"
                   style={{ fontSize: 'clamp(3.5rem, 10vw, 8.5rem)' }}>
@@ -34,7 +34,7 @@ export default function CTABand() {
                 {t('cta.headline2')}<br />
                 <span className="text-coral">{t('cta.headline3')}</span>
               </h2>
-              <p className="mt-7 max-w-md text-[15px] leading-relaxed text-white/45">
+              <p className="mt-7 max-w-md text-[15px] leading-relaxed text-white/70">
                 {t('cta.subtitle')}
               </p>
             </div>
@@ -55,7 +55,7 @@ export default function CTABand() {
 
               <a
                 href={`tel:${PHONE_CALL.replace(/\D/g, '')}`}
-                className="flex items-center justify-center gap-3 rounded-2xl border border-white/10 bg-white/[0.05] px-8 py-4 text-sm font-medium text-white/65 transition-all hover:bg-white/[0.09] hover:text-white"
+                className="flex items-center justify-center gap-3 rounded-2xl border border-white/10 bg-white/[0.05] px-8 py-4 text-sm font-medium text-white/80 transition-all hover:bg-white/[0.09] hover:text-white"
               >
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -63,7 +63,7 @@ export default function CTABand() {
                 {t('common.call')} {PHONE_CALL}
               </a>
 
-              <div className="mt-1 flex flex-col gap-1.5 text-xs text-white/25 lg:items-end">
+              <div className="mt-1 flex flex-col gap-1.5 text-xs text-white/55 lg:items-end">
                 <span>{t('cta.noReferral')}</span>
                 <span>{t('cta.allInsurance')}</span>
                 <span>{t('cta.telehealth7')}</span>

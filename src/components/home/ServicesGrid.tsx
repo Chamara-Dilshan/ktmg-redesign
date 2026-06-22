@@ -84,7 +84,20 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
                       {tFeatured.hours}
                     </p>
                   )}
-                  <p className="text-[13px] leading-relaxed text-white/55">{tFeatured.description}</p>
+                  <p className="text-[13px] leading-relaxed text-white/70">{tFeatured.description}</p>
+
+                  <ul className="mt-6 space-y-2.5 border-t border-white/[0.08] pt-6">
+                    {['h1', 'h2', 'h3', 'h4'].map(k => (
+                      <li key={k} className="flex items-center gap-2.5 text-[13px] font-medium text-white/85">
+                        <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-coral/20 text-coral">
+                          <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                          </svg>
+                        </span>
+                        {t(`serviceData.${slugToCamel(tFeatured.slug)}.${k}`)}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
                 <span className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-coral transition-all duration-200 group-hover:gap-3">
                   {t('servicesGrid.learnMore')}

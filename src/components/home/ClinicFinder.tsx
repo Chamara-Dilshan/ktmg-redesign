@@ -39,7 +39,7 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
             {t('clinicFinder.headline1')}<br />
             {t('clinicFinder.headline2')}
           </h2>
-          <p className="mb-8 text-[14px] leading-relaxed text-white/55">
+          <p className="mb-8 text-[14px] leading-relaxed text-white/75">
             {t('clinicFinder.subtitle')}
           </p>
 
@@ -53,7 +53,7 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
               value={query}
               onChange={e => setQuery(e.target.value)}
               placeholder={t('clinicFinder.placeholder')}
-              className="flex-1 bg-transparent text-sm text-white placeholder-white/35 outline-none"
+              className="flex-1 bg-transparent text-sm text-white placeholder-white/55 outline-none"
             />
             {query && (
               <button onClick={() => setQuery('')} className="text-white/30 hover:text-white/60 transition-colors">
@@ -78,7 +78,7 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
                     </div>
                     <div>
                       <p className="text-sm font-semibold text-white">{loc.name}</p>
-                      <p className="text-[11px] text-white/40">{loc.address}, {loc.city}</p>
+                      <p className="text-[11px] text-white/65">{loc.address}, {loc.city}</p>
                     </div>
                   </div>
                   <span className="ml-3 shrink-0 text-xs font-semibold text-coral opacity-0 transition-opacity duration-200 group-hover:opacity-100">
@@ -89,14 +89,14 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
             ))}
           </ul>
 
-          <Link href="/locations" className="mt-5 block text-center text-xs font-semibold text-white/35 transition-colors hover:text-teal-light">
+          <Link href="/locations" className="mt-5 block text-center text-xs font-semibold text-white/60 transition-colors hover:text-teal-light">
             {t('clinicFinder.viewAll')}
           </Link>
         </div>
 
         {/* Right: coverage panel */}
         <div className="relative overflow-hidden rounded-3xl border border-brand-border bg-white p-8 md:p-10 shadow-sm">
-          <span className="pointer-events-none absolute -right-6 -top-6 select-none font-heading text-[180px] font-extrabold leading-none text-teal-dark/[0.04]">
+          <span className="pointer-events-none absolute right-4 top-2 select-none font-heading text-[130px] font-extrabold leading-none text-teal-dark/[0.05]">
             25
           </span>
 
