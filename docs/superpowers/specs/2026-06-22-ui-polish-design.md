@@ -101,7 +101,8 @@
 **Files to change:**
 - `src/components/home/ServicesGrid.tsx`
 - `src/components/home/DoctorsPreview.tsx`
-- Any component with `whileHover={{ scale: ... }}` using duration-based transition
+- `src/components/ui/Button.tsx`
+- `src/components/ui/BookingCTA.tsx`
 
 ---
 

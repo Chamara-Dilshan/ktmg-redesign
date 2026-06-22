@@ -6,9 +6,13 @@ import ServiceIcon from '@/components/ui/ServiceIcon'
 import { useLanguage, slugToCamel } from '@/contexts/LanguageContext'
 import type { Service } from '@/types'
 
+const URGENT_SLUGS = new Set(['urgent-care', 'after-hours-care'])
+
 export default function ServicesGrid({ services }: { services: Service[] }) {
   const { t } = useLanguage()
   const [featured, ...rest] = services
+  const regularCards = rest.slice(0, -1)
+  const wideCard = rest[rest.length - 1]
 
   const tService = (service: Service) => ({
     ...service,
@@ -18,6 +22,7 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
   })
 
   const tFeatured = tService(featured)
+  const tWide = tService(wideCard)
 
   return (
     <section className="bg-brand-bg px-6 py-20 md:px-12">
@@ -41,7 +46,7 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
         </FadeIn>
 
         <div className="grid gap-4 lg:grid-cols-3">
-          {/* Featured card — large */}
+          {/* Featured card — large, spans 2 rows */}
           <FadeIn className="lg:col-span-1 lg:row-span-2">
             <motion.div
               whileHover={{ scale: 1.015 }}
@@ -92,9 +97,10 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
             </motion.div>
           </FadeIn>
 
-          {/* Remaining cards */}
-          {rest.map((service, i) => {
+          {/* Regular cards — 4 cards filling the 2×2 right of the featured */}
+          {regularCards.map((service, i) => {
             const ts = tService(service)
+            const isUrgent = URGENT_SLUGS.has(service.slug)
             return (
               <FadeIn key={service.slug} delay={i * 0.06}>
                 <motion.div
@@ -106,21 +112,26 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
                     href={`/services/${service.slug}`}
                     className="group flex h-full flex-col overflow-hidden rounded-2xl border border-brand-border bg-white"
                   >
-                    <div className="relative h-[3px] w-full shrink-0 overflow-hidden bg-brand-border">
+                    {/* Accent bar: 1/3 visible at rest, expands on hover */}
+                    <div className="relative h-[3px] w-full shrink-0 overflow-hidden">
+                      <div className={`h-full w-1/3 ${isUrgent ? 'bg-coral' : 'bg-teal-mid'}`} />
                       <motion.div
                         initial={{ scaleX: 0, originX: 0 }}
                         whileHover={{ scaleX: 1 }}
                         transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                        className={`absolute inset-0 ${i % 2 === 0 ? 'bg-coral' : 'bg-teal-mid'}`}
+                        className={`absolute inset-0 ${isUrgent ? 'bg-coral' : 'bg-teal-mid'}`}
                       />
-                      <div className={`h-full w-full ${i % 2 === 0 ? 'bg-coral/30' : 'bg-teal-mid/30'}`} />
                     </div>
 
                     <div className="flex flex-1 flex-col p-6">
                       <motion.div
                         whileHover={{ rotate: [-4, 4, -2, 0], scale: 1.08 }}
                         transition={{ type: 'spring', stiffness: 300, damping: 18 }}
-                        className={`mb-4 flex h-11 w-11 items-center justify-center rounded-xl ${i % 2 === 0 ? 'bg-teal-tint' : 'bg-brand-amber/10'} text-teal-mid ring-1 ring-teal-mid/15 transition-colors duration-300 group-hover:bg-teal-dark group-hover:text-white group-hover:ring-0`}
+                        className={`mb-4 flex h-11 w-11 items-center justify-center rounded-xl ring-1 transition-colors duration-300
+                          ${isUrgent
+                            ? 'bg-coral/10 text-coral ring-coral/20 group-hover:bg-coral group-hover:text-white group-hover:ring-0'
+                            : 'bg-teal-tint text-teal-mid ring-teal-mid/15 group-hover:bg-teal-dark group-hover:text-white group-hover:ring-0'
+                          }`}
                       >
                         <ServiceIcon slug={service.slug} className="h-5 w-5" />
                       </motion.div>
@@ -128,13 +139,14 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
                         {ts.name}
                       </h3>
                       {ts.hours && (
-                        <p className="mb-2 text-[11px] font-semibold text-coral">{ts.hours}</p>
+                        <p className={`mb-2 text-[11px] font-semibold ${isUrgent ? 'text-coral' : 'text-teal-mid'}`}>{ts.hours}</p>
                       )}
                       <p className="mb-5 flex-1 text-[13px] leading-relaxed text-brand-muted">{ts.description}</p>
                       <motion.span
                         whileHover={{ x: 3 }}
                         transition={{ type: 'spring', stiffness: 400 }}
-                        className="flex items-center gap-1.5 text-xs font-semibold text-teal-mid transition-colors group-hover:text-coral"
+                        className={`flex items-center gap-1.5 text-xs font-semibold transition-colors group-hover:text-coral
+                          ${isUrgent ? 'text-coral' : 'text-teal-mid'}`}
                       >
                         {t('servicesGrid.learnMore')} →
                       </motion.span>
@@ -144,6 +156,52 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
               </FadeIn>
             )
           })}
+
+          {/* Wide card — Specialized Care — spans full bottom row */}
+          <FadeIn delay={0.24} className="lg:col-span-3">
+            <motion.div
+              whileHover={{ y: -4, boxShadow: '0 20px 40px -12px rgba(7,63,73,0.14)' }}
+              transition={{ type: 'spring', stiffness: 380, damping: 22 }}
+            >
+              <Link
+                href={`/services/${wideCard.slug}`}
+                className="group flex flex-col gap-5 overflow-hidden rounded-2xl border border-brand-border bg-white p-6 sm:flex-row sm:items-center"
+              >
+                <motion.div
+                  whileHover={{ rotate: [-4, 4, -2, 0], scale: 1.08 }}
+                  transition={{ type: 'spring', stiffness: 300, damping: 18 }}
+                  className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-teal-tint text-teal-mid ring-1 ring-teal-mid/15 transition-colors duration-300 group-hover:bg-teal-dark group-hover:text-white group-hover:ring-0"
+                >
+                  <ServiceIcon slug={wideCard.slug} className="h-7 w-7" />
+                </motion.div>
+
+                <div className="min-w-0 shrink-0 sm:w-56">
+                  <h3 className="font-heading text-[15px] font-bold text-teal-dark transition-colors duration-200 group-hover:text-teal-mid">
+                    {tWide.name}
+                  </h3>
+                  <p className="mt-0.5 text-[12px] leading-relaxed text-brand-muted">{tWide.description}</p>
+                </div>
+
+                <div className="hidden h-8 w-px shrink-0 bg-brand-border sm:block" />
+
+                <div className="flex flex-wrap gap-2">
+                  {['ADHD & Behavioral', 'Allergy Care', 'Sports Physicals', 'Adolescent Health'].map(tag => (
+                    <span key={tag} className="rounded-full bg-teal-tint px-3 py-1 text-[11px] font-semibold text-teal-mid ring-1 ring-teal-mid/15">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                <motion.span
+                  whileHover={{ x: 3 }}
+                  transition={{ type: 'spring', stiffness: 400 }}
+                  className="hidden shrink-0 items-center gap-1.5 text-xs font-semibold text-teal-mid transition-colors group-hover:text-coral sm:ml-auto sm:flex"
+                >
+                  {t('servicesGrid.learnMore')} →
+                </motion.span>
+              </Link>
+            </motion.div>
+          </FadeIn>
         </div>
       </div>
     </section>
