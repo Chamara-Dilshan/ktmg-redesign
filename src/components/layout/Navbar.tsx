@@ -6,7 +6,6 @@ import MobileMenu from '@/components/layout/MobileMenu'
 import LanguageToggle from '@/components/ui/LanguageToggle'
 import ServiceIcon from '@/components/ui/ServiceIcon'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { HEALOW_URL, PAY_ONLINE_URL, PORTAL_URL } from '@/lib/constants'
 
 export default function Navbar() {
   const { t } = useLanguage()
