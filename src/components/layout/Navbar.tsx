@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <header>
       {/* Main nav */}
-      <nav className="sticky top-0 z-50 bg-white/95 shadow-[0_1px_0_#E0EAED] backdrop-blur-md">
+      <nav className="sticky top-0 z-50 bg-white shadow-[0_1px_0_#E8E2D9] border-b border-brand-border">
         <div className="relative mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5">
           <Link href="/" className="flex items-center gap-3 group">
             <div className="overflow-hidden rounded-xl">
@@ -47,7 +47,7 @@ export default function Navbar() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className="absolute left-0 top-full z-50 hidden w-64 rounded-2xl border border-brand-border bg-white py-2 shadow-xl shadow-teal-dark/10 backdrop-blur-xl group-hover:block">
+              <div className="absolute left-0 top-full z-50 hidden w-64 rounded-2xl border border-brand-border bg-white py-2 shadow-xl shadow-teal-dark/10 group-hover:block">
                 <div className="px-3 pb-2 pt-1">
                   <p className="text-[9px] font-semibold uppercase tracking-[0.18em] text-brand-muted">{t('nav.ourServices')}</p>
                 </div>
