@@ -1,3 +1,5 @@
+'use client'
+import { motion } from 'framer-motion'
 import { HEALOW_URL } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 
@@ -8,12 +10,15 @@ interface BookingCTAProps {
 
 export default function BookingCTA({ label = 'Book Appointment', className }: BookingCTAProps) {
   return (
-    <a
+    <motion.a
       href={HEALOW_URL}
       target="_blank"
       rel="noopener noreferrer"
+      whileHover={{ y: -2 }}
+      whileTap={{ scale: 0.97 }}
+      transition={{ type: 'spring', stiffness: 380, damping: 22 }}
       className={cn(
-        'group inline-flex items-center gap-2.5 rounded-full bg-coral px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-coral/25 transition-all duration-200 hover:bg-coral/90 hover:shadow-xl hover:shadow-coral/30 hover:-translate-y-0.5 active:scale-95',
+        'group inline-flex items-center gap-2.5 rounded-full bg-coral px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-coral/25 hover:shadow-xl hover:shadow-coral/30 active:scale-95',
         className
       )}
     >
@@ -24,6 +29,6 @@ export default function BookingCTA({ label = 'Book Appointment', className }: Bo
       >
         →
       </span>
-    </a>
+    </motion.a>
   )
 }

@@ -45,7 +45,7 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
           <FadeIn className="lg:col-span-1 lg:row-span-2">
             <motion.div
               whileHover={{ scale: 1.015 }}
-              transition={{ type: 'spring', stiffness: 300, damping: 22 }}
+              transition={{ type: 'spring', stiffness: 380, damping: 22 }}
               className="h-full"
             >
               <Link
@@ -55,7 +55,7 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileHover={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.4 }}
+                  transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
                   className="pointer-events-none absolute -right-20 -bottom-20 h-72 w-72 rounded-full bg-coral/20 blur-3xl"
                 />
                 <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full border border-white/[0.06]" />
@@ -64,7 +64,7 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
                 <div>
                   <motion.div
                     whileHover={{ rotate: [0, -8, 8, 0], scale: 1.1 }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ type: 'spring', stiffness: 300, damping: 18 }}
                     className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/[0.1] text-white ring-1 ring-white/10"
                   >
                     <ServiceIcon slug={tFeatured.slug} className="h-7 w-7" />
@@ -99,7 +99,7 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
               <FadeIn key={service.slug} delay={i * 0.06}>
                 <motion.div
                   whileHover={{ y: -6, boxShadow: '0 20px 40px -12px rgba(7,63,73,0.18)' }}
-                  transition={{ type: 'spring', stiffness: 350, damping: 24 }}
+                  transition={{ type: 'spring', stiffness: 380, damping: 22 }}
                   className="h-full"
                 >
                   <Link
@@ -119,7 +119,7 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
                     <div className="flex flex-1 flex-col p-6">
                       <motion.div
                         whileHover={{ rotate: [-4, 4, -2, 0], scale: 1.08 }}
-                        transition={{ duration: 0.45 }}
+                        transition={{ type: 'spring', stiffness: 300, damping: 18 }}
                         className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-teal-tint text-teal-mid ring-1 ring-teal-mid/15 transition-colors duration-300 group-hover:bg-teal-dark group-hover:text-white group-hover:ring-0"
                       >
                         <ServiceIcon slug={service.slug} className="h-5 w-5" />
