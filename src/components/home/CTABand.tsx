@@ -7,7 +7,7 @@ export default function CTABand() {
   const { t } = useLanguage()
 
   return (
-    <section className="relative overflow-hidden bg-teal-dark px-6 py-24 md:px-12 md:py-32">
+    <section className="relative overflow-hidden bg-teal-dark px-6 py-24 md:px-12 md:py-28">
       <div className="grain absolute inset-0 pointer-events-none" />
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -right-40 -top-40 h-[700px] w-[700px] rounded-full bg-teal-mid/[0.07]" />
@@ -63,10 +63,17 @@ export default function CTABand() {
                 {t('common.call')} {PHONE_CALL}
               </a>
 
-              <div className="mt-1 flex flex-col gap-1.5 text-xs text-white/55 lg:items-end">
-                <span>{t('cta.noReferral')}</span>
-                <span>{t('cta.allInsurance')}</span>
-                <span>{t('cta.telehealth7')}</span>
+              <div className="mt-1 flex flex-col gap-2 text-xs text-white/70">
+                {[t('cta.noReferral'), t('cta.allInsurance'), t('cta.telehealth7')].map(item => (
+                  <span key={item} className="flex items-center gap-2">
+                    <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-coral/20 text-coral">
+                      <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </span>
+                    {item.replace(/^✓\s*/, '')}
+                  </span>
+                ))}
               </div>
             </div>
 

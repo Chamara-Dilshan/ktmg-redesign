@@ -31,9 +31,10 @@ export default function Hero() {
         />
       </motion.div>
 
-      {/* Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-r from-teal-dark via-teal-dark/88 to-teal-dark/10" />
-      <div className="absolute inset-0 bg-gradient-to-t from-teal-dark/80 via-transparent to-transparent" />
+      {/* Overlays — mobile keeps a strong scrim across the full width so text stays
+          legible over the bright image; desktop fades to reveal more of the photo. */}
+      <div className="absolute inset-0 bg-gradient-to-r from-teal-dark via-teal-dark/92 to-teal-dark/80 md:via-teal-dark/88 md:to-teal-dark/10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-teal-dark/85 via-teal-dark/20 to-transparent md:from-teal-dark/80 md:via-transparent" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-1 items-center">
@@ -52,7 +53,7 @@ export default function Hero() {
             {/* Headline */}
             <motion.h1
               {...fadeUp(0.08)}
-              className="font-heading mb-7 text-[clamp(3.25rem,9vw,7rem)] font-extrabold leading-[0.95] tracking-tight text-white heading-tighter"
+              className="font-heading mb-7 text-[clamp(2.5rem,8.5vw,7rem)] font-extrabold leading-[0.95] tracking-tight text-white heading-tighter"
             >
               {t('hero.headline1')}<br />
               {t('hero.headline2')}{' '}
@@ -62,7 +63,7 @@ export default function Hero() {
             {/* Sub */}
             <motion.p
               {...fadeUp(0.18)}
-              className="mb-9 max-w-md text-[15px] leading-[1.8] text-white/60"
+              className="mb-9 max-w-md text-[15px] leading-[1.8] text-white/80"
             >
               {t('hero.subtitle')}
             </motion.p>
@@ -92,12 +93,12 @@ export default function Hero() {
                     <span key={j} className="text-xs text-coral">★</span>
                   ))}
                 </div>
-                <span className="text-xs text-white/65">{t('hero.reviews')}</span>
+                <span className="text-xs text-white/80">{t('hero.reviews')}</span>
               </div>
               <span className="hidden text-white/15 md:block">|</span>
-              <span className="text-xs text-white/65">{t('hero.sameDay')}</span>
-              <span className="text-xs text-white/65">{t('hero.allInsurance')}</span>
-              <span className="text-xs text-white/65">{t('hero.ages')}</span>
+              <span className="text-xs text-white/80">{t('hero.sameDay')}</span>
+              <span className="text-xs text-white/80">{t('hero.allInsurance')}</span>
+              <span className="text-xs text-white/80">{t('hero.ages')}</span>
             </motion.div>
 
           </div>

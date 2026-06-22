@@ -1,13 +1,33 @@
 'use client'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { HEALOW_URL, PHONE_CALL } from '@/lib/constants'
 
 export default function MobileBookingBar() {
   const { t } = useLanguage()
+  // Only reveal once the hero (with its own Book CTA) has scrolled away, so the
+  // two identical CTAs never stack in the same viewport.
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > window.innerHeight * 0.85)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
-      <div className="border-t border-white/[0.07] bg-teal-dark px-4 pb-6 pt-3">
+    <AnimatePresence>
+      {visible && (
+        <motion.div
+          initial={{ y: '100%' }}
+          animate={{ y: 0 }}
+          exit={{ y: '100%' }}
+          transition={{ type: 'spring', stiffness: 320, damping: 32 }}
+          className="fixed bottom-0 left-0 right-0 z-50 md:hidden"
+        >
+          <div className="border-t border-white/[0.07] bg-teal-dark px-4 pb-6 pt-3">
         <div className="flex gap-2.5">
           <a
             href={`tel:${PHONE_CALL.replace(/\D/g, '')}`}
@@ -26,8 +46,10 @@ export default function MobileBookingBar() {
             {t('common.bookAppointment')}
             <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white/20 text-xs">→</span>
           </a>
-        </div>
-      </div>
-    </div>
+            </div>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   )
 }

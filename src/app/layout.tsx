@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${bricolage.variable} ${jakarta.variable}`}>
-      <body className="font-body bg-brand-bg pb-20 text-brand-text antialiased md:pb-0">
+      <body className="font-body bg-brand-bg pb-24 text-brand-text antialiased md:pb-0">
         <LanguageProvider>
           <UrgencyBar />
           <Navbar />

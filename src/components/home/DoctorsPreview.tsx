@@ -10,7 +10,7 @@ export default function DoctorsPreview({ doctors }: { doctors: Doctor[] }) {
   const { t } = useLanguage()
 
   return (
-    <section className="bg-white px-6 py-20 md:px-12">
+    <section className="bg-white px-6 pb-12 pt-20 md:px-12 md:pb-16">
       <div className="mx-auto max-w-7xl">
         <FadeIn>
           <div className="mb-12 flex flex-col gap-5 border-b border-brand-border pb-10 sm:flex-row sm:items-end sm:justify-between">

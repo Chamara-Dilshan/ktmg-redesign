@@ -26,7 +26,7 @@ export default function TestimonialsSection({ testimonials }: { testimonials: Te
   const { t } = useLanguage()
 
   return (
-    <section className="bg-brand-text px-6 py-24 md:px-12">
+    <section className="bg-teal-deep px-6 py-24 md:px-12">
       <div className="mx-auto max-w-7xl">
 
         {/* Header row */}
