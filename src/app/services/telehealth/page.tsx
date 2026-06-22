@@ -15,22 +15,22 @@ export default function TelehealthPage() {
       subtitle="Video visits with our pediatricians from the comfort of your home. Available seven days a week, plus evening hours for working families."
       features={[
         {
-          icon: '🏠',
+          icon: 'home',
           title: 'Convenience',
           desc: 'No travel time — video visits from home, school, or anywhere with a safe, private space.',
         },
         {
-          icon: '⚡',
+          icon: 'bolt',
           title: 'Quick Access',
           desc: 'Often same-day or next-day appointments available, with shorter wait times than in-person visits.',
         },
         {
-          icon: '🗓️',
+          icon: 'calendar',
           title: 'Flexible Scheduling',
           desc: "Open seven days a week, including early mornings and evenings to fit your family's schedule.",
         },
         {
-          icon: '🤝',
+          icon: 'user-group',
           title: 'Continuity of Care',
           desc: "Work with your child's regular pediatrician or another trusted KTMG provider via secure video.",
         },

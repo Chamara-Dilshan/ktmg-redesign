@@ -14,22 +14,22 @@ export default function PrenatalConsultationPage() {
       subtitle="Getting ready for baby's arrival? Schedule a prenatal consultation to meet your pediatrician, ask questions, and plan your newborn's first days of care."
       features={[
         {
-          icon: '👩‍⚕️',
+          icon: 'user-circle',
           title: 'Meet Your Pediatrician',
           desc: "Get to know the doctor who'll care for your newborn, discuss your parenting approach, and build trust before baby arrives.",
         },
         {
-          icon: '💬',
+          icon: 'chat',
           title: 'Answer Your Questions',
           desc: "Breastfeeding, sleep, feeding schedules, vaccines — ask everything. We're here to prepare you for success.",
         },
         {
-          icon: '🏥',
+          icon: 'building',
           title: 'Hospital Coordination',
           desc: 'We coordinate with partner hospitals in LA for first visits and hospital birth follow-ups.',
         },
         {
-          icon: '👶',
+          icon: 'face-smile',
           title: 'Newborn Preparation',
           desc: "Learn what to expect during your newborn's first checkups, screening tests, and ongoing preventive care.",
         },

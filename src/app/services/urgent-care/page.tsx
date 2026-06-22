@@ -14,22 +14,22 @@ export default function UrgentCarePage() {
       subtitle="Non-emergency illnesses and injuries deserve immediate attention. Our urgent care clinics are staffed by experienced pediatricians, with minimal waiting and maximum peace of mind."
       features={[
         {
-          icon: '🚑',
+          icon: 'plus-circle',
           title: 'Immediate Care',
           desc: 'Fast assessment and treatment for fevers, coughs, ear infections, sprains, cuts, and other urgent needs.',
         },
         {
-          icon: '⏱️',
+          icon: 'clock',
           title: 'Less Waiting',
           desc: 'Shorter wait times than emergency rooms, with streamlined check-in and efficient care.',
         },
         {
-          icon: '✅',
+          icon: 'check-circle',
           title: 'No ER Visit Needed',
           desc: "Handle most minor injuries and illnesses right here — avoid the hospital when your child doesn't need it.",
         },
         {
-          icon: '👶',
+          icon: 'face-smile',
           title: 'Ages 0–21',
           desc: 'Our urgent care clinics serve the full pediatric age range, from infants to young adults.',
         },

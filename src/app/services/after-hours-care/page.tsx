@@ -25,22 +25,22 @@ export default function AfterHoursCarePage() {
       }
       features={[
         {
-          icon: '🌙',
+          icon: 'moon',
           title: 'Evening Hours',
           desc: "Care available when your regular pediatrician's office is closed, during weekday evenings and nights.",
         },
         {
-          icon: '📅',
+          icon: 'calendar-days',
           title: 'Weekend Support',
           desc: "Saturday and Sunday appointments for illnesses and injuries that can't wait until Monday.",
         },
         {
-          icon: '🤝',
+          icon: 'user-group',
           title: 'Trusted Network',
           desc: 'We partner with board-certified pediatricians in the after-hours network for seamless, coordinated care.',
         },
         {
-          icon: '📱',
+          icon: 'device-phone-mobile',
           title: 'Easy Access',
           desc: 'Simple online booking and quick check-in — because your time matters when your child is sick.',
         },

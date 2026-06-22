@@ -1,5 +1,6 @@
 import PageHero from '@/components/layout/PageHero'
 import BookingCTA from '@/components/ui/BookingCTA'
+import FeatureIcon from '@/components/ui/FeatureIcon'
 import Link from 'next/link'
 
 interface Feature {
@@ -52,8 +53,8 @@ export default function ServiceDetailLayout({
                 className="group flex flex-col rounded-2xl border border-brand-border bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
               >
                 {f.icon && (
-                  <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-teal-tint text-xl ring-1 ring-teal-mid/10">
-                    {f.icon}
+                  <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-teal-tint text-teal-mid ring-1 ring-teal-mid/15">
+                    <FeatureIcon name={f.icon} className="h-6 w-6" />
                   </div>
                 )}
                 <div className="mb-3 h-px w-8 bg-coral/60" />

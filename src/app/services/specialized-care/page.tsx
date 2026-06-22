@@ -14,22 +14,22 @@ export default function SpecializedCarePage() {
       subtitle="From managing ADHD to treating allergies and preparing for sports — our pediatricians offer specialized services that go beyond routine wellness visits."
       features={[
         {
-          icon: '🧠',
+          icon: 'light-bulb',
           title: 'ADHD Evaluation & Management',
           desc: 'Comprehensive assessment, behavior strategies, medication management, and school coordination for children with ADHD.',
         },
         {
-          icon: '🌿',
+          icon: 'shield-check',
           title: 'Allergy Care',
           desc: 'Diagnosis and treatment of allergies and asthma, including allergen testing and management plans.',
         },
         {
-          icon: '🏃',
+          icon: 'trophy',
           title: 'Sports Physicals',
           desc: 'Pre-sports evaluations to ensure your young athlete is healthy and safe to play at their best.',
         },
         {
-          icon: '💙',
+          icon: 'heart',
           title: 'Adolescent Health',
           desc: 'Specialized services for teens: mental health screening, substance use prevention, reproductive health.',
         },
