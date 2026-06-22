@@ -125,7 +125,7 @@ export default function ClinicFinder({ locations }: { locations: Location[] }) {
                   </p>
                   <Link
                     href="/services/telehealth"
-                    className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-coral transition-colors hover:text-teal-dark"
+                    className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-coral-ink transition-colors hover:text-teal-dark"
                   >
                     {t('clinicFinder.learnTelehealth')}
                   </Link>

@@ -19,9 +19,9 @@ export default function UrgencyBar() {
           <span className="text-white/20">·</span>
           <a href={PORTAL_URL}     target="_blank" rel="noopener noreferrer" className="text-[11px] text-white/55 transition-colors hover:text-white">{t('nav.patientPortal')}</a>
           <span className="text-white/20">|</span>
-          <a href={`tel:${PHONE_CALL.replace(/\D/g, '')}`} className="text-xs font-semibold text-coral transition-colors hover:text-white">{PHONE_CALL}</a>
+          <a href={`tel:${PHONE_CALL.replace(/\D/g, '')}`} className="text-xs font-semibold text-white transition-colors hover:text-coral">{PHONE_CALL}</a>
         </div>
-        <a href={`tel:${PHONE_CALL.replace(/\D/g, '')}`} className="shrink-0 text-xs font-semibold text-coral transition-colors hover:text-white md:hidden">
+        <a href={`tel:${PHONE_CALL.replace(/\D/g, '')}`} className="shrink-0 text-xs font-semibold text-white transition-colors hover:text-coral md:hidden">
           {PHONE_CALL}
         </a>
       </div>

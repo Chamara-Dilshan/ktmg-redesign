@@ -47,14 +47,14 @@ export default function ServicesContent() {
                   </div>
                   <h2 className="font-heading mb-2 text-lg font-bold text-teal-dark group-hover:text-teal-mid transition-colors">{s.name}</h2>
                   {s.hours && (
-                    <p className="mb-2 inline-flex items-center gap-1.5 text-xs font-semibold text-coral">
+                    <p className="mb-2 inline-flex items-center gap-1.5 text-xs font-semibold text-coral-ink">
                       <span className="h-1.5 w-1.5 rounded-full bg-coral" />
                       {s.hours}
                     </p>
                   )}
                   <p className="flex-1 text-sm leading-relaxed text-brand-muted">{s.description}</p>
                   <div className="mt-5">
-                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-teal-mid transition-colors group-hover:text-coral">
+                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-teal-mid transition-colors group-hover:text-coral-ink">
                       {t('servicesPage.learnMore')}
                     </span>
                   </div>

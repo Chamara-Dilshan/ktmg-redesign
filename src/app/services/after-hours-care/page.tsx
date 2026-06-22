@@ -17,7 +17,7 @@ export default function AfterHoursCarePage() {
           href="https://pediatricafterhour.com/contact-us/"
           target="_blank"
           rel="noopener noreferrer"
-          className="group inline-flex items-center gap-2.5 rounded-full bg-coral px-7 py-3 text-sm font-bold text-white transition-opacity hover:opacity-90"
+          className="group inline-flex items-center gap-2.5 rounded-full bg-coral-ink px-7 py-3 text-sm font-bold text-white transition-opacity hover:opacity-90"
         >
           Learn More
           <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white/20 text-xs">→</span>

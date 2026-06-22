@@ -45,7 +45,7 @@ export default function Footer() {
               </div>
               <div>
                 <span className="block text-sm font-semibold text-white">Kids & Teens</span>
-                <span className="block text-[10px] text-white/40">Medical Group</span>
+                <span className="block text-[10px] text-white/60">Medical Group</span>
               </div>
             </Link>
             <p className="text-[13px] leading-relaxed">
@@ -74,7 +74,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/40">{t('footer.services')}</h3>
+            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/60">{t('footer.services')}</h3>
             <ul className="space-y-2.5">
               {[
                 ['footer.primaryCare',          '/services/primary-care'],
@@ -93,7 +93,7 @@ export default function Footer() {
 
           {/* For Patients */}
           <div>
-            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/40">{t('footer.forPatients')}</h3>
+            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/60">{t('footer.forPatients')}</h3>
             <ul className="space-y-2.5">
               {[
                 ['footer.findClinic',       '/locations'],
@@ -112,7 +112,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/40">{t('footer.contact')}</h3>
+            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/60">{t('footer.contact')}</h3>
             <ul className="space-y-3">
               <li>
                 <a href={`tel:${PHONE_CALL.replace(/\D/g, '')}`} className="flex items-center gap-2.5 text-sm transition-colors hover:text-white">
@@ -142,10 +142,10 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center gap-3 border-t border-white/[0.07] pt-6 text-xs sm:flex-row sm:justify-between">
-          <span className="text-white/35">{t('footer.copyright')}</span>
+          <span className="text-white/60">{t('footer.copyright')}</span>
           <div className="flex gap-5">
-            <Link href="/privacy-policy"   className="text-white/35 transition-colors hover:text-white/70">{t('footer.privacy')}</Link>
-            <Link href="/terms-conditions" className="text-white/35 transition-colors hover:text-white/70">{t('footer.terms')}</Link>
+            <Link href="/privacy-policy"   className="text-white/60 transition-colors hover:text-white/70">{t('footer.privacy')}</Link>
+            <Link href="/terms-conditions" className="text-white/60 transition-colors hover:text-white/70">{t('footer.terms')}</Link>
           </div>
         </div>
       </div>

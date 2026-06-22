@@ -18,7 +18,7 @@ export default function BookingCTA({ label = 'Book Appointment', className }: Bo
       whileTap={{ scale: 0.97 }}
       transition={{ type: 'spring', stiffness: 380, damping: 22 }}
       className={cn(
-        'group inline-flex items-center gap-2.5 rounded-full bg-coral px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-coral/25 hover:shadow-xl hover:shadow-coral/30',
+        'group inline-flex items-center gap-2.5 rounded-full bg-coral-ink px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-coral/25 hover:shadow-xl hover:shadow-coral/30',
         className
       )}
     >

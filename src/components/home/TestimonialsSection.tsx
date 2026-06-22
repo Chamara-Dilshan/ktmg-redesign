@@ -19,7 +19,7 @@ function Stars({ count }: { count: number }) {
   )
 }
 
-const accentColors = ['bg-coral', 'bg-teal-mid', 'bg-teal-light']
+const accentColors = ['bg-coral-ink', 'bg-teal-mid', 'bg-teal-light']
 
 export default function TestimonialsSection({ testimonials }: { testimonials: Testimonial[] }) {
   const [featured, ...rest] = testimonials
@@ -49,7 +49,7 @@ export default function TestimonialsSection({ testimonials }: { testimonials: Te
             <div className="mt-10 flex items-center gap-5">
               <div className="h-px w-14 shrink-0 bg-coral" />
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-coral text-xs font-bold text-white">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-coral-ink text-xs font-bold text-white">
                   {initials(featured.author)}
                 </div>
                 <div>

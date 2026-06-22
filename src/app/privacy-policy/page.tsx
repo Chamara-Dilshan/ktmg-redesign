@@ -144,8 +144,8 @@ export default function PrivacyPolicyPage() {
             </p>
             <ul className="space-y-1 text-brand-muted">
               <li><strong className="text-brand-text">Kids &amp; Teens Medical Group</strong></li>
-              <li>📞 <a href={`tel:${PHONE_CALL.replace(/\D/g, '')}`} className="text-coral hover:underline">{PHONE_CALL}</a></li>
-              <li>✉️ <a href={`mailto:${EMAIL}`} className="text-coral hover:underline">{EMAIL}</a></li>
+              <li>📞 <a href={`tel:${PHONE_CALL.replace(/\D/g, '')}`} className="text-coral-ink hover:underline">{PHONE_CALL}</a></li>
+              <li>✉️ <a href={`mailto:${EMAIL}`} className="text-coral-ink hover:underline">{EMAIL}</a></li>
             </ul>
           </section>
 

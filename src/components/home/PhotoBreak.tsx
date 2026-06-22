@@ -24,7 +24,7 @@ export default function PhotoBreak() {
               <p className="font-heading text-[clamp(1.5rem,3.5vw,2.5rem)] font-semibold italic leading-snug text-white">
                 &ldquo;{t('photoBreak.quote')}&rdquo;
               </p>
-              <p className="mt-4 text-sm font-medium text-white/50">
+              <p className="mt-4 text-sm font-medium text-white/70">
                 {t('photoBreak.since')}
               </p>
             </div>

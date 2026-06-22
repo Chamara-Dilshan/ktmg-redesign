@@ -91,7 +91,7 @@ export default function CareersPage() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`flex shrink-0 items-center gap-1.5 whitespace-nowrap px-5 py-2.5 text-sm font-semibold transition-colors ${
                     activeTab === tab.id
-                      ? 'border-b-2 border-coral text-coral'
+                      ? 'border-b-2 border-coral text-coral-ink'
                       : 'text-brand-muted hover:text-brand-text'
                   }`}
                 >
@@ -114,7 +114,7 @@ export default function CareersPage() {
                     href="https://www.indeed.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-semibold text-coral hover:underline"
+                    className="font-semibold text-coral-ink hover:underline"
                   >
                     {t('careersPage.indeedLabel')}
                   </a>{' '}
@@ -225,12 +225,12 @@ export default function CareersPage() {
                     <button
                       type="submit"
                       disabled={submitState === 'sending'}
-                      className="rounded-full bg-coral px-8 py-3 text-sm font-bold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
+                      className="rounded-full bg-coral-ink px-8 py-3 text-sm font-bold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
                     >
                       {submitState === 'sending' ? t('careersPage.sending') : t('careersPage.submit')}
                     </button>
                     {submitState === 'error' && (
-                      <p className="mt-2 text-xs text-coral">{t('careersPage.error')}</p>
+                      <p className="mt-2 text-xs text-coral-ink">{t('careersPage.error')}</p>
                     )}
                   </>
                 )}

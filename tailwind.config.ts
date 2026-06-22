@@ -10,6 +10,7 @@ const config: Config = {
         'teal-mid':    '#047391',
         'teal-light':  '#7dd3e8',
         'coral':       '#E8612C',
+        'coral-ink':   '#BD471C',  // AA-compliant coral for small text links on light bg (>=4.5:1)
         'brand-bg':    '#FBF8F4',
         'brand-text':  '#1A1A2E',
         'brand-muted': '#5B6270',

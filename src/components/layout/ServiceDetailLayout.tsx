@@ -72,8 +72,8 @@ export default function ServiceDetailLayout({
                   className={`flex items-center gap-2 rounded-full px-5 py-2.5 ${b.accent ? 'bg-coral/10 ring-1 ring-coral/20' : 'bg-teal-tint ring-1 ring-teal-mid/15'}`}
                 >
                   <span className={`h-1.5 w-1.5 rounded-full ${b.accent ? 'bg-coral' : 'bg-teal-mid'}`} />
-                  <span className={`text-xs font-semibold ${b.accent ? 'text-coral' : 'text-teal-dark'}`}>{b.label}:</span>
-                  <span className={`text-xs ${b.accent ? 'text-coral/80' : 'text-teal-mid'}`}>{b.value}</span>
+                  <span className={`text-xs font-semibold ${b.accent ? 'text-coral-ink' : 'text-teal-dark'}`}>{b.label}:</span>
+                  <span className={`text-xs ${b.accent ? 'text-coral-ink' : 'text-teal-mid'}`}>{b.value}</span>
                 </div>
               ))}
             </div>

@@ -61,7 +61,7 @@ export default function InsurancePage() {
                 {p}
               </span>
             ))}
-            <span className="rounded-full border border-dashed border-brand-border bg-white px-5 py-2 text-sm font-semibold text-brand-muted/60">
+            <span className="rounded-full border border-dashed border-brand-border bg-white px-5 py-2 text-sm font-semibold text-brand-muted">
               + many more
             </span>
           </div>
@@ -76,7 +76,7 @@ export default function InsurancePage() {
               </p>
               <a
                 href={`mailto:${EMAIL}`}
-                className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-coral hover:underline"
+                className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-coral-ink hover:underline"
               >
                 Email us to start a transfer →
               </a>
@@ -106,7 +106,7 @@ export default function InsurancePage() {
                 href="https://www.serendibhealthways.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-sm font-semibold text-coral hover:underline"
+                className="inline-flex items-center gap-1 text-sm font-semibold text-coral-ink hover:underline"
               >
                 Check Eligibility at Serendib Healthways →
               </a>

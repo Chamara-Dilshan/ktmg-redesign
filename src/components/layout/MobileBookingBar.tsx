@@ -41,7 +41,7 @@ export default function MobileBookingBar() {
             href={HEALOW_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-coral py-3 text-sm font-semibold text-white shadow-lg shadow-coral/20 transition-transform active:scale-95"
+            className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-coral-ink py-3 text-sm font-semibold text-white shadow-lg shadow-coral/20 transition-transform active:scale-95"
           >
             {t('common.bookAppointment')}
             <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white/20 text-xs">→</span>

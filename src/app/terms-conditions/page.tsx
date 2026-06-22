@@ -21,7 +21,7 @@ export default function TermsConditionsPage() {
             <h2 className="font-heading mb-3 text-xl font-bold text-teal-dark">1. Acceptance of Terms</h2>
             <p>
               By accessing or using <strong>ktdoctor.com</strong> (the &ldquo;Site&rdquo;), you agree to be bound by
-              these Terms &amp; Conditions and our <a href="/privacy-policy" className="font-semibold text-coral hover:underline">Privacy Policy</a>.
+              these Terms &amp; Conditions and our <a href="/privacy-policy" className="font-semibold text-coral-ink hover:underline">Privacy Policy</a>.
               If you do not agree, please do not use the Site. Kids &amp; Teens Medical Group (&ldquo;KTMG&rdquo;)
               reserves the right to modify these terms at any time; continued use of the Site constitutes
               acceptance of any changes.
@@ -117,8 +117,8 @@ export default function TermsConditionsPage() {
               <p className="mb-3">Questions about these Terms? Reach us at:</p>
               <ul className="space-y-1 text-brand-muted">
                 <li><strong className="text-brand-text">Kids &amp; Teens Medical Group</strong></li>
-                <li>📞 <a href={`tel:${PHONE_CALL.replace(/\D/g, '')}`} className="text-coral hover:underline">{PHONE_CALL}</a></li>
-                <li>✉️ <a href={`mailto:${EMAIL}`} className="text-coral hover:underline">{EMAIL}</a></li>
+                <li>📞 <a href={`tel:${PHONE_CALL.replace(/\D/g, '')}`} className="text-coral-ink hover:underline">{PHONE_CALL}</a></li>
+                <li>✉️ <a href={`mailto:${EMAIL}`} className="text-coral-ink hover:underline">{EMAIL}</a></li>
               </ul>
             </div>
           </section>

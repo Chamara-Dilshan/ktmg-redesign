@@ -46,7 +46,7 @@ export default function Hero() {
               {...fadeUp(0)}
               className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-white/20 px-4 py-2"
             >
-              <span className="flex h-4 w-4 items-center justify-center rounded-full bg-coral text-[8px] text-white">★</span>
+              <span className="flex h-4 w-4 items-center justify-center rounded-full bg-coral-ink text-[8px] text-white">★</span>
               <span className="text-xs font-medium tracking-wide text-white/80">{t('hero.badge')}</span>
             </motion.div>
 
@@ -55,7 +55,7 @@ export default function Hero() {
               {...fadeUp(0.08)}
               className="font-heading mb-7 text-[clamp(2.5rem,8.5vw,7rem)] font-extrabold leading-[0.95] tracking-tight text-white heading-tighter"
             >
-              {t('hero.headline1')}<br />
+              {t('hero.headline1')}{' '}<br />
               {t('hero.headline2')}{' '}
               <span className="text-teal-light">{t('hero.headline3')}</span>
             </motion.h1>

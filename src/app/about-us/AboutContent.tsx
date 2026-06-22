@@ -80,11 +80,11 @@ export default function AboutContent() {
                 <div className="space-y-5">
                   {milestoneYears.map((year, i) => (
                     <div key={year} className="flex items-center gap-4">
-                      <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl font-heading text-xs font-bold ${i === milestoneYears.length - 1 ? 'bg-coral text-white' : 'bg-white/10 text-white/60'}`}>
+                      <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl font-heading text-xs font-bold ${i === milestoneYears.length - 1 ? 'bg-coral-ink text-white' : 'bg-white/10 text-white/60'}`}>
                         {year.slice(-2)}
                       </div>
                       <div>
-                        <p className="text-xs text-white/35">{year}</p>
+                        <p className="text-xs text-white/60">{year}</p>
                         <p className="text-sm font-medium text-white">{t(`aboutPage.milestone.${i}`)}</p>
                       </div>
                     </div>

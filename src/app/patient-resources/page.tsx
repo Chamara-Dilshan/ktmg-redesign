@@ -94,7 +94,7 @@ export default function PatientResourcesPage() {
                   href={r.href}
                   target={r.external ? '_blank' : undefined}
                   rel={r.external ? 'noopener noreferrer' : undefined}
-                  className="inline-flex items-center gap-1 text-sm font-semibold text-coral hover:underline"
+                  className="inline-flex items-center gap-1 text-sm font-semibold text-coral-ink hover:underline"
                 >
                   {r.action} →
                 </a>

@@ -62,7 +62,7 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <div className="mx-3 mt-2 border-t border-brand-border pt-2">
-                  <Link href="/services" className="block px-2 py-1.5 text-xs font-semibold text-coral transition-colors hover:text-teal-dark">
+                  <Link href="/services" className="block px-2 py-1.5 text-xs font-semibold text-coral-ink transition-colors hover:text-teal-dark">
                     {t('nav.viewAllServices')}
                   </Link>
                 </div>

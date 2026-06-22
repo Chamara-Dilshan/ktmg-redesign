@@ -57,7 +57,7 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
         <div className="relative mx-auto max-w-7xl">
           <Link
             href="/locations"
-            className="mb-5 inline-flex items-center gap-1.5 text-sm text-white/50 transition-colors hover:text-white/80"
+            className="mb-5 inline-flex items-center gap-1.5 text-sm text-white/70 transition-colors hover:text-white"
           >
             <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -100,7 +100,7 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
                     href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${location.address}, ${location.city}, ${location.state} ${location.zip}`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center gap-2 rounded-full bg-coral px-5 py-2.5 text-sm font-bold text-white transition-opacity hover:opacity-90"
+                    className="mt-6 inline-flex items-center gap-2 rounded-full bg-coral-ink px-5 py-2.5 text-sm font-bold text-white transition-opacity hover:opacity-90"
                   >
                     Get Directions →
                   </a>
@@ -115,12 +115,12 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
                 {location.saturdayHours && (
                   <p className="mt-2 text-sm font-semibold text-coral">
                     {location.saturdayHours}{' '}
-                    <span className="text-xs font-normal text-white/50">(In-office walk-in)</span>
+                    <span className="text-xs font-normal text-white/65">(In-office walk-in)</span>
                   </p>
                 )}
                 {location.telehealthHours && (
                   <div className="mt-5 border-t border-white/10 pt-4">
-                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">Telehealth</p>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/65">Telehealth</p>
                     <p className="mt-1 text-sm font-semibold text-white">{location.telehealthHours}</p>
                   </div>
                 )}

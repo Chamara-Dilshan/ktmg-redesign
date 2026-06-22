@@ -45,7 +45,7 @@ export default function CTABand() {
                 href={HEALOW_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center justify-between gap-4 rounded-2xl bg-coral px-8 py-5 shadow-2xl shadow-coral/25 transition-all duration-200 hover:-translate-y-0.5 hover:bg-coral/90 hover:shadow-coral/35 active:scale-[0.98]"
+                className="group flex items-center justify-between gap-4 rounded-2xl bg-coral-ink px-8 py-5 shadow-2xl shadow-coral/25 transition-all duration-200 hover:-translate-y-0.5 hover:bg-coral-ink/90 hover:shadow-coral/35 active:scale-[0.98]"
               >
                 <span className="font-heading text-lg font-bold text-white">{t('cta.bookAppointment')}</span>
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition-transform duration-200 group-hover:translate-x-0.5">

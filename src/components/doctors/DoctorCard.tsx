@@ -48,7 +48,7 @@ export default function DoctorCard({ doctor }: { doctor: Doctor }) {
         )}
         {/* FAAP badge */}
         {isFAAP && (
-          <span className="relative z-10 ml-auto rounded-full bg-coral px-2.5 py-1 text-[9px] font-bold uppercase tracking-wide text-white">
+          <span className="relative z-10 ml-auto rounded-full bg-coral-ink px-2.5 py-1 text-[9px] font-bold uppercase tracking-wide text-white">
             FAAP
           </span>
         )}
@@ -72,7 +72,7 @@ export default function DoctorCard({ doctor }: { doctor: Doctor }) {
           </p>
         )}
         <div className="mt-auto pt-4">
-          <span className="text-xs font-semibold text-teal-mid transition-colors group-hover:text-coral">
+          <span className="text-xs font-semibold text-teal-mid transition-colors group-hover:text-coral-ink">
             View Profile →
           </span>
         </div>

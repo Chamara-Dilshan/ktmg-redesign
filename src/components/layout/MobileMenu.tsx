@@ -97,7 +97,7 @@ export default function MobileMenu() {
               />
               <div>
                 <span className="block text-sm font-semibold leading-snug text-white">Kids & Teens</span>
-                <span className="block text-[10px] font-medium leading-none tracking-wide text-white/45">Medical Group</span>
+                <span className="block text-[10px] font-medium leading-none tracking-wide text-white/60">Medical Group</span>
               </div>
             </Link>
             <button
@@ -114,7 +114,7 @@ export default function MobileMenu() {
           {/* Scrollable content */}
           <div className="flex-1 overflow-y-auto px-5 py-5">
             {/* Services */}
-            <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/35">{t('nav.services')}</p>
+            <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/60">{t('nav.services')}</p>
             <div className="mb-5 grid grid-cols-2 gap-1.5">
               {serviceLinks.map(s => (
                 <Link
@@ -150,7 +150,7 @@ export default function MobileMenu() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
-                className="flex items-center justify-center gap-2.5 rounded-2xl bg-coral px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-coral/20"
+                className="flex items-center justify-center gap-2.5 rounded-2xl bg-coral-ink px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-coral/20"
               >
                 {t('mobile.bookAppointment')}
               </a>

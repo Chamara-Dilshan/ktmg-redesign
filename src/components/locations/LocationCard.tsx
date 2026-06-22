@@ -27,7 +27,7 @@ export default function LocationCard({ location }: { location: Location }) {
             {location.officeHours}
           </span>
           {location.saturdayHours && (
-            <span className="inline-flex items-center gap-1 rounded-full bg-coral/10 px-3 py-1 text-[11px] font-medium text-coral">
+            <span className="inline-flex items-center gap-1 rounded-full bg-coral/10 px-3 py-1 text-[11px] font-medium text-coral-ink">
               <span className="h-1.5 w-1.5 rounded-full bg-coral" />
               {location.saturdayHours}
             </span>

@@ -67,7 +67,7 @@ export default function DoctorPage({ params }: { params: { slug: string } }) {
         <div className="relative mx-auto max-w-7xl">
           <Link
             href="/doctors"
-            className="mb-5 inline-flex items-center gap-1.5 text-sm text-white/50 transition-colors hover:text-white/80"
+            className="mb-5 inline-flex items-center gap-1.5 text-sm text-white/70 transition-colors hover:text-white"
           >
             <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -99,7 +99,7 @@ export default function DoctorPage({ params }: { params: { slug: string } }) {
                 )}
               </div>
               {isFAAP && (
-                <div className="absolute -bottom-1 -right-1 rounded-full bg-coral px-2 py-0.5 text-[9px] font-bold text-white ring-2 ring-teal-dark">
+                <div className="absolute -bottom-1 -right-1 rounded-full bg-coral-ink px-2 py-0.5 text-[9px] font-bold text-white ring-2 ring-teal-dark">
                   FAAP
                 </div>
               )}
