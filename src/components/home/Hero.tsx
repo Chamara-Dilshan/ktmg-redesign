@@ -3,7 +3,6 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import { useRef } from 'react'
 import BookingCTA from '@/components/ui/BookingCTA'
-import Button from '@/components/ui/Button'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { PHONE_CALL } from '@/lib/constants'
 
@@ -18,8 +17,6 @@ export default function Hero() {
   const { scrollY } = useScroll()
   const bgY = useTransform(scrollY, [0, 700], ['0%', '25%'])
   const { t } = useLanguage()
-
-  const ticker = Array.from({ length: 8 }, (_, i) => t(`hero.ticker.${i}`))
 
   return (
     <section ref={sectionRef} className="relative flex min-h-[94vh] flex-col overflow-hidden">
@@ -46,10 +43,10 @@ export default function Hero() {
             {/* Trust badge */}
             <motion.div
               {...fadeUp(0)}
-              className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.07] px-4 py-2 backdrop-blur-sm"
+              className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-white/20 px-4 py-2"
             >
               <span className="flex h-4 w-4 items-center justify-center rounded-full bg-coral text-[8px] text-white">★</span>
-              <span className="text-xs font-medium tracking-wide text-white/75">{t('hero.badge')}</span>
+              <span className="text-xs font-medium tracking-wide text-white/80">{t('hero.badge')}</span>
             </motion.div>
 
             {/* Headline */}
@@ -73,10 +70,9 @@ export default function Hero() {
             {/* CTAs */}
             <motion.div {...fadeUp(0.28)} className="flex flex-wrap items-center gap-3">
               <BookingCTA label={t('hero.bookAppointment')} className="animate-pulse-glow" />
-              <Button variant="ghost" href="/locations">{t('hero.findClinic')}</Button>
               <a
                 href={`tel:${PHONE_CALL.replace(/\D/g, '')}`}
-                className="hidden items-center gap-2 text-sm text-white/45 transition-colors hover:text-white/75 md:flex"
+                className="hidden items-center gap-2 text-sm text-white/65 transition-colors hover:text-white md:flex"
               >
                 <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -96,34 +92,18 @@ export default function Hero() {
                     <span key={j} className="text-xs text-coral">★</span>
                   ))}
                 </div>
-                <span className="text-xs text-white/40">{t('hero.reviews')}</span>
+                <span className="text-xs text-white/65">{t('hero.reviews')}</span>
               </div>
               <span className="hidden text-white/15 md:block">|</span>
-              <span className="text-xs text-white/40">{t('hero.sameDay')}</span>
-              <span className="text-xs text-white/40">{t('hero.allInsurance')}</span>
-              <span className="text-xs text-white/40">{t('hero.ages')}</span>
+              <span className="text-xs text-white/65">{t('hero.sameDay')}</span>
+              <span className="text-xs text-white/65">{t('hero.allInsurance')}</span>
+              <span className="text-xs text-white/65">{t('hero.ages')}</span>
             </motion.div>
 
           </div>
         </div>
       </div>
 
-      {/* Bottom ticker */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.7 }}
-        className="relative z-10 overflow-hidden border-t border-white/[0.08] bg-teal-dark/60 backdrop-blur-sm"
-      >
-        <div className="flex animate-marquee gap-0 whitespace-nowrap py-3">
-          {[...ticker, ...ticker].map((item, i) => (
-            <span key={i} className="flex items-center gap-5 px-6 text-[11px] font-semibold uppercase tracking-[0.15em] text-white/40">
-              {item}
-              <span className="h-1 w-1 rounded-full bg-coral/50" />
-            </span>
-          ))}
-        </div>
-      </motion.div>
     </section>
   )
 }
