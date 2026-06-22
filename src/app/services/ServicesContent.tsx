@@ -1,5 +1,6 @@
 'use client'
 import SectionLabel from '@/components/ui/SectionLabel'
+import ServiceIcon from '@/components/ui/ServiceIcon'
 import services from '@/data/services.json'
 import type { Service } from '@/types'
 import Link from 'next/link'
@@ -42,8 +43,8 @@ export default function ServicesContent() {
               >
                 <div className={`h-[3px] shrink-0 ${i % 2 === 0 ? 'bg-teal-mid' : 'bg-coral'}`} />
                 <div className="flex flex-1 flex-col p-6">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-teal-tint text-2xl ring-1 ring-teal-mid/10 transition-all duration-200 group-hover:bg-teal-dark">
-                    {s.icon}
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-teal-tint text-teal-mid ring-1 ring-teal-mid/15 transition-colors duration-200 group-hover:bg-teal-dark group-hover:text-white">
+                    <ServiceIcon slug={s.slug} className="h-6 w-6" />
                   </div>
                   <h2 className="font-heading mb-2 text-lg font-bold text-teal-dark group-hover:text-teal-mid transition-colors">{s.name}</h2>
                   {s.hours && (
