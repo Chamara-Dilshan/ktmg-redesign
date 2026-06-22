@@ -118,6 +118,7 @@ const en: Record<string, string> = {
   'servicesGrid.headline2': 'your child needs.',
   'servicesGrid.viewAll': 'View all services →',
   'servicesGrid.learnMore': 'Learn more',
+  'servicesGrid.alsoAvailable': 'Also available',
 
   // ── Clinic Finder ─────────────────────────────────────────
   'clinicFinder.label': '25 Locations',
@@ -271,12 +272,19 @@ const en: Record<string, string> = {
   'serviceData.telehealth.hours': '7 days a week',
   'serviceData.urgentCare.name': 'Urgent Care',
   'serviceData.urgentCare.description': 'Immediate care for non-emergency illnesses and injuries. Less waiting, same trusted pediatric care for ages 0–21.',
+  'serviceData.urgentCare.hours': 'Walk-in, no appointment',
   'serviceData.afterHoursCare.name': 'After-Hours Care',
   'serviceData.afterHoursCare.description': 'Evening and weekend availability when your child needs care outside of regular office hours.',
+  'serviceData.afterHoursCare.hours': 'Evenings & weekends',
   'serviceData.prenatalConsultation.name': 'Prenatal Consultation',
   'serviceData.prenatalConsultation.description': 'Meet your pediatrician before baby arrives. We coordinate first hospital visits with our partner hospitals for families delivering nearby.',
+  'serviceData.prenatalConsultation.hours': 'By appointment',
   'serviceData.specializedCare.name': 'Specialized Care',
   'serviceData.specializedCare.description': 'ADHD evaluation and management, allergy care, sports physicals, and adolescent health services.',
+  'serviceData.specializedCare.tag1': 'ADHD & Behavioral',
+  'serviceData.specializedCare.tag2': 'Allergy Care',
+  'serviceData.specializedCare.tag3': 'Sports Physicals',
+  'serviceData.specializedCare.tag4': 'Adolescent Health',
 }
 
 export default en

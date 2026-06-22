@@ -118,6 +118,7 @@ const es: Record<string, string> = {
   'servicesGrid.headline2': 'que su hijo necesita.',
   'servicesGrid.viewAll': 'Ver todos los servicios →',
   'servicesGrid.learnMore': 'Más información',
+  'servicesGrid.alsoAvailable': 'También disponible',
 
   // ── Clinic Finder ─────────────────────────────────────────
   'clinicFinder.label': '25 Ubicaciones',
@@ -271,12 +272,19 @@ const es: Record<string, string> = {
   'serviceData.telehealth.hours': '7 días a la semana',
   'serviceData.urgentCare.name': 'Atención de Urgencias',
   'serviceData.urgentCare.description': 'Atención inmediata para enfermedades y lesiones no urgentes. Menos espera, la misma atención pediátrica de confianza para edades 0–21.',
+  'serviceData.urgentCare.hours': 'Sin cita previa',
   'serviceData.afterHoursCare.name': 'Atención Fuera de Horario',
   'serviceData.afterHoursCare.description': 'Disponibilidad en tardes y fines de semana cuando su hijo necesita atención fuera del horario regular de oficina.',
+  'serviceData.afterHoursCare.hours': 'Tardes y fines de semana',
   'serviceData.prenatalConsultation.name': 'Consulta Prenatal',
   'serviceData.prenatalConsultation.description': 'Conozca a su pediatra antes de que llegue el bebé. Coordinamos las primeras visitas hospitalarias con nuestros hospitales asociados para familias que dan a luz cerca.',
+  'serviceData.prenatalConsultation.hours': 'Con cita previa',
   'serviceData.specializedCare.name': 'Atención Especializada',
   'serviceData.specializedCare.description': 'Evaluación y manejo de TDAH, atención de alergias, exámenes médicos deportivos y servicios de salud adolescente.',
+  'serviceData.specializedCare.tag1': 'TDAH y Conducta',
+  'serviceData.specializedCare.tag2': 'Atención de Alergias',
+  'serviceData.specializedCare.tag3': 'Exámenes Deportivos',
+  'serviceData.specializedCare.tag4': 'Salud Adolescente',
 }
 
 export default es
