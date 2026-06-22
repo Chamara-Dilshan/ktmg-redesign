@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <header>
       {/* Main nav */}
-      <nav className="sticky top-0 z-50 bg-white shadow-[0_1px_0_#E8E2D9] border-b border-brand-border">
+      <nav className="sticky top-0 z-50 bg-white border-b border-brand-border">
         <div className="relative mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5">
           <Link href="/" className="flex items-center gap-3 group">
             <div className="overflow-hidden rounded-xl">
